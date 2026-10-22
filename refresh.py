@@ -64,18 +64,53 @@ def quote(sym):
         if mm: mc = mm.group(1)
         return {'name': name, 'price': price, 'chg': chg, 'chgPct': pct, 'vol': vol, 'range': rng, 'mcap': mc}
     return None
+def money(v):
+    if v >= 1e9: return '$%.1fB' % (v/1e9)
+    if v >= 1e6: return '$%.0fM' % (v/1e6)
+    return '$%.0fK' % (v/1e3)
+
+def clean_deal(x):
+    x = (x or '').strip().replace('$','').replace(',','')
+    if not x or x in ('-','\u2014'): return None
+    v = num(x)
+    if v: return money(v)
+    return '$' + x
+
+def deal_size(sym, deals, offer=None):
+    d = deals.get(sym) or {}
+    ds = clean_deal(d.get('deal'))
+    if ds: return ds
+    sh = num((d.get('shares') or '').replace(',',''))
+    off = num(offer) if offer else None
+    if sh and off: return money(sh*off)
+    return '\u2014'
+
+def raise_est(d):
+    sh = num((d.get('shares') or '').replace(',',''))
+    m = re.match(r'\$?([\d.]+)\s*-\s*\$?([\d.]+)', (d.get('rng') or ''))
+    if m and sh: return money(sh*(float(m.group(1))+float(m.group(2)))/2)
+    off = num((d.get('offer') or '').replace('$','')) if d.get('offer') else None
+    if off and sh: return money(sh*off)
+    return None
+
 def ipos():
-    out = {'upcoming': [], 'priced': []}
+    out = {'upcoming': [], 'priced': [], 'deals': {}}
+    deals = {}
+    offers = {}
     soup = BeautifulSoup(fetch('https://stockanalysis.com/ipos/'), 'html.parser')
     for h in soup.find_all(['h2','h3']):
         if 'Last 200 IPOs' not in h.get_text(strip=True): continue
         tbl = h.find_next('table')
         if not tbl: break
-        rows = []
+        priced_rows = []
         for tr in tbl.find_all('tr')[1:16]:
             cells = [td.get_text(' ', strip=True) for td in tr.find_all(['td','th'])]
-            if cells and len(cells) >= 6: rows.append(cells)
-        out['priced'] = rows
+            if cells and len(cells) >= 6:
+                deals.setdefault(cells[1], {})
+                deals[cells[1]]['offer'] = cells[3]
+                offers[cells[1]] = cells[3]
+                priced_rows.append(cells[:6])
+        out['priced'] = priced_rows
         break
     soup = BeautifulSoup(fetch('https://stockanalysis.com/ipos/calendar/'), 'html.parser')
     for h in soup.find_all(['h2','h3']):
@@ -85,9 +120,15 @@ def ipos():
         if not tbl: continue
         for tr in tbl.find_all('tr')[1:]:
             cells = [td.get_text(' ', strip=True) for td in tr.find_all(['td','th'])]
-            if cells and len(cells) >= 3 and cells[0] != 'IPO Date':
-                out['upcoming'].append([title.split(chr(183))[0].strip()] + cells[:6])
+            if cells and len(cells) >= 7 and cells[0] != 'IPO Date':
+                d = deals.setdefault(cells[1], {})
+                d.update({'rng': cells[4], 'shares': cells[5], 'deal': cells[6], 'offer': offers.get(cells[1])})
+                rv = clean_deal(cells[6]) or raise_est(d) or '\u2014'
+                out['upcoming'].append([title.split(chr(183))[0].strip()] + cells[:6] + [rv])
+    out['deals'] = deals
+    out['priced'] = [r + [deal_size(r[1], deals, r[3])] for r in out['priced']]
     return out
+
 def main():
     dpath = 'data.json'
     data = {}

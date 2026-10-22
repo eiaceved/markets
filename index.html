@@ -34,10 +34,32 @@ footer{margin-top:36px;color:#8a97a5;font-size:12px}
 a{color:#1a53f0;text-decoration:none}
 a:hover{text-decoration:underline}
 @media(max-width:640px){td.nm{max-width:150px}}
+.kt{border:1px solid #e3e8ee;border-radius:10px;padding:10px 14px;margin:0 0 22px}
+.kt summary{cursor:pointer;font-weight:700;font-size:13px;color:#3d4a56}
+.ktgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:7px 20px;margin-top:9px;font-size:13.5px;color:#4d5b68;line-height:1.45}
+.ktgrid b{color:#1c2731;font-weight:700}
+.ant td{white-space:normal}
+.ant td.nm{max-width:340px}
 </style></head><body>
 <header><h1>Markets</h1><span class="stamp" id="stamp">Loading…</span></header>
-<div class="sub">Watchlist and IPO tracker, refreshed once a day after the close.</div>
+<div class="sub">Watchlist and IPO tracker, refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific.</div>
 
+<details class="kt" open><summary>Key terms — what you're reading</summary>
+<div class="ktgrid">
+<div><b>IPO</b> — when a private company sells shares to the public for the first time.</div>
+<div><b>Ticker</b> — the short symbol for a stock, like AAPL for Apple.</div>
+<div><b>Offer price</b> — the price set the night before trading starts; what IPO buyers paid.</div>
+<div><b>Price range</b> — what the company and its bankers float before pricing; the final offer usually lands inside it.</div>
+<div><b>Shares offered</b> — how many shares are being sold in the IPO.</div>
+<div><b>Raised</b> — offer price × shares offered: the money the company pulls in.</div>
+<div><b>Expected raise</b> — the money an upcoming deal is thought to be worth, from its range or offer estimate.</div>
+<div><b>Return</b> — how the stock has done since listing: (latest − offer) ÷ offer.</div>
+<div><b>Market cap</b> — share price × all shares outstanding: the whole company's sticker price.</div>
+<div><b>Volume</b> — how many shares changed hands today.</div>
+<div><b>Day range</b> — the lowest and highest price touched today.</div>
+<div><b>Anticipated</b> — big private companies reported to be preparing to go public; from press reports, not confirmed by the companies.</div>
+</div>
+</details>
 <h2>Watchlist</h2>
 <div class="lead">Live-style quotes in the Yahoo Finance layout: last price, change, volume, day range and market cap.</div>
 <div class="card"><table id="wl"><thead><tr>
@@ -53,11 +75,23 @@ a:hover{text-decoration:underline}
 <div class="lead">The newest listings, priced against their offer price.</div>
 <div class="card"><table id="priced"><thead></thead><tbody></tbody></table></div>
 
+<h2>Anticipated IPOs</h2>
+<div class="lead">The big private names reported to be lining up, as of Oct 22, 2026. Dates and terms are from press reports, not confirmed by the companies.</div>
+<div class="card"><table class="ant">
+<thead><tr><th>Company</th><th>Expected timing</th><th>What's expected</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><b>Anthropic</b><br><span class="note">AI models (Claude)</span></td><td>As soon as mid-November 2026</td><td class="nm">Early talk of a ~$2T valuation has cooled toward ~$1.5T after slowing growth; a raise of up to ~$100B was floated. Would trail only SpaceX as the largest IPO ever.</td><td class="nm">Filed confidentially; public registration documents could land as early as Oct 24</td></tr>
+<tr><td><b>OpenAI</b><br><span class="note">ChatGPT</span></td><td>2027 at the earliest</td><td class="nm">Confidential S-1 filed Jun 8, 2026. Last confirmed valuation $852B; reportedly raising ~$30B more privately at ~$1.4T. Could be the largest tech IPO in U.S. history.</td><td class="nm">Altman ruled out 2026; CFO told staff "public company in 2027"</td></tr>
+<tr><td><b>Databricks</b><br><span class="note">Data &amp; AI platform</span></td><td>Deferred, timing TBD</td><td class="nm">Held off its debut; last private round valued it at $190B. One of the first big tech names expected once markets settle.</td><td>Private</td></tr>
+<tr><td><b>Kraken</b><br><span class="note">Crypto exchange</span></td><td>2027 earliest</td><td class="nm">Confidential filing reported; no terms public yet.</td><td>Private</td></tr>
+</tbody></table></div>
+<div class="note" style="margin:8px 2px">Context: SpaceX set the bar in June 2026 — listed at $135, about a $1.77T valuation, the largest IPO ever.</div>
+
 <h2>Upcoming IPOs</h2>
 <div class="lead">Deals expected to price soon, with ranges where they are known.</div>
 <div class="card"><table id="ipo"><thead></thead><tbody></tbody></table></div>
 
-<footer>Prices are delayed. The page is refreshed once a day after market close, around 4:30 PM Pacific. For study use, not trading advice.</footer>
+<footer>Prices are delayed. The page is refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific. For study use, not trading advice.</footer>
 
 <script>
 fetch('data.json?v='+Date.now()).then(r=>r.json()).then(DATA=>{
@@ -101,23 +135,23 @@ watch.forEach(sym=>{
 });
 function rm(s){watch=watch.filter(x=>x!==s);saveWatch();location.reload()}
 const ph=document.querySelector('#priced thead'),pb=document.querySelector('#priced tbody');
-ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Latest</th><th>Return</th></tr>';
+ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Raised</th><th>Latest</th><th>Return</th></tr>';
 (IPOS.priced||[]).forEach(r=>{
-  const [date,sym,co,offer,last,ret]=r;
+  const [date,sym,co,offer,raised,last,ret]=r;
   const v=pct(ret||'');
   const tr=document.createElement('tr');
   tr.innerHTML='<td style="color:#6b7785">'+date+'</td><td class="sym">'+sym+'</td><td class="nm">'+co+'</td>'
-    +'<td class="px">'+offer+'</td><td class="px">'+last+'</td>'
+    +'<td class="px">'+offer+'</td><td>'+(raised||'\u2014')+'</td><td class="px">'+last+'</td>'
     +'<td class="'+cls(v)+'">'+(ret||'')+'</td>';
   pb.appendChild(tr);
 });
 const uh=document.querySelector('#ipo thead'),ub=document.querySelector('#ipo tbody');
-uh.innerHTML='<tr><th>When</th><th>Date</th><th>Symbol</th><th>Company</th><th>Exchange</th><th>Price range</th><th>Shares offered</th></tr>';
+uh.innerHTML='<tr><th>When</th><th>Date</th><th>Symbol</th><th>Company</th><th>Exchange</th><th>Price range</th><th>Shares offered</th><th>Expected raise</th></tr>';
 (IPOS.upcoming||[]).forEach(r=>{
-  const [week,date,sym,co,ex,rng,sh]=r;
+  const [week,date,sym,co,ex,rng,sh,raise]=r;
   const tr=document.createElement('tr');
   tr.innerHTML='<td><span class="badge">'+(week||'')+'</span></td><td style="color:#6b7785">'+date+'</td>'
-    +'<td class="sym">'+sym+'</td><td class="nm">'+co+'</td><td>'+ex+'</td><td>'+rng+'</td><td>'+sh+'</td>';
+    +'<td class="sym">'+sym+'</td><td class="nm">'+co+'</td><td>'+ex+'</td><td>'+rng+'</td><td>'+sh+'</td><td>'+(raise||'\u2014')+'</td>';
   ub.appendChild(tr);
 });
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
