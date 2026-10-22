@@ -139,7 +139,7 @@ function rm(s){watch=watch.filter(x=>x!==s);saveWatch();location.reload()}
 const ph=document.querySelector('#priced thead'),pb=document.querySelector('#priced tbody');
 ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Raised</th><th>Latest</th><th>Return</th></tr>';
 (IPOS.priced||[]).forEach(r=>{
-  const [date,sym,co,offer,raised,last,ret]=r;
+  const [date,sym,co,offer,last,ret,raised]=r;
   const v=pct(ret||'');
   const tr=document.createElement('tr');
   tr.innerHTML='<td style="color:#6b7785">'+date+'</td><td class="sym">'+sym+'</td><td class="nm">'+co+'</td>'
