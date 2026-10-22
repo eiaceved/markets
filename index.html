@@ -34,32 +34,13 @@ footer{margin-top:36px;color:#8a97a5;font-size:12px}
 a{color:#1a53f0;text-decoration:none}
 a:hover{text-decoration:underline}
 @media(max-width:640px){td.nm{max-width:150px}}
-.kt{border:1px solid #e3e8ee;border-radius:10px;padding:10px 14px;margin:0 0 22px}
-.kt summary{cursor:pointer;font-weight:700;font-size:13px;color:#3d4a56}
-.ktgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:7px 20px;margin-top:9px;font-size:13.5px;color:#4d5b68;line-height:1.45}
-.ktgrid b{color:#1c2731;font-weight:700}
 .ant td{white-space:normal}
 .ant td.nm{max-width:340px}
 </style></head><body>
 <header><h1>Markets</h1><span class="stamp" id="stamp">Loading…</span></header>
 <div class="sub">Watchlist and IPO tracker, refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific.</div>
 
-<details class="kt" open><summary>Key terms — what you're reading</summary>
-<div class="ktgrid">
-<div><b>IPO</b> — when a private company sells shares to the public for the first time.</div>
-<div><b>Ticker</b> — the short symbol for a stock, like AAPL for Apple.</div>
-<div><b>Offer price</b> — the price set the night before trading starts; what IPO buyers paid.</div>
-<div><b>Price range</b> — what the company and its bankers float before pricing; the final offer usually lands inside it.</div>
-<div><b>Shares offered</b> — how many shares are being sold in the IPO.</div>
-<div><b>Raised</b> — offer price × shares offered: the money the company pulls in.</div>
-<div><b>Expected raise</b> — the money an upcoming deal is thought to be worth, from its range or offer estimate.</div>
-<div><b>Return</b> — how the stock has done since listing: (latest − offer) ÷ offer.</div>
-<div><b>Market cap</b> — share price × all shares outstanding: the whole company's sticker price.</div>
-<div><b>Volume</b> — how many shares changed hands today.</div>
-<div><b>Day range</b> — the lowest and highest price touched today.</div>
-<div><b>Anticipated</b> — big private companies reported to be preparing to go public; from press reports, not confirmed by the companies.</div>
-</div>
-</details>
+
 <h2>Watchlist</h2>
 <div class="lead">Live-style quotes in the Yahoo Finance layout: last price, change, volume, day range and market cap.</div>
 <div class="card"><table id="wl"><thead><tr>
@@ -157,10 +138,12 @@ uh.innerHTML='<tr><th>When</th><th>Date</th><th>Symbol</th><th>Company</th><th>E
   ub.appendChild(tr);
 });
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
+if(window.glScan)glScan();
 function addSym(){
   const v=document.getElementById('addSym').value.trim().toUpperCase();
   if(v&&!watch.includes(v)){watch.push(v);saveWatch();location.reload()}
 }
 })
 </script>
+<script src="glossary.js?v=1"></script>
 </body></html>
