@@ -3,6 +3,8 @@
 (function(){
 if(window.__wajoGloss)return;window.__wajoGloss=true;
 var TERMS=[
+["Last","The latest price the stock traded at, also called the current price.",1],
+["Chg","Change from the previous close: how much the price moved since yesterday. Percent change compares that to yesterday\u2019s closing price.",1],
 ["IPO","Initial public offering: when a private company sells shares to the public for the first time, which is how it gets listed on a stock exchange."],
 ["Ticker","The short symbol that identifies a stock, like AAPL for Apple."],
 ["Offer price","The price set the night before an IPO starts trading: what buyers in the IPO paid per share."],
@@ -57,7 +59,7 @@ function tryNode(node,counts){
  if(!txt||txt.length<3)return false;
  for(var k=0;k<TERMS.length;k++){
   var t=TERMS[k];
-  if((counts[t[0]]||0)>=N_EACH)continue;
+  if((counts[t[0]]||0)>=(t[2]||N_EACH))continue;
   var re=new RegExp('\\b'+t[0].replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s+')+'\\b','i');
   var mm=re.exec(txt);
   if(!mm)continue;
