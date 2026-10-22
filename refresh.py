@@ -11,6 +11,20 @@ def num(x):
     x = x.replace(',','').replace('−','-').replace('$','').replace('%','').strip()
     try: return float(x)
     except: return None
+def yahoo_hist(sym, days=30):
+    """Best-effort 1mo close history from Yahoo; returns {date: close} or {}."""
+    try:
+        js = json.loads(fetch(f'https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1mo&interval=1d'))
+        r = js['chart']['result'][0]
+        ts = r['timestamp']
+        closes = r['indicators']['quote'][0]['close']
+        out = {}
+        for t, c in zip(ts, closes):
+            if c is None: continue
+            out[datetime.datetime.utcfromtimestamp(t).date().isoformat()] = c
+        return out
+    except Exception:
+        return {}
 def quote(sym):
     for kind in ('stocks','etf'):
         try:
@@ -90,6 +104,9 @@ def main():
         if q and q.get('price'):
             old = quotes.get(sym, {})
             hist = old.get('hist', {})
+            if len(hist) < 5:
+                for k, v in yahoo_hist(sym).items():
+                    hist.setdefault(k, v)
             hist[today] = q['price']
             q['hist'] = dict(sorted(hist.items())[-30:])
             quotes[sym] = q

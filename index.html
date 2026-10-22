@@ -91,7 +91,7 @@ watch.forEach(sym=>{
       +'<td class="px">'+(q.price!=null?q.price.toFixed(2):'')+'</td>'
       +'<td class="'+cls(q.chg)+'">'+(q.chg!=null?sign(q.chg):'')+'</td>'
       +'<td class="'+cls(q.chgPct)+'">'+(q.chgPct!=null?sign(q.chgPct)+'%':'')+'</td>'
-      +'<td>'+(q.vol||'')+'</td><td style="color:#6b7785">'+(q.range||'')+'</td><td>'+(q.mcap||'')+'</td>'
+      +'<td>'+(q.vol||'\u2014')+'</td><td style="color:#6b7785">'+(q.range||'\u2014')+'</td><td>'+(q.mcap||'\u2014')+'</td>'
       +'<td>'+spark(q.hist||{})+'</td>'
       +'<td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
   }else{
