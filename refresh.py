@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+"""Daily refresh for the Markets page: quotes + IPO calendar -> data.json"""
+import json, re, os, sys, time, datetime, urllib.request
+from bs4 import BeautifulSoup
+UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'}
+WATCH = ['AAPL','MSFT','NVDA','AMZN','GOOGL','META','TSLA','JPM','GS','MS','SPY','QQQ']
+def fetch(url):
+    req = urllib.request.Request(url, headers=UA)
+    return urllib.request.urlopen(req, timeout=30).read().decode('utf-8','ignore')
+def num(x):
+    x = x.replace(',','').replace('−','-').replace('$','').replace('%','').strip()
+    try: return float(x)
+    except: return None
+def quote(sym):
+    for kind in ('stocks','etf'):
+        try:
+            html = fetch(f'https://stockanalysis.com/{kind}/{sym.lower()}/')
+        except Exception:
+            continue
+        soup = BeautifulSoup(html, 'html.parser')
+        t = soup.get_text(' ', strip=True)
+        i = t.find('· USD')
+        if i < 0: continue
+        seg = t[i:i+400]
+        m = re.search(r'([\d,]+\.\d{2})', seg)
+        if not m: continue
+        price = num(m.group(1))
+        pct = None; chg = None
+        after = seg[m.end():]
+        pm = re.search(r'([-−+]?[\d.,]+)\s*\(([-−+]?[\d.]+)%\)', after)
+        if pm:
+            chg = num(pm.group(1)); pct = num(pm.group(2))
+            if '−' in pm.group(1): chg = -abs(chg)
+            if '−' in pm.group(2): pct = -abs(pct)
+        else:
+            pm = re.search(r'([-−+])([\d.,]+)\s*\(|([-−+])([\d.]+)%', after)
+            if pm:
+                if pm.group(2):
+                    chg = num(pm.group(2)) * (-1 if '−' in pm.group(1) else 1)
+                if pm.group(4):
+                    pct = num(pm.group(4)) * (-1 if '−' in pm.group(3) else 1)
+        nm = re.search(r'([A-Za-z0-9 .,&\'-]+?) \(' + re.escape(sym) + r'\)', t[:i+400])
+        name = nm.group(1).strip() if nm else sym
+        return {'name': name, 'price': price, 'chg': chg, 'chgPct': pct}
+    return None
+def ipos():
+    out = {'upcoming': [], 'priced': []}
+    soup = BeautifulSoup(fetch('https://stockanalysis.com/ipos/'), 'html.parser')
+    for h in soup.find_all(['h2','h3']):
+        if 'Last 200 IPOs' not in h.get_text(strip=True): continue
+        tbl = h.find_next('table')
+        if not tbl: break
+        rows = []
+        for tr in tbl.find_all('tr')[1:16]:
+            cells = [td.get_text(' ', strip=True) for td in tr.find_all(['td','th'])]
+            if cells and len(cells) >= 6: rows.append(cells)
+        out['priced'] = rows
+        break
+    soup = BeautifulSoup(fetch('https://stockanalysis.com/ipos/calendar/'), 'html.parser')
+    for h in soup.find_all(['h2','h3']):
+        title = h.get_text(' ', strip=True)
+        if 'IPO' not in title: continue
+        tbl = h.find_next('table')
+        if not tbl: continue
+        for tr in tbl.find_all('tr')[1:]:
+            cells = [td.get_text(' ', strip=True) for td in tr.find_all(['td','th'])]
+            if cells and len(cells) >= 3 and cells[0] != 'IPO Date':
+                out['upcoming'].append([title.split(chr(183))[0].strip()] + cells[:6])
+    return out
+def main():
+    dpath = 'data.json'
+    data = {}
+    if os.path.exists(dpath):
+        try: data = json.load(open(dpath))
+        except Exception: data = {}
+    today = datetime.date.today().isoformat()
+    quotes = data.get('quotes', {})
+    for sym in WATCH:
+        try:
+            q = quote(sym)
+        except Exception:
+            q = None
+        if q and q.get('price'):
+            old = quotes.get(sym, {})
+            hist = old.get('hist', {})
+            hist[today] = q['price']
+            q['hist'] = dict(sorted(hist.items())[-30:])
+            quotes[sym] = q
+            print(sym, q['price'], q['chgPct'])
+        else:
+            print(sym, 'FAILED', file=sys.stderr)
+        time.sleep(0.4)
+    try:
+        ip = ipos()
+        print('upcoming rows:', len(ip['upcoming']), 'priced rows:', len(ip['priced']))
+    except Exception as e:
+        ip = data.get('ipos', {'upcoming': [], 'priced': []})
+        print('ipos FAILED', e, file=sys.stderr)
+    data.update({'updated': datetime.datetime.now().isoformat(timespec='seconds'), 'quotes': quotes, 'ipos': ip})
+    json.dump(data, open(dpath, 'w'), indent=1)
+    print('wrote data.json,', len(quotes), 'quotes')
+main()
