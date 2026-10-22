@@ -60,7 +60,7 @@ a:hover{text-decoration:underline}
 <footer>Prices are delayed. The page is refreshed once a day after market close, around 4:30 PM Pacific. For study use, not trading advice.</footer>
 
 <script>
-fetch('data.json').then(r=>r.json()).then(DATA=>{
+fetch('data.json?v='+Date.now()).then(r=>r.json()).then(DATA=>{
 function cls(v){return v>0?'up':(v<0?'down':'flat')}
 function sign(v){return (v>0?'+':'')+v.toFixed(2)}
 function pct(s){const v=parseFloat(s.replace(/[−+]/g,m=>m==='−'?'-':''));return v}
