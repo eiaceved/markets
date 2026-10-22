@@ -129,7 +129,9 @@ watch.forEach(sym=>{
       +'<td>'+spark(q.hist||{})+'</td>'
       +'<td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
   }else{
-    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm" colspan="8">waiting for the next daily feed</td><td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
+    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm"></td>'
+      +'<td colspan="6" style="color:#8a97a5;text-align:center">waiting for the next daily feed</td>'
+      +'<td></td><td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
   }
   wl.appendChild(tr);
 });
