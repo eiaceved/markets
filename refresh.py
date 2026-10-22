@@ -12,19 +12,19 @@ def num(x):
     try: return float(x)
     except: return None
 def yahoo_hist(sym, days=30):
-    """Best-effort 1mo close history from Yahoo; returns {date: close} or {}."""
-    try:
-        js = json.loads(fetch(f'https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1mo&interval=1d'))
-        r = js['chart']['result'][0]
-        ts = r['timestamp']
-        closes = r['indicators']['quote'][0]['close']
-        out = {}
-        for t, c in zip(ts, closes):
-            if c is None: continue
-            out[datetime.datetime.utcfromtimestamp(t).date().isoformat()] = c
-        return out
-    except Exception:
-        return {}
+    """Best-effort 1-month close history for sparklines; returns {date: close} or {}."""
+    for base in ('https://stockanalysis.com/api/symbol/s/','https://stockanalysis.com/api/symbol/e/'):
+        try:
+            js = json.loads(fetch(base + sym + '/history?range=1M&period=Daily'))
+            if js.get('status') != 200: continue
+            out = {}
+            for row in js.get('data', []):
+                if row.get('c') is None: continue
+                out[row['t']] = row['c']
+            if out: return out
+        except Exception:
+            continue
+    return {}
 def quote(sym):
     for kind in ('stocks','etf'):
         try:
