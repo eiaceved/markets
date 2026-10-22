@@ -1,107 +1,130 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Markets · IPO calendar & watchlist</title>
+<title>Markets · Watchlist & IPOs</title>
 <style>
-:root{color-scheme:dark;box-sizing:border-box}
+:root{color-scheme:light;box-sizing:border-box}
 *{margin:0;padding:0}
-body{background:#0b0f14;color:#d7e0ea;font:15px/1.5 ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:28px 20px 60px;max-width:1060px;margin:0 auto}
-h1{font-size:26px;letter-spacing:.3px}
-.sub{color:#7d8da0;margin:6px 0 22px;font-size:13.5px}
-h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:#8fa3b8;margin:30px 0 10px}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th{color:#7d8da0;text-align:left;font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid #1d2733}
-td{padding:9px 10px;border-bottom:1px solid #141c26;white-space:nowrap}
-td.nm{white-space:normal;max-width:280px}
-.up{color:#37d67a}.down{color:#ff5d5d}.flat{color:#8fa3b8}
+body{background:#fff;color:#232a31;font:15px/1.55 ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1120px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-size:28px;letter-spacing:.2px}
+.stamp{color:#6b7785;font-size:13px}
+.sub{color:#6b7785;margin:4px 0 26px;font-size:13.5px}
+h2{font-size:19px;margin:34px 0 2px}
+.lead{color:#6b7785;font-size:13px;margin-bottom:12px}
+.card{border:1px solid #e3e8ee;border-radius:10px;overflow-x:auto;margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+th{color:#6b7785;text-align:left;font-weight:600;font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:10px 12px;border-bottom:1px solid #e3e8ee;white-space:nowrap;background:#f7f9fb}
+td{padding:10px 12px;border-bottom:1px solid #f0f3f7;white-space:nowrap;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fafbfc}
+td.nm{white-space:normal;max-width:300px;color:#6b7785}
+.up{color:#00873c}.down{color:#d0342c}.flat{color:#6b7785}
 .px{font-variant-numeric:tabular-nums;font-weight:600}
-.sym{font-weight:700}
-.badge{display:inline-block;padding:2px 9px;border:1px solid #24334a;border-radius:99px;font-size:11px;color:#9fb2c6;margin-right:8px}
-input{background:#101820;border:1px solid #24334a;color:#d7e0ea;border-radius:8px;padding:8px 10px;font:inherit;width:160px}
-button{background:#16202b;border:1px solid #2a3b52;color:#d7e0ea;border-radius:8px;padding:8px 14px;font:inherit;cursor:pointer}
-button:hover{background:#1c2937}
-.row-actions{color:#5b6b7d;cursor:pointer;font-size:12px;padding-left:6px}
-.note{color:#66788c;font-size:12.5px;margin-top:8px}
-.card{background:#0e141c;border:1px solid #1a2431;border-radius:14px;padding:16px 18px;overflow-x:auto}
+.sym{font-weight:700;letter-spacing:.02em}
+.badge{display:inline-block;padding:2px 9px;border:1px solid #dbe3ec;border-radius:99px;font-size:11px;color:#5a6b7d;background:#f7f9fb}
+input{background:#fff;border:1px solid #cfd8e3;color:#232a31;border-radius:8px;padding:8px 10px;font:inherit;width:170px}
+input:focus{outline:2px solid #bcd4f5;border-color:#7ab3e8}
+button{background:#1a53f0;border:none;color:#fff;border-radius:8px;padding:8px 16px;font:inherit;font-weight:600;cursor:pointer}
+button:hover{background:#1646cc}
+.x{color:#9aa7b5;cursor:pointer;font-size:13px;padding:2px 6px;border-radius:6px}
+.x:hover{background:#f0f3f7;color:#d0342c}
+.note{color:#8a97a5;font-size:12px}
 svg.spark{display:block}
-footer{margin-top:34px;color:#5b6b7d;font-size:12px}
-a{color:#7ab3e8;text-decoration:none}
+footer{margin-top:36px;color:#8a97a5;font-size:12px}
+a{color:#1a53f0;text-decoration:none}
+a:hover{text-decoration:underline}
+@media(max-width:640px){td.nm{max-width:150px}}
 </style></head><body>
-<h1>Markets</h1>
-<div class="sub" id="stamp">Loading…</div>
+<header><h1>Markets</h1><span class="stamp" id="stamp">Loading…</span></header>
+<div class="sub">Watchlist and IPO tracker, refreshed once a day after the close.</div>
 
 <h2>Watchlist</h2>
-<div class="card">
-<table id="wl"><thead><tr><th>Symbol</th><th>Company</th><th>Price</th><th>Change</th><th>Trend</th><th></th></tr></thead><tbody></tbody></table>
-<div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+<div class="lead">Live-style quotes in the Yahoo Finance layout: last price, change, volume, day range and market cap.</div>
+<div class="card"><table id="wl"><thead><tr>
+<th>Symbol</th><th>Name</th><th>Last</th><th>Chg</th><th>% Chg</th><th>Volume</th><th>Day Range</th><th>Market Cap</th><th>Trend</th><th></th>
+</tr></thead><tbody></tbody></table></div>
+<div style="margin:14px 0 4px;display:flex;gap:8px;align-items:center">
 <input id="addSym" placeholder="Add a ticker (e.g. TSM)" maxlength="6" style="text-transform:uppercase">
 <button onclick="addSym()">Add</button>
-<span class="note" style="margin:0">Saved on this device. A ticker not yet in the daily feed shows as waiting.</span>
-</div>
+<span class="note">Saved on this device. A ticker not yet in the daily feed shows as waiting.</span>
 </div>
 
-<h2>Upcoming IPOs</h2>
-<div class="card"><table id="ipo"><thead></thead><tbody></tbody></table></div>
-
-<h2>Recently priced</h2>
+<h2>Recent IPOs</h2>
+<div class="lead">The newest listings, priced against their offer price.</div>
 <div class="card"><table id="priced"><thead></thead><tbody></tbody></table></div>
 
-<footer>Prices are delayed and the page is refreshed once a day after market close, around 4:30 PM Pacific. Data from public quote listings; for study use, not trading advice.</footer>
+<h2>Upcoming IPOs</h2>
+<div class="lead">Deals expected to price soon, with ranges where they are known.</div>
+<div class="card"><table id="ipo"><thead></thead><tbody></tbody></table></div>
+
+<footer>Prices are delayed. The page is refreshed once a day after market close, around 4:30 PM Pacific. For study use, not trading advice.</footer>
 
 <script>
+fetch('data.json').then(r=>r.json()).then(DATA=>{
 function cls(v){return v>0?'up':(v<0?'down':'flat')}
 function sign(v){return (v>0?'+':'')+v.toFixed(2)}
 function pct(s){const v=parseFloat(s.replace(/[−+]/g,m=>m==='−'?'-':''));return v}
 function spark(hist){
   const vals=Object.values(hist);
   if(vals.length<2)return'';
-  const w=110,h=28,min=Math.min(...vals),max=Math.max(...vals),r=(max-min)||1;
-  const pts=vals.map((v,i)=>[(i/(vals.length-1))*(w-4)+2,h-2-((v-min)/r)*(h-6)]);
+  const w=120,h=30,min=Math.min(...vals),max=Math.max(...vals),r=(max-min)||1;
+  const pts=vals.map((v,i)=>[(i/(vals.length-1))*(w-6)+3,h-3-((v-min)/r)*(h-8)]);
   const d=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
-  const c=vals[vals.length-1]>=vals[0]?'#37d67a':'#ff5d5d';
-  return `<svg class="spark" width="${w}" height="${h}"><path d="${d}" fill="none" stroke="${c}" stroke-width="1.6"/></svg>`;
+  const c=vals[vals.length-1]>=vals[0]?'#00873c':'#d0342c';
+  return '<svg class="spark" width="'+w+'" height="'+h+'"><path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="1.6"/></svg>';
 }
-function list(){
-  try{const s=JSON.parse(localStorage.getItem('mktWatch')||'null');if(Array.isArray(s)&&s.length)return s}catch(e){}
-  return ['AAPL','MSFT','NVDA','AMZN','GOOGL','META','TSLA','JPM','GS','MS','SPY','QQQ'];
+function fmtTime(iso){
+  const d=new Date(iso+'Z');
+  return d.toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit',timeZone:'America/Los_Angeles'})+' PT';
 }
-function save(l){localStorage.setItem('mktWatch',JSON.stringify(l))}
-function render(q,W){
-  const tb=document.querySelector('#wl tbody');tb.innerHTML='';
-  W.forEach(sym=>{
-    const q=q(sym)||{};
-    const r=document.createElement('tr');
-    r.innerHTML=`<td class="sym">${sym}</td><td class="nm">${q.name||'<span class=flat>waiting for the daily refresh</span>'}</td>`+
-      `<td class="px">${q.price!=null?'$'+q.price.toFixed(2):'–'}</td>`+
-      `<td class="${cls(q.chgPct||0)}">${q.chgPct!=null?sign(q.chgPct)+'% ('+sign(q.chg||0)+')':'–'}</td>`+
-      `<td>${spark(q.hist||{})}</td>`+
-      `<td><span class="row-actions" onclick="rmSym('${sym}')">remove</span></td>`;
-    tb.appendChild(r);
-  });
-}
-function rmSym(s){const l=list().filter(x=>x!==s);save(l);render(WORK,()=>WORK?WORK[s]:null)}
-function addSym(){
-  const el=document.getElementById('addSym');const s=(el.value||'').trim().toUpperCase();
-  if(!s)return;const l=list();if(!l.includes(s))l.push(s);save(l);el.value='';render(WORK,()=>WORK?WORK[s]:null);
-}
-function fillTable(id,rows,fmt){
-  const t=document.getElementById(id);
-  if(!rows||!rows.length){t.querySelector('tbody').innerHTML='<tr><td colspan="7" class="flat">Nothing here yet.</td></tr>';return}
-  t.querySelector('thead').innerHTML='<tr>'+rows[0].slice(1).map((h,i)=>`<th>${['Date','Symbol','Company','Exchange','Price range','Shares'][i]||h}</th>`).join('')+'</tr>';
-  t.querySelector('tbody').innerHTML=rows.slice(1).map(r=>'<tr>'+r.slice(1).map((c,i)=>{
-    if(id==='priced'){
-      if(i===4){const v=pct(c);return `<td class="${cls(v)}">${c}</td>`}
-      if(i===2)return `<td class="nm">${c}</td>`;
-    } else if(i===2){return `<td class="nm">${c}</td>`}
-    return `<td>${c}</td>`}).join('')+'</tr>').join('');
-}
-let WORK=null;
-fetch('data.json').then(r=>r.json()).then(d=>{
-  WORK=d.quotes;WORK.__idx=d.quotes;
-  document.getElementById('stamp').textContent='Updated '+new Date(d.updated).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' · Pacific';
-  render(null,s=>d.quotes[s]);
-  fillTable('ipo',d.ipos.upcoming);
-  const pr=[['x','IPO Date','Symbol','Company Name','IPO Price','Current','Return']].concat(d.ipos.priced||[]);
-  fillTable('priced',pr);
+let watch;
+try{watch=JSON.parse(localStorage.getItem('mktWatch'))||null}catch(e){watch=null}
+if(!Array.isArray(watch)||!watch.length)watch=['AAPL','MSFT','NVDA','AMZN','GOOGL','META','TSLA','JPM','GS','MS','SPY','QQQ'];
+function saveWatch(){localStorage.setItem('mktWatch',JSON.stringify(watch))}
+const Q=DATA.quotes||{},IPOS=DATA.ipos||{upcoming:[],priced:[]};
+const wl=document.querySelector('#wl tbody');
+watch.forEach(sym=>{
+  const q=Q[sym];
+  const tr=document.createElement('tr');
+  if(q){
+    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm">'+(q.name||'')+'</td>'
+      +'<td class="px">'+(q.price!=null?q.price.toFixed(2):'')+'</td>'
+      +'<td class="'+cls(q.chg)+'">'+(q.chg!=null?sign(q.chg):'')+'</td>'
+      +'<td class="'+cls(q.chgPct)+'">'+(q.chgPct!=null?sign(q.chgPct)+'%':'')+'</td>'
+      +'<td>'+(q.vol||'')+'</td><td style="color:#6b7785">'+(q.range||'')+'</td><td>'+(q.mcap||'')+'</td>'
+      +'<td>'+spark(q.hist||{})+'</td>'
+      +'<td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
+  }else{
+    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm" colspan="8">waiting for the next daily feed</td><td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
+  }
+  wl.appendChild(tr);
 });
+function rm(s){watch=watch.filter(x=>x!==s);saveWatch();location.reload()}
+const ph=document.querySelector('#priced thead'),pb=document.querySelector('#priced tbody');
+ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Latest</th><th>Return</th></tr>';
+(IPOS.priced||[]).forEach(r=>{
+  const [date,sym,co,offer,last,ret]=r;
+  const v=pct(ret||'');
+  const tr=document.createElement('tr');
+  tr.innerHTML='<td style="color:#6b7785">'+date+'</td><td class="sym">'+sym+'</td><td class="nm">'+co+'</td>'
+    +'<td class="px">'+offer+'</td><td class="px">'+last+'</td>'
+    +'<td class="'+cls(v)+'">'+(ret||'')+'</td>';
+  pb.appendChild(tr);
+});
+const uh=document.querySelector('#ipo thead'),ub=document.querySelector('#ipo tbody');
+uh.innerHTML='<tr><th>When</th><th>Date</th><th>Symbol</th><th>Company</th><th>Exchange</th><th>Price range</th><th>Shares offered</th></tr>';
+(IPOS.upcoming||[]).forEach(r=>{
+  const [week,date,sym,co,ex,rng,sh]=r;
+  const tr=document.createElement('tr');
+  tr.innerHTML='<td><span class="badge">'+(week||'')+'</span></td><td style="color:#6b7785">'+date+'</td>'
+    +'<td class="sym">'+sym+'</td><td class="nm">'+co+'</td><td>'+ex+'</td><td>'+rng+'</td><td>'+sh+'</td>';
+  ub.appendChild(tr);
+});
+document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
+function addSym(){
+  const v=document.getElementById('addSym').value.trim().toUpperCase();
+  if(v&&!watch.includes(v)){watch.push(v);saveWatch();location.reload()}
+}
+})
 </script>
 </body></html>

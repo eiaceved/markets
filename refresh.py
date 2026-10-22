@@ -18,8 +18,8 @@ def quote(sym):
         except Exception:
             continue
         soup = BeautifulSoup(html, 'html.parser')
-        t = soup.get_text(' ', strip=True)
-        i = t.find('· USD')
+        t = soup.get_text(' | ', strip=True)
+        i = t.find(chr(183)+' USD')
         if i < 0: continue
         seg = t[i:i+400]
         m = re.search(r'([\d,]+\.\d{2})', seg)
@@ -27,21 +27,28 @@ def quote(sym):
         price = num(m.group(1))
         pct = None; chg = None
         after = seg[m.end():]
-        pm = re.search(r'([-−+]?[\d.,]+)\s*\(([-−+]?[\d.]+)%\)', after)
+        pm = re.search(r'([-\u2212+]?[\d.,]+)\s*\(([-\u2212+]?[\d.]+)%\)', after)
         if pm:
             chg = num(pm.group(1)); pct = num(pm.group(2))
-            if '−' in pm.group(1): chg = -abs(chg)
-            if '−' in pm.group(2): pct = -abs(pct)
+            if '\u2212' in pm.group(1): chg = -abs(chg)
+            if '\u2212' in pm.group(2): pct = -abs(pct)
         else:
-            pm = re.search(r'([-−+])([\d.,]+)\s*\(|([-−+])([\d.]+)%', after)
+            pm = re.search(r'([-\u2212+])([\d.,]+)\s*\(|([-\u2212+])([\d.]+)%', after)
             if pm:
                 if pm.group(2):
-                    chg = num(pm.group(2)) * (-1 if '−' in pm.group(1) else 1)
+                    chg = num(pm.group(2)) * (-1 if '\u2212' in pm.group(1) else 1)
                 if pm.group(4):
-                    pct = num(pm.group(4)) * (-1 if '−' in pm.group(3) else 1)
-        nm = re.search(r'([A-Za-z0-9 .,&\'-]+?) \(' + re.escape(sym) + r'\)', t[:i+400])
+                    pct = num(pm.group(4)) * (-1 if '\u2212' in pm.group(3) else 1)
+        nm = re.search(r"([A-Za-z0-9 .,&\'-]+?) \(" + re.escape(sym) + r'\)', t[:i+400])
         name = nm.group(1).strip() if nm else sym
-        return {'name': name, 'price': price, 'chg': chg, 'chgPct': pct}
+        vol = rng = mc = None
+        vm = re.search(r'Volume \| ([\d,]+)', t)
+        if vm: vol = vm.group(1)
+        rm = re.search(r"Day's Range \| ([\d.,]+) - ([\d.,]+)", t)
+        if rm: rng = rm.group(1) + ' - ' + rm.group(2)
+        mm = re.search(r'Market Cap \| ([\d.]+[MBT])', t)
+        if mm: mc = mm.group(1)
+        return {'name': name, 'price': price, 'chg': chg, 'chgPct': pct, 'vol': vol, 'range': rng, 'mcap': mc}
     return None
 def ipos():
     out = {'upcoming': [], 'priced': []}

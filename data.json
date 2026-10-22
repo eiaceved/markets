@@ -1,112 +1,148 @@
 {
- "updated": "2026-10-22T20:11:13",
+ "updated": "2026-10-22T22:27:30",
  "quotes": {
   "AAPL": {
    "name": "Apple",
-   "price": 347.26,
-   "chg": 3.27,
-   "chgPct": 0.95,
+   "price": 348.22,
+   "chg": 4.23,
+   "chgPct": 1.23,
+   "vol": "46,679,797",
+   "range": "342.28 - 348.36",
+   "mcap": "5.08T",
    "hist": {
-    "2026-10-22": 347.26
+    "2026-10-22": 348.22
    }
   },
   "MSFT": {
    "name": "Microsoft",
-   "price": 521.45,
-   "chg": -11.5,
-   "chgPct": -2.16,
+   "price": 521.08,
+   "chg": -11.87,
+   "chgPct": -2.23,
+   "vol": "21,104,008",
+   "range": "520.30 - 533.60",
+   "mcap": "3.87T",
    "hist": {
-    "2026-10-22": 521.45
+    "2026-10-22": 521.08
    }
   },
   "NVDA": {
    "name": "NVIDIA",
-   "price": 211.75,
-   "chg": -10.22,
-   "chgPct": -4.6,
+   "price": 212.21,
+   "chg": -9.76,
+   "chgPct": -4.4,
+   "vol": "124,598,362",
+   "range": "211.26 - 218.88",
+   "mcap": "5.12T",
    "hist": {
-    "2026-10-22": 211.75
+    "2026-10-22": 212.21
    }
   },
   "AMZN": {
    "name": "Amazon.com",
-   "price": 249.6,
-   "chg": -12.77,
-   "chgPct": -4.87,
+   "price": 250.38,
+   "chg": -11.99,
+   "chgPct": -4.57,
+   "vol": "48,597,901",
+   "range": "248.00 - 258.41",
+   "mcap": "2.70T",
    "hist": {
-    "2026-10-22": 249.6
+    "2026-10-22": 250.38
    }
   },
   "GOOGL": {
    "name": "Alphabet",
-   "price": 322.14,
-   "chg": -12.62,
-   "chgPct": -3.77,
+   "price": 324.22,
+   "chg": -10.54,
+   "chgPct": -3.15,
+   "vol": "27,569,748",
+   "range": "322.00 - 331.43",
+   "mcap": "3.97T",
    "hist": {
-    "2026-10-22": 322.14
+    "2026-10-22": 324.22
    }
   },
   "META": {
    "name": "Meta Platforms",
-   "price": 641.39,
-   "chg": -56.13,
-   "chgPct": -8.05,
+   "price": 648.85,
+   "chg": -48.67,
+   "chgPct": -6.98,
+   "vol": "40,516,580",
+   "range": "639.69 - 681.07",
+   "mcap": "1.65T",
    "hist": {
-    "2026-10-22": 641.39
+    "2026-10-22": 648.85
    }
   },
   "TSLA": {
    "name": "Tesla",
-   "price": 378.14,
-   "chg": -8.33,
-   "chgPct": -2.16,
+   "price": 374.58,
+   "chg": -11.89,
+   "chgPct": -3.08,
+   "vol": "51,383,129",
+   "range": "373.71 - 388.86",
+   "mcap": "1.48T",
    "hist": {
-    "2026-10-22": 378.14
+    "2026-10-22": 374.58
    }
   },
   "JPM": {
    "name": "JPMorgan Chase & Co.",
-   "price": 334.62,
-   "chg": -0.57,
-   "chgPct": -0.17,
+   "price": 336.54,
+   "chg": 1.35,
+   "chgPct": 0.4,
+   "vol": "6,182,431",
+   "range": "332.26 - 336.62",
+   "mcap": "893.72B",
    "hist": {
-    "2026-10-22": 334.62
+    "2026-10-22": 336.54
    }
   },
   "GS": {
    "name": "The Goldman Sachs Group",
-   "price": 891.08,
-   "chg": -13.64,
-   "chgPct": -1.51,
+   "price": 891.3,
+   "chg": -13.42,
+   "chgPct": -1.48,
+   "vol": "2,030,261",
+   "range": "881.00 - 906.35",
+   "mcap": "269.85B",
    "hist": {
-    "2026-10-22": 891.08
+    "2026-10-22": 891.3
    }
   },
   "MS": {
    "name": "Morgan Stanley",
-   "price": 183.65,
-   "chg": -3.36,
-   "chgPct": -1.8,
+   "price": 183.97,
+   "chg": -3.04,
+   "chgPct": -1.63,
+   "vol": "6,286,324",
+   "range": "182.22 - 187.00",
+   "mcap": "287.91B",
    "hist": {
-    "2026-10-22": 183.65
+    "2026-10-22": 183.97
    }
   },
   "SPY": {
-   "name": "SPY ETF Stock Price & Overview Skip to main content Help Log In Sign Up Home Watchlist Stocks Stock Screener Stock Exchanges By Country Comparison Tool Earnings Calendar By Industry Stock Lists Top Stocks Corporate Actions IPOs Recent IPOs IPO Calendar IPO Lockups IPO Statistics IPO News IPO Screener ETFs ETF Screener Comparison Tool New Launches ETF Providers Analysts News Trending Private Companies Technical Chart Fundamental Chart Market Movers Top Gainers Top Losers Most Active Premarket After Hours Market Heatmap Market Newsletter Stock Analysis Pro Tools Collapse Sign Up Log In Help State Street SPDR S&P 500 ETF",
-   "price": 763.58,
-   "chg": -9.51,
-   "chgPct": -1.23,
+   "name": "State Street SPDR S&P 500 ETF",
+   "price": 763.96,
+   "chg": -9.13,
+   "chgPct": -1.18,
+   "vol": "54,017,458",
+   "range": "761.17 - 767.71",
+   "mcap": null,
    "hist": {
-    "2026-10-22": 763.58
+    "2026-10-22": 763.96
    }
   },
   "QQQ": {
-   "name": "QQQ ETF Stock Price & Overview Skip to main content Help Log In Sign Up Home Watchlist Stocks Stock Screener Stock Exchanges By Country Comparison Tool Earnings Calendar By Industry Stock Lists Top Stocks Corporate Actions IPOs Recent IPOs IPO Calendar IPO Lockups IPO Statistics IPO News IPO Screener ETFs ETF Screener Comparison Tool New Launches ETF Providers Analysts News Trending Private Companies Technical Chart Fundamental Chart Market Movers Top Gainers Top Losers Most Active Premarket After Hours Market Heatmap Market Newsletter Stock Analysis Pro Tools Collapse Sign Up Log In Help Invesco QQQ Trust Series I",
-   "price": 703.66,
-   "chg": -21.54,
-   "chgPct": -2.97,
+   "name": "Invesco QQQ Trust Series I",
+   "price": 704.47,
+   "chg": -20.73,
+   "chgPct": -2.86,
+   "vol": "64,212,683",
+   "range": "701.90 - 715.43",
+   "mcap": null,
    "hist": {
-    "2026-10-22": 703.66
+    "2026-10-22": 704.47
    }
   }
  },
@@ -145,7 +181,7 @@
     "CTY",
     "City Therapeutics, Inc.",
     "$18.00",
-    "$20.54",
+    "$20.77",
     "14.56%"
    ],
    [
@@ -161,15 +197,15 @@
     "AMRO",
     "Amaero Inc.",
     "$4.25",
-    "$5.46",
-    "13.18%"
+    "$5.42",
+    "27.53%"
    ],
    [
     "Oct 15, 2026",
     "IAM",
     "Iambic Therapeutics, Inc.",
     "$16.00",
-    "$14.81",
+    "$14.67",
     "-5.75%"
    ],
    [
@@ -177,7 +213,7 @@
     "FLSC",
     "Frazier Life Sciences Acquisition Corp II",
     "$10.00",
-    "$10.28",
+    "$10.27",
     "3.00%"
    ],
    [
@@ -185,15 +221,15 @@
     "RTSN",
     "Retension Pharmaceuticals, Inc.",
     "$12.00",
-    "$15.00",
-    "25.00%"
+    "$15.50",
+    "29.17%"
    ],
    [
     "Oct 9, 2026",
     "TRXB",
     "TRex Bio, Inc.",
     "$14.00",
-    "$15.35",
+    "$15.49",
     "9.64%"
    ],
    [
@@ -201,7 +237,7 @@
     "PAXG",
     "Pine Tree Acquisition Corp.",
     "$10.00",
-    "$9.98",
+    "$10.00",
     "-0.30%"
    ],
    [
@@ -209,7 +245,7 @@
     "PORT",
     "Southport Acquisition Corp. II",
     "$10.00",
-    "$9.94",
+    "$9.92",
     "-0.70%"
    ],
    [
@@ -217,7 +253,7 @@
     "ACCV",
     "Accelevation Holdings Corp.",
     "$18.00",
-    "$12.21",
+    "$12.25",
     "-32.67%"
    ],
    [
@@ -225,7 +261,7 @@
     "ADRX",
     "ADARx Pharmaceuticals, Inc.",
     "$17.00",
-    "$17.61",
+    "$17.68",
     "2.77%"
    ],
    [
@@ -249,7 +285,7 @@
     "ETRA",
     "Electra Therapeutics, Inc.",
     "$15.00",
-    "$9.35",
+    "$9.25",
     "-38.93%"
    ]
   ]
