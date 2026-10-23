@@ -93,6 +93,33 @@ def raise_est(d):
     if off and sh: return money(sh*off)
     return None
 
+
+def page_mcap(sym):
+    for kind in ('stocks','etf'):
+        try:
+            html = fetch(f'https://stockanalysis.com/{kind}/{sym.lower()}/')
+        except Exception:
+            continue
+        soup = BeautifulSoup(html, 'html.parser')
+        t = soup.get_text(' | ', strip=True)
+        m = re.search(r'Market Cap \| ([\d.]+[MBT])', t)
+        if m: return m.group(1)
+    return None
+
+def sold_for(sym, deals, offer, latest):
+    d = deals.get(sym) or {}
+    mc = clean_deal(d.get('mcap'))
+    if mc and mc != '\u2014': return mc
+    pv = page_mcap(sym)
+    off = num(offer) if offer else None
+    cur = num(latest) if latest else None
+    pm = re.match(r'([\d.]+)([MBT]?)$', pv or '')
+    if pm and off and cur:
+        mult = {'B':1e9,'M':1e6,'T':1e12}.get(pm.group(2), 1e6)
+        v = (float(pm.group(1))*mult/cur) * off
+        return money(v)
+    return '\u2014'
+
 def ipos():
     out = {'upcoming': [], 'priced': [], 'deals': {}}
     deals = {}
@@ -118,15 +145,24 @@ def ipos():
         if 'IPO' not in title: continue
         tbl = h.find_next('table')
         if not tbl: continue
+        mc_i = None
+        hdr = tbl.find('tr')
+        if hdr:
+            hcells = [c.get_text(' ', strip=True).lower() for c in hdr.find_all(['td','th'])]
+            for i,hc in enumerate(hcells):
+                if 'market cap' in hc: mc_i = i
         for tr in tbl.find_all('tr')[1:]:
             cells = [td.get_text(' ', strip=True) for td in tr.find_all(['td','th'])]
             if cells and len(cells) >= 7 and cells[0] != 'IPO Date':
                 d = deals.setdefault(cells[1], {})
                 d.update({'rng': cells[4], 'shares': cells[5], 'deal': cells[6], 'offer': offers.get(cells[1])})
+                if mc_i is not None and mc_i < len(cells):
+                    mc = clean_deal(cells[mc_i])
+                    if mc and mc != '\u2014': d['mcap'] = mc
                 rv = clean_deal(cells[6]) or raise_est(d) or '\u2014'
                 out['upcoming'].append([title.split(chr(183))[0].strip()] + cells[:6] + [rv])
     out['deals'] = deals
-    out['priced'] = [r + [deal_size(r[1], deals, r[3])] for r in out['priced']]
+    out['priced'] = [r + [deal_size(r[1], deals, r[3]), sold_for(r[1], deals, r[3], r[4])] for r in out['priced']]
     return out
 
 def main():
