@@ -52,6 +52,12 @@ a:hover{text-decoration:underline}
 <span class="note">Saved on this device. A ticker not yet in the daily feed shows as waiting.</span>
 </div>
 
+<h2>Big IPOs of 2026</h2>
+<div class="lead">The year's headline listings, worth knowing even though they don't show up in the recent-deal feed: SpaceX was the largest IPO ever, SK hynix the largest by a foreign company, Cerebras the largest chipmaker listing, Jersey Mike's the year's biggest consumer debut. Prices here update with the page.</div>
+<div class="card"><table id="big">
+<thead></thead><tbody></tbody>
+</table></div>
+
 <h2>Recent IPOs</h2>
 <div class="lead">The newest listings, priced against their offer price.</div>
 <div class="card"><table id="priced"><thead></thead><tbody></tbody></table></div>
@@ -137,6 +143,26 @@ uh.innerHTML='<tr><th>When</th><th>Date</th><th>Symbol</th><th>Company</th><th>E
     +'<td class="sym">'+sym+'</td><td class="nm">'+co+'</td><td>'+ex+'</td><td>'+rng+'</td><td>'+sh+'</td><td>'+(raise||'\u2014')+'</td>';
   ub.appendChild(tr);
 });
+
+const BH=document.querySelector('#big thead'),BB=document.querySelector('#big tbody');
+BH.innerHTML='<tr><th>Listed</th><th>Company</th><th>Offer price</th><th>Raised</th><th>Sold for</th><th>Latest</th><th>Return</th></tr>';
+const BIG=[
+ ['Jun 12, 2026','SpaceX <span class="note">Nasdaq \u00b7 rockets, Starlink, xAI \u00b7 largest IPO ever</span>','SPCX','$135','$75B','~$1.77T'],
+ ['Jul 10, 2026','SK hynix <span class="note">Nasdaq ADR \u00b7 Korean chipmaker \u00b7 largest foreign IPO in US history</span>','SKHY','$149','$26.5B','\u2014'],
+ ['May 13, 2026','Cerebras <span class="note">Nasdaq \u00b7 AI chips \u00b7 largest chipmaker IPO ever</span>','CBRS','$185','$5.5B','\u2014'],
+ ['Jul 29, 2026','Jersey Mike\u2019s <span class="note">NYSE \u00b7 subs \u00b7 year\u2019s biggest consumer IPO</span>','JMKE','$23','~$1B','$7.3B']
+];
+BIG.forEach(r=>{
+  const [dt,co,tk,off,raised,sold]=r;
+  const q=(DATA.notable||{})[tk];
+  let latest='\u2014',ret='\u2014',v=null;
+  if(q&&q.price!=null){latest='$'+q.price.toFixed(2);const o=num(off);if(o){v=(q.price/o-1)*100;ret=(v>0?'+':'')+v.toFixed(1)+'%';}}
+  const tr=document.createElement('tr');
+  tr.innerHTML='<td style="color:#6b7785">'+dt+'</td><td class="nm">'+co+'</td><td>'+tk+'</td>'
+    +'<td class="px">'+off+'</td><td>'+raised+'</td><td>'+sold+'</td>'
+    +'<td class="px">'+latest+'</td><td class="'+cls(v)+'">'+ret+'</td>';
+  BB.appendChild(tr);
+});
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
 if(window.glScan)glScan();
 function addSym(){
@@ -145,5 +171,5 @@ function addSym(){
 }
 })
 </script>
-<script src="glossary.js?v=3"></script>
+<script src="glossary.js?v=4"></script>
 </body></html>

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T00:03:35",
+ "updated": "2026-10-23T00:10:28",
  "quotes": {
   "AAPL": {
    "name": "Apple",
@@ -334,7 +334,7 @@
    "price": 891.3,
    "chg": -13.42,
    "chgPct": -1.48,
-   "vol": "2,030,261",
+   "vol": "2,033,726",
    "range": "881.00 - 906.35",
    "mcap": "269.85B",
    "hist": {
@@ -725,6 +725,44 @@
     "offer": null,
     "mcap": "$937.70M"
    }
+  }
+ },
+ "notable": {
+  "SPCX": {
+   "name": "Space Exploration Technologies",
+   "price": 144.75,
+   "chg": -14.56,
+   "chgPct": -9.14,
+   "vol": "196,628,691",
+   "range": "143.21 - 154.26",
+   "mcap": "1.97T"
+  },
+  "SKHY": {
+   "name": "SK hynix",
+   "price": 131.69,
+   "chg": -11.56,
+   "chgPct": -8.07,
+   "vol": "24,237,789",
+   "range": "130.79 - 139.30",
+   "mcap": "671.80B"
+  },
+  "CBRS": {
+   "name": "Cerebras Systems",
+   "price": 108.94,
+   "chg": -9.04,
+   "chgPct": -7.66,
+   "vol": "11,141,726",
+   "range": "107.90 - 114.19",
+   "mcap": "25.88B"
+  },
+  "JMKE": {
+   "name": "Jersey Mike's Subs",
+   "price": 17.69,
+   "chg": 0.03,
+   "chgPct": 0.17,
+   "vol": "2,398,311",
+   "range": "17.40 - 17.82",
+   "mcap": "5.63B"
   }
  }
 }

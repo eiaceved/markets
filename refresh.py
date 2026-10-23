@@ -165,6 +165,8 @@ def ipos():
     out['priced'] = [r + [deal_size(r[1], deals, r[3]), sold_for(r[1], deals, r[3], r[4])] for r in out['priced']]
     return out
 
+NOTABLE=['SPCX','SKHY','CBRS','JMKE']
+
 def main():
     dpath = 'data.json'
     data = {}
@@ -197,7 +199,15 @@ def main():
     except Exception as e:
         ip = data.get('ipos', {'upcoming': [], 'priced': []})
         print('ipos FAILED', e, file=sys.stderr)
-    data.update({'updated': datetime.datetime.now().isoformat(timespec='seconds'), 'quotes': quotes, 'ipos': ip})
+    notable={}
+    for sym in NOTABLE:
+        try:
+            q=quote(sym)
+            if q and q.get('price'): notable[sym]=q
+        except Exception:
+            pass
+        time.sleep(0.3)
+    data.update({'updated': datetime.datetime.now().isoformat(timespec='seconds'), 'quotes': quotes, 'ipos': ip, 'notable': notable})
     json.dump(data, open(dpath, 'w'), indent=1)
     print('wrote data.json,', len(quotes), 'quotes')
 main()

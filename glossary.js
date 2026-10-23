@@ -4,6 +4,7 @@
 if(window.__wajoGloss)return;window.__wajoGloss=true;
 var TERMS=[
 ["Last","The latest price the stock traded at, also called the current price.",1],
+["ADR","American Depositary Receipt: a US-listed share that stands in for shares of a foreign company, so US investors can trade it. SK hynix\u2019s Nasdaq ADRs stand in for its Seoul-listed shares.",1],
 ["Sold for","The company\u2019s total value at the IPO price: all shares outstanding times the offer price. Different from Raised, which is only the money from the new shares sold.",1],
 ["Chg","Change from the previous close: how much the price moved since yesterday. Percent change compares that to yesterday\u2019s closing price.",1],
 ["IPO","Initial public offering: when a private company sells shares to the public for the first time, which is how it gets listed on a stock exchange."],
