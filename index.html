@@ -118,13 +118,13 @@ watch.forEach(sym=>{
 });
 function rm(s){watch=watch.filter(x=>x!==s);saveWatch();location.reload()}
 const ph=document.querySelector('#priced thead'),pb=document.querySelector('#priced tbody');
-ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Raised</th><th>Latest</th><th>Return</th></tr>';
+ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Raised</th><th>Sold for</th><th>Latest</th><th>Return</th></tr>';
 (IPOS.priced||[]).forEach(r=>{
-  const [date,sym,co,offer,last,ret,raised]=r;
+  const [date,sym,co,offer,last,ret,raised,sold]=r;
   const v=pct(ret||'');
   const tr=document.createElement('tr');
   tr.innerHTML='<td style="color:#6b7785">'+date+'</td><td class="sym">'+sym+'</td><td class="nm">'+co+'</td>'
-    +'<td class="px">'+offer+'</td><td>'+(raised||'\u2014')+'</td><td class="px">'+last+'</td>'
+    +'<td class="px">'+offer+'</td><td>'+(raised||'\u2014')+'</td><td>'+(sold||'\u2014')+'</td><td class="px">'+last+'</td>'
     +'<td class="'+cls(v)+'">'+(ret||'')+'</td>';
   pb.appendChild(tr);
 });
@@ -145,5 +145,5 @@ function addSym(){
 }
 })
 </script>
-<script src="glossary.js?v=2"></script>
+<script src="glossary.js?v=3"></script>
 </body></html>
