@@ -156,7 +156,8 @@ BIG.forEach(r=>{
   const [dt,co,tk,off,raised,sold]=r;
   const q=(DATA.notable||{})[tk];
   let latest='\u2014',ret='\u2014',v=null;
-  if(q&&q.price!=null){latest='$'+q.price.toFixed(2);const o=num(off);if(o){v=(q.price/o-1)*100;ret=(v>0?'+':'')+v.toFixed(1)+'%';}}
+  const o=parseFloat(off.replace(/[$,]/g,''));
+  if(q&&q.price!=null){latest='$'+q.price.toFixed(2);if(o){v=(q.price/o-1)*100;ret=(v>0?'+':'')+v.toFixed(1)+'%';}}
   const tr=document.createElement('tr');
   tr.innerHTML='<td style="color:#6b7785">'+dt+'</td><td class="nm">'+co+'</td><td>'+tk+'</td>'
     +'<td class="px">'+off+'</td><td>'+raised+'</td><td>'+sold+'</td>'
