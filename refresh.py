@@ -175,6 +175,22 @@ def treasury(csv_type, year=2026):
     hdr = {h.strip().strip('"').replace(' YR', ' Yr'): i for i, h in enumerate(rows[0])}
     return hdr, rows[1:]
 
+def fdic():
+    """FDIC national average deposit rates (monthly page), savings + 12-month CD."""
+    soup = BeautifulSoup(fetch('https://www.fdic.gov/national-rates-and-rate-caps'), 'html.parser')
+    out = {}
+    for tr in soup.find_all('tr'):
+        cells = [td.get_text(' ', strip=True) for td in tr.find_all('td')]
+        if len(cells) >= 2 and cells[0] in ('Savings', '12 month CD', '6 month CD'):
+            v = num(cells[1])
+            if v is not None:
+                key = {'Savings': 'savings', '12 month CD': 'cd12m', '6 month CD': 'cd6m'}[cells[0]]
+                out[key] = v
+    t = soup.title.get_text(' ', strip=True) if soup.title else ''
+    m = re.search(r'Rate Caps\s*[\u2013\u2014-]\s*([A-Z][a-z]+ 20\d\d)', t)
+    if m: out['fdic_asof'] = m.group(1)
+    return out
+
 def rates():
     out = {}
     hdr, rows = treasury('yield_curve')
@@ -188,6 +204,12 @@ def rates():
     if '10 Yr' in hdr2: out['tips10y'] = num(r0[hdr2['10 Yr']])
     if out.get('y10y') is not None and out.get('tips10y') is not None:
         out['breakeven'] = round(out['y10y'] - out['tips10y'], 2)
+    try:
+        f = fdic()
+        out.update(f)
+        print('fdic:', f)
+    except Exception as e:
+        print('fdic failed', e, file=sys.stderr)
     try:
         js = None
         body = json.dumps({'seriesid': ['LNS14000000'], 'startyear': 2024, 'endyear': 2026}).encode()
