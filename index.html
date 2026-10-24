@@ -37,6 +37,10 @@ button:hover{background:#1646cc}
 .chip:first-child .tip{left:0;transform:none}
 .chip:last-child .tip{left:auto;right:0;transform:none}
 @media(max-width:1080px){.strip{overflow-x:auto;scrollbar-width:none}.strip::-webkit-scrollbar{display:none}}
+.hint{margin-left:auto;display:flex;align-items:center;gap:7px;color:#8a97a5;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;padding-left:18px}
+.hint .arr{display:inline-block;animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(-4px)}}
+@media(max-width:1080px){.hint{display:none}}
 .chip .lb{color:#6b7785;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
 .chip .v{font-weight:600;font-variant-numeric:tabular-nums;font-size:14px}
 svg.spark{display:block}
@@ -190,6 +194,7 @@ if(R){
   ];
   if(R.unemployment!=null)chips.push(['Unemployment',R.unemployment,"The labor market's temperature, from the BLS."]);
   chips.forEach(function(c){if(c[1]!=null){const d=document.createElement('div');d.className='chip';d.innerHTML='<span class="lb">'+c[0]+'</span><span class="v">'+c[1].toFixed(2)+'%</span><span class="tip">'+c[2]+'</span>';st.appendChild(d);}});
+  const hint=document.createElement('div');hint.className='hint';hint.innerHTML='<span class="arr">\u2190</span>Hover over me';st.appendChild(hint);
 }
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
 if(window.glScan)glScan();
