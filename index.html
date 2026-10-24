@@ -29,9 +29,14 @@ button:hover{background:#1646cc}
 .x{color:#9aa7b5;cursor:pointer;font-size:13px;padding:2px 6px;border-radius:6px}
 .x:hover{background:#f0f3f7;color:#d0342c}
 .note{color:#8a97a5;font-size:12px}
-.strip{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e3e8ee;margin:0 -20px;padding:9px 20px;display:flex;gap:22px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.strip{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e3e8ee;margin:0 -20px;padding:9px 20px;display:flex;gap:22px;white-space:nowrap}
 .strip::-webkit-scrollbar{display:none}
-.chip{display:flex;flex-direction:column;gap:1px}
+.chip{display:flex;flex-direction:column;gap:1px;position:relative}
+.chip .tip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:240px;background:#232a31;color:#fff;padding:8px 11px;border-radius:8px;font-size:12px;line-height:1.45;z-index:40;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:normal}
+.chip:hover .tip{display:block}
+.chip:first-child .tip{left:0;transform:none}
+.chip:last-child .tip{left:auto;right:0;transform:none}
+@media(max-width:1080px){.strip{overflow-x:auto;scrollbar-width:none}.strip::-webkit-scrollbar{display:none}}
 .chip .lb{color:#6b7785;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
 .chip .v{font-weight:600;font-variant-numeric:tabular-nums;font-size:14px}
 svg.spark{display:block}
@@ -46,11 +51,6 @@ a:hover{text-decoration:underline}
 <div class="sub">Watchlist and IPO tracker, refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific.</div>
 <div class="strip" id="strip"></div>
 
-
-<h2>Rates and the economy</h2>
-<div class="lead">The rates every market story leans on, straight from Treasury, the BLS and the FDIC. Yields update each business day with the feed; FDIC averages and unemployment are monthly.</div>
-<div class="card"><table id="rates"><thead></thead><tbody></tbody></table></div>
-<div class="note" style="margin:8px 2px" id="ratesDate"></div>
 
 <h2>Watchlist</h2>
 <div class="lead">Live-style quotes in the Yahoo Finance layout: last price, change, volume, day range and market cap.</div>
@@ -178,28 +178,18 @@ BIG.forEach(r=>{
 const R=DATA.rates;
 if(R){
   const st=document.getElementById('strip');
-  const chips=[['3M T-bill',R.y3m],['2Y',R.y2y],['10Y',R.y10y],['30Y',R.y30y],['10Y TIPS',R.tips10y],['10Y breakeven',R.breakeven],['Savings FDIC',R.savings],['12-mo CD FDIC',R.cd12m]];
-  if(R.unemployment!=null)chips.push(['Unemployment',R.unemployment]);
-  chips.forEach(function(c){if(c[1]!=null){const d=document.createElement('div');d.className='chip';d.innerHTML='<span class="lb">'+c[0]+'</span><span class="v">'+c[1].toFixed(2)+'%</span>';st.appendChild(d);}});
-  const rb=document.querySelector('#rates tbody');
-  rb.parentElement.querySelector('thead').innerHTML='<tr><th>Measure</th><th>Rate</th><th>What it tells you</th></tr>';
-  const rows=[
-    ['3-month T-bill', R.y3m, "What risk-free cash earns right now; the Fed's short end."],
-    ['2-year Treasury', R.y2y, 'Where markets think the Fed is headed next.'],
-    ['10-year Treasury', R.y10y, 'The anchor for mortgages, loans and company valuations.'],
-    ['30-year Treasury', R.y30y, 'The long end; moves on growth and inflation expectations.'],
-    ['10-year TIPS (real yield)', R.tips10y, 'The risk-free rate after inflation; what a TIPS bond actually pays.'],
-    ['10-year breakeven inflation', R.breakeven, '10-year Treasury minus the TIPS yield: the inflation markets expect.'],
-    ['Savings (FDIC avg)', R.savings, 'The national average an insured bank pays on savings; FDIC, monthly.'],
-    ['12-month CD (FDIC avg)', R.cd12m, 'Average national rate on a one-year CD; FDIC, monthly.']
+  const chips=[
+    ['3M T-bill',R.y3m,"What risk-free cash earns right now; the Fed's short end."],
+    ['2Y',R.y2y,'Where markets think the Fed is headed next.'],
+    ['10Y',R.y10y,'The anchor for mortgages, loans and company valuations.'],
+    ['30Y',R.y30y,'The long end; moves on growth and inflation expectations.'],
+    ['10Y TIPS',R.tips10y,'The risk-free rate after inflation; what a TIPS bond actually pays.'],
+    ['10Y breakeven',R.breakeven,'10-year Treasury minus the TIPS yield: the inflation markets expect.'],
+    ['Savings FDIC',R.savings,'The national average an insured bank pays on savings; FDIC, monthly.'],
+    ['12-mo CD FDIC',R.cd12m,'Average national rate on a one-year CD; FDIC, monthly.']
   ];
-  if(R.unemployment!=null)rows.push(['Unemployment rate'+(R.unemployment_month?' ('+R.unemployment_month+')':''), R.unemployment, "The labor market's temperature, from the BLS."]);
-  rows.forEach(function(r){
-    const tr=document.createElement('tr');
-    tr.innerHTML='<td class="sym">'+r[0]+'</td><td class="px">'+(r[1]!=null?r[1].toFixed(2)+'%':'\u2014')+'</td><td class="nm">'+r[2]+'</td>';
-    rb.appendChild(tr);
-  });
-  document.getElementById('ratesDate').textContent='Treasury yields as of '+R.date+(R.date_real&&R.date_real!==R.date?' \u00b7 TIPS yield as of '+R.date_real:'')+(R.fdic_asof?' \u00b7 FDIC averages as of '+R.fdic_asof:'');
+  if(R.unemployment!=null)chips.push(['Unemployment',R.unemployment,"The labor market's temperature, from the BLS."]);
+  chips.forEach(function(c){if(c[1]!=null){const d=document.createElement('div');d.className='chip';d.innerHTML='<span class="lb">'+c[0]+'</span><span class="v">'+c[1].toFixed(2)+'%</span><span class="tip">'+c[2]+'</span>';st.appendChild(d);}});
 }
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
 if(window.glScan)glScan();
