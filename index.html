@@ -41,6 +41,11 @@ a:hover{text-decoration:underline}
 <div class="sub">Watchlist and IPO tracker, refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific.</div>
 
 
+<h2>Rates and the economy</h2>
+<div class="lead">The rates every market story leans on, straight from Treasury and the BLS. Yields update each business day with the feed; unemployment is monthly.</div>
+<div class="card"><table id="rates"><thead></thead><tbody></tbody></table></div>
+<div class="note" style="margin:8px 2px" id="ratesDate"></div>
+
 <h2>Watchlist</h2>
 <div class="lead">Live-style quotes in the Yahoo Finance layout: last price, change, volume, day range and market cap.</div>
 <div class="card"><table id="wl"><thead><tr>
@@ -164,6 +169,26 @@ BIG.forEach(r=>{
     +'<td class="px">'+latest+'</td><td class="'+cls(v)+'">'+ret+'</td>';
   BB.appendChild(tr);
 });
+const R=DATA.rates;
+if(R){
+  const rb=document.querySelector('#rates tbody');
+  rb.parentElement.querySelector('thead').innerHTML='<tr><th>Measure</th><th>Rate</th><th>What it tells you</th></tr>';
+  const rows=[
+    ['3-month T-bill', R.y3m, "What risk-free cash earns right now; the Fed's short end."],
+    ['2-year Treasury', R.y2y, 'Where markets think the Fed is headed next.'],
+    ['10-year Treasury', R.y10y, 'The anchor for mortgages, loans and company valuations.'],
+    ['30-year Treasury', R.y30y, 'The long end; moves on growth and inflation expectations.'],
+    ['10-year TIPS (real yield)', R.tips10y, 'The risk-free rate after inflation; what a TIPS bond actually pays.'],
+    ['10-year breakeven inflation', R.breakeven, '10-year Treasury minus the TIPS yield: the inflation markets expect.'],
+  ];
+  if(R.unemployment!=null)rows.push(['Unemployment rate'+(R.unemployment_month?' ('+R.unemployment_month+')':''), R.unemployment, "The labor market's temperature, from the BLS."]);
+  rows.forEach(function(r){
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td class="sym">'+r[0]+'</td><td class="px">'+(r[1]!=null?r[1].toFixed(2)+'%':'\u2014')+'</td><td class="nm">'+r[2]+'</td>';
+    rb.appendChild(tr);
+  });
+  document.getElementById('ratesDate').textContent='Treasury yields as of '+R.date+(R.date_real&&R.date_real!==R.date?' \u00b7 TIPS yield as of '+R.date_real:'');
+}
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
 if(window.glScan)glScan();
 function addSym(){

@@ -165,6 +165,51 @@ def ipos():
     out['priced'] = [r + [deal_size(r[1], deals, r[3]), sold_for(r[1], deals, r[3], r[4])] for r in out['priced']]
     return out
 
+
+def treasury(csv_type, year=2026):
+    url = ('https://home.treasury.gov/resource-center/data-chart-center/interest-rates/'
+           'daily-treasury-rates.csv/%d/all?type=daily_treasury_%s&field_tdr_date_value=%d&page&_format=csv'
+           % (year, csv_type, year))
+    txt = fetch(url)
+    rows = [r.split(',') for r in txt.strip().splitlines()]
+    hdr = {h.strip().strip('"').replace(' YR', ' Yr'): i for i, h in enumerate(rows[0])}
+    return hdr, rows[1:]
+
+def rates():
+    out = {}
+    hdr, rows = treasury('yield_curve')
+    r0 = rows[0]
+    out['date'] = r0[hdr['Date']].strip()
+    for key, col in (('y3m', '3 Mo'), ('y2y', '2 Yr'), ('y10y', '10 Yr'), ('y30y', '30 Yr')):
+        if col in hdr: out[key] = num(r0[hdr[col]])
+    hdr2, rows2 = treasury('real_yield_curve')
+    r0 = rows2[0]
+    out['date_real'] = r0[hdr2['Date']].strip()
+    if '10 Yr' in hdr2: out['tips10y'] = num(r0[hdr2['10 Yr']])
+    if out.get('y10y') is not None and out.get('tips10y') is not None:
+        out['breakeven'] = round(out['y10y'] - out['tips10y'], 2)
+    try:
+        js = None
+        body = json.dumps({'seriesid': ['LNS14000000'], 'startyear': 2024, 'endyear': 2026}).encode()
+        for attempt in range(3):
+            try:
+                req = urllib.request.Request('https://api.bls.gov/publicAPI/v1/timeseries/data/', data=body,
+                                             headers={'Content-Type': 'application/json', 'User-Agent': UA['User-Agent']})
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    js = json.load(r)
+                break
+            except Exception:
+                time.sleep(3)
+        if js is not None:
+            d0 = js['Results']['series'][0]['data'][0]
+            out['unemployment'] = float(d0['value'])
+            out['unemployment_month'] = d0['periodName'] + ' ' + d0['year']
+        else:
+            print('BLS unreachable, unemployment omitted', file=sys.stderr)
+    except Exception as e:
+        print('BLS failed', e, file=sys.stderr)
+    return out
+
 NOTABLE=['SPCX','SKHY','CBRS','JMKE']
 
 def main():
@@ -195,10 +240,20 @@ def main():
         time.sleep(0.4)
     try:
         ip = ipos()
+        old_ip = data.get('ipos') or {}
+        if not ip['upcoming'] and old_ip.get('upcoming'):
+            ip['upcoming'] = old_ip['upcoming']
+            print('upcoming parse empty, kept previous rows')
         print('upcoming rows:', len(ip['upcoming']), 'priced rows:', len(ip['priced']))
     except Exception as e:
         ip = data.get('ipos', {'upcoming': [], 'priced': []})
         print('ipos FAILED', e, file=sys.stderr)
+    try:
+        rt = rates()
+        print('rates:', rt.get('y10y'), '10y;', rt.get('tips10y'), 'tips;', rt.get('unemployment'), rt.get('unemployment_month'))
+    except Exception as e:
+        rt = data.get('rates')
+        print('rates FAILED', e, file=sys.stderr)
     notable={}
     for sym in NOTABLE:
         try:
@@ -207,6 +262,7 @@ def main():
         except Exception:
             pass
         time.sleep(0.3)
+    if rt: data['rates'] = rt
     data.update({'updated': datetime.datetime.now().isoformat(timespec='seconds'), 'quotes': quotes, 'ipos': ip, 'notable': notable})
     json.dump(data, open(dpath, 'w'), indent=1)
     print('wrote data.json,', len(quotes), 'quotes')
