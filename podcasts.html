@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<title>Podcasts · the daily listen rotation</title>
+<style>
+:root{
+  --bg:#f8f6f1;--surface:#ffffff;--surface-2:#f0ede5;--fg:#16233c;--fg-2:#41536d;--muted:#70809a;
+  --line:#e3ddd0;--accent:#c9a54a;--accent-ink:#8a6d1f;--accent-soft:#faf5e8;
+  --shadow:0 1px 3px rgba(21,36,46,.08)
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#0b111e;--surface:#131b2c;--surface-2:#1a2438;--fg:#e8edf6;--fg-2:#a9b6c9;--muted:#8a99b0;
+    --line:#26314a;--accent:#c9a54a;--accent-ink:#d8bc72;--accent-soft:#20242e;
+    --shadow:0 1px 3px rgba(0,0,0,.4)
+  }
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
+.stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
+.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:8px;background:var(--surface);box-shadow:var(--shadow)}
+.show{display:block;padding:15px 18px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.show:last-child{border-bottom:0}
+.show:hover{background:var(--surface-2)}
+.show .row1{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:5px}
+.show .src{font:600 10.5px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);display:inline-block;border:1px solid var(--line);border-radius:99px;padding:3px 9px;background:var(--accent-soft)}
+.show .cad{color:var(--muted);font-size:12px;font-style:italic}
+.show .t{font-weight:700;font-size:16.5px;margin:0 0 4px;line-height:1.35}
+.show .take{color:var(--fg-2);font-size:14px;margin:0;max-width:78ch}
+.latest{margin:8px 0 0;padding:9px 12px;background:var(--surface-2);border-radius:8px;font-size:13px;color:var(--fg-2)}
+.latest b{color:var(--fg)}
+.latest a{color:var(--accent-ink);text-decoration:none;font-weight:600}
+.latest a:hover{text-decoration:underline}
+footer{margin-top:30px;color:var(--muted);font-size:12px}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header><h1>Podcasts</h1><span class="stamp" id="stamp">Loading…</span></header>
+<div class="sub">The daily listen rotation: where each show is from, how often it drops, and why it's worth your walk. New episodes are checked every morning around 7 AM Pacific, alongside the Read Daily brief.</div>
+<div id="list"></div>
+<footer>Shows are theirs, notes are ours. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
+<script>
+fetch('podcasts.json?v='+Date.now()).then(r=>r.json()).then(D=>{
+  document.getElementById('stamp').textContent='Refreshed '+new Date(D.updated).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  const L=document.getElementById('list');
+  (D.shows||[]).forEach(s=>{
+    const a=document.createElement('a');a.className='show';a.href=s.apple;a.target='_blank';a.rel='noopener';
+    let h='<span class="row1"><span class="src">'+s.from+'</span><span class="cad">'+s.cad+'</span></span><p class="t">'+s.name+'</p><p class="take">'+s.blurb+'</p>';
+    const ep=(D.latest||[]).find(e=>e.show===s.name);
+    if(ep)h+='<div class="latest">Latest checked: <b>'+ep.title+'</b> · <a href="'+ep.url+'" target="_blank" rel="noopener">listen &#8599;</a></div>';
+    a.innerHTML=h;L.appendChild(a);
+  });
+}).catch(()=>{document.getElementById('stamp').textContent='Failed to load — refresh the page';});
+</script>
+</body>
+</html>

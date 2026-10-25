@@ -1,0 +1,45 @@
+{
+  "updated": "2026-10-25T14:05:00-07:00",
+  "shows": [
+    {
+      "name": "What's News",
+      "from": "The Wall Street Journal",
+      "cadence": "Twice a day, every weekday morning and afternoon",
+      "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
+      "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440"
+    },
+    {
+      "name": "Bloomberg Surveillance",
+      "from": "Bloomberg",
+      "cadence": "Daily, mornings",
+      "blurb": "Tom Keene, Paul Sweeney, Lisa Abramowicz and Jonathan Ferro with the morning's markets conversation and big interviews. Longer-form: good for a walk to campus.",
+      "apple": "https://podcasts.apple.com/us/podcast/bloomberg-surveillance/id296237493",
+      "web": "https://www.bloomberg.com/podcasts/series/bloomberg-surveillance"
+    },
+    {
+      "name": "Thoughts on the Market",
+      "from": "Morgan Stanley",
+      "cadence": "Every weekday",
+      "blurb": "Short, sharp takes (about 10 minutes) from Morgan Stanley strategists and economists on what moved markets. Perfect between classes.",
+      "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
+      "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market"
+    },
+    {
+      "name": "Making Sense",
+      "from": "J.P. Morgan",
+      "cadence": "Regular episodes",
+      "blurb": "J.P. Morgan leaders on market trends and the forces shaping the global economy, from the Commercial & Investment Bank's research side.",
+      "apple": "https://podcasts.apple.com/us/podcast/making-sense/id1456184829",
+      "web": "https://www.jpmorgan.com/insights/podcast-hub/making-sense"
+    },
+    {
+      "name": "The Markets",
+      "from": "Goldman Sachs",
+      "cadence": "Weekly",
+      "blurb": "Goldman traders and investors break down one market dynamic at a time, in ten minutes or less. Trading-floor perspective you won't get from the news.",
+      "apple": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600",
+      "web": "https://www.goldmansachs.com/insights/the-markets"
+    }
+  ],
+  "latest": []
+}
