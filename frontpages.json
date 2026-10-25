@@ -11,6 +11,16 @@
       "name": "Los Angeles Times",
       "url": "https://www.latimes.com",
       "img": "frontpages/lat-2026-10-25.jpg"
+    },
+    {
+      "name": "Chicago Tribune",
+      "url": "https://www.chicagotribune.com",
+      "img": "frontpages/trib-2026-10-25.jpg"
+    },
+    {
+      "name": "The Boston Globe",
+      "url": "https://www.bostonglobe.com",
+      "img": "frontpages/globe-2026-10-25.jpg"
     }
   ]
 }
