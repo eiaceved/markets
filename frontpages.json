@@ -1,1 +1,16 @@
-{"updated":"2026-10-25T14:15:00-07:00","label":"first edition lands tomorrow, Sunday Oct 26, 7 AM","pages":[]}
+{
+  "updated": "2026-10-25T14:18:02-07:00",
+  "label": "Sunday, October 25, 2026",
+  "pages": [
+    {
+      "name": "The New York Times",
+      "url": "https://www.nytimes.com",
+      "img": "frontpages/nyt-2026-10-25.jpg"
+    },
+    {
+      "name": "Los Angeles Times",
+      "url": "https://www.latimes.com",
+      "img": "frontpages/lat-2026-10-25.jpg"
+    }
+  ]
+}

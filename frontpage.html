@@ -28,10 +28,10 @@ a{color:var(--accent-ink);text-decoration:none}
 </head>
 <body>
 <div class="top"><h1>Front Page</h1><span class="stamp" id="stamp">Loading&#8230;</span></div>
-<p class="sub">Today's front pages of the journals, captured through the USC Libraries each morning. Tap a cover to read the journal itself.</p>
+<p class="sub">Today's front pages of the journals, captured fresh every morning. Tap a cover to read the journal itself (USC students read these free through the USC Libraries).</p>
 <div class="grid" id="grid"></div>
 <p class="note" id="note"></p>
-<footer>Fo captures these with your USC Libraries access each morning. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
+<footer>Front pages captured each morning from the Freedom Forum gallery; full articles stay with the publishers. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
 <script>
 fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   document.getElementById('stamp').textContent='Captured '+D.label;
