@@ -135,7 +135,7 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     st.appendChild(d);
   });
   if(D.audio){const p=document.getElementById('player');p.src=D.audio+'?v='+Date.now();
-    const l=document.getElementById('alisten');l.textContent=(D.label||'Today')+' · '+(D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'listen');
+    const l=document.getElementById('alisten');if(l)l.textContent=(D.label||'Today')+' · '+(D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'listen');
     const mins=D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'';
     document.getElementById('minibar').hidden=false;
     document.getElementById('mbLabel').textContent=(D.label||'Today\u2019s brief')+(mins?' \u00b7 '+mins:'')+'';
