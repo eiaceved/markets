@@ -25,18 +25,18 @@ body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans
 header{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
 .stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
-.sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
-h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:36px 0 2px;display:flex;align-items:center;gap:9px}
+.sub{color:var(--fg-2);margin:6px 0 18px;font-size:14px;max-width:70ch}
+h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:0 0 10px}
 .lead{color:var(--muted);font-size:13.5px;margin:0 0 12px;max-width:75ch}
 .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:6px;background:var(--surface);box-shadow:var(--shadow)}
 .strip{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);margin:0 -20px;padding:9px 20px;display:flex;gap:22px;white-space:nowrap;box-shadow:0 2px 10px rgba(21,36,46,.06)}
 .strip::-webkit-scrollbar{display:none}
-.chip{display:flex;flex-direction:column;gap:1px}
+.chip{display:flex;flex-direction:column;gap:1px;position:relative;cursor:help}
 .chip .lb{color:var(--muted);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
 .chip .v{font-weight:700;font-variant-numeric:tabular-nums;font-size:14px}
 .chip .up{color:#177a4d}.chip .dn{color:#b03636}
 @media(prefers-color-scheme:dark){.chip .up{color:#4cc28a}.chip .dn{color:#ff7d7d}}
-.chip .tip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:240px;background:#232a31;color:#fff;padding:8px 11px;border-radius:8px;font-size:12px;line-height:1.45;z-index:40;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:normal}
+.chip .tip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:320px;background:#232a31;color:#fff;padding:10px 13px;border-radius:8px;font-size:12.5px;line-height:1.5;z-index:40;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:normal;text-align:left}
 .chip:hover .tip{display:block}
 @media(max-width:1080px){.strip{overflow-x:auto;scrollbar-width:none}}
 .read{display:block;padding:15px 18px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
@@ -47,32 +47,81 @@ h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-
 .read .take{color:var(--fg-2);font-size:14px;margin:0;max-width:78ch}
 .listenbox{padding:14px 18px}
 .listenbox audio{width:100%;margin-top:8px}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start;margin-top:22px}
+@media(max-width:880px){.cols{grid-template-columns:1fr}.col-listen{order:-1}}
+details.learn{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+details.learn summary{cursor:pointer;padding:13px 18px;font-weight:700;font-size:14.5px;list-style:none;display:flex;align-items:center;gap:8px;color:var(--accent-ink)}
+details.learn summary::-webkit-details-marker{display:none}
+details.learn summary:after{content:"+";margin-left:auto;font-weight:700;font-size:16px}
+details.learn[open] summary:after{content:"–"}
+details.learn .body{padding:2px 20px 18px;border-top:1px solid var(--line)}
+details.learn h3{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-size:15.5px;margin:16px 0 4px}
+details.learn p{font-size:13.5px;line-height:1.6;color:var(--fg-2);margin:0 0 6px;max-width:78ch}
+details.learn b{color:var(--fg)}
 .note{color:var(--muted);font-size:12px}
 footer{margin-top:36px;color:var(--muted);font-size:12px}
 a{color:var(--accent-ink);text-decoration:none}
 a:hover{text-decoration:underline}
-.toplink{font-size:13px}
 </style>
 </head>
 <body>
 <header><h1>Read Daily</h1><span class="stamp" id="stamp">Loading…</span></header>
-<div class="sub">A daily pick of finance reads, rotated every morning around 7 AM Pacific. Each entry is a headline and a two-sentence take; the full article stays with the publisher. USC students read nearly all of these free through the USC Libraries.</div>
+<div class="sub">A daily pick of finance reads, refreshed every morning around 7 AM Pacific. Each entry is a headline and a two-sentence take; the full article stays with the publisher. USC students read nearly all of these free through the USC Libraries.</div>
+
+<details class="learn">
+  <summary>Struggling to understand what any of this means? Open me.</summary>
+  <div class="body">
+    <h3>How to read the top strip</h3>
+    <p>Every chip in the strip shows three things: <b>name, number, percent change</b>. "S&amp;P 500  7,623.68  −0.52%" means: the S&amp;P 500 index last closed at 7,623.68 points, which is 0.52% <i>lower</i> than the previous day's close. Green is up, red is down. Always judge the <b>percent</b>, not the points: a 100-point move on the Dow and a 100-point move on the S&amp;P are very different sizes.</p>
+    <p>Markets are only open weekdays, 6:30 AM to 1:00 PM Pacific. On weekends and holidays nothing is trading, so the numbers you see are the last close (on a Sunday, Friday's close).</p>
+    <h3>S&amp;P 500</h3>
+    <p><b>Standard &amp; Poor's 500.</b> Not a company: an index, a single number that tracks 500 of the largest US companies lumped together, weighted by how big each company is. When a news anchor says "the market was up today," they almost always mean this. It is the broadest, most-watched snapshot of US big business, and the benchmark almost every fund measures itself against.</p>
+    <h3>Dow 30</h3>
+    <p><b>The Dow Jones Industrial Average, "the Dow."</b> The oldest US index (1896). It tracks just 30 giant, long-established companies (Coca-Cola, Boeing, Home Depot, Goldman Sachs...) and averages them in an old-fashioned way that weights higher-priced stocks more. Because it is only 30 companies, it moves less than the S&amp;P and is more a headline tradition than a precise market read.</p>
+    <h3>Nasdaq</h3>
+    <p><b>The Nasdaq Composite.</b> An index of everything listed on the Nasdaq exchange, which is where tech lives: Apple, Microsoft, Nvidia, Amazon and thousands more. When tech stocks are moving hard, the Nasdaq moves hardest. People read it as the "tech barometer."</p>
+    <h3>10-Yr (Treasury yield)</h3>
+    <p><b>The 10-Year Treasury yield.</b> The US government borrows money by selling bonds; the yield is the interest rate it pays. The 10-year is the world's baseline "safe" rate. When it rises fast, borrowing gets more expensive for everyone (mortgages, car loans, companies), and stock valuations take pressure, especially young companies whose value sits far in the future. Around 5% is historically on the high side.</p>
+    <h3>VIX</h3>
+    <p><b>The "fear gauge."</b> A number derived from options prices that measures how rocky investors expect stocks to be over the next month. Under 15 = calm. Around 20 = normal nerves. Over 30 = fear. Over 40 = panic. It is quoted like a percent (19.45 ≈ the market expects about 19% swings) but read as a mood.</p>
+    <h3>Gold</h3>
+    <p>The price of one troy ounce (31.1 grams) of gold. It tends to rise when people are scared and want something tangible, and fall when they would rather own stocks. Investors treat it as insurance, not growth.</p>
+    <h3>Bitcoin</h3>
+    <p>The price of one bitcoin, the largest cryptocurrency. It trades 24 hours a day, every day, and moves much more violently than stocks. Institutions now treat it as a high-risk asset that sometimes behaves like a tech stock.</p>
+    <p class="note">Want more depth on rates and valuations? The Understanding Basic Finance page in your hub's Skills group goes deeper.</p>
+  </div>
+</details>
+
 <div class="strip" id="strip"></div>
 
-<h2>Today's reads</h2>
-<div class="lead" id="intro"></div>
-<div class="card" id="list"></div>
-
-<h2>Listen</h2>
-<div class="lead">The same five reads as a short audio brief. New recording every morning.</div>
-<div class="card listenbox">
-  <b id="alisten">Loading…</b>
-  <audio id="player" controls preload="none"></audio>
+<div class="cols">
+  <div class="col-reads">
+    <h2>Today's reads</h2>
+    <div class="lead" id="intro"></div>
+    <div class="card" id="list"></div>
+  </div>
+  <aside class="col-listen">
+    <h2>Listen</h2>
+    <div class="lead">The same reads as a short audio brief. New recording every morning.</div>
+    <div class="card listenbox">
+      <b id="alisten">Loading…</b>
+      <audio id="player" controls preload="none"></audio>
+    </div>
+  </aside>
 </div>
 
 <footer>Fo picks and summarizes these from the publishers' own sites; headlines and takes are ours, articles are theirs. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
 
 <script>
+var TIPS={
+ "S&P 500":"The S&P 500: one number tracking 500 of the biggest US companies combined. When the news says 'the market rose 1%', this is what they mean. Higher = investors buying, lower = selling.",
+ "Dow 30":"The Dow: the oldest US index (1896), tracking 30 giant companies like Coca-Cola and Boeing. A headline tradition more than a precise read, since it covers only 30 firms.",
+ "Nasdaq":"The Nasdaq Composite: every company on the tech-heavy Nasdaq exchange, Apple and Nvidia included. Moves hardest when tech moves.",
+ "10-Yr":"The 10-Year Treasury yield: the interest rate the US government pays to borrow for 10 years. The world's baseline 'safe' rate. When it jumps, mortgages, loans and stock valuations all feel it.",
+ "VIX":"The 'fear gauge': how rocky investors expect stocks to be over the next month. Under 15 calm, around 20 normal, over 30 fear, over 40 panic.",
+ "Gold":"Price of one ounce of gold. Rises when people get scared and want something tangible; falls when they chase stocks instead.",
+ "Bitcoin":"Price of one bitcoin. Trades 24/7 and moves far more violently than stocks; institutions treat it as a high-risk asset."
+};
 fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   document.getElementById('stamp').textContent='Updated '+new Date(D.updated).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
   document.getElementById('intro').textContent=D.intro||'';
@@ -84,9 +133,9 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   });
   const st=document.getElementById('strip');
   (D.tape||[]).forEach(c=>{
-    const d=document.createElement('div');d.className='chip';d.style.position='relative';
+    const d=document.createElement('div');d.className='chip';
     const cls=c.chg&&c.chg.startsWith('-')?'dn':'up';
-    d.innerHTML='<span class="lb">'+c.name+'</span><span class="v '+cls+'">'+c.value+' <small>'+c.chg+'</small></span>';
+    d.innerHTML='<span class="lb">'+c.name+'</span><span class="v '+cls+'">'+c.value+' <small>'+c.chg+'</small></span><span class="tip">'+(TIPS[c.name]||c.name)+'</span>';
     st.appendChild(d);
   });
   if(D.audio){const p=document.getElementById('player');p.src=D.audio+'?v='+Date.now();

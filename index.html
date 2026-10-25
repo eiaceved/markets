@@ -68,6 +68,40 @@ a:hover{text-decoration:underline}
 </style></head><body>
 <header><h1>Markets</h1><span class="stamp" id="stamp">Loading…</span></header>
 <div class="sub">Watchlist and IPO tracker, refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific.</div>
+<style>
+details.learn{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin:14px 0 4px;max-width:900px;overflow:hidden}
+details.learn summary{cursor:pointer;padding:13px 18px;font-weight:700;font-size:14.5px;list-style:none;display:flex;align-items:center;gap:8px;color:var(--accent-ink)}
+details.learn summary::-webkit-details-marker{display:none}
+details.learn summary:after{content:"+";margin-left:auto;font-weight:700;font-size:16px}
+details.learn[open] summary:after{content:"\2013"}
+details.learn .body{padding:2px 20px 18px;border-top:1px solid var(--line)}
+details.learn h3{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-size:15.5px;margin:16px 0 4px}
+details.learn p{font-size:13.5px;line-height:1.6;color:var(--fg-2);margin:0 0 6px;max-width:78ch}
+details.learn b{color:var(--fg)}
+details.learn .note{color:var(--muted);font-size:12px}
+</style>
+<details class="learn">
+  <summary>Struggling to understand what any of this means? Open me.</summary>
+  <div class="body">
+    <h3>How to read the top strip</h3>
+    <p>Each chip is <b>name, rate, plain-English meaning</b>. Hover over any chip for a one-liner. All the rates here are annual percentages: "4.98%" means 4.98% per year.</p>
+    <h3>Treasuries: the government's IOUs</h3>
+    <p>The US government borrows money by selling bonds of different lengths, from 3 months to 30 years. The <b>yield</b> is the interest rate each length pays. One rule to carry everywhere: <b>when a yield rises, that bond's price fell</b>, and vice versa. These yields are the baseline for nearly everything else: mortgages, car loans, corporate borrowing, even how analysts value stocks.</p>
+    <h3>3M T-bill</h3>
+    <p>A 3-month government IOU. It follows what the Federal Reserve is doing with short-term rates right now, and it is the closest thing to a guaranteed, risk-free return in the world. When cash sits in a money-market fund, it earns roughly this.</p>
+    <h3>2Y, 10Y, 30Y</h3>
+    <p>The same government borrowing at 2, 10 and 30 years. Shorter rates track what the Fed will do next; longer rates track expectations for growth and inflation years out. The 10Y is the one everything else is measured against. When the 2Y sits <i>above</i> the 10Y (an "inverted curve"), markets are usually bracing for a slowdown.</p>
+    <h3>10Y TIPS</h3>
+    <p>A 10-year Treasury whose payments rise with inflation (TIPS = Treasury Inflation-Protected Securities). Its yield is "real": inflation is already subtracted, so it shows the guaranteed return after inflation eats its share.</p>
+    <h3>10Y breakeven</h3>
+    <p>Normal 10Y yield minus the TIPS yield. That gap is the inflation rate bond markets expect over the next 10 years. A breakeven of 2.34% means the market prices in about 2.3% inflation a year, close to the Fed's target.</p>
+    <h3>Savings FDIC / 12-mo CD FDIC</h3>
+    <p>What ordinary insured US banks pay: the national average on a regular savings account, and on a 12-month certificate of deposit. Compare them with the T-bill to see whether the bank or the government pays you better for parking cash.</p>
+    <h3>Unemployment</h3>
+    <p>The share of the labor force out of work, from the Bureau of Labor Statistics. It is the labor market's temperature: low is good for workers, but too low can push the Fed to keep rates high.</p>
+    <p class="note">The Understanding Basic Finance page in your hub's Skills group goes deeper on rates and valuations.</p>
+  </div>
+</details>
 <div class="strip" id="strip"></div>
 
 
