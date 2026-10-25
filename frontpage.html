@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Front Page · today's journals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f3ee;--fg:#15242e;--fg-2:#5a666e;--muted:#8a939a;--line:#dcd8ce;--surface:#fff;--accent:#15242e;--accent-ink:#8c6d1f;--accent-soft:#f4ead2}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1418;--fg:#e8e4da;--fg-2:#a9b2b8;--muted:#77828a;--line:#24313a;--surface:#161e24;--accent-ink:#d4b05a;--accent-soft:#252015}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1120px;margin:0 auto;padding:28px 20px 96px}
+h1{font-family:"Archivo",sans-serif;font-size:34px;margin:0}
+.stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.sub{color:var(--fg-2);margin:6px 0 18px;font-size:14px;max-width:70ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin-top:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.card img{width:100%;display:block}
+.card .cap{padding:12px 15px;border-top:1px solid var(--line)}
+.card .nm{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px}
+.card .cap a{color:var(--accent-ink);text-decoration:none;font-size:12.5px}
+.note{color:var(--muted);font-size:12px;margin-top:16px}
+footer{margin-top:36px;color:var(--muted);font-size:12px}
+a{color:var(--accent-ink);text-decoration:none}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="top"><h1>Front Page</h1><span class="stamp" id="stamp">Loading&#8230;</span></div>
+<p class="sub">Today's front pages of the journals, captured through the USC Libraries each morning. Tap a cover to read the journal itself.</p>
+<div class="grid" id="grid"></div>
+<p class="note" id="note"></p>
+<footer>Fo captures these with your USC Libraries access each morning. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
+<script>
+fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
+  document.getElementById('stamp').textContent='Captured '+D.label;
+  const g=document.getElementById('grid');
+  if(!D.pages||!D.pages.length){g.innerHTML='';document.getElementById('note').textContent='First captures land with tomorrow morning\\u2019s 7 AM refresh.';return}
+  D.pages.forEach(p=>{const c=document.createElement('div');c.className='card';
+    c.innerHTML='<img src="'+p.img+'?v='+Date.now()+'" alt="'+p.name+' front page" loading="lazy"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \\u2192</a></div>';
+    g.appendChild(c)});
+}).catch(()=>{document.getElementById('note').textContent='Could not load the front pages right now.'});
+</script>
+</body>
+</html>
