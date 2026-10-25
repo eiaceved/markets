@@ -106,7 +106,7 @@ a:hover{text-decoration:underline}
   </div>
   <aside class="col-listen">
     <h2>Listen</h2>
-    <div class="lead">The same reads as a short audio brief. New recording every morning.</div>
+    <div class="lead">The same reads as a short audio brief. New recording every morning. This is the <b>one and only</b> recording for today: the bar at the bottom of the page plays this exact same audio, it just follows you as you scroll so you can play or pause without coming back up here.</div>
     <div class="card listenbox">
       <b id="alisten">Loading…</b>
       <audio id="player" controls preload="none"></audio>
@@ -146,7 +146,7 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     const l=document.getElementById('alisten');l.textContent=(D.label||'Today')+' · '+(D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'listen');
     const mins=D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'';
     document.getElementById('minibar').hidden=false;
-    document.getElementById('mbLabel').textContent=(D.label||'Today\u2019s brief')+(mins?' \u00b7 '+mins:'');
+    document.getElementById('mbLabel').textContent=(D.label||'Today\u2019s brief')+(mins?' \u00b7 '+mins:'')+' \u00b7 same recording as the Listen card above';
     const btn=document.getElementById('mbPlay'),PLAYING='\u23f8 Pause',IDLE='\u25b6 Listen to today\u2019s brief';
     btn.addEventListener('click',function(){if(p.paused){p.play();btn.innerHTML=PLAYING;}else{p.pause();btn.innerHTML=IDLE;}});
     p.addEventListener('ended',function(){btn.innerHTML=IDLE;});}
