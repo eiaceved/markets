@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<title>Read Daily · finance reads &amp; listen</title>
+<style>
+:root{
+  --bg:#f8f6f1;--surface:#ffffff;--surface-2:#f0ede5;--fg:#16233c;--fg-2:#41536d;--muted:#70809a;
+  --line:#e3ddd0;--accent:#c9a54a;--accent-ink:#8a6d1f;--accent-soft:#faf5e8;--gold:#a4802a;
+  --shadow:0 1px 3px rgba(21,36,46,.08)
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#0b111e;--surface:#131b2c;--surface-2:#1a2438;--fg:#e8edf6;--fg-2:#a9b6c9;--muted:#8a99b0;
+    --line:#26314a;--accent:#c9a54a;--accent-ink:#d8bc72;--accent-soft:#20242e;--gold:#d8bc72;
+    --shadow:0 1px 3px rgba(0,0,0,.4)
+  }
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1120px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
+.stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
+h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:36px 0 2px;display:flex;align-items:center;gap:9px}
+.lead{color:var(--muted);font-size:13.5px;margin:0 0 12px;max-width:75ch}
+.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:6px;background:var(--surface);box-shadow:var(--shadow)}
+.strip{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);margin:0 -20px;padding:9px 20px;display:flex;gap:22px;white-space:nowrap;box-shadow:0 2px 10px rgba(21,36,46,.06)}
+.strip::-webkit-scrollbar{display:none}
+.chip{display:flex;flex-direction:column;gap:1px}
+.chip .lb{color:var(--muted);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.chip .v{font-weight:700;font-variant-numeric:tabular-nums;font-size:14px}
+.chip .up{color:#177a4d}.chip .dn{color:#b03636}
+@media(prefers-color-scheme:dark){.chip .up{color:#4cc28a}.chip .dn{color:#ff7d7d}}
+.chip .tip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:240px;background:#232a31;color:#fff;padding:8px 11px;border-radius:8px;font-size:12px;line-height:1.45;z-index:40;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:normal}
+.chip:hover .tip{display:block}
+@media(max-width:1080px){.strip{overflow-x:auto;scrollbar-width:none}}
+.read{display:block;padding:15px 18px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.read:last-child{border-bottom:0}
+.read:hover{background:var(--surface-2)}
+.read .src{font:600 10.5px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);display:inline-block;border:1px solid var(--line);border-radius:99px;padding:3px 9px;background:var(--accent-soft);margin-bottom:7px}
+.read .t{font-weight:700;font-size:16.5px;margin:0 0 5px;line-height:1.35}
+.read .take{color:var(--fg-2);font-size:14px;margin:0;max-width:78ch}
+.listenbox{padding:14px 18px}
+.listenbox audio{width:100%;margin-top:8px}
+.note{color:var(--muted);font-size:12px}
+footer{margin-top:36px;color:var(--muted);font-size:12px}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+.toplink{font-size:13px}
+</style>
+</head>
+<body>
+<header><h1>Read Daily</h1><span class="stamp" id="stamp">Loading…</span></header>
+<div class="sub">A daily pick of finance reads, rotated every morning around 7 AM Pacific. Each entry is a headline and a two-sentence take; the full article stays with the publisher. USC students read nearly all of these free through the USC Libraries.</div>
+<div class="strip" id="strip"></div>
+
+<h2>Today's reads</h2>
+<div class="lead" id="intro"></div>
+<div class="card" id="list"></div>
+
+<h2>Listen</h2>
+<div class="lead">The same five reads as a short audio brief. New recording every morning.</div>
+<div class="card listenbox">
+  <b id="alisten">Loading…</b>
+  <audio id="player" controls preload="none"></audio>
+</div>
+
+<footer>Fo picks and summarizes these from the publishers' own sites; headlines and takes are ours, articles are theirs. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
+
+<script>
+fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
+  document.getElementById('stamp').textContent='Updated '+new Date(D.updated).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  document.getElementById('intro').textContent=D.intro||'';
+  const list=document.getElementById('list');
+  D.items.forEach(it=>{
+    const a=document.createElement('a');a.className='read';a.href=it.url;a.target='_blank';a.rel='noopener';
+    a.innerHTML='<span class="src">'+it.source+'</span><p class="t">'+it.title+'</p><p class="take">'+it.take+'</p>';
+    list.appendChild(a);
+  });
+  const st=document.getElementById('strip');
+  (D.tape||[]).forEach(c=>{
+    const d=document.createElement('div');d.className='chip';d.style.position='relative';
+    const cls=c.chg&&c.chg.startsWith('-')?'dn':'up';
+    d.innerHTML='<span class="lb">'+c.name+'</span><span class="v '+cls+'">'+c.value+' <small>'+c.chg+'</small></span>';
+    st.appendChild(d);
+  });
+  if(D.audio){const p=document.getElementById('player');p.src=D.audio+'?v='+Date.now();
+    const l=document.getElementById('alisten');l.textContent=(D.label||'Today')+' · '+(D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'listen');}
+}).catch(()=>{document.getElementById('stamp').textContent='Reads failed to load — refresh the page';});
+</script>
+</body>
+</html>

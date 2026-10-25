@@ -1,0 +1,48 @@
+{
+  "updated": "2026-10-25T13:50:00-07:00",
+  "label": "Sunday, October 25, 2026 · week-ahead edition",
+  "audio": "audio/read-daily/2026-10-25.mp3",
+  "audio_seconds": 86,
+  "intro": "Five finance reads for the week ahead. Headlines and two-sentence takes stay here; the full articles stay with the publishers. USC students read almost all of these free through the USC Libraries.",
+  "items": [
+    {
+      "source": "Reuters",
+      "title": "Earnings flood, Fed meeting will test rickety AI market rally",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-flood-fed-meeting-pose-100557196.html",
+      "take": "The coming week is the AI trade's pivotal test: Alphabet, Microsoft, Amazon and Intel all report, and the Federal Reserve meets. With the 10-year Treasury yield hovering just under 5%, the question is whether Big Tech can defend what it is spending."
+    },
+    {
+      "source": "Bloomberg",
+      "title": "AI spending fears threaten to swamp Big Tech's strong earnings",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-spending-fears-threaten-swamp-130000182.html",
+      "take": "The results are strong; the market is reacting harder to what companies plan to spend on AI than to the beats themselves. When the hyperscalers report, listen for how each one frames its capital budget."
+    },
+    {
+      "source": "Yahoo Finance",
+      "title": "Meta stock closes out Friday down as AI spending fears continue to rattle markets",
+      "url": "https://finance.yahoo.com/technology/article/meta-stock-drops-more-than-7-despite-strong-q3-results-as-ai-spending-fears-return-193128008.html",
+      "take": "Meta is the flashpoint of the spending debate: the stock fell more than 7% on strong Q3 results as AI-spending fears returned. Cathie Wood's ARK used the dip to add shares, so watch who leans in on weakness."
+    },
+    {
+      "source": "Stocktwits",
+      "title": "Tom Lee says AI selloff is nearing its end, points to setup similar to Cisco's 1997 rout",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tom-lee-says-ai-selloff-101704477.html",
+      "take": "The Fundstrat strategist argues the AI selloff may be near its end, comparing the setup to Cisco's rout in the late 1990s, and sees opportunity in Nvidia and software. One strategist's view, not consensus."
+    },
+    {
+      "source": "Podcast · WSJ",
+      "title": "What's News: the Sunday deep dive",
+      "url": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440",
+      "take": "The weekend catch-up from WSJ's twice-daily news podcast, in about ten minutes. Good on a walk between steps of the case prep."
+    }
+  ],
+  "tape": [
+    {"name": "S&P 500", "value": "7,623.68", "chg": "-0.52%"},
+    {"name": "Dow 30", "value": "52,215.16", "chg": "-1.23%"},
+    {"name": "Nasdaq", "value": "25,955.34", "chg": "-0.21%"},
+    {"name": "10-Yr", "value": "4.988%", "chg": "+0.71%"},
+    {"name": "VIX", "value": "19.45", "chg": "+2.21%"},
+    {"name": "Gold", "value": "$4,007.90", "chg": "-1.29%"},
+    {"name": "Bitcoin", "value": "$80,368", "chg": "-0.05%"}
+  ]
+}
