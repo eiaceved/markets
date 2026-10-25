@@ -21,6 +21,11 @@ body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans
 header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
 h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
 .stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.tipwrap{position:relative;display:inline-flex;align-items:center;gap:6px;cursor:help;outline:none}
+.tipwrap .hint{color:var(--muted);font-size:11px;line-height:1}
+.tip{position:absolute;top:calc(100% + 9px);right:0;z-index:30;display:none;width:min(320px,82vw);background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 13px;color:var(--fg-2);font-size:12.5px;line-height:1.5;text-align:left;box-shadow:var(--shadow)}
+.tip b{color:var(--fg);font-weight:600}
+.tipwrap:hover .tip,.tipwrap:focus-within .tip{display:block}
 .sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
 h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:36px 0 2px;display:flex;align-items:center;gap:9px}
 h2::before{content:'';width:16px;height:4px;border-radius:2px;background:var(--gold);flex:0 0 auto}
@@ -66,8 +71,8 @@ a:hover{text-decoration:underline}
 .ant td{white-space:normal}
 .ant td.nm{max-width:340px}
 </style></head><body>
-<header><h1>Markets</h1><span class="stamp" id="stamp">Loading…</span></header>
-<div class="sub">Watchlist and IPO tracker, refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific.</div>
+<header><h1>Markets</h1><div class="tipwrap" tabindex="0" aria-describedby="mkttip"><span class="stamp" id="stamp">Loading…</span><span class="hint" aria-hidden="true">ⓘ</span><span class="tip" id="mkttip" role="tooltip"><b>US markets trade weekdays only, 6:30 AM to 1:00 PM Pacific.</b> Prices only move while trading is open, so nights, weekends, and holidays the quotes sit at the last close. The page holds Friday's close through the weekend until Monday's open.</span></div></header>
+<div class="sub">Watchlist and IPO tracker, refreshed on weekdays from the 6:30 AM open through the 1:00 PM close. Markets are closed on weekends and holidays, so the page holds Friday's close until Monday.</div>
 <style>
 details.learn{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin:14px 0 4px;max-width:900px;overflow:hidden}
 details.learn summary{cursor:pointer;padding:13px 18px;font-weight:700;font-size:14.5px;list-style:none;display:flex;align-items:center;gap:8px;color:var(--accent-ink)}
@@ -142,7 +147,7 @@ details.learn .note{color:var(--muted);font-size:12px}
 <div class="lead">Deals expected to price soon, with ranges where they are known.</div>
 <div class="card"><table id="ipo"><thead></thead><tbody></tbody></table></div>
 
-<footer>Prices are delayed. The page is refreshed twice a day on weekdays, around 7:30 AM and 4:30 PM Pacific. For study use, not trading advice.</footer>
+<footer>Prices are delayed. The page refreshes on weekdays from the 6:30 AM open through the 1:00 PM close. For study use, not trading advice.</footer>
 
 <script>
 fetch('data.json?v='+Date.now()).then(r=>r.json()).then(DATA=>{
