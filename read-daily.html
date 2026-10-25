@@ -47,8 +47,7 @@ h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-
 .read .take{color:var(--fg-2);font-size:14px;margin:0;max-width:78ch}
 .listenbox{padding:14px 18px}
 .listenbox audio{width:100%;margin-top:8px}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start;margin-top:22px}
-@media(max-width:880px){.cols{grid-template-columns:1fr}.col-listen{order:-1}}
+
 details.learn{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
 details.learn summary{cursor:pointer;padding:13px 18px;font-weight:700;font-size:14.5px;list-style:none;display:flex;align-items:center;gap:8px;color:var(--accent-ink)}
 details.learn summary::-webkit-details-marker{display:none}
@@ -104,14 +103,7 @@ a:hover{text-decoration:underline}
     <div class="lead" id="intro"></div>
     <div class="card" id="list"></div>
   </div>
-  <aside class="col-listen">
-    <h2>Listen</h2>
-    <div class="lead">The same reads as a short audio brief. New recording every morning. This is the <b>one and only</b> recording for today: the bar at the bottom of the page plays this exact same audio, it just follows you as you scroll so you can play or pause without coming back up here.</div>
-    <div class="card listenbox">
-      <b id="alisten">Loading…</b>
-      <audio id="player" controls preload="none"></audio>
-    </div>
-  </aside>
+  <div style="display:none"><audio id="player" preload="none"></audio></div>
 </div>
 
 <footer>Fo picks and summarizes these from the publishers' own sites; headlines and takes are ours, articles are theirs. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
@@ -146,7 +138,7 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     const l=document.getElementById('alisten');l.textContent=(D.label||'Today')+' · '+(D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'listen');
     const mins=D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'';
     document.getElementById('minibar').hidden=false;
-    document.getElementById('mbLabel').textContent=(D.label||'Today\u2019s brief')+(mins?' \u00b7 '+mins:'')+' \u00b7 same recording as the Listen card above';
+    document.getElementById('mbLabel').textContent=(D.label||'Today\u2019s brief')+(mins?' \u00b7 '+mins:'')+'';
     const btn=document.getElementById('mbPlay'),PLAYING='\u23f8 Pause',IDLE='\u25b6 Listen to today\u2019s brief';
     btn.addEventListener('click',function(){if(p.paused){p.play();btn.innerHTML=PLAYING;}else{p.pause();btn.innerHTML=IDLE;}});
     p.addEventListener('ended',function(){btn.innerHTML=IDLE;});}
