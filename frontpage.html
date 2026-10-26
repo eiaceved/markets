@@ -14,7 +14,18 @@ body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans
 h1{font-family:"Archivo",sans-serif;font-size:34px;margin:0}
 .stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
 .sub{color:var(--fg-2);margin:6px 0 18px;font-size:14px;max-width:70ch}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin-top:22px}
+.wrap{display:flex;gap:24px;align-items:flex-start;margin-top:22px}
+.main{flex:1;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.hist{flex:0 0 240px;position:sticky;top:16px}
+.hist h2{font-family:"Archivo",sans-serif;font-size:16px;margin:0 0 12px}
+.day{margin-bottom:18px}
+.day .dl{font:600 11px/1.4 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.day .thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.day .thumbs a{display:block;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.day .thumbs img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.day .thumbs a:hover{border-color:var(--accent-ink)}
+@media(max-width:860px){.wrap{flex-direction:column}.hist{flex:none;width:100%;position:static}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .card img{width:100%;display:block}
 .card .cap{padding:12px 15px;border-top:1px solid var(--line)}
@@ -29,8 +40,11 @@ a{color:var(--accent-ink);text-decoration:none}
 <body>
 <div class="top"><h1>Front Page</h1><span class="stamp" id="stamp">Loading&#8230;</span></div>
 <p class="sub">Today's front pages of the journals, captured fresh every morning. Tap a cover to read the journal itself (USC students read these free through the USC Libraries).</p>
+<div class="wrap"><div class="main">
 <div class="grid" id="grid"></div>
 <p class="note" id="note"></p>
+</div>
+<aside class="hist" id="hist" hidden><h2>Previous days</h2><div id="histdays"></div></aside></div>
 <footer>Front pages captured each morning from the Freedom Forum gallery; full articles stay with the publishers. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
 <script>
 fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
@@ -40,6 +54,12 @@ fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   D.pages.forEach(p=>{const c=document.createElement('div');c.className='card';
     c.innerHTML='<img src="'+p.img+'?v='+Date.now()+'" alt="'+p.name+' front page" loading="lazy"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \\u2192</a></div>';
     g.appendChild(c)});
+  const days=D.history||[];
+  if(days.length){const h=document.getElementById('hist');h.hidden=false;const hd=document.getElementById('histdays');
+    days.forEach(d=>{const b=document.createElement('div');b.className='day';
+      let t='<div class="dl">'+d.label+'</div><div class="thumbs">';
+      d.pages.forEach(p=>{t+='<a href="'+p.img+'" target="_blank" title="'+p.name+'"><img src="'+p.img+'" alt="'+p.name+' front page" loading="lazy"></a>'});
+      b.innerHTML=t+'</div>';hd.appendChild(b)});}
 }).catch(()=>{document.getElementById('note').textContent='Could not load the front pages right now.'});
 </script>
 </body>
