@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T14:05:00-07:00",
+  "updated": "2026-10-26T07:24:00-07:00",
   "shows": [
     {
       "name": "What's News",
@@ -41,5 +41,21 @@
       "web": "https://www.goldmansachs.com/insights/the-markets"
     }
   ],
-  "latest": []
+  "latest": [
+    {
+      "show": "Bloomberg Surveillance",
+      "title": "Market Uncertainty Ahead of the Midterms",
+      "url": "https://omny.fm/shows/bloomberg-surveillance/market-uncertainty-ahead-of-the-midterms"
+    },
+    {
+      "show": "What's News",
+      "title": "The Internet Isn't Buying Trump's Economic Claims",
+      "url": "https://www.wsj.com/podcasts/whats-news"
+    },
+    {
+      "show": "Thoughts on the Market",
+      "title": "One Global Shock, Different Rate Paths",
+      "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market"
+    }
+  ]
 }
