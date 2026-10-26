@@ -39,14 +39,13 @@ h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-
 .chip .tip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:320px;background:#232a31;color:#fff;padding:10px 13px;border-radius:8px;font-size:12.5px;line-height:1.5;z-index:40;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:normal;text-align:left}
 .chip:hover .tip{display:block}
 @media(max-width:1080px){.strip{overflow-x:auto;scrollbar-width:none}}
-.help-bubble{display:flex;align-items:center;gap:10px;margin-left:auto;order:999;padding-right:2px;text-decoration:none}
-.help-bubble .hb-label{font-size:12px;color:var(--muted);white-space:nowrap}
-.help-bubble .hb-bubble{display:inline-flex;align-items:center;justify-content:center;width:100px;height:74px;border-radius:50%;flex:none;text-align:center;background:radial-gradient(ellipse 62% 58% at 30% 22%,#fff6da 0%,#f2dfa8 42%,#ddb961 78%,var(--accent) 100%);color:#3a2c06;font:700 12px/1 "Source Sans 3",sans-serif;letter-spacing:.02em;box-shadow:0 4px 12px rgba(21,36,46,.16);position:relative;overflow:hidden;animation:bubblefloat 3.2s ease-in-out infinite;transition:transform .15s ease}
-.help-bubble .hb-bubble:after{content:"";position:absolute;top:9px;left:14px;width:26px;height:16px;border-radius:50%;background:rgba(255,255,255,.55);filter:blur(3px)}
+.help-bubble{display:flex;align-items:center;gap:9px;margin-left:auto;order:999;padding-right:2px;text-decoration:none}
+.help-bubble .hb-label{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.help-bubble .hb-pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 12px;font:600 12px/1 "Source Sans 3",sans-serif;color:var(--fg);white-space:nowrap;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.help-bubble .hb-pill:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);flex:0 0 auto}
+.help-bubble .hb-sub{color:var(--muted);font-weight:400}
 .help-bubble:hover{text-decoration:none}
-.help-bubble:hover .hb-bubble{transform:scale(1.07)}
-@keyframes bubblefloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@media(prefers-color-scheme:dark){.help-bubble .hb-bubble{color:#f6e9c8;background:radial-gradient(ellipse 62% 58% at 30% 22%,#6b572a 0%,#8a6d1f 45%,#b08f35 80%,var(--accent) 100%);box-shadow:0 4px 12px rgba(0,0,0,.45)}}
+.help-bubble:hover .hb-pill{transform:translateY(-1px);border-color:var(--gold)}
 .read{display:block;padding:15px 18px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
 .read:last-child{border-bottom:0}
 .read:hover{background:var(--surface-2)}
@@ -103,7 +102,7 @@ a:hover{text-decoration:underline}
   </div>
 </details>
 
-<div class="strip" id="strip"><a class="help-bubble" href="/markets/relationships.html"><span class="hb-label">Need more help check:</span><span class="hb-bubble">Relationships</span></a></div>
+<div class="strip" id="strip"><a class="help-bubble" href="/markets/relationships.html"><span class="hb-label">Need more help?</span><span class="hb-pill">Relationships <span class="hb-sub">· the map</span></span></a></div>
 
 <div class="cols">
   <div class="col-reads">
