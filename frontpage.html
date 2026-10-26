@@ -52,7 +52,7 @@ fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   const g=document.getElementById('grid');
   if(!D.pages||!D.pages.length){g.innerHTML='';document.getElementById('note').textContent='First captures land with tomorrow morning\\u2019s 7 AM refresh.';return}
   D.pages.forEach(p=>{const c=document.createElement('div');c.className='card';
-    c.innerHTML='<img src="'+p.img+'?v='+Date.now()+'" alt="'+p.name+' front page" loading="lazy"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \\u2192</a></div>';
+    c.innerHTML='<img src="'+p.img+'" alt="'+p.name+' front page" loading="lazy"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \u2192</a></div>';
     g.appendChild(c)});
   const days=D.history||[];
   if(days.length){const h=document.getElementById('hist');h.hidden=false;const hd=document.getElementById('histdays');
