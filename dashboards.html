@@ -49,8 +49,8 @@ button:hover{background:var(--accent-ink)}
 .x{color:var(--muted);cursor:pointer;font-size:13px;padding:2px 6px;border-radius:6px}
 .x:hover{background:var(--surface-2);color:var(--down)}
 .note{color:var(--muted);font-size:12px}
-th.wt{position:relative;cursor:help;outline:none}
-th.wt .tip{display:none;position:absolute;left:0;top:calc(100% + 8px);z-index:30;width:240px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:400 12.5px/1.5 "Source Sans 3",system-ui,sans-serif;color:var(--fg);box-shadow:var(--shadow);text-transform:none;letter-spacing:0;white-space:normal}
+th.wt{cursor:help;text-decoration:underline;text-decoration-style:dashed;text-decoration-color:var(--fg-2);text-underline-offset:4px;outline:none}
+#wltip{display:none;position:fixed;z-index:99;max-width:270px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:400 12.5px/1.5 "Source Sans 3",system-ui,sans-serif;color:var(--fg);box-shadow:var(--shadow);pointer-events:none}
 .strip{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);margin:0 -20px;padding:9px 20px;display:flex;gap:22px;white-space:nowrap;box-shadow:0 2px 10px rgba(21,36,46,.06)}
 .strip::-webkit-scrollbar{display:none}
 .chip{display:flex;flex-direction:column;gap:1px;position:relative}
@@ -109,13 +109,13 @@ a:hover{text-decoration:underline}
 <div class="card" style="margin-top:10px"><table id="wl">
 <thead><tr>
 <th>Symbol</th><th>Name</th>
-<th class="wt" tabindex="0">Last<span class="tip">The most recent trade price.</span></th>
-<th class="wt" tabindex="0">Chg<span class="tip">How far the price moved from yesterday's close, in dollars.</span></th>
-<th class="wt" tabindex="0">% Chg<span class="tip">The same move as a percentage of yesterday's close.</span></th>
-<th class="wt" tabindex="0">Volume<span class="tip">Shares traded so far today.</span></th>
-<th class="wt" tabindex="0">Day Range<span class="tip">The lowest and highest price so far today.</span></th>
-<th class="wt" tabindex="0">Market Cap<span class="tip">The total value of every share outstanding.</span></th>
-<th class="wt" tabindex="0">Trend<span class="tip">The last five weeks of closes, green when the line ends higher than it started.</span></th>
+<th class="wt" tabindex="0" data-def="The most recent trade price.">Last</th>
+<th class="wt" tabindex="0" data-def="How far the price moved from yesterday&#39;s close, in dollars.">Chg</th>
+<th class="wt" tabindex="0" data-def="The same move as a percentage of yesterday&#39;s close.">% Chg</th>
+<th class="wt" tabindex="0" data-def="Shares traded so far today.">Volume</th>
+<th class="wt" tabindex="0" data-def="The lowest and highest price so far today.">Day Range</th>
+<th class="wt" tabindex="0" data-def="The total value of every share outstanding.">Market Cap</th>
+<th class="wt" tabindex="0" data-def="The last five weeks of closes, green when the line ends higher than it started.">Trend</th>
 <th></th>
 </tr></thead><tbody></tbody></table></div>
 <div style="margin:14px 0 4px;display:flex;gap:8px;align-items:center">
@@ -179,6 +179,22 @@ window.addSym=function(){
 const st=document.getElementById('wlStamp');
 if(st)st.textContent='Updated '+fmtTime(DATA.updated);
 })
+</script>
+<script>
+(function(){
+var tip=document.createElement('div');tip.id='wltip';document.body.appendChild(tip);var cur=null;
+function show(th){var r=th.getBoundingClientRect();tip.textContent=th.getAttribute('data-def');tip.style.display='block';
+var l=Math.min(r.left,window.innerWidth-tip.offsetWidth-12);tip.style.left=Math.max(8,l)+'px';tip.style.top=(r.bottom+8)+'px';cur=th;}
+function hide(){tip.style.display='none';cur=null;}
+document.querySelectorAll('th.wt').forEach(function(th){
+th.addEventListener('mouseenter',function(){show(th)});
+th.addEventListener('mouseleave',hide);
+th.addEventListener('focus',function(){show(th)});
+th.addEventListener('blur',hide);
+th.addEventListener('click',function(e){e.preventDefault();(cur===th)?hide():show(th)});
+});
+window.addEventListener('scroll',hide,true);
+})();
 </script>
 </body>
 </html>
