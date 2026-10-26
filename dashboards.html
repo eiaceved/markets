@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<title>Markets · Watchlist & IPOs</title>
+<style>
+:root{
+  color-scheme:light dark;box-sizing:border-box;
+  --bg:#f8f6f1;--surface:#ffffff;--surface-2:#f0ede5;--fg:#16233c;--fg-2:#41536d;--muted:#70809a;
+  --line:#e3e0d6;--line-soft:#edeae2;--accent:#1d3a6b;--accent-ink:#16305a;--accent-soft:#e9eef6;--on-accent:#fff;
+  --gold:#a9822c;--up:#0f7d46;--down:#bb3a34;--hover:#f4f2ec;--shadow:0 1px 2px rgba(22,35,60,.05),0 4px 14px rgba(22,35,60,.04);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0b111e;--surface:#131b2c;--surface-2:#1a2438;--fg:#e8edf6;--fg-2:#a9b6c9;--muted:#8a99b0;
+  --line:#28344c;--line-soft:#1f2a40;--accent:#8fb4f0;--accent-ink:#a9c6f5;--accent-soft:#152642;--on-accent:#0b111e;
+  --gold:#d9b45a;--up:#5adb97;--down:#f29b94;--hover:#1a2438;--shadow:0 1px 2px rgba(0,0,0,.35),0 4px 14px rgba(0,0,0,.25);
+}}
+*{margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1120px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
+.stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.tipwrap{position:relative;display:inline-flex;align-items:center;gap:6px;cursor:help;outline:none}
+.tipwrap .hint{color:var(--muted);font-size:11px;line-height:1}
+.tip{position:absolute;top:calc(100% + 9px);right:0;z-index:30;display:none;width:min(320px,82vw);background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 13px;color:var(--fg-2);font-size:12.5px;line-height:1.5;text-align:left;box-shadow:var(--shadow)}
+.tip b{color:var(--fg);font-weight:600}
+.tipwrap:hover .tip,.tipwrap:focus-within .tip{display:block}
+.sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
+h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:36px 0 2px;display:flex;align-items:center;gap:9px}
+h2::before{content:'';width:16px;height:4px;border-radius:2px;background:var(--gold);flex:0 0 auto}
+.lead{color:var(--muted);font-size:13.5px;margin:0 0 12px;max-width:75ch}
+.card{border:1px solid var(--line);border-radius:12px;overflow-x:auto;margin-bottom:6px;background:var(--surface);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+th{color:var(--accent-ink);text-align:left;font:600 10.5px/1.3 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--accent-soft)}
+td{padding:10px 12px;border-bottom:1px solid var(--line-soft);white-space:nowrap;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--hover)}
+td.nm{white-space:normal;max-width:300px;color:var(--fg-2)}
+.mut{color:var(--muted)}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}.flat{color:var(--muted)}
+.px{font-variant-numeric:tabular-nums;font-weight:600}
+.sym{font:600 13px "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.02em}
+.badge{display:inline-block;padding:2px 9px;border:1px solid var(--line);border-radius:99px;font-size:11px;color:var(--fg-2);background:var(--surface-2)}
+input{background:var(--surface);border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:8px 10px;font:inherit;width:170px}
+input:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+button{background:var(--accent);border:none;color:var(--on-accent);border-radius:8px;padding:8px 16px;font:inherit;font-weight:600;cursor:pointer}
+button:hover{background:var(--accent-ink)}
+.x{color:var(--muted);cursor:pointer;font-size:13px;padding:2px 6px;border-radius:6px}
+.x:hover{background:var(--surface-2);color:var(--down)}
+.note{color:var(--muted);font-size:12px}
+.strip{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);margin:0 -20px;padding:9px 20px;display:flex;gap:22px;white-space:nowrap;box-shadow:0 2px 10px rgba(21,36,46,.06)}
+.strip::-webkit-scrollbar{display:none}
+.chip{display:flex;flex-direction:column;gap:1px;position:relative}
+.chip .lb{color:var(--muted);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.chip .v{font-weight:700;font-variant-numeric:tabular-nums;font-size:14px}
+.chip .tip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);width:240px;background:#232a31;color:#fff;padding:8px 11px;border-radius:8px;font-size:12px;line-height:1.45;z-index:40;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:normal}
+.chip:hover .tip{display:block}
+.chip:first-child .tip{left:0;transform:none}
+.chip:last-child .tip{left:auto;right:0;transform:none}
+@media(max-width:1080px){.strip{overflow-x:auto;scrollbar-width:none}.strip::-webkit-scrollbar{display:none}}
+.hint{margin-left:auto;display:flex;align-items:center;gap:7px;color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;padding-left:18px}
+.hint .arr{display:inline-block;animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(-4px)}}
+@media(max-width:1080px){.hint{display:none}}
+svg.spark{display:block}
+footer{margin-top:36px;color:var(--muted);font-size:12px}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+@media(max-width:640px){td.nm{max-width:150px}}
+.ant td{white-space:normal}
+.ant td.nm{max-width:340px}
+</style></head>
+<body>
+<header>
+  <h1>Dashboards</h1>
+  <span class="stamp">LIVE EMBEDS</span>
+</header>
+<p class="sub">The live tools that don't belong to a table: a full market heat map and the national debt clock. The main Markets page keeps the watchlist, rates and IPO tracker.</p>
+
+<h2>Sector heat map</h2>
+<div class="lead">The S&amp;P 500 as a heat map: each square is a company, sized by market cap and colored by today's move. Hover any square for name, price and change. Finviz locks its map page against embedding, so this is the closest live version, and the original is one click away: <a href="https://finviz.com/map?t=sec_all" target="_blank" rel="noopener">open the Finviz map in its own tab</a>.</div>
+<div class="card" style="padding:0;overflow:hidden">
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+{
+"dataSource": "SPX500",
+"blockSize": "market_cap_basic",
+"blockColor": "change",
+"colorTheme": "dark",
+"locale": "en",
+"symbolUrl": "",
+"hasTopBar": false,
+"isDataSetEnabled": false,
+"isZoomEnabled": true,
+"hasSymbolTooltip": true,
+"width": "100%",
+"height": 620
+}
+</script>
+</div>
+</div>
+
+<h2>US National Debt Clock</h2>
+<div class="lead">The US national debt, counting up in real time, straight from usdebtclock.org.</div>
+<div class="card" style="padding:0;overflow:hidden"><iframe src="https://usdebtclock.org/" style="width:100%;height:780px;border:0;display:block" loading="lazy" title="US National Debt Clock"></iframe></div>
+
+<footer>Live third-party embeds (TradingView, usdebtclock.org). For study use, not trading advice.</footer>
+</body>
+</html>
