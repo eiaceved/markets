@@ -20,11 +20,12 @@ h1{font-family:"Archivo",sans-serif;font-size:34px;margin:0}
 .hist{flex:0 0 240px;position:sticky;top:16px}
 .hist h2{font-family:"Archivo",sans-serif;font-size:16px;margin:0 0 12px}
 .day{margin-bottom:18px}
-.day .dl{font:600 11px/1.4 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.day .dl{display:block;width:100%;text-align:left;background:none;border:0;padding:0;margin-bottom:7px;cursor:pointer;font:600 11px/1.4 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.day .dl:hover{color:var(--accent-ink)}
 .day .thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
-.day .thumbs a{display:block;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.day .thumbs button{display:block;padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface);cursor:pointer}
 .day .thumbs img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:top}
-.day .thumbs a:hover{border-color:var(--accent-ink)}
+.day .thumbs button:hover{border-color:var(--accent-ink)}
 @media(max-width:860px){.wrap{flex-direction:column}.hist{flex:none;width:100%;position:static}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .card img{width:100%;display:block}
@@ -39,7 +40,7 @@ a{color:var(--accent-ink);text-decoration:none}
 </head>
 <body>
 <div class="top"><h1>Front Page</h1><span class="stamp" id="stamp">Loading&#8230;</span></div>
-<p class="sub">Today's front pages of the journals, captured fresh every morning. Tap a cover to read the journal itself (USC students read these free through the USC Libraries).</p>
+<p class="sub">Today's front pages of the journals, captured fresh every morning. Tap a cover to read the journal itself (USC students read these free through the USC Libraries). Click a date under Previous days to bring that day's front pages into the main view.</p>
 <div class="wrap"><div class="main">
 <div class="grid" id="grid"></div>
 <p class="note" id="note"></p>
@@ -49,17 +50,24 @@ a{color:var(--accent-ink);text-decoration:none}
 <script>
 fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   document.getElementById('stamp').textContent='Captured '+D.label;
-  const g=document.getElementById('grid');
-  if(!D.pages||!D.pages.length){g.innerHTML='';document.getElementById('note').textContent='First captures land with tomorrow morning\\u2019s 7 AM refresh.';return}
-  D.pages.forEach(p=>{const c=document.createElement('div');c.className='card';
-    c.innerHTML='<img src="'+p.img+'" alt="'+p.name+' front page" loading="lazy"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \u2192</a></div>';
-    g.appendChild(c)});
-  const days=D.history||[];
-  if(days.length){const h=document.getElementById('hist');h.hidden=false;const hd=document.getElementById('histdays');
-    days.forEach(d=>{const b=document.createElement('div');b.className='day';
-      let t='<div class="dl">'+d.label+'</div><div class="thumbs">';
-      d.pages.forEach(p=>{t+='<a href="'+p.img+'" target="_blank" title="'+p.name+'"><img src="'+p.img+'" alt="'+p.name+' front page" loading="lazy"></a>'});
-      b.innerHTML=t+'</div>';hd.appendChild(b)});}
+  const g=document.getElementById('grid'),note=document.getElementById('note');
+  if(!D.pages||!D.pages.length){g.innerHTML='';note.textContent='First captures land with tomorrow morning\u2019s 7 AM refresh.';return}
+  const days=[{label:D.label,today:true,pages:D.pages}].concat(D.history||[]);
+  let cur=0;
+  function card(p){return '<div class="card"><img src="'+p.img+'" alt="'+p.name+' front page"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \u2192</a></div></div>'}
+  function renderMain(){g.innerHTML=days[cur].pages.map(card).join('');note.textContent=days[cur].today?'':'Showing '+days[cur].label+'. Click a date under Previous days to swap back.'}
+  function renderSide(){
+    const h=document.getElementById('hist'),hd=document.getElementById('histdays');
+    hd.innerHTML='';
+    days.forEach((d,i)=>{if(i===cur)return;
+      const b=document.createElement('div');b.className='day';
+      let t='<button class="dl" title="Swap this day\u2019s front pages in">'+d.label+'</button><div class="thumbs">';
+      d.pages.forEach(p=>{t+='<button class="th" title="Swap in '+p.name+'"><img src="'+p.img+'" alt="'+p.name+' front page"></button>'});
+      b.innerHTML=t+'</div>';
+      b.querySelectorAll('.dl,.th').forEach(el=>el.addEventListener('click',()=>{cur=i;renderMain();renderSide();window.scrollTo({top:0,behavior:'smooth'})}));
+      hd.appendChild(b)});
+    h.hidden=days.length<2}
+  renderMain();renderSide();
 }).catch(()=>{document.getElementById('note').textContent='Could not load the front pages right now.'});
 </script>
 </body>
