@@ -9,18 +9,18 @@
   color-scheme:light dark;box-sizing:border-box;
   --bg:#f8f6f1;--surface:#ffffff;--surface-2:#f0ede5;--fg:#16233c;--fg-2:#41536d;--muted:#70809a;
   --line:#e3e0d6;--line-soft:#edeae2;--accent:#1d3a6b;--accent-ink:#16305a;--accent-soft:#e9eef6;--on-accent:#fff;
-  --gold:#a9822c;--up:#0f7d46;--down:#bb3a34;--shadow:0 1px 2px rgba(22,35,60,.05),0 4px 14px rgba(22,35,60,.04);
+  --gold:#a9822c;--up:#0f7d46;--down:#bb3a34;--shadow:0 1px 2px rgba(22,35,60,.05),0 4px 14px rgba(22,35,60,.04);--gold-soft:rgba(169,130,44,.09);--gold-line:rgba(169,130,44,.38);
 }
 @media (prefers-color-scheme:dark){:root{
   --bg:#0b111e;--surface:#131b2c;--surface-2:#1a2438;--fg:#e8edf6;--fg-2:#a9b6c9;--muted:#8a99b0;
   --line:#28344c;--line-soft:#1f2a40;--accent:#8fb4f0;--accent-ink:#a9c6f5;--accent-soft:#152642;--on-accent:#0b111e;
-  --gold:#d9b45a;--up:#5adb97;--down:#f29b94;--shadow:0 1px 2px rgba(0,0,0,.35),0 4px 14px rgba(0,0,0,.25);
+  --gold:#d9b45a;--up:#5adb97;--down:#f29b94;--shadow:0 1px 2px rgba(0,0,0,.35),0 4px 14px rgba(0,0,0,.25);--gold-soft:rgba(217,180,90,.10);--gold-line:rgba(217,180,90,.40);
 }}
 *{margin:0;padding:0}
 body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1120px;margin:0 auto;padding:28px 20px 60px}
 header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
 h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
-.stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.stamp{color:var(--gold);font:600 11px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.09em;text-transform:uppercase;background:var(--gold-soft);border:1px solid var(--gold-line);border-radius:99px;padding:7px 13px;white-space:nowrap;display:inline-flex;align-items:center;gap:7px}.stamp::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex:0 0 auto}
 .sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
 h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:36px 0 2px;display:flex;align-items:center;gap:9px}
 h2::before{content:'';width:16px;height:4px;border-radius:2px;background:var(--gold);flex:0 0 auto}
