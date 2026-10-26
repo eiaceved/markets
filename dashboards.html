@@ -76,7 +76,7 @@ a:hover{text-decoration:underline}
   <h1>Markets</h1>
   <span class="stamp">LIVE EMBEDS</span>
 </header>
-<p class="sub">The live tools that don't belong to a table: a full market heat map and the national debt clock. The IPO Calendar page keeps the watchlist, rates and IPO tracker.</p>
+<p class="sub">The live tools and your watchlist: a full market heat map, the national debt clock, and live-style quotes for the tickers you follow. The IPO Calendar page keeps the rates and IPO tracker.</p>
 
 <h2>Sector heat map</h2>
 <div class="lead">The S&amp;P 500 as a heat map: each square is a company, sized by market cap and colored by today's move. Hover any square for name, price and change. Finviz locks its map page against embedding, so this is the closest live version, and the original is one click away: <a href="https://finviz.com/map?t=sec_all" target="_blank" rel="noopener">open the Finviz map in its own tab</a>.</div>
@@ -102,10 +102,77 @@ a:hover{text-decoration:underline}
 </div>
 </div>
 
+<h2>Watchlist</h2>
+<div class="lead">Live-style quotes in the Yahoo Finance layout for the tickers you follow: last price, change, volume, day range, market cap and a five-week trend line.</div>
+<div class="card" style="max-width:900px;padding:16px 18px">
+<p style="margin:0 0 9px"><b>How to read it.</b> Each row is a ticker on your list. <b>Last</b> is the most recent trade price. <b>Chg</b> and <b>% Chg</b> compare it with yesterday's close. <b>Volume</b> is shares traded so far today, <b>Day Range</b> is the lowest and highest price so far today, and <b>Market Cap</b> is the total value of every share outstanding. <b>Trend</b> sketches the last five weeks of closes, green when the line ends higher than it started.</p>
+<p style="margin:0 0 9px"><b>When it moves.</b> Quotes refresh on weekdays from the 6:30 AM open through the 1:00 PM close, Pacific time. Nights, weekends and holidays the prices sit at the last close, so the page looks frozen until markets reopen.</p>
+<p style="margin:0"><b>Managing it.</b> Type a ticker in the box to add it, and tap the &#10005; to remove one. Your list is saved on this device, and a ticker not yet in the daily feed shows as waiting.</p>
+</div>
+<div class="card" style="margin-top:10px"><table id="wl">
+<thead><tr>
+<th>Symbol</th><th>Name</th><th>Last</th><th>Chg</th><th>% Chg</th><th>Volume</th><th>Day Range</th><th>Market Cap</th><th>Trend</th><th></th>
+</tr></thead><tbody></tbody></table></div>
+<div style="margin:14px 0 4px;display:flex;gap:8px;align-items:center">
+<input id="addSym" placeholder="Add a ticker (e.g. TSM)" maxlength="6" style="text-transform:uppercase">
+<button onclick="addSym()">Add</button>
+<span class="note" id="wlStamp"></span>
+</div>
+
 <h2>US National Debt Clock</h2>
 <div class="lead">The US national debt, counting up in real time, straight from usdebtclock.org.</div>
 <div class="card" style="padding:0;overflow:hidden"><iframe src="https://usdebtclock.org/" style="width:100%;height:780px;border:0;display:block" loading="lazy" title="US National Debt Clock"></iframe></div>
 
 <footer>Live third-party embeds (TradingView, usdebtclock.org). For study use, not trading advice.</footer>
+<script>
+fetch('data.json?v='+Date.now()).then(r=>r.json()).then(DATA=>{
+function cls(v){return v>0?'up':(v<0?'down':'flat')}
+function sign(v){return (v>0?'+':'')+v.toFixed(2)}
+function spark(hist){
+  const vals=Object.values(hist);
+  if(vals.length<2)return'';
+  const w=120,h=30,min=Math.min(...vals),max=Math.max(...vals),r=(max-min)||1;
+  const pts=vals.map((v,i)=>[(i/(vals.length-1))*(w-6)+3,h-3-((v-min)/r)*(h-8)]);
+  const d=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+  const c=vals[vals.length-1]>=vals[0]?'var(--up)':'var(--down)';
+  return '<svg class="spark" width="'+w+'" height="'+h+'"><path d="'+d+'" fill="none" style="stroke:'+c+'" stroke-width="1.6"/></svg>';
+}
+function fmtTime(iso){
+  const d=new Date(iso+'Z');
+  return d.toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit',timeZone:'America/Los_Angeles'})+' PT';
+}
+let watch;
+try{watch=JSON.parse(localStorage.getItem('mktWatch'))||null}catch(e){watch=null}
+if(!Array.isArray(watch)||!watch.length)watch=['AAPL','MSFT','NVDA','AMZN','GOOGL','META','TSLA','JPM','GS','MS','SPY','QQQ'];
+function saveWatch(){localStorage.setItem('mktWatch',JSON.stringify(watch))}
+const Q=DATA.quotes||{};
+const wl=document.querySelector('#wl tbody');
+watch.forEach(sym=>{
+  const q=Q[sym];
+  const tr=document.createElement('tr');
+  if(q){
+    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm">'+(q.name||'')+'</td>'
+      +'<td class="px">'+(q.price!=null?q.price.toFixed(2):'')+'</td>'
+      +'<td class="'+cls(q.chg)+'">'+(q.chg!=null?sign(q.chg):'')+'</td>'
+      +'<td class="'+cls(q.chgPct)+'">'+(q.chgPct!=null?sign(q.chgPct)+'%':'')+'</td>'
+      +'<td>'+(q.vol||'\u2014')+'</td><td class="mut">'+(q.range||'\u2014')+'</td><td>'+(q.mcap||'\u2014')+'</td>'
+      +'<td>'+spark(q.hist||{})+'</td>'
+      +'<td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">\u2715</span></td>';
+  }else{
+    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm"></td>'
+      +'<td colspan="6" class="mut" style="text-align:center">waiting for the next daily feed</td>'
+      +'<td></td><td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">\u2715</span></td>';
+  }
+  wl.appendChild(tr);
+});
+window.rm=function(s){watch=watch.filter(x=>x!==s);saveWatch();location.reload()}
+window.addSym=function(){
+  const v=document.getElementById('addSym').value.trim().toUpperCase();
+  if(v&&!watch.includes(v)){watch.push(v);saveWatch();location.reload()}
+}
+const st=document.getElementById('wlStamp');
+if(st)st.textContent='Updated '+fmtTime(DATA.updated);
+})
+</script>
 </body>
 </html>

@@ -72,7 +72,7 @@ a:hover{text-decoration:underline}
 .ant td.nm{max-width:340px}
 </style></head><body>
 <header><h1>IPO Calendar</h1><div class="tipwrap" tabindex="0" aria-describedby="mkttip"><span class="stamp" id="stamp">Loading…</span><span class="hint" aria-hidden="true">ⓘ</span><span class="tip" id="mkttip" role="tooltip"><b>US markets trade weekdays only, 6:30 AM to 1:00 PM Pacific.</b> Prices only move while trading is open, so nights, weekends, and holidays the quotes sit at the last close. The page holds Friday's close through the weekend until Monday's open.</span></div></header>
-<div class="sub">Watchlist and IPO tracker, refreshed on weekdays from the 6:30 AM open through the 1:00 PM close. Markets are closed on weekends and holidays, so the page holds Friday's close until Monday.</div>
+<div class="sub">Rates and the IPO tracker, refreshed on weekdays from the 6:30 AM open through the 1:00 PM close. Markets are closed on weekends and holidays, so the page holds Friday's close until Monday.</div>
 <style>
 details.learn{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin:14px 0 4px;max-width:900px;overflow:hidden}
 details.learn summary{cursor:pointer;padding:13px 18px;font-weight:700;font-size:14.5px;list-style:none;display:flex;align-items:center;gap:8px;color:var(--accent-ink)}
@@ -109,17 +109,6 @@ details.learn .note{color:var(--muted);font-size:12px}
 </details>
 <div class="strip" id="strip"></div>
 
-<h2>Watchlist</h2>
-<div class="lead">Live-style quotes in the Yahoo Finance layout: last price, change, volume, day range and market cap.</div>
-<div class="card"><table id="wl"><thead><tr>
-<th>Symbol</th><th>Name</th><th>Last</th><th>Chg</th><th>% Chg</th><th>Volume</th><th>Day Range</th><th>Market Cap</th><th>Trend</th><th></th>
-</tr></thead><tbody></tbody></table></div>
-<div style="margin:14px 0 4px;display:flex;gap:8px;align-items:center">
-<input id="addSym" placeholder="Add a ticker (e.g. TSM)" maxlength="6" style="text-transform:uppercase">
-<button onclick="addSym()">Add</button>
-<span class="note">Saved on this device. A ticker not yet in the daily feed shows as waiting.</span>
-</div>
-
 <h2>Big IPOs of 2026</h2>
 <div class="lead">The year's headline listings, worth knowing even though they don't show up in the recent-deal feed: SpaceX was the largest IPO ever, SK hynix the largest by a foreign company, Cerebras the largest chipmaker listing, Jersey Mike's the year's biggest consumer debut. Prices here update with the page.</div>
 <div class="card"><table id="big">
@@ -153,44 +142,11 @@ fetch('data.json?v='+Date.now()).then(r=>r.json()).then(DATA=>{
 function cls(v){return v>0?'up':(v<0?'down':'flat')}
 function sign(v){return (v>0?'+':'')+v.toFixed(2)}
 function pct(s){const v=parseFloat(s.replace(/[−+]/g,m=>m==='−'?'-':''));return v}
-function spark(hist){
-  const vals=Object.values(hist);
-  if(vals.length<2)return'';
-  const w=120,h=30,min=Math.min(...vals),max=Math.max(...vals),r=(max-min)||1;
-  const pts=vals.map((v,i)=>[(i/(vals.length-1))*(w-6)+3,h-3-((v-min)/r)*(h-8)]);
-  const d=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
-  const c=vals[vals.length-1]>=vals[0]?'var(--up)':'var(--down)';
-  return '<svg class="spark" width="'+w+'" height="'+h+'"><path d="'+d+'" fill="none" style="stroke:'+c+'" stroke-width="1.6"/></svg>';
-}
 function fmtTime(iso){
   const d=new Date(iso+'Z');
   return d.toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit',timeZone:'America/Los_Angeles'})+' PT';
 }
-let watch;
-try{watch=JSON.parse(localStorage.getItem('mktWatch'))||null}catch(e){watch=null}
-if(!Array.isArray(watch)||!watch.length)watch=['AAPL','MSFT','NVDA','AMZN','GOOGL','META','TSLA','JPM','GS','MS','SPY','QQQ'];
-function saveWatch(){localStorage.setItem('mktWatch',JSON.stringify(watch))}
-const Q=DATA.quotes||{},IPOS=DATA.ipos||{upcoming:[],priced:[]};
-const wl=document.querySelector('#wl tbody');
-watch.forEach(sym=>{
-  const q=Q[sym];
-  const tr=document.createElement('tr');
-  if(q){
-    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm">'+(q.name||'')+'</td>'
-      +'<td class="px">'+(q.price!=null?q.price.toFixed(2):'')+'</td>'
-      +'<td class="'+cls(q.chg)+'">'+(q.chg!=null?sign(q.chg):'')+'</td>'
-      +'<td class="'+cls(q.chgPct)+'">'+(q.chgPct!=null?sign(q.chgPct)+'%':'')+'</td>'
-      +'<td>'+(q.vol||'\u2014')+'</td><td class="mut">'+(q.range||'\u2014')+'</td><td>'+(q.mcap||'\u2014')+'</td>'
-      +'<td>'+spark(q.hist||{})+'</td>'
-      +'<td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
-  }else{
-    tr.innerHTML='<td class="sym">'+sym+'</td><td class="nm"></td>'
-      +'<td colspan="6" class="mut" style="text-align:center">waiting for the next daily feed</td>'
-      +'<td></td><td><span class="x" title="Remove" onclick="rm(\''+sym+'\')">✕</span></td>';
-  }
-  wl.appendChild(tr);
-});
-function rm(s){watch=watch.filter(x=>x!==s);saveWatch();location.reload()}
+const IPOS=DATA.ipos||{upcoming:[],priced:[]};
 const ph=document.querySelector('#priced thead'),pb=document.querySelector('#priced tbody');
 ph.innerHTML='<tr><th>Date</th><th>Symbol</th><th>Company</th><th>Offer price</th><th>Raised</th><th>Sold for</th><th>Latest</th><th>Return</th></tr>';
 (IPOS.priced||[]).forEach(r=>{
@@ -255,10 +211,6 @@ if(R){
 }
 document.getElementById('stamp').textContent='Updated '+fmtTime(DATA.updated);
 if(window.glScan)glScan();
-function addSym(){
-  const v=document.getElementById('addSym').value.trim().toUpperCase();
-  if(v&&!watch.includes(v)){watch.push(v);saveWatch();location.reload()}
-}
 })
 </script>
 <script src="glossary.js?v=4"></script>
