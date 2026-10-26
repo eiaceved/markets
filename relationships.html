@@ -1,0 +1,129 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<title>Markets · Relationships</title>
+<style>
+:root{
+  color-scheme:light dark;box-sizing:border-box;
+  --bg:#f8f6f1;--surface:#ffffff;--surface-2:#f0ede5;--fg:#16233c;--fg-2:#41536d;--muted:#70809a;
+  --line:#e3e0d6;--line-soft:#edeae2;--accent:#1d3a6b;--accent-ink:#16305a;--accent-soft:#e9eef6;--on-accent:#fff;
+  --gold:#a9822c;--up:#0f7d46;--down:#bb3a34;--shadow:0 1px 2px rgba(22,35,60,.05),0 4px 14px rgba(22,35,60,.04);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0b111e;--surface:#131b2c;--surface-2:#1a2438;--fg:#e8edf6;--fg-2:#a9b6c9;--muted:#8a99b0;
+  --line:#28344c;--line-soft:#1f2a40;--accent:#8fb4f0;--accent-ink:#a9c6f5;--accent-soft:#152642;--on-accent:#0b111e;
+  --gold:#d9b45a;--up:#5adb97;--down:#f29b94;--shadow:0 1px 2px rgba(0,0,0,.35),0 4px 14px rgba(0,0,0,.25);
+}}
+*{margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 "Source Sans 3",ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:1120px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:32px;letter-spacing:-.01em}
+.stamp{color:var(--muted);font:500 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 12px;white-space:nowrap}
+.sub{color:var(--fg-2);margin:6px 0 26px;font-size:14px;max-width:70ch}
+h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:750;font-size:21px;margin:36px 0 2px;display:flex;align-items:center;gap:9px}
+h2::before{content:'';width:16px;height:4px;border-radius:2px;background:var(--gold);flex:0 0 auto}
+.lead{color:var(--muted);font-size:13.5px;margin:0 0 14px;max-width:75ch}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
+.card .head{display:flex;align-items:center;gap:10px;padding:13px 16px 11px;border-bottom:1px solid var(--line-soft);background:var(--surface-2)}
+.card .head .drv{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-weight:800;font-size:16px}
+.card .head .tag{margin-left:auto;color:var(--muted);font:600 10.5px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:4px 9px}
+.card ul{list-style:none;padding:6px 16px 12px}
+.card li{display:flex;gap:9px;padding:7px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+.card li:last-child{border-bottom:none}
+.card li .arrow{flex:0 0 auto;font-weight:800;width:16px;text-align:center}
+.card li .who{font-weight:600}
+.card li .why{color:var(--muted);font-size:12.5px;margin-left:auto;text-align:right;max-width:56%}
+.up{color:var(--up)}.down{color:var(--down)}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media(max-width:760px){.three{grid-template-columns:1fr}}
+.scene .head{display:flex;align-items:baseline;gap:8px;padding:13px 16px 4px}
+.scene .story{padding:4px 16px 14px;color:var(--fg-2);font-size:13.5px}
+.scene .tape{padding:0 16px 12px;display:flex;flex-wrap:wrap;gap:6px}
+.scene .tape span{font:500 11px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:99px;padding:5px 9px;background:var(--surface-2)}
+.ones{border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:var(--shadow);padding:4px 0}
+.ones .row{display:flex;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line-soft);align-items:baseline}
+.ones .row:last-child{border-bottom:none}
+.ones .rule{font-weight:700;flex:0 0 38%;max-width:38%}
+.ones .rest{color:var(--fg-2);font-size:13.5px}
+footer{margin-top:36px;color:var(--muted);font-size:12px}
+a{color:var(--accent-ink);text-decoration:none}
+</style></head><body>
+<header><h1>Relationships</h1><span class="stamp">the map &middot; what moves what</span></header>
+<p class="sub">When one number moves, others follow. This is the plain-English map of what drags what, so the tape stops being eight separate numbers and starts being a few stories you can read at a glance.</p>
+
+<h2>The moves that travel</h2>
+<p class="lead">Five drivers that reach into everything else. If the driver is up or down, the arrows show what usually follows, and the small line says why. "Usually" is doing real work here: these are tendencies, not laws.</p>
+<div class="grid">
+  <div class="card"><div class="head"><span class="drv">Oil</span><span class="tag">up = pressure</span></div><ul>
+    <li><span class="arrow up">&#8593;</span><span class="who">Gas &amp; inflation</span><span class="why">fuel feeds into the price of nearly everything moved or made</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Energy stocks</span><span class="why">Exxon, Chevron and friends earn more per barrel</span></li>
+    <li><span class="arrow down">&#8595;</span><span class="who">Airlines &amp; shipping</span><span class="why">fuel is their biggest cost</span></li>
+    <li><span class="arrow down">&#8595;</span><span class="who">Odds of rate cuts</span><span class="why">the Fed fights inflation, so higher oil pushes cuts further out</span></li>
+  </ul></div>
+  <div class="card"><div class="head"><span class="drv">10-year yield</span><span class="tag">up = see-saw</span></div><ul>
+    <li><span class="arrow down">&#8595;</span><span class="who">Bond prices</span><span class="why">the see-saw rule: yield up, existing bonds worth less. Always</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Mortgage rates</span><span class="why">home loans price off the 10-year</span></li>
+    <li><span class="arrow down">&#8595;</span><span class="who">Tech &amp; growth stocks</span><span class="why">their profits sit far in the future, and higher yields shrink what that future is worth today</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">The dollar</span><span class="why">higher US yields pull foreign money toward US bonds</span></li>
+  </ul></div>
+  <div class="card"><div class="head"><span class="drv">VIX</span><span class="tag">the fear gauge</span></div><ul>
+    <li><span class="arrow down">&#8595;</span><span class="who">Stocks, usually</span><span class="why">VIX measures fear, and fear climbs when stocks drop. It reads the market more than it moves it</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Safe havens</span><span class="why">bonds, gold and the dollar catch the money leaving risky trades</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Insurance costs</span><span class="why">VIX is literally the price of protecting a stock portfolio</span></li>
+  </ul></div>
+  <div class="card"><div class="head"><span class="drv">Dollar</span><span class="tag">up = squeeze</span></div><ul>
+    <li><span class="arrow down">&#8595;</span><span class="who">S&amp;P multinationals</span><span class="why">Apple, Nike and friends earn abroad; those profits buy fewer dollars back home</span></li>
+    <li><span class="arrow down">&#8595;</span><span class="who">Gold &amp; oil</span><span class="why">both are priced in dollars, so a stronger dollar makes them pricier for everyone else</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Your imports</span><span class="why">foreign goods get cheaper for Americans</span></li>
+  </ul></div>
+  <div class="card"><div class="head"><span class="drv">Gold</span><span class="tag">up = a question</span></div><ul>
+    <li><span class="arrow up">&#8593;</span><span class="who">Fear bid</span><span class="why">if stocks are falling with it, gold is the crisis hedge working</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Rate-cut bet</span><span class="why">if yields are falling with it, traders expect easier money</span></li>
+    <li><span class="arrow up">&#8593;</span><span class="who">Inflation hedge</span><span class="why">if inflation is climbing with it, it is buying power insurance</span></li>
+  </ul></div>
+  <div class="card"><div class="head"><span class="drv">Read them together</span><span class="tag">gold's trick</span></div><ul>
+    <li><span class="arrow up">&#8593;</span><span class="who">Gold alone says little</span><span class="why">the neighbours tell you which story is running: fear, rate cuts, or inflation. Same rule for every number: never read one line alone</span></li>
+  </ul></div>
+</div>
+
+<h2>The big three read together</h2>
+<p class="lead">The Dow, S&amp;P 500 and Nasdaq are not three markets. They are three lenses on the same one, and the gap between them is the story.</p>
+<div class="ones">
+  <div class="row"><span class="rule">Nasdaq up most, VIX low</span><span class="rest">A tech-led rally. Growth names are running and nobody is scared.</span></div>
+  <div class="row"><span class="rule">Dow up most</span><span class="rest">A defensive day: money rotating into big, boring, dividend-paying companies.</span></div>
+  <div class="row"><span class="rule">All three up together</span><span class="rest">A broad rally, not a tech-only one. The strongest kind.</span></div>
+  <div class="row"><span class="rule">All three down together</span><span class="rest">Something macro is moving: rates, oil, or a shock somewhere.</span></div>
+</div>
+
+<h2>Three scenes you will actually see</h2>
+<p class="lead">Real mornings come in patterns. Here are the three you will spot first.</p>
+<div class="three">
+  <div class="card scene"><div class="head"><span class="drv">The inflation scare</span></div>
+    <div class="tape"><span class="up">Oil &#8593;</span><span class="up">Yields &#8593;</span><span class="down">Stocks &#8595;</span><span class="up">Gold &#8593;</span></div>
+    <p class="story">Costs are rising, the Fed looks less likely to cut, and the expensive tech names feel it hardest. You will know it by oil and yields climbing together.</p>
+  </div>
+  <div class="card scene"><div class="head"><span class="drv">The tech-led calm</span></div>
+    <div class="tape"><span class="up">S&amp;P &#8593;</span><span class="up">Nasdaq &#8593;&#8593;</span><span class="flat">Yields flat</span><span class="down">VIX low</span></div>
+    <p class="story">The growth trade is on. Nasdaq outruns the S&amp;P, the Dow lags, and nothing looks frightened anywhere.</p>
+  </div>
+  <div class="card scene"><div class="head"><span class="drv">The flight to safety</span></div>
+    <div class="tape"><span class="down">Stocks &#8595;</span><span class="up">VIX &#8593;</span><span class="down">Yields &#8595;</span><span class="up">Gold &#8593;</span><span class="up">Dollar &#8593;</span></div>
+    <p class="story">Worry about a war, a bank, or an election, and money hides in the usual places: bonds, gold, dollars. Falling yields with falling stocks is the tell.</p>
+  </div>
+</div>
+
+<h2>The one-line versions</h2>
+<div class="ones">
+  <div class="row"><span class="rule">Yield up &rarr; bond prices down</span><span class="rest">The one true "always" in the strip.</span></div>
+  <div class="row"><span class="rule">Oil up &rarr; rate cuts pushed out</span><span class="rest">Inflation pressure makes the Fed's job harder.</span></div>
+  <div class="row"><span class="rule">VIX high = nervous market</span><span class="rest">It is the price of insurance, not a prediction.</span></div>
+  <div class="row"><span class="rule">Dollar up &rarr; S&amp;P earnings squeezed</span><span class="rest">Overseas profits are worth less back home.</span></div>
+  <div class="row"><span class="rule">Never read one line alone</span><span class="rest">Every number borrows its meaning from what moved with it.</span></div>
+</div>
+
+<footer>Part of <a href="/">Evelyn's Case Practice Hub</a> &middot; Markets</footer>
+</body></html>
