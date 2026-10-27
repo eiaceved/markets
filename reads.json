@@ -1,76 +1,82 @@
 {
-  "updated": "2026-10-26T07:24:00-07:00",
-  "label": "Monday, October 26, 2026 · Fed-and-earnings week edition",
-  "intro": "Five finance reads to open the week. Headlines and two-sentence takes stay here; the full articles stay with the publishers. USC students read almost all of these free through the USC Libraries.",
+  "updated": "2026-10-27T07:25:00-07:00",
+  "label": "Tuesday, October 27, 2026 · AI-IPO rally, day two edition",
+  "intro": "Five finance reads to open the day. Headlines and two-sentence takes stay here; the full articles stay with the publishers. USC students read almost all of these free through the USC Libraries.",
   "items": [
     {
       "source": "Yahoo Finance",
-      "title": "Stock market today: Dow, S&P 500, Nasdaq rise as investors parse Anthropic IPO filing, busy week of tech earnings",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html",
-      "take": "Stocks opened the week higher as investors parsed Anthropic's just-filed public S-1 and braced for a full earnings docket plus the Fed's decision on Wednesday. Alphabet and Microsoft report that day, with markets broadly expecting the central bank to hold rates steady days before the midterms."
+      "title": "Stock Market News for Oct 27, 2026: Anthropic files S-1 for Nasdaq listing under ticker 'ANT'",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-27-072700640.html",
+      "take": "Anthropic filed its S-1 for a Nasdaq listing under ticker ANT, disclosing first-half 2026 revenues of $16.29 billion, up more than 1,300% from a year earlier. The filing revived the AI trade Monday, and Bloomberg says it could raise more money in its IPO than any firm in history."
+    },
+    {
+      "source": "Yahoo Finance",
+      "title": "Stock market today: S&P 500, Nasdaq lead stocks higher as tech bounces back",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html",
+      "take": "The Fed opens its two-day October meeting today, with economists expecting a so-called 'hawkish pause' when it decides Wednesday. Markets price only about a 10% chance the central bank actually hikes, per CME Group."
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Stock Market Today: Dow, S&P Live Updates for October 27",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-26/stock-market-today-dow-s-p-live-updates",
+      "take": "Monday's Anthropic-driven rally cooled a little Tuesday, with futures stalling as traders turn to a busy earnings slate, the Fed decision and simmering Middle East tensions. Oil slipped for a second day on hopes stepped-up US-Iran diplomacy averts an escalation."
     },
     {
       "source": "Reuters",
-      "title": "Meta launches $35 billion stock offering to fund AI expansion",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-launches-35-billion-stock-110947478.html",
-      "take": "Meta launched public offerings of about $35 billion in common and convertible preferred stock to bankroll its AI buildout, days after a sharp earnings-driven selloff. It is the most direct test yet of whether investors will keep funding AI capex at this scale."
+      "title": "DoorDash in talks to buy Instacart in roughly $17 billion deal, source says",
+      "url": "https://www.reuters.com/business/doordash-talks-buy-instacart-wsj-reports-2026-10-26/",
+      "take": "DoorDash is in advanced talks to buy Instacart for roughly $17 billion, and a source tells Reuters a deal could be finalized as soon as Wednesday. Instacart jumped 8% Monday while DoorDash fell about 6%; Instacart's earlier talks with Uber are no longer active."
     },
     {
-      "source": "Reuters",
-      "title": "US stock futures edge up as oil falls heading into earnings barrage",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-edge-oil-100215774.html",
-      "take": "Crude pulled back from last week's surge, lifting sentiment after two straight losing weeks on Wall Street. Elon Musk added a fresh warning: markets have \"almost entirely shut off access to money\" for companies without revenue independent of AI data centers, and CoreWeave and Nebius are each down more than 30% this month."
+      "source": "Yahoo Finance",
+      "title": "Coca-Cola raises outlook; UPS lifts full-year guidance as earnings roll in",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html",
+      "take": "Coca-Cola beat and raised its outlook even as it flagged slowing North American demand, while UPS rose 2% after lifting its full-year guidance. Alphabet and Microsoft report their quarters on Wednesday."
     },
     {
-      "source": "Reuters",
-      "title": "Analysts forecast Brazil market falls after Lula turnaround win",
-      "url": "https://ca.finance.yahoo.com/news/analysts-forecast-brazil-market-falls-100956609.html",
-      "take": "President Lula's surprise reelection over Flavio Bolsonaro is set to trigger a sharp selloff in Brazilian markets on Monday. The iShares MSCI Brazil ETF tumbled 26% premarket, which if it holds would be its biggest single-day drop since 2000."
-    },
-    {
-      "source": "Podcast · Bloomberg",
-      "title": "Surveillance: Market Uncertainty Ahead of the Midterms",
-      "url": "https://omny.fm/shows/bloomberg-surveillance/market-uncertainty-ahead-of-the-midterms",
-      "take": "This morning's Bloomberg Surveillance sets up the week: a Fed decision Wednesday, tech earnings across the tape, and midterm uncertainty layered on top. Longer-form, so it pairs well with a walk to campus."
+      "source": "Podcast pick",
+      "title": "Morgan Stanley · Thoughts on the Market — The Next Stage of the Market Correction",
+      "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
+      "take": "Monday's episode asks where this pullback sits in the cycle and what would extend or end it. Short and sharp, perfect between classes."
     }
   ],
   "tape": [
     {
       "name": "S&P 500",
-      "value": "7,623.68",
-      "chg": "-0.52%"
+      "value": "7,676.77",
+      "chg": "+0.70%"
     },
     {
       "name": "Dow 30",
-      "value": "52,215.16",
-      "chg": "-1.23%"
+      "value": "52,361.58",
+      "chg": "+0.28%"
     },
     {
       "name": "Nasdaq",
-      "value": "25,955.34",
-      "chg": "-0.21%"
+      "value": "26,169.38",
+      "chg": "+0.83%"
     },
     {
       "name": "10-Yr",
       "value": "4.99%",
-      "chg": "+0.81%"
+      "chg": "0.00%"
     },
     {
       "name": "VIX",
-      "value": "19.45",
-      "chg": "+2.21%"
+      "value": "18.39",
+      "chg": "-5.45%"
     },
     {
       "name": "Gold",
-      "value": "$4,007.90",
-      "chg": "-1.29%"
+      "value": "$4,038.40",
+      "chg": "+0.76%"
     },
     {
       "name": "Bitcoin",
-      "value": "$80,024",
-      "chg": "-0.95%"
+      "value": "$80,006.66",
+      "chg": "-0.02%"
     }
   ],
-  "audio": "audio/read-daily/2026-10-26.mp3",
-  "audio_seconds": 88
+  "audio": "audio/read-daily/2026-10-27.mp3",
+  "audio_seconds": 90
 }

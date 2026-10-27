@@ -1,19 +1,35 @@
 {
-  "updated": "2026-10-26T07:28:00-07:00",
-  "label": "Monday, October 26, 2026",
+  "updated": "2026-10-27T07:25:00-07:00",
+  "label": "Tuesday, October 27, 2026",
   "pages": [
     {
       "name": "The New York Times",
       "url": "https://www.nytimes.com",
-      "img": "frontpages/nyt-2026-10-26.jpg"
+      "img": "frontpages/nyt-2026-10-27.jpg"
     },
     {
       "name": "Los Angeles Times",
       "url": "https://www.latimes.com",
-      "img": "frontpages/lat-2026-10-26.jpg"
+      "img": "frontpages/lat-2026-10-27.jpg"
     }
   ],
   "history": [
+    {
+      "date": "2026-10-26",
+      "label": "Monday, October 26, 2026",
+      "pages": [
+        {
+          "name": "The New York Times",
+          "url": "https://www.nytimes.com",
+          "img": "frontpages/nyt-2026-10-26.jpg"
+        },
+        {
+          "name": "Los Angeles Times",
+          "url": "https://www.latimes.com",
+          "img": "frontpages/lat-2026-10-26.jpg"
+        }
+      ]
+    },
     {
       "date": "2026-10-25",
       "label": "Sunday, October 25, 2026",
