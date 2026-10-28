@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T07:25:00-07:00",
+  "updated": "2026-10-28T07:30:00-07:00",
   "shows": [
     {
       "name": "What's News",
@@ -44,18 +44,18 @@
   "latest": [
     {
       "show": "Bloomberg Surveillance",
-      "title": "Previewing the Fed Meeting and AI IPOs",
-      "url": "https://omny.fm/shows/bloomberg-surveillance/previewing-the-fed-meeting-and-ai-ipos"
-    },
-    {
-      "show": "Thoughts on the Market",
-      "title": "The Next Stage of the Market Correction",
-      "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market"
+      "title": "Fed Decision and Tech Earnings",
+      "url": "https://omny.fm/shows/bloomberg-surveillance/fed-decision-and-tech-earnings"
     },
     {
       "show": "Making Sense",
       "title": "The evolution of hedge fund performance: From enhancer to diversifier",
       "url": "https://marketmatters.podbean.com/e/the-evolution-of-hedge-fund-performance-from-enhancer-to-diversifier/"
+    },
+    {
+      "show": "What's News",
+      "title": "Can Netanyahu Hold On?",
+      "url": "https://www.wsj.com/podcasts/whats-news"
     }
   ]
 }

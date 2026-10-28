@@ -1,60 +1,60 @@
 {
-  "updated": "2026-10-27T07:25:00-07:00",
-  "label": "Tuesday, October 27, 2026 · AI-IPO rally, day two edition",
+  "updated": "2026-10-28T07:30:00-07:00",
+  "label": "Wednesday, October 28, 2026 \u00b7 Fed-decision day edition",
   "intro": "Five finance reads to open the day. Headlines and two-sentence takes stay here; the full articles stay with the publishers. USC students read almost all of these free through the USC Libraries.",
   "items": [
     {
       "source": "Yahoo Finance",
-      "title": "Stock Market News for Oct 27, 2026: Anthropic files S-1 for Nasdaq listing under ticker 'ANT'",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-27-072700640.html",
-      "take": "Anthropic filed its S-1 for a Nasdaq listing under ticker ANT, disclosing first-half 2026 revenues of $16.29 billion, up more than 1,300% from a year earlier. The filing revived the AI trade Monday, and Bloomberg says it could raise more money in its IPO than any firm in history."
+      "title": "Fed decision day: hold expected at 2 p.m., Warsh presser in focus",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-080642111.html",
+      "take": "The Fed is widely expected to leave rates unchanged when it announces at 2 p.m. ET, and Chair Kevin Warsh's press conference will be watched for any hawkish bias. Tech stocks carry momentum into the decision after back-to-back gains for the S&P 500 and Nasdaq."
     },
     {
       "source": "Yahoo Finance",
-      "title": "Stock market today: S&P 500, Nasdaq lead stocks higher as tech bounces back",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html",
-      "take": "The Fed opens its two-day October meeting today, with economists expecting a so-called 'hawkish pause' when it decides Wednesday. Markets price only about a 10% chance the central bank actually hikes, per CME Group."
+      "title": "Microsoft and Alphabet report after the bell, with AI demand on the line",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-080642111.html",
+      "take": "Two Big Tech giants and cloud leaders deliver updates on AI demand and their capex plans after the close. It is the other big catalyst of the day: traders want proof the AI buildout is still paying for itself."
     },
     {
       "source": "Bloomberg",
-      "title": "Stock Market Today: Dow, S&P Live Updates for October 27",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-26/stock-market-today-dow-s-p-live-updates",
-      "take": "Monday's Anthropic-driven rally cooled a little Tuesday, with futures stalling as traders turn to a busy earnings slate, the Fed decision and simmering Middle East tensions. Oil slipped for a second day on hopes stepped-up US-Iran diplomacy averts an escalation."
+      "title": "DoorDash-Instacart deal could be finalized as soon as this week",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-26/doordash-is-said-to-near-takeover-of-rival-instacart",
+      "take": "The $17 billion takeover of Instacart's parent Maplebear could close within days, per the WSJ. Instacart was valued around $13 billion before the report, DoorDash is worth roughly $73 billion and saw shares drop about 6% Monday."
     },
     {
-      "source": "Reuters",
-      "title": "DoorDash in talks to buy Instacart in roughly $17 billion deal, source says",
-      "url": "https://www.reuters.com/business/doordash-talks-buy-instacart-wsj-reports-2026-10-26/",
-      "take": "DoorDash is in advanced talks to buy Instacart for roughly $17 billion, and a source tells Reuters a deal could be finalized as soon as Wednesday. Instacart jumped 8% Monday while DoorDash fell about 6%; Instacart's earlier talks with Uber are no longer active."
+      "source": "Bloomberg",
+      "title": "Anthropic picks JPMorgan to lead its IPO's US retail offering",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-28/anthropic-said-to-pick-jpmorgan-to-lead-ipo-s-us-retail-offering",
+      "take": "JPMorgan will lead sales of shares to individual investors in Anthropic's potentially record-setting IPO. Routing a mega-deal's retail tranche through one bank is unusual and signals how hard the deal is chasing everyday demand."
     },
     {
-      "source": "Yahoo Finance",
-      "title": "Coca-Cola raises outlook; UPS lifts full-year guidance as earnings roll in",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html",
-      "take": "Coca-Cola beat and raised its outlook even as it flagged slowing North American demand, while UPS rose 2% after lifting its full-year guidance. Alphabet and Microsoft report their quarters on Wednesday."
+      "source": "The New York Times",
+      "title": "DealBook: Who stands to gain from the Anthropic IPO",
+      "url": "https://www.nytimes.com/2026/10/27/business/dealbook/winners-losers-anthropic-ipo-ai.html",
+      "take": "DealBook maps the winners and losers as Anthropic heads public, with Bank of America, Blackstone, Citi and Morgan Stanley announcing a $63 billion deal to buy Broadcom chips for the AI company. Broadcom's CEO helped get the deal over the line over the weekend."
     },
     {
-      "source": "Podcast pick",
-      "title": "Morgan Stanley · Thoughts on the Market — The Next Stage of the Market Correction",
-      "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
-      "take": "Monday's episode asks where this pullback sits in the cycle and what would extend or end it. Short and sharp, perfect between classes."
+      "source": "JPMorgan Making Sense",
+      "title": "Podcast pick: The evolution of hedge fund performance, from enhancer to diversifier",
+      "url": "https://marketmatters.podbean.com/e/the-evolution-of-hedge-fund-performance-from-enhancer-to-diversifier/",
+      "take": "This week's rotation lands on JPMorgan's Making Sense, on how hedge funds have shifted from return enhancers to portfolio diversifiers, a framing that maps neatly onto the AI concentration trade everyone is fretting about."
     }
   ],
   "tape": [
     {
       "name": "S&P 500",
-      "value": "7,676.77",
-      "chg": "+0.70%"
+      "value": "7,722.60",
+      "chg": "+0.60%"
     },
     {
       "name": "Dow 30",
-      "value": "52,361.58",
-      "chg": "+0.28%"
+      "value": "52,377.57",
+      "chg": "+0.03%"
     },
     {
       "name": "Nasdaq",
-      "value": "26,169.38",
-      "chg": "+0.83%"
+      "value": "26,477.81",
+      "chg": "+1.18%"
     },
     {
       "name": "10-Yr",
@@ -63,20 +63,20 @@
     },
     {
       "name": "VIX",
-      "value": "18.39",
-      "chg": "-5.45%"
+      "value": "17.52",
+      "chg": "\u22124.73%"
     },
     {
       "name": "Gold",
-      "value": "$4,038.40",
-      "chg": "+0.76%"
+      "value": "$4,074.60",
+      "chg": "+0.90%"
     },
     {
       "name": "Bitcoin",
-      "value": "$80,006.66",
-      "chg": "-0.02%"
+      "value": "$80,805.08",
+      "chg": "+1.00%"
     }
   ],
-  "audio": "audio/read-daily/2026-10-27.mp3",
+  "audio": "audio/read-daily/2026-10-28.mp3",
   "audio_seconds": 90
 }
