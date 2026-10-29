@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T07:30:00-07:00",
+  "updated": "2026-10-29T07:19:00-07:00",
   "shows": [
     {
       "name": "What's News",
@@ -44,8 +44,8 @@
   "latest": [
     {
       "show": "Bloomberg Surveillance",
-      "title": "Fed Decision and Tech Earnings",
-      "url": "https://omny.fm/shows/bloomberg-surveillance/fed-decision-and-tech-earnings"
+      "title": "Outlook for Inflation, Oil, and Tech",
+      "url": "https://omny.fm/shows/bloomberg-surveillance/outlook-for-inflation-oil-and-tech"
     },
     {
       "show": "Making Sense",
@@ -54,8 +54,13 @@
     },
     {
       "show": "What's News",
-      "title": "Can Netanyahu Hold On?",
+      "title": "\u2018AI Mode\u2019 Is Denting Google\u2019s Search Revenue",
       "url": "https://www.wsj.com/podcasts/whats-news"
+    },
+    {
+      "show": "The Markets",
+      "title": "Why Investors Are Reducing AI Exposure",
+      "url": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600"
     }
   ]
 }
