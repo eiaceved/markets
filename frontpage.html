@@ -54,7 +54,7 @@ fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   if(!D.pages||!D.pages.length){g.innerHTML='';note.textContent='First captures land with tomorrow morning\u2019s 7 AM refresh.';return}
   const days=[{label:D.label,today:true,pages:D.pages}].concat(D.history||[]);
   let cur=0;
-  function card(p){return '<div class="card"><img src="'+p.img+'" alt="'+p.name+' front page"><div class="cap"><div class="nm">'+p.name+'</div><a href="'+p.url+'" target="_blank">Open the journal \u2192</a></div></div>'}
+  function card(p){const i=p.img||p.image,u=p.url||(p.source?'https://www.'+p.source:'');return '<div class="card"><img src="'+i+'" alt="'+p.name+' front page"><div class="cap"><div class="nm">'+p.name+'</div>'+(u?'<a href="'+u+'" target="_blank">Open the journal \u2192</a>':'')+'</div></div>'}
   function renderMain(){g.innerHTML=days[cur].pages.map(card).join('');note.textContent=days[cur].today?'':'Showing '+days[cur].label+'. Click a date under Previous days to swap back.'}
   function renderSide(){
     const h=document.getElementById('hist'),hd=document.getElementById('histdays');

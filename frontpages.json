@@ -5,12 +5,14 @@
     {
       "name": "The New York Times",
       "source": "nytimes.com",
-      "image": "frontpages/nyt-2026-10-28.jpg"
+      "img": "frontpages/nyt-2026-10-28.jpg",
+      "url": "https://www.nytimes.com"
     },
     {
       "name": "Los Angeles Times",
       "source": "latimes.com",
-      "image": "frontpages/lat-2026-10-28.jpg"
+      "img": "frontpages/lat-2026-10-28.jpg",
+      "url": "https://www.latimes.com"
     }
   ],
   "history": [
