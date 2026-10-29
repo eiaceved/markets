@@ -28,7 +28,9 @@ h1{font-family:"Archivo",sans-serif;font-size:34px;margin:0}
 .day .thumbs button:hover{border-color:var(--accent-ink)}
 @media(max-width:860px){.wrap{flex-direction:column}.hist{flex:none;width:100%;position:static}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.card img{width:100%;display:block}
+.card img{width:100%;display:block;cursor:zoom-in}
+.lb{position:fixed;inset:0;background:rgba(10,9,13,.92);display:none;align-items:center;justify-content:center;z-index:60;cursor:zoom-out;padding:16px}
+.lb img{max-width:min(94vw,1100px);max-height:94vh;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.65)}
 .card .cap{padding:12px 15px;border-top:1px solid var(--line)}
 .card .nm{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px}
 .card .cap a{color:var(--accent-ink);text-decoration:none;font-size:12.5px}
@@ -39,8 +41,9 @@ a{color:var(--accent-ink);text-decoration:none}
 </style>
 </head>
 <body>
+<div class="lb" id="lb"><img id="lbimg" alt="Front page, enlarged"></div>
 <div class="top"><h1>Front Page</h1><span class="stamp" id="stamp">Loading&#8230;</span></div>
-<p class="sub">Today's front pages of the journals, captured fresh every morning. Tap a cover to read the journal itself (USC students read these free through the USC Libraries). Click a date under Previous days to bring that day's front pages into the main view.</p>
+<p class="sub">Today's front pages of the journals, captured fresh every morning. Click a cover to open it bigger so it's easier to read. Open the journal itself under its cover (USC students read these free through the USC Libraries). Click a date under Previous days to bring that day's front pages into the main view.</p>
 <div class="wrap"><div class="main">
 <div class="grid" id="grid"></div>
 <p class="note" id="note"></p>
@@ -55,6 +58,10 @@ fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   const days=[{label:D.label,today:true,pages:D.pages}].concat(D.history||[]);
   let cur=0;
   function card(p){const i=p.img||p.image,u=p.url||(p.source?'https://www.'+p.source:'');return '<div class="card"><img src="'+i+'" alt="'+p.name+' front page"><div class="cap"><div class="nm">'+p.name+'</div>'+(u?'<a href="'+u+'" target="_blank">Open the journal \u2192</a>':'')+'</div></div>'}
+  var lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+  g.addEventListener('click',function(e){var im=e.target.closest?e.target.closest('.card img'):null;if(im){lbimg.src=im.src;lb.style.display='flex'}});
+  lb.addEventListener('click',function(){lb.style.display='none'});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.style.display='none'});
   function renderMain(){g.innerHTML=days[cur].pages.map(card).join('');note.textContent=days[cur].today?'':'Showing '+days[cur].label+'. Click a date under Previous days to swap back.'}
   function renderSide(){
     const h=document.getElementById('hist'),hd=document.getElementById('histdays');
