@@ -29,9 +29,9 @@ h1{font-family:"Archivo",sans-serif;font-size:34px;margin:0}
 @media(max-width:860px){.wrap{flex-direction:column}.hist{flex:none;width:100%;position:static}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .card img{width:100%;display:block;cursor:zoom-in}
-.lb{position:fixed;inset:0;background:rgba(10,9,13,.92);display:none;flex-direction:column;z-index:60;padding:14px 16px 70px}
-.lb-scroll{flex:1;min-height:0;overflow:auto;border-radius:8px;cursor:grab}
-.lb-scroll.drag{cursor:grabbing;user-select:none}
+.lb{position:fixed;inset:0;background:rgba(10,9,13,.92);display:none;flex-direction:column;align-items:center;z-index:60;padding:14px 16px 70px}
+.lb-scroll{flex:1;min-height:0;overflow:auto;border-radius:8px;cursor:auto;width:fit-content;max-width:100%}
+.lb-scroll.drag{cursor:auto;user-select:none}
 .lb img{display:block;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.65);max-width:none;max-height:none}
 .lb-bar{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);display:flex;gap:6px;align-items:center;background:rgba(24,21,28,.94);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:7px 10px}
 .lb-bar button{font:600 14px/1 "Source Sans 3",sans-serif;color:#f2e9ec;background:rgba(255,255,255,.12);border:0;border-radius:99px;padding:7px 14px;cursor:pointer}
@@ -85,9 +85,10 @@ fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   lb.addEventListener('click',function(e){if(e.target===lb)lb.style.display='none'});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.style.display='none'});
   var dg=null;
-  sc.addEventListener('pointerdown',function(e){dg={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop};sc.classList.add('drag');try{sc.setPointerCapture(e.pointerId)}catch(_){}});
+  sc.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dg={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop};sc.classList.add('drag');try{sc.setPointerCapture(e.pointerId)}catch(_){}});
   sc.addEventListener('pointermove',function(e){if(!dg)return;sc.scrollLeft=dg.l-(e.clientX-dg.x);sc.scrollTop=dg.t-(e.clientY-dg.y)});
   ['pointerup','pointercancel'].forEach(function(ev){sc.addEventListener(ev,function(){dg=null;sc.classList.remove('drag')})});
+  sc.addEventListener('dblclick',function(){if(z>1){z=1;fitSize();apply()}else{z=2;apply()}});
   addEventListener('resize',function(){if(lb.style.display==='flex'&&z===1){fitSize();apply()}});
   function renderMain(){g.innerHTML=days[cur].pages.map(card).join('');note.textContent=days[cur].today?'':'Showing '+days[cur].label+'. Click a date under Previous days to swap back.'}
   function renderSide(){
