@@ -29,8 +29,15 @@ h1{font-family:"Archivo",sans-serif;font-size:34px;margin:0}
 @media(max-width:860px){.wrap{flex-direction:column}.hist{flex:none;width:100%;position:static}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .card img{width:100%;display:block;cursor:zoom-in}
-.lb{position:fixed;inset:0;background:rgba(10,9,13,.92);display:none;align-items:center;justify-content:center;z-index:60;cursor:zoom-out;padding:16px}
-.lb img{max-width:min(94vw,1100px);max-height:94vh;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.65)}
+.lb{position:fixed;inset:0;background:rgba(10,9,13,.92);display:none;flex-direction:column;z-index:60;padding:14px 16px 70px}
+.lb-scroll{flex:1;min-height:0;overflow:auto;border-radius:8px;cursor:grab}
+.lb-scroll.drag{cursor:grabbing;user-select:none}
+.lb img{display:block;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.65);max-width:none;max-height:none}
+.lb-bar{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);display:flex;gap:6px;align-items:center;background:rgba(24,21,28,.94);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:7px 10px}
+.lb-bar button{font:600 14px/1 "Source Sans 3",sans-serif;color:#f2e9ec;background:rgba(255,255,255,.12);border:0;border-radius:99px;padding:7px 14px;cursor:pointer}
+.lb-bar button:hover{background:rgba(255,255,255,.24)}
+.lb-bar button:disabled{opacity:.35;cursor:default}
+.lb-bar .pct{color:#d4b05a;font:600 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;min-width:46px;text-align:center}
 .card .cap{padding:12px 15px;border-top:1px solid var(--line)}
 .card .nm{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px}
 .card .cap a{color:var(--accent-ink);text-decoration:none;font-size:12.5px}
@@ -41,9 +48,15 @@ a{color:var(--accent-ink);text-decoration:none}
 </style>
 </head>
 <body>
-<div class="lb" id="lb"><img id="lbimg" alt="Front page, enlarged"></div>
+<div class="lb" id="lb">
+  <div class="lb-scroll" id="lbsc"><img id="lbimg" alt="Front page, enlarged"></div>
+  <div class="lb-bar">
+    <button id="zout" title="Zoom out">&minus;</button><span class="pct" id="zpct">100%</span><button id="zin" title="Zoom in">+</button>
+    <button id="zfit" title="Back to fit">Fit</button><button id="zclose" title="Close (Esc)">&#10005;</button>
+  </div>
+</div>
 <div class="top"><h1>Front Page</h1><span class="stamp" id="stamp">Loading&#8230;</span></div>
-<p class="sub">Today's front pages of the journals, captured fresh every morning. Click a cover to open it bigger so it's easier to read. Open the journal itself under its cover (USC students read these free through the USC Libraries). Click a date under Previous days to bring that day's front pages into the main view.</p>
+<p class="sub">Today's front pages of the journals, captured fresh every morning. Click a cover to open it bigger, then zoom in with the + button (or drag to pan) to read any article up close. Open the journal itself under its cover (USC students read these free through the USC Libraries). Click a date under Previous days to bring that day's front pages into the main view.</p>
 <div class="wrap"><div class="main">
 <div class="grid" id="grid"></div>
 <p class="note" id="note"></p>
@@ -58,10 +71,24 @@ fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   const days=[{label:D.label,today:true,pages:D.pages}].concat(D.history||[]);
   let cur=0;
   function card(p){const i=p.img||p.image,u=p.url||(p.source?'https://www.'+p.source:'');return '<div class="card"><img src="'+i+'" alt="'+p.name+' front page"><div class="cap"><div class="nm">'+p.name+'</div>'+(u?'<a href="'+u+'" target="_blank">Open the journal \u2192</a>':'')+'</div></div>'}
-  var lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
-  g.addEventListener('click',function(e){var im=e.target.closest?e.target.closest('.card img'):null;if(im){lbimg.src=im.src;lb.style.display='flex'}});
-  lb.addEventListener('click',function(){lb.style.display='none'});
+  var lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg'),sc=document.getElementById('lbsc'),zpct=document.getElementById('zpct'),zin=document.getElementById('zin'),zout=document.getElementById('zout');
+  var z=1,BW=0,BH=0;
+  function fitSize(){var vw=innerWidth-32,vh=innerHeight-88,r=(lbimg.naturalWidth&&lbimg.naturalHeight)?lbimg.naturalWidth/lbimg.naturalHeight:.75;BW=Math.min(vw,vh*r,1100);BH=BW/r}
+  function apply(){lbimg.style.width=(BW*z)+'px';lbimg.style.height=(BH*z)+'px';zpct.textContent=Math.round(z*100)+'%';zin.disabled=z>=4;zout.disabled=z<=1}
+  function openLb(src){lbimg.src=src;z=1;lb.style.display='flex';if(lbimg.complete&&lbimg.naturalWidth){fitSize();apply()}}
+  lbimg.onload=function(){z=1;fitSize();apply()};
+  zin.onclick=function(){z=Math.min(4,Math.round(z*1.35*100)/100);apply()};
+  zout.onclick=function(){z=Math.max(1,Math.round(z/1.35*100)/100);apply()};
+  document.getElementById('zfit').onclick=function(){z=1;fitSize();apply()};
+  document.getElementById('zclose').onclick=function(){lb.style.display='none'};
+  g.addEventListener('click',function(e){var im=e.target.closest?e.target.closest('.card img'):null;if(im)openLb(im.src)});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.style.display='none'});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.style.display='none'});
+  var dg=null;
+  sc.addEventListener('pointerdown',function(e){dg={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop};sc.classList.add('drag');try{sc.setPointerCapture(e.pointerId)}catch(_){}});
+  sc.addEventListener('pointermove',function(e){if(!dg)return;sc.scrollLeft=dg.l-(e.clientX-dg.x);sc.scrollTop=dg.t-(e.clientY-dg.y)});
+  ['pointerup','pointercancel'].forEach(function(ev){sc.addEventListener(ev,function(){dg=null;sc.classList.remove('drag')})});
+  addEventListener('resize',function(){if(lb.style.display==='flex'&&z===1){fitSize();apply()}});
   function renderMain(){g.innerHTML=days[cur].pages.map(card).join('');note.textContent=days[cur].today?'':'Showing '+days[cur].label+'. Click a date under Previous days to swap back.'}
   function renderSide(){
     const h=document.getElementById('hist'),hd=document.getElementById('histdays');
