@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T21:08:00-07:00",
+  "updated": "2026-10-28T21:18:00-07:00",
   "label": "Wednesday, October 28, 2026",
   "pages": [
     {
@@ -37,6 +37,12 @@
       "source": "bostonglobe.com",
       "img": "frontpages/globe-2026-10-28.jpg",
       "url": "https://d2dr22b2lm4tvw.cloudfront.net/ma_bg/2026-10-28/front-page-large.jpg"
+    },
+    {
+      "name": "The Washington Post",
+      "source": "washingtonpost.com",
+      "img": "frontpages/wap-2026-10-28.jpg",
+      "url": "https://dedq39jz5ilmb.cloudfront.net/20261028/A01_SU_EZ_DAILY_20261028.pdf"
     }
   ],
   "history": [
