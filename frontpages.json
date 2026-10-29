@@ -1,18 +1,42 @@
 {
-  "updated": "2026-10-28T07:27:00-07:00",
+  "updated": "2026-10-28T21:08:00-07:00",
   "label": "Wednesday, October 28, 2026",
   "pages": [
     {
       "name": "The New York Times",
       "source": "nytimes.com",
       "img": "frontpages/nyt-2026-10-28.jpg",
-      "url": "https://www.nytimes.com"
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ny_nyt/2026-10-28/front-page-large.jpg"
+    },
+    {
+      "name": "The Wall Street Journal",
+      "source": "wsj.com",
+      "img": "frontpages/wsj-2026-10-28.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/wsj/2026-10-28/front-page-large.jpg"
     },
     {
       "name": "Los Angeles Times",
       "source": "latimes.com",
       "img": "frontpages/lat-2026-10-28.jpg",
-      "url": "https://www.latimes.com"
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ca_lat/2026-10-28/front-page-large.jpg"
+    },
+    {
+      "name": "USA Today",
+      "source": "usatoday.com",
+      "img": "frontpages/usat-2026-10-28.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/usat/2026-10-28/front-page-large.jpg"
+    },
+    {
+      "name": "Chicago Tribune",
+      "source": "chicagotribune.com",
+      "img": "frontpages/trib-2026-10-28.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/il_ct/2026-10-28/front-page-large.jpg"
+    },
+    {
+      "name": "The Boston Globe",
+      "source": "bostonglobe.com",
+      "img": "frontpages/globe-2026-10-28.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ma_bg/2026-10-28/front-page-large.jpg"
     }
   ],
   "history": [

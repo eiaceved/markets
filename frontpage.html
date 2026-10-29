@@ -49,7 +49,7 @@ a{color:var(--accent-ink);text-decoration:none}
 <footer>Front pages captured each morning from the Freedom Forum gallery; full articles stay with the publishers. Part of <a href="/">Evelyn's case-prep hub</a>.</footer>
 <script>
 fetch('frontpages.json?v='+Date.now()).then(r=>r.json()).then(D=>{
-  document.getElementById('stamp').textContent='Captured '+D.label;
+  document.getElementById('stamp').textContent='Captured '+D.label+(D.updated?\' at \'+new Date(D.updated).toLocaleTimeString(\'en-US\',{hour:\'numeric\',minute:\'2-digit\',timeZone:\'America/Los_Angeles\'})+\' PT\':\'\');
   const g=document.getElementById('grid'),note=document.getElementById('note');
   if(!D.pages||!D.pages.length){g.innerHTML='';note.textContent='First captures land with tomorrow morning\u2019s 7 AM refresh.';return}
   const days=[{label:D.label,today:true,pages:D.pages}].concat(D.history||[]);
