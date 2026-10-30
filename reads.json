@@ -1,82 +1,82 @@
 {
-  "updated": "2026-10-29T08:05:01-07:00",
-  "label": "Thursday, October 29, 2026 \u00b7 Delivery-duopoly day edition",
-  "intro": "Good morning. It's Thursday, October 29th. Here's your Read Daily brief.",
+  "updated": "2026-10-30T07:19:00-07:00",
+  "label": "Friday, October 30, 2026 \u00b7 AI-payoff doubt day edition",
+  "intro": "Good morning. It's Friday, October 30th. Here's your Read Daily brief.",
   "items": [
     {
+      "source": "Yahoo Finance",
+      "title": "Dow, S&P 500, Nasdaq slip as Alphabet stock sinks 12% and AI jitters return",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html",
+      "take": "The three-day winning run ended Thursday as Alphabet sank 12%, its worst post-earnings reaction on record, on the capex-versus-cash-flow worry. DoorDash made the Instacart deal official: about $17 billion, $65 a share, 75% cash, with the board approving unanimously."
+    },
+    {
+      "source": "Yahoo Finance",
+      "title": "Stock Market News for Oct 30, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html",
+      "take": "The size of the Alphabet selloff makes more sense on the numbers: adjusted EPS of $2.12 missed consensus by about 28% and fell 26% year over year. September PCE inflation ran 0.5% monthly and 3.6% yearly, in line but still hot, which keeps the pressure on."
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Stock Market Today: Dow, S&P Live Updates for October 30, 2026",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-29/stock-market-today-dow-s-p-live-updates",
+      "take": "The AI-payoff doubt widened past Alphabet on Thursday: another batch of disappointing tech earnings deepened the selloff, the Nasdaq 100 fell about 3%, and Intel sank 29% after its revenue forecast missed estimates."
+    },
+    {
+      "source": "TheStreet",
+      "title": "S&P 500 sinks as Amazon, Intel losses shake Wall Street",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
+      "take": "Friday opens with the selloff still running on weak Amazon and Intel results, rekindling concern about the payoff from massive AI spending. One pocket of green: Exxon and Chevron rose premarket after both beat, helped by soaring refining margins."
+    },
+    {
       "source": "The Washington Post",
-      "title": "No change in interest rates after last month\u2019s increase",
-      "url": "https://www.washingtonpost.com/business/2026/10/28/federal-reserve-held-interest-rates-steady/",
-      "take": "The Fed held steady Wednesday afternoon after last month\u2019s increase, and Wall Street closed higher for a third straight session. The instant-reaction calls flagged dissents from Lisa Cook and Beth Hammack, a reminder the committee is still split on weighing a cooling jobs market against inflation."
+      "title": "Amodei called for an AI slowdown, then informed investors he\u2019d race ahead",
+      "url": "https://www.washingtonpost.com/technology/2026/10/29/anthropic-other-ai-firms-agreed-slow-down-ai-it-didnt-happen/",
+      "take": "Anthropic publicly backed an AI slowdown, then told IPO investors it would race ahead, and the Post lays out the gap in black and white. It is a sharp lens on the week\u2019s theme: the same firms selling caution to the public are selling growth to markets."
     },
     {
-      "source": "CNBC",
-      "title": "Alphabet stock drops 10% while Microsoft rises after earnings",
-      "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html",
-      "take": "Alphabet\u2019s $51.4 billion of capex, up 114%, outran its $42.3 billion of operating cash flow and pushed quarterly free cash flow negative, and the stock fell about 10% premarket, on track for its worst post-earnings reaction ever. Microsoft rose roughly 3% on Azure growth of 48% excluding currency and capex that came in below expectations."
-    },
-    {
-      "source": "CNBC",
-      "title": "DoorDash to acquire Instacart for $17 billion",
-      "url": "https://www.cnbc.com/2026/10/28/doordash-instacart-maplebear.html",
-      "take": "DoorDash announced a roughly $17 billion deal for Instacart, about $65 a share, with the Instacart brand and app staying on. It pairs DoorDash\u2019s restaurant engine with Instacart\u2019s grocery partners and builds a delivery duopoly that regulators will now get to look at."
-    },
-    {
-      "source": "Reuters",
-      "title": "Anthropic\u2019s IPO is all about ignoring the future",
-      "url": "https://reuters.com/commentary/breakingviews/anthropics-ipo-is-all-about-ignoring-future-2026-10-28",
-      "take": "With word that as much as 20% of Anthropic\u2019s IPO could be opened to retail investors, Breakingviews argues pricing the deal means largely ignoring the future, the very uncertainty that makes the AI builder\u2019s valuation so contested."
-    },
-    {
-      "source": "The Washington Post",
-      "title": "Anthropic\u2019s plan to protect humanity has a flaw",
-      "url": "https://www.washingtonpost.com/opinions/2026/10/28/anthropic-wants-investors-trust-its-founders-with-humanitys-future/",
-      "take": "The opinion page takes on Anthropic\u2019s governance ahead of the IPO: investors are being asked to trust the founders with the company\u2019s safety mission, and that founder-control structure is the flaw critics keep pointing at."
-    },
-    {
-      "source": "Goldman Sachs",
-      "title": "The Markets: Why Investors Are Reducing AI Exposure",
-      "url": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600",
-      "take": "This week\u2019s episode digs into why institutional investors are trimming AI exposure right as the IPO calendar, Anthropic included, leans hardest into the theme. A useful counterweight on a morning of AI earnings drama."
+      "source": "The Wall Street Journal",
+      "title": "What\u2019s News: \u2018AI Mode\u2019 Is Denting Google\u2019s Search Revenue",
+      "url": "https://www.wsj.com/podcasts/whats-news",
+      "take": "Today\u2019s rotation pick lands squarely on theme: WSJ\u2019s What\u2019s News digs into AI Mode eating into Google\u2019s search revenue, the very business underwriting Alphabet\u2019s AI spending spree. Good context for a rough earnings morning."
     }
   ],
   "tape": [
     {
       "name": "S&P 500",
-      "value": "7,743.98",
-      "chg": "+0.28%"
+      "value": "7,720.39",
+      "chg": "-0.30%"
     },
     {
       "name": "Dow Jones",
-      "value": "52,475.10",
-      "chg": "+0.19%"
+      "value": "52,342.56",
+      "chg": "-0.25%"
     },
     {
       "name": "Nasdaq",
-      "value": "26,549.85",
-      "chg": "+0.27%"
+      "value": "26,184.72",
+      "chg": "-1.38%"
     },
     {
       "name": "10-Yr Yield",
-      "value": "5.05%",
-      "chg": "+0.06%"
+      "value": "4.99%",
+      "chg": "-0.06%"
     },
     {
       "name": "VIX",
-      "value": "16.91",
-      "chg": "-3.48%"
+      "value": "17.20",
+      "chg": "+1.72%"
     },
     {
       "name": "Gold",
-      "value": "$4,051.60",
-      "chg": "-0.56%"
+      "value": "$4,031.40",
+      "chg": "-0.50%"
     },
     {
       "name": "Bitcoin",
-      "value": "$81,267.59",
-      "chg": "+0.57%"
+      "value": "$77,775.11",
+      "chg": "-4.30%"
     }
   ],
-  "audio": "audio/read-daily/2026-10-29.mp3",
-  "audio_seconds": 90
+  "audio": "audio/read-daily/2026-10-30.mp3",
+  "audio_seconds": 80
 }
