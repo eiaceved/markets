@@ -1,80 +1,80 @@
 {
-  "updated": "2026-10-30T07:19:00-07:00",
-  "label": "Friday, October 30, 2026 \u00b7 AI-payoff doubt day edition",
-  "intro": "Good morning. It's Friday, October 30th. Here's your Read Daily brief.",
+  "updated": "2026-10-31T07:12:00-07:00",
+  "label": "Saturday, October 31, 2026 \u00b7 Worst month since March day edition",
+  "intro": "Good morning. It's Saturday, October 31st. Here's your Read Daily brief.",
   "items": [
     {
       "source": "Yahoo Finance",
-      "title": "Dow, S&P 500, Nasdaq slip as Alphabet stock sinks 12% and AI jitters return",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html",
-      "take": "The three-day winning run ended Thursday as Alphabet sank 12%, its worst post-earnings reaction on record, on the capex-versus-cash-flow worry. DoorDash made the Instacart deal official: about $17 billion, $65 a share, 75% cash, with the board approving unanimously."
+      "title": "Nasdaq, Dow, S&P 500 clobbered as October closes with brutal sell-off",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html",
+      "take": "Friday was brutal: the Nasdaq fell 2.86%, its worst day since June 5, the S&P lost 1.82%, and October closed as the Nasdaq\u2019s worst month since March 2025 (it shed 5.3%). Amazon and Intel earnings stoked fresh doubts about the enormous cost of the AI boom."
     },
     {
-      "source": "Yahoo Finance",
-      "title": "Stock Market News for Oct 30, 2026",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html",
-      "take": "The size of the Alphabet selloff makes more sense on the numbers: adjusted EPS of $2.12 missed consensus by about 28% and fell 26% year over year. September PCE inflation ran 0.5% monthly and 3.6% yearly, in line but still hot, which keeps the pressure on."
+      "source": "Charles Schwab",
+      "title": "Running Scared: Amazon, Intel Put Tech on Defense",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "take": "The Amazon numbers are the crux: AWS grew 39%, above forecasts, yet the company still ran negative free cash flow while holding 2026 capex at about $220 billion. The same math that sank Alphabet. Intel blamed weak PC demand even as its data center and AI revenue grew 78% to $7.3 billion."
     },
     {
       "source": "Bloomberg",
-      "title": "Stock Market Today: Dow, S&P Live Updates for October 30, 2026",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-29/stock-market-today-dow-s-p-live-updates",
-      "take": "The AI-payoff doubt widened past Alphabet on Thursday: another batch of disappointing tech earnings deepened the selloff, the Nasdaq 100 fell about 3%, and Intel sank 29% after its revenue forecast missed estimates."
+      "title": "Google Stock Hammered After Earnings Raise AI Revenue Concerns",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-30/google-stock-hammered-after-earnings-raise-ai-revenue-concerns",
+      "take": "Google finished the week down 13% as investors weigh how much AI is eating, rather than feeding, its search business. That single question now frames the whole tape: the market is repricing what AI capex actually buys."
     },
     {
-      "source": "TheStreet",
-      "title": "S&P 500 sinks as Amazon, Intel losses shake Wall Street",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
-      "take": "Friday opens with the selloff still running on weak Amazon and Intel results, rekindling concern about the payoff from massive AI spending. One pocket of green: Exxon and Chevron rose premarket after both beat, helped by soaring refining margins."
+      "source": "CNBC",
+      "title": "Midterms, Apple earnings, jobs report. Wall Street faces a big week ahead just as investors dump tech",
+      "url": "https://www.cnbc.com/2026/10/30/stock-market-next-week-outlook-for-nov-2-6-2026.html",
+      "take": "A heavy calendar hits an AI-wary market: Apple reports Monday, Election Day is Tuesday, and the October jobs report lands Friday. Roughly half the S&P has reported so far, with Q3 earnings on pace to rise 31.6%."
     },
     {
       "source": "The Washington Post",
-      "title": "Amodei called for an AI slowdown, then informed investors he\u2019d race ahead",
-      "url": "https://www.washingtonpost.com/technology/2026/10/29/anthropic-other-ai-firms-agreed-slow-down-ai-it-didnt-happen/",
-      "take": "Anthropic publicly backed an AI slowdown, then told IPO investors it would race ahead, and the Post lays out the gap in black and white. It is a sharp lens on the week\u2019s theme: the same firms selling caution to the public are selling growth to markets."
+      "title": "Hack is likely largest theft of digital currencies in history",
+      "url": "https://www.washingtonpost.com/technology/2026/10/29/suspected-binance-hack-sets-off-scramble-lock-down-billions-crypto/",
+      "take": "The Binance hack is now estimated at $6.3 billion, likely the largest crypto theft ever, and investigators watched thousands of automated transactions move the funds across blockchains. Crypto stocks fell more than 6% on the news Friday."
     },
     {
-      "source": "The Wall Street Journal",
-      "title": "What\u2019s News: \u2018AI Mode\u2019 Is Denting Google\u2019s Search Revenue",
-      "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Today\u2019s rotation pick lands squarely on theme: WSJ\u2019s What\u2019s News digs into AI Mode eating into Google\u2019s search revenue, the very business underwriting Alphabet\u2019s AI spending spree. Good context for a rough earnings morning."
+      "source": "Morgan Stanley",
+      "title": "Thoughts on the Market: The Curious Calm of Credit Markets",
+      "url": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
+      "take": "Today\u2019s rotation pick looks at the interesting wrinkle in Friday\u2019s rout: stocks clobbered, credit markets oddly calm. That calm is the tell traders are watching, since real credit stress would turn an equity story into a credit one."
     }
   ],
   "tape": [
     {
       "name": "S&P 500",
-      "value": "7,720.39",
-      "chg": "-0.30%"
+      "value": "7,580.07",
+      "chg": "-1.82%"
     },
     {
       "name": "Dow Jones",
-      "value": "52,342.56",
-      "chg": "-0.25%"
+      "value": "51,770.31",
+      "chg": "-1.09%"
     },
     {
       "name": "Nasdaq",
-      "value": "26,184.72",
-      "chg": "-1.38%"
+      "value": "25,437.00",
+      "chg": "-2.86%"
     },
     {
       "name": "10-Yr Yield",
-      "value": "4.99%",
+      "value": "4.93%",
       "chg": "-0.06%"
     },
     {
       "name": "VIX",
-      "value": "17.20",
-      "chg": "+1.72%"
+      "value": "19.42",
+      "chg": "+12.91%"
     },
     {
       "name": "Gold",
-      "value": "$4,031.40",
-      "chg": "-0.50%"
+      "value": "$3,898.90",
+      "chg": "-3.29%"
     },
     {
       "name": "Bitcoin",
-      "value": "$77,775.11",
-      "chg": "-4.30%"
+      "value": "$77,198.21",
+      "chg": "-0.74%"
     }
   ],
   "audio": "audio/read-daily/2026-10-30.mp3",

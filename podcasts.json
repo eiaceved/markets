@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T14:19:00Z",
+  "updated": "2026-10-31T14:12:00Z",
   "shows": [
     {
       "name": "What's News",
@@ -61,6 +61,11 @@
       "show": "The Markets",
       "title": "Why Investors Are Reducing AI Exposure",
       "url": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600"
+    },
+    {
+      "show": "Thoughts on the Market",
+      "title": "The Curious Calm of Credit Markets",
+      "url": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717"
     }
   ]
 }
