@@ -1,43 +1,43 @@
 {
-  "updated": "2026-10-31T07:12:00-07:00",
-  "label": "Saturday, October 31, 2026 \u00b7 Worst month since March day edition",
-  "intro": "Good morning. It's Saturday, October 31st. Here's your Read Daily brief.",
+  "updated": "2026-11-01T07:10:00-08:00",
+  "label": "Sunday, November 1, 2026 \u00b7 Elections-eve edition",
+  "intro": "Good morning. It's Sunday, November 1st. Here's your Read Daily brief.",
   "items": [
     {
       "source": "Yahoo Finance",
-      "title": "Nasdaq, Dow, S&P 500 clobbered as October closes with brutal sell-off",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html",
-      "take": "Friday was brutal: the Nasdaq fell 2.86%, its worst day since June 5, the S&P lost 1.82%, and October closed as the Nasdaq\u2019s worst month since March 2025 (it shed 5.3%). Amazon and Intel earnings stoked fresh doubts about the enormous cost of the AI boom."
+      "title": "A big sell-off collides with more Big Tech earnings and a midterm election: What to watch this week",
+      "url": "https://finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html",
+      "take": "A bruising week for tech rolls into a heavy calendar: Apple reports Monday with its new CEO at the helm, the midterm elections land Tuesday, and the October jobs report closes the week Friday. All eyes are on what could re-light the fire under the tech sector, and the fire here is the bad kind."
     },
     {
-      "source": "Charles Schwab",
-      "title": "Running Scared: Amazon, Intel Put Tech on Defense",
-      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
-      "take": "The Amazon numbers are the crux: AWS grew 39%, above forecasts, yet the company still ran negative free cash flow while holding 2026 capex at about $220 billion. The same math that sank Alphabet. Intel blamed weak PC demand even as its data center and AI revenue grew 78% to $7.3 billion."
+      "source": "Seeking Alpha",
+      "title": "Wall Street Week Ahead: Midterm Madness, Nvidia, and Walmart",
+      "url": "https://seekingalpha.com/article/4960711-wall-street-week-ahead",
+      "take": "Midterms and the October jobs report dominate, with payrolls expected to rise 65K and unemployment holding at 4.2%. Earnings from Apple, AMD and Palantir test the battered tech trade, and the weekend question is blunt: can Anthropic\u2019s IPO save the market?"
     },
     {
-      "source": "Bloomberg",
-      "title": "Google Stock Hammered After Earnings Raise AI Revenue Concerns",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-30/google-stock-hammered-after-earnings-raise-ai-revenue-concerns",
-      "take": "Google finished the week down 13% as investors weigh how much AI is eating, rather than feeding, its search business. That single question now frames the whole tape: the market is repricing what AI capex actually buys."
-    },
-    {
-      "source": "CNBC",
-      "title": "Midterms, Apple earnings, jobs report. Wall Street faces a big week ahead just as investors dump tech",
-      "url": "https://www.cnbc.com/2026/10/30/stock-market-next-week-outlook-for-nov-2-6-2026.html",
-      "take": "A heavy calendar hits an AI-wary market: Apple reports Monday, Election Day is Tuesday, and the October jobs report lands Friday. Roughly half the S&P has reported so far, with Q3 earnings on pace to rise 31.6%."
+      "source": "TipRanks",
+      "title": "The Week That Was, The Week Ahead: Anthropic\u2019s S-1 in focus",
+      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-1",
+      "take": "Investors are still digesting Anthropic\u2019s IPO paperwork: more than $16 billion of revenue in the first half of 2026, against a reported net loss of $80.7 billion, largely from a one-time accounting adjustment. It is the clearest public look yet at what the AI boom earns and burns."
     },
     {
       "source": "The Washington Post",
-      "title": "Hack is likely largest theft of digital currencies in history",
-      "url": "https://www.washingtonpost.com/technology/2026/10/29/suspected-binance-hack-sets-off-scramble-lock-down-billions-crypto/",
-      "take": "The Binance hack is now estimated at $6.3 billion, likely the largest crypto theft ever, and investigators watched thousands of automated transactions move the funds across blockchains. Crypto stocks fell more than 6% on the news Friday."
+      "title": "How suspected North Korean hackers swiped billions",
+      "url": "https://www.washingtonpost.com/technology/2026/10/31/how-suspected-north-korean-hackers-swiped-billions-crypto-only-minutes/",
+      "take": "The Post retraces how the record Binance theft, now estimated at $6.3 billion, moved in minutes across blockchains with automated laundering. Crypto stocks were down more than 6% Friday and the story follows the money into the weekend."
     },
     {
-      "source": "Morgan Stanley",
-      "title": "Thoughts on the Market: The Curious Calm of Credit Markets",
-      "url": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
-      "take": "Today\u2019s rotation pick looks at the interesting wrinkle in Friday\u2019s rout: stocks clobbered, credit markets oddly calm. That calm is the tell traders are watching, since real credit stress would turn an equity story into a credit one."
+      "source": "The Washington Post",
+      "title": "Gulf nations push to stave off re-escalation of Iran war",
+      "url": "https://www.washingtonpost.com/world/2026/10/31/persian-gulf-scrambling-prevent-iran-war-again-hitting-its-doorstep/",
+      "take": "With reports of a possible strike window after the midterms, Gulf states are working to keep the Iran conflict from hitting their doorstep again. For markets it is the biggest non-AI wildcard: a re-escalation would tighten oil further and keep inflation an issue."
+    },
+    {
+      "source": "J.P. Morgan",
+      "title": "Making Sense: Sponsors, spreads and stress testing: Navigating 2026\u2019s rate reset",
+      "url": "https://www.jpmorgan.com/insights/podcast-hub/making-sense/sponsors-spreads-rate-reset",
+      "take": "Today\u2019s rotation pick asks the question behind Friday\u2019s rout: in volatile markets, do you pay for certainty now or preserve flexibility for later. Leveraged finance and private markets are weighing exactly that trade-off in a higher-for-longer rate world."
     }
   ],
   "tape": [
@@ -73,10 +73,10 @@
     },
     {
       "name": "Bitcoin",
-      "value": "$77,198.21",
-      "chg": "-0.74%"
+      "value": "$77,923.43",
+      "chg": "+0.63%"
     }
   ],
-  "audio": "audio/read-daily/2026-10-31.mp3",
+  "audio": "audio/read-daily/2026-11-01.mp3",
   "audio_seconds": 81
 }
