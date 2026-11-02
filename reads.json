@@ -1,43 +1,43 @@
 {
-  "updated": "2026-11-01T07:10:00-08:00",
-  "label": "Sunday, November 1, 2026 \u00b7 Elections-eve edition",
-  "intro": "Good morning. It's Sunday, November 1st. Here's your Read Daily brief.",
+  "updated": "2026-11-02T07:35:00-08:00",
+  "label": "Monday, November 2, 2026 · Apple test-day edition",
+  "intro": "Good morning. It's Monday, November 2nd. Here's your Read Daily brief.",
   "items": [
     {
       "source": "Yahoo Finance",
-      "title": "A big sell-off collides with more Big Tech earnings and a midterm election: What to watch this week",
-      "url": "https://finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html",
-      "take": "A bruising week for tech rolls into a heavy calendar: Apple reports Monday with its new CEO at the helm, the midterm elections land Tuesday, and the October jobs report closes the week Friday. All eyes are on what could re-light the fire under the tech sector, and the fire here is the bad kind."
+      "title": "Stock market today: Dow, S&P 500, Nasdaq recover from bruising sell-off as oil prices fall",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html",
+      "take": "Stocks opened higher Monday as tech catches its breath after October's AI sell-off, with the Dow up 0.7% and the Nasdaq up 0.7% in morning trade. Anthropic filed an amended S-1 Monday morning, a fresh look at the filing just ahead of a debut expected as soon as this month."
     },
     {
-      "source": "Seeking Alpha",
-      "title": "Wall Street Week Ahead: Midterm Madness, Nvidia, and Walmart",
-      "url": "https://seekingalpha.com/article/4960711-wall-street-week-ahead",
-      "take": "Midterms and the October jobs report dominate, with payrolls expected to rise 65K and unemployment holding at 4.2%. Earnings from Apple, AMD and Palantir test the battered tech trade, and the weekend question is blunt: can Anthropic\u2019s IPO save the market?"
+      "source": "Reuters (via Yahoo Finance)",
+      "title": "Apple's new CEO faces earnings test as rising chip costs cloud outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apples-ceo-faces-earnings-test-113824267.html",
+      "take": "Apple reports after the bell tonight, the first quarter under new CEO John Ternus. Consensus looks for about $2 of EPS on roughly $113.4B of revenue, but the watch items are rising memory-chip costs, holiday guidance, and iPhone Duo demand."
     },
     {
-      "source": "TipRanks",
-      "title": "The Week That Was, The Week Ahead: Anthropic\u2019s S-1 in focus",
-      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-1",
-      "take": "Investors are still digesting Anthropic\u2019s IPO paperwork: more than $16 billion of revenue in the first half of 2026, against a reported net loss of $80.7 billion, largely from a one-time accounting adjustment. It is the clearest public look yet at what the AI boom earns and burns."
+      "source": "The New York Times (DealBook)",
+      "title": "Cracks in the A.I. Borrowing Binge",
+      "url": "https://www.nytimes.com/2026/11/02/business/dealbook/ai-borrowing-binge.html",
+      "take": "Big Tech's AI spending is squeezing cash flow and pushing companies toward more borrowing and stock sales, and Wall Street is hunting for a catalyst to quiet the bubble chatter. A lot rides on Anthropic's trading debut, and the filing's own language about catastrophic risk is drawing attention."
     },
     {
-      "source": "The Washington Post",
-      "title": "How suspected North Korean hackers swiped billions",
-      "url": "https://www.washingtonpost.com/technology/2026/10/31/how-suspected-north-korean-hackers-swiped-billions-crypto-only-minutes/",
-      "take": "The Post retraces how the record Binance theft, now estimated at $6.3 billion, moved in minutes across blockchains with automated laundering. Crypto stocks were down more than 6% Friday and the story follows the money into the weekend."
+      "source": "Reuters (via Investing.com)",
+      "title": "Wall Street futures rise as AI stocks catch their breath; midterms in focus",
+      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus-4990733",
+      "take": "After a week of negative AI sentiment, Reuters notes OpenAI has reportedly cut $10B from its latest funding-round target and Blackstone has told investors Anthropic may not secure an investment-grade rating after its IPO. Futures still rose Monday with the midterms in focus."
     },
     {
-      "source": "The Washington Post",
-      "title": "Gulf nations push to stave off re-escalation of Iran war",
-      "url": "https://www.washingtonpost.com/world/2026/10/31/persian-gulf-scrambling-prevent-iran-war-again-hitting-its-doorstep/",
-      "take": "With reports of a possible strike window after the midterms, Gulf states are working to keep the Iran conflict from hitting their doorstep again. For markets it is the biggest non-AI wildcard: a re-escalation would tighten oil further and keep inflation an issue."
+      "source": "Yahoo Finance",
+      "title": "Apple Earnings, Midterms, Jobs Data Put Markets To The Test: 3 Charts To Watch This Week",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-earnings-midterms-jobs-data-110531218.html",
+      "take": "Three tests decide whether last week's AI sell-off was a blip: Apple tonight, the midterms Tuesday (CNBC has Democrats expected to take the House, the Senate still uncertain), and Friday's October jobs report. The jobs print also shapes whether slowing hiring keeps a December Fed rate hike on the table."
     },
     {
-      "source": "J.P. Morgan",
-      "title": "Making Sense: Sponsors, spreads and stress testing: Navigating 2026\u2019s rate reset",
-      "url": "https://www.jpmorgan.com/insights/podcast-hub/making-sense/sponsors-spreads-rate-reset",
-      "take": "Today\u2019s rotation pick asks the question behind Friday\u2019s rout: in volatile markets, do you pay for certainty now or preserve flexibility for later. Leveraged finance and private markets are weighing exactly that trade-off in a higher-for-longer rate world."
+      "source": "WSJ What's News (podcast pick)",
+      "title": "Democratic Dust-up Puts Must-Win Seat at Risk",
+      "url": "https://www.wsj.com/podcasts/whats-news",
+      "take": "Today's featured listen from the rotation, ahead of tomorrow's midterms: the Journal's daily show on a Democratic intraparty fight that has put a must-win Senate seat at risk, the first market-relevant data point of election week."
     }
   ],
   "tape": [
@@ -77,6 +77,6 @@
       "chg": "+0.63%"
     }
   ],
-  "audio": "audio/read-daily/2026-11-01.mp3",
-  "audio_seconds": 81
+  "audio": "audio/read-daily/2026-11-02.mp3",
+  "audio_seconds": 84
 }
