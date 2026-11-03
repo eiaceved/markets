@@ -1,82 +1,82 @@
 {
-  "updated": "2026-11-02T07:35:00-08:00",
-  "label": "Monday, November 2, 2026 · Apple test-day edition",
-  "intro": "Good morning. It's Monday, November 2nd. Here's your Read Daily brief.",
+  "updated": "2026-11-03T07:25:00-08:00",
+  "label": "Tuesday, November 3, 2026 · Election Day edition",
+  "intro": "Good morning. It's Tuesday, November 3rd. Here's your Read Daily brief.",
   "items": [
     {
       "source": "Yahoo Finance",
-      "title": "Stock market today: Dow, S&P 500, Nasdaq recover from bruising sell-off as oil prices fall",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html",
-      "take": "Stocks opened higher Monday as tech catches its breath after October's AI sell-off, with the Dow up 0.7% and the Nasdaq up 0.7% in morning trade. Anthropic filed an amended S-1 Monday morning, a fresh look at the filing just ahead of a debut expected as soon as this month."
+      "title": "Apple Beats Q4 Earnings Forecasts but Warns Rising Memory Costs Will Pressure Holiday Margins",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-beats-q4-earnings-forecasts-112209799.html",
+      "take": "Apple's first report under CEO John Ternus beat: $114.48B revenue, up 12%, and $2.10 EPS, with iPhone up 17% on the Duo and 18 Pro. The stock still sank 3% premarket Tuesday after holiday guidance of 45-46% gross margin versus 47.9% last quarter, with memory-chip inflation the stated culprit."
     },
     {
-      "source": "Reuters (via Yahoo Finance)",
-      "title": "Apple's new CEO faces earnings test as rising chip costs cloud outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apples-ceo-faces-earnings-test-113824267.html",
-      "take": "Apple reports after the bell tonight, the first quarter under new CEO John Ternus. Consensus looks for about $2 of EPS on roughly $113.4B of revenue, but the watch items are rising memory-chip costs, holiday guidance, and iPhone Duo demand."
+      "source": "CNBC",
+      "title": "Apple's stock drops on weak margin forecast in Ternus' first earnings report",
+      "url": "https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html",
+      "take": "The headline numbers carried asterisks: EPS included a $0.05 tariff-refund benefit, wearables fell 8% to $8.3B and missed, and Greater China came in short of estimates. Services growth was guided at 8-9% versus 10.7% expected, and Ternus called the memory-price run unprecedented."
     },
     {
-      "source": "The New York Times (DealBook)",
-      "title": "Cracks in the A.I. Borrowing Binge",
-      "url": "https://www.nytimes.com/2026/11/02/business/dealbook/ai-borrowing-binge.html",
-      "take": "Big Tech's AI spending is squeezing cash flow and pushing companies toward more borrowing and stock sales, and Wall Street is hunting for a catalyst to quiet the bubble chatter. A lot rides on Anthropic's trading debut, and the filing's own language about catastrophic risk is drawing attention."
+      "source": "Investopedia",
+      "title": "Stock Market Today: S&P 500, Nasdaq Rise After 3 Days of Losses; Dow Drops as Apple Sinks After Earnings",
+      "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11032026-12209150",
+      "take": "Stocks are rebounding on Election Day after three straight losing sessions, though the Dow lags as Apple sinks on that margin warning. Palantir fell more than 7% premarket despite solid earnings, on concerns over future bookings."
     },
     {
-      "source": "Reuters (via Investing.com)",
-      "title": "Wall Street futures rise as AI stocks catch their breath; midterms in focus",
-      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus-4990733",
-      "take": "After a week of negative AI sentiment, Reuters notes OpenAI has reportedly cut $10B from its latest funding-round target and Blackstone has told investors Anthropic may not secure an investment-grade rating after its IPO. Futures still rose Monday with the midterms in focus."
+      "source": "Investing.com",
+      "title": "S&P futures muted, Nasdaq futures higher ahead of U.S. midterms",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-apple-dips-after-mixed-earnings-4993314",
+      "take": "Futures hovered around the flatline as voters headed to the polls, with Deutsche Bank describing markets as caught between energy and AI themes. Analysts flag that a Democratic sweep could mean tougher AI rules and more resistance to data centers."
     },
     {
       "source": "Yahoo Finance",
       "title": "Apple Earnings, Midterms, Jobs Data Put Markets To The Test: 3 Charts To Watch This Week",
       "url": "https://finance.yahoo.com/markets/stocks/articles/apple-earnings-midterms-jobs-data-110531218.html",
-      "take": "Three tests decide whether last week's AI sell-off was a blip: Apple tonight, the midterms Tuesday (CNBC has Democrats expected to take the House, the Senate still uncertain), and Friday's October jobs report. The jobs print also shapes whether slowing hiring keeps a December Fed rate hike on the table."
+      "take": "Two tests remain after Apple: today's midterms and Friday's October jobs report, which shapes whether the Fed keeps a December rate hike on the table. Reports suggest Anthropic's IPO could come before Thanksgiving, with no date confirmed."
     },
     {
-      "source": "WSJ What's News (podcast pick)",
-      "title": "Democratic Dust-up Puts Must-Win Seat at Risk",
-      "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Today's featured listen from the rotation, ahead of tomorrow's midterms: the Journal's daily show on a Democratic intraparty fight that has put a must-win Senate seat at risk, the first market-relevant data point of election week."
+      "source": "Bloomberg Surveillance (podcast pick)",
+      "title": "'Ugly' Midterms, Increasing Your Nest Egg, Everywhere Millionaires",
+      "url": "https://omny.fm/shows/bloomberg-money/ugly-midterms-increasing-your-nest-egg-everywhere-millionaires",
+      "take": "Today's rotation pick for election day: Surveillance on what an ugly midterm result means for markets, plus a practical segment on building the nest egg and the rise of everyday millionaires."
     }
   ],
   "tape": [
     {
       "name": "S&P 500",
-      "value": "7,580.07",
-      "chg": "-1.82%"
+      "value": "7,541.40",
+      "chg": "-0.51%"
     },
     {
       "name": "Dow Jones",
-      "value": "51,770.31",
-      "chg": "-1.09%"
+      "value": "51,983.98",
+      "chg": "+0.41%"
     },
     {
       "name": "Nasdaq",
-      "value": "25,437.00",
-      "chg": "-2.86%"
+      "value": "25,164.31",
+      "chg": "-1.07%"
     },
     {
       "name": "10-Yr Yield",
-      "value": "4.93%",
-      "chg": "-0.06%"
+      "value": "4.89%",
+      "chg": "-0.04"
     },
     {
       "name": "VIX",
-      "value": "19.42",
-      "chg": "+12.91%"
+      "value": "21.15",
+      "chg": "+8.91%"
     },
     {
       "name": "Gold",
-      "value": "$3,898.90",
-      "chg": "-3.29%"
+      "value": "$3,969.60",
+      "chg": "+1.81%"
     },
     {
       "name": "Bitcoin",
-      "value": "$77,923.43",
-      "chg": "+0.63%"
+      "value": "$76,677.30",
+      "chg": "-1.60%"
     }
   ],
-  "audio": "audio/read-daily/2026-11-02.mp3",
-  "audio_seconds": 84
+  "audio": "audio/read-daily/2026-11-03.mp3",
+  "audio_seconds": 83
 }
