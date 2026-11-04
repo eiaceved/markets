@@ -1,71 +1,56 @@
 {
-  "updated": "2026-11-03T15:25:00Z",
-  "shows": [
-    {
-      "name": "What's News",
-      "from": "The Wall Street Journal",
-      "cadence": "Twice a day, every weekday morning and afternoon",
-      "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
-      "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440"
-    },
-    {
-      "name": "Bloomberg Surveillance",
-      "from": "Bloomberg",
-      "cadence": "Daily, mornings",
-      "blurb": "Tom Keene, Paul Sweeney, Lisa Abramowicz and Jonathan Ferro with the morning's markets conversation and big interviews. Longer-form: good for a walk to campus.",
-      "apple": "https://podcasts.apple.com/us/podcast/bloomberg-surveillance/id296237493",
-      "web": "https://www.bloomberg.com/podcasts/series/bloomberg-surveillance"
-    },
-    {
-      "name": "Thoughts on the Market",
-      "from": "Morgan Stanley",
-      "cadence": "Every weekday",
-      "blurb": "Short, sharp takes (about 10 minutes) from Morgan Stanley strategists and economists on what moved markets. Perfect between classes.",
-      "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
-      "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market"
-    },
-    {
-      "name": "Making Sense",
-      "from": "J.P. Morgan",
-      "cadence": "Regular episodes",
-      "blurb": "J.P. Morgan leaders on market trends and the forces shaping the global economy, from the Commercial & Investment Bank's research side.",
-      "apple": "https://podcasts.apple.com/us/podcast/making-sense/id1456184829",
-      "web": "https://www.jpmorgan.com/insights/podcast-hub/making-sense"
-    },
-    {
-      "name": "The Markets",
-      "from": "Goldman Sachs",
-      "cadence": "Weekly",
-      "blurb": "Goldman traders and investors break down one market dynamic at a time, in ten minutes or less. Trading-floor perspective you won't get from the news.",
-      "apple": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600",
-      "web": "https://www.goldmansachs.com/insights/the-markets"
-    }
-  ],
-  "latest": [
-    {
-      "show": "Bloomberg Surveillance",
-      "title": "'Ugly' Midterms, Increasing Your Nest Egg, Everywhere Millionaires",
-      "url": "https://omny.fm/shows/bloomberg-money/ugly-midterms-increasing-your-nest-egg-everywhere-millionaires"
-    },
-    {
-      "show": "What's News",
-      "title": "Democratic Dust-up Puts Must-Win Seat at Risk",
-      "url": "https://www.wsj.com/podcasts/whats-news"
-    },
-    {
-      "show": "The Markets",
-      "title": "Bullish Options Trades Slow amid AI Uncertainty",
-      "url": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600"
-    },
-    {
-      "show": "Making Sense",
-      "title": "Sponsors, spreads and stress testing: Navigating 2026’s rate reset",
-      "url": "https://www.jpmorgan.com/insights/podcast-hub/making-sense/sponsors-spreads-rate-reset"
-    },
-    {
-      "show": "Thoughts on the Market",
-      "title": "The Curious Calm of Credit Markets",
-      "url": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717"
-    }
-  ]
+ "updated": "2026-11-04T15:14:36+00:00",
+ "shows": [
+  {
+   "name": "What's News",
+   "from": "The Wall Street Journal",
+   "cadence": "Twice a day, every weekday morning and afternoon",
+   "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
+   "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440"
+  },
+  {
+   "name": "Bloomberg Surveillance",
+   "from": "Bloomberg",
+   "cadence": "Daily, mornings",
+   "blurb": "Tom Keene, Paul Sweeney, Lisa Abramowicz and Jonathan Ferro with the morning's markets conversation and big interviews. Longer-form: good for a walk to campus.",
+   "apple": "https://podcasts.apple.com/us/podcast/bloomberg-surveillance/id296237493",
+   "web": "https://www.bloomberg.com/podcasts/series/bloomberg-surveillance"
+  },
+  {
+   "name": "Thoughts on the Market",
+   "from": "Morgan Stanley",
+   "cadence": "Every weekday",
+   "blurb": "Short, sharp takes (about 10 minutes) from Morgan Stanley strategists and economists on what moved markets. Perfect between classes.",
+   "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
+   "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market"
+  },
+  {
+   "name": "Making Sense",
+   "from": "J.P. Morgan",
+   "cadence": "Regular episodes",
+   "blurb": "J.P. Morgan leaders on market trends and the forces shaping the global economy, from the Commercial & Investment Bank's research side.",
+   "apple": "https://podcasts.apple.com/us/podcast/making-sense/id1456184829",
+   "web": "https://www.jpmorgan.com/insights/podcast-hub/making-sense"
+  },
+  {
+   "name": "The Markets",
+   "from": "Goldman Sachs",
+   "cadence": "Weekly",
+   "blurb": "Goldman traders and investors break down one market dynamic at a time, in ten minutes or less. Trading-floor perspective you won't get from the news.",
+   "apple": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600",
+   "web": "https://www.goldmansachs.com/insights/the-markets"
+  }
+ ],
+ "latest": [
+  {
+   "show": "What's News",
+   "title": "A Blue Wave Just Swept Congress",
+   "url": "https://www.wsj.com/podcasts/whats-news"
+  },
+  {
+   "show": "The Markets",
+   "title": "Bullish Options Trades Slow amid AI Uncertainty",
+   "url": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600"
+  }
+ ]
 }

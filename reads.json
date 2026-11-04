@@ -1,82 +1,82 @@
 {
-  "updated": "2026-11-03T07:25:00-08:00",
-  "label": "Tuesday, November 3, 2026 · Election Day edition",
-  "intro": "Good morning. It's Tuesday, November 3rd. Here's your Read Daily brief.",
-  "items": [
-    {
-      "source": "Yahoo Finance",
-      "title": "Apple Beats Q4 Earnings Forecasts but Warns Rising Memory Costs Will Pressure Holiday Margins",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-beats-q4-earnings-forecasts-112209799.html",
-      "take": "Apple's first report under CEO John Ternus beat: $114.48B revenue, up 12%, and $2.10 EPS, with iPhone up 17% on the Duo and 18 Pro. The stock still sank 3% premarket Tuesday after holiday guidance of 45-46% gross margin versus 47.9% last quarter, with memory-chip inflation the stated culprit."
-    },
-    {
-      "source": "CNBC",
-      "title": "Apple's stock drops on weak margin forecast in Ternus' first earnings report",
-      "url": "https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html",
-      "take": "The headline numbers carried asterisks: EPS included a $0.05 tariff-refund benefit, wearables fell 8% to $8.3B and missed, and Greater China came in short of estimates. Services growth was guided at 8-9% versus 10.7% expected, and Ternus called the memory-price run unprecedented."
-    },
-    {
-      "source": "Investopedia",
-      "title": "Stock Market Today: S&P 500, Nasdaq Rise After 3 Days of Losses; Dow Drops as Apple Sinks After Earnings",
-      "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11032026-12209150",
-      "take": "Stocks are rebounding on Election Day after three straight losing sessions, though the Dow lags as Apple sinks on that margin warning. Palantir fell more than 7% premarket despite solid earnings, on concerns over future bookings."
-    },
-    {
-      "source": "Investing.com",
-      "title": "S&P futures muted, Nasdaq futures higher ahead of U.S. midterms",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-apple-dips-after-mixed-earnings-4993314",
-      "take": "Futures hovered around the flatline as voters headed to the polls, with Deutsche Bank describing markets as caught between energy and AI themes. Analysts flag that a Democratic sweep could mean tougher AI rules and more resistance to data centers."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "Apple Earnings, Midterms, Jobs Data Put Markets To The Test: 3 Charts To Watch This Week",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-earnings-midterms-jobs-data-110531218.html",
-      "take": "Two tests remain after Apple: today's midterms and Friday's October jobs report, which shapes whether the Fed keeps a December rate hike on the table. Reports suggest Anthropic's IPO could come before Thanksgiving, with no date confirmed."
-    },
-    {
-      "source": "Bloomberg Surveillance (podcast pick)",
-      "title": "'Ugly' Midterms, Increasing Your Nest Egg, Everywhere Millionaires",
-      "url": "https://omny.fm/shows/bloomberg-money/ugly-midterms-increasing-your-nest-egg-everywhere-millionaires",
-      "take": "Today's rotation pick for election day: Surveillance on what an ugly midterm result means for markets, plus a practical segment on building the nest egg and the rise of everyday millionaires."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": "7,541.40",
-      "chg": "-0.51%"
-    },
-    {
-      "name": "Dow Jones",
-      "value": "51,983.98",
-      "chg": "+0.41%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": "25,164.31",
-      "chg": "-1.07%"
-    },
-    {
-      "name": "10-Yr Yield",
-      "value": "4.89%",
-      "chg": "-0.04"
-    },
-    {
-      "name": "VIX",
-      "value": "21.15",
-      "chg": "+8.91%"
-    },
-    {
-      "name": "Gold",
-      "value": "$3,969.60",
-      "chg": "+1.81%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": "$76,677.30",
-      "chg": "-1.60%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-03.mp3",
-  "audio_seconds": 83
+ "updated": "2026-11-04T07:12:49-08:00",
+ "label": "Wednesday, November 4, 2026 \u00b7 Blue-wave rally edition",
+ "intro": "Democrats swept both chambers of Congress on Election Night, and Wall Street woke up to it: stocks, bonds and gold all rallying while the dollar slid. Today's tape shows Tuesday's quiet close, but futures were sharply higher ahead of the bell.",
+ "items": [
+  {
+   "source": "Bloomberg",
+   "title": "Democratic sweep heralds 'a new political era' \u2014 stocks and bonds rise, dollar falls",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-03/stock-market-today-dow-s-p-live-updates",
+   "take": "Democrats took both chambers of Congress in a midterm sweep, and global markets bid risk on: stocks and bonds rose while the dollar fell. Gold pushed back above $4,000 as traders price a slower pace of tax cuts and a check on the Trump agenda."
+  },
+  {
+   "source": "Investing.com",
+   "title": "Democrats seize Congress; AMD shares surge \u2014 what's moving markets",
+   "url": "https://in.investing.com/news/economy-news/democrats-seize-congress-amd-shares-surge--whats-moving-markets-5677485",
+   "take": "Democrats swept statewide races even in traditional Republican strongholds, after voters punished the White House over affordability and the Iran war. Wednesday brings earnings from Arm Holdings and Qualcomm to test whether the chip rally has legs."
+  },
+  {
+   "source": "CNBC",
+   "title": "AMD stock jumps 8% on earnings as data center revenue nearly doubles",
+   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+   "take": "AMD beat on both lines ($2.09 adjusted EPS, $13.38B revenue) and guided stronger, saying data-center chips will drive 80% of sales. Meta, Microsoft, OpenAI, Oracle and Anthropic are all starting to use its Helios racks, and AMD has committed up to $5B to Anthropic."
+  },
+  {
+   "source": "Seeking Alpha",
+   "title": "Blue wave sweeps the nation: futures rise, gold tops $4K, Anthropic 'gobbling up' compute",
+   "url": "https://seekingalpha.com/article/4962070-blue-wave-sweeps-the-nation",
+   "take": "Anthropic's amended S-1 shows Q3 revenue of $16.8B, up from $11.6B in Q2, and the company is buying compute aggressively ahead of a potentially historic IPO. Meta launched its debut euro bond sale, extending the AI borrowing spree. TD Securities called bonds the clear winner of the sweep."
+  },
+  {
+   "source": "TheStreet",
+   "title": "Dow climbs as Democrats take House and Senate; Trump warns he'll 'just veto everything'",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026",
+   "take": "Intraday Wednesday the Dow was up more than 2% and the S&P 500 back over 7,670, with health insurers and hospital operators the clear Democratic-policy winners while energy lagged. Trump congratulated Democrats, then warned about a veto wall \u2014 divided government is now part of the market math."
+  },
+  {
+   "source": "Goldman Sachs",
+   "title": "Podcast: The Markets \u2014 Bullish options trades slow amid AI uncertainty",
+   "url": "https://podcasts.apple.com/us/podcast/the-markets/id1639289298",
+   "take": "This week's pick from the rotation: Goldman's traders-desk podcast on why bullish options positioning is cooling as the AI trade gets re-priced, a useful counterweight to today's relief rally."
+  }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": "7,568.92",
+   "chg": "+0.36%"
+  },
+  {
+   "name": "Dow",
+   "value": "51,786.72",
+   "chg": "-0.38%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": "25,372.01",
+   "chg": "+0.83%"
+  },
+  {
+   "name": "10-Yr Treasury",
+   "value": "4.95%",
+   "chg": "+0.06"
+  },
+  {
+   "name": "VIX",
+   "value": "20.83",
+   "chg": "-1.5%"
+  },
+  {
+   "name": "Gold",
+   "value": "$3,940.40",
+   "chg": "-0.74%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": "$77,345.05",
+   "chg": "+0.87%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-04.mp3",
+ "audio_seconds": 89
 }
