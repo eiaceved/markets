@@ -1,82 +1,82 @@
 {
- "updated": "2026-11-04T07:12:49-08:00",
- "label": "Wednesday, November 4, 2026 \u00b7 Blue-wave rally edition",
- "intro": "Democrats swept both chambers of Congress on Election Night, and Wall Street woke up to it: stocks, bonds and gold all rallying while the dollar slid. Today's tape shows Tuesday's quiet close, but futures were sharply higher ahead of the bell.",
+ "updated": "2026-11-05T07:29:26-08:00",
+ "label": "Thursday, November 5, 2026 \u00b7 Chip hangover edition",
+ "intro": "The blue-wave rally lasted one session. Wednesday the Dow posted its biggest single-day gain since April, but Thursday the AI trade gave it back as chip stocks sold off for a second day on fears the Democratic Congress tightens data-center rules.",
  "items": [
   {
    "source": "Bloomberg",
-   "title": "Democratic sweep heralds 'a new political era' \u2014 stocks and bonds rise, dollar falls",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-03/stock-market-today-dow-s-p-live-updates",
-   "take": "Democrats took both chambers of Congress in a midterm sweep, and global markets bid risk on: stocks and bonds rose while the dollar fell. Gold pushed back above $4,000 as traders price a slower pace of tax cuts and a check on the Trump agenda."
+   "title": "Semiconductor ETF drops over 3% as chipmakers extend losses into a second day",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-05/us-stock-futures-diverge-as-chip-selloff-extends-into-second-day",
+   "take": "The chip selloff bled through the night and into Asia, with memory giants Samsung and SK Hynix slipping hard. The fear: a Democratic sweep means tighter US data-center regulation and weaker semiconductor demand."
+  },
+  {
+   "source": "Yahoo Finance",
+   "title": "Dow, S&P 500, Nasdaq plunge in dramatic reversal, giving back post-election rally gains",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-falls-090519607.html",
+   "take": "A day after the Dow's biggest one-day gain since April (+1,569 points), Thursday opened with a reversal: Nasdaq down 3.6%, S&P down 2.1%, Dow down 1% intraday. Losses are concentrated in chip and data-center stocks while energy and financials hold up."
   },
   {
    "source": "Investing.com",
-   "title": "Democrats seize Congress; AMD shares surge \u2014 what's moving markets",
-   "url": "https://in.investing.com/news/economy-news/democrats-seize-congress-amd-shares-surge--whats-moving-markets-5677485",
-   "take": "Democrats swept statewide races even in traditional Republican strongholds, after voters punished the White House over affordability and the Iran war. Wednesday brings earnings from Arm Holdings and Qualcomm to test whether the chip rally has legs."
+   "title": "AI, data-center stocks slip as Democratic sweep clouds expansion plans",
+   "url": "https://www.investing.com/news/stock-market-news/ai-datacenter-stocks-slip-as-democratic-sweep-clouds-expansion-plans-5003196",
+   "take": "Neocloud names CoreWeave and Nebius led the slide as investors priced tougher scrutiny of data-center construction. UBS estimates about 30% of expected 2028 US data-center capacity additions could be at risk from pauses; public opposition to new facilities was already mounting."
   },
   {
-   "source": "CNBC",
-   "title": "AMD stock jumps 8% on earnings as data center revenue nearly doubles",
-   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
-   "take": "AMD beat on both lines ($2.09 adjusted EPS, $13.38B revenue) and guided stronger, saying data-center chips will drive 80% of sales. Meta, Microsoft, OpenAI, Oracle and Anthropic are all starting to use its Helios racks, and AMD has committed up to $5B to Anthropic."
+   "source": "Investing.com",
+   "title": "Qualcomm plunges on weak smartphone-chip guidance; oil steadies after 8% slide",
+   "url": "https://www.investing.com/news/economy-news/us-midterms-fallout-in-focus-qualcomm-shares-slip--whats-moving-markets-5002636",
+   "take": "Qualcomm dropped about 10% after missing Q4 smartphone-chip estimates, hurt by sluggish demand and Apple-related revenue; global smartphone shipments fell a fifth last quarter partly on the memory-chip cost surge. Oil steadied above $95 after an 8% plunge on hopes the new Congress pressures an Iran endgame."
   },
   {
-   "source": "Seeking Alpha",
-   "title": "Blue wave sweeps the nation: futures rise, gold tops $4K, Anthropic 'gobbling up' compute",
-   "url": "https://seekingalpha.com/article/4962070-blue-wave-sweeps-the-nation",
-   "take": "Anthropic's amended S-1 shows Q3 revenue of $16.8B, up from $11.6B in Q2, and the company is buying compute aggressively ahead of a potentially historic IPO. Meta launched its debut euro bond sale, extending the AI borrowing spree. TD Securities called bonds the clear winner of the sweep."
+   "source": "Washington Post",
+   "title": "Voters nationwide push back against data centers",
+   "url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
+   "take": "More than 20 local ballot measures to ban or restrict data centers passed Tuesday, the same night as the Democratic sweep. For the AI build-out, the resistance to new facilities is now both political and local \u2014 the backdrop behind this week's chip selloff."
   },
   {
-   "source": "TheStreet",
-   "title": "Dow climbs as Democrats take House and Senate; Trump warns he'll 'just veto everything'",
-   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026",
-   "take": "Intraday Wednesday the Dow was up more than 2% and the S&P 500 back over 7,670, with health insurers and hospital operators the clear Democratic-policy winners while energy lagged. Trump congratulated Democrats, then warned about a veto wall \u2014 divided government is now part of the market math."
-  },
-  {
-   "source": "Goldman Sachs",
-   "title": "Podcast: The Markets \u2014 Bullish options trades slow amid AI uncertainty",
-   "url": "https://podcasts.apple.com/us/podcast/the-markets/id1639289298",
-   "take": "This week's pick from the rotation: Goldman's traders-desk podcast on why bullish options positioning is cooling as the AI trade gets re-priced, a useful counterweight to today's relief rally."
+   "source": "Morgan Stanley",
+   "title": "Podcast: Thoughts on the Market \u2014 Solving AI's power bottleneck",
+   "url": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
+   "take": "This week's rotation pick lands right on the day's story: Morgan Stanley on where the power for AI data centers actually comes from, and why the bottleneck shapes which build-outs survive."
   }
  ],
  "tape": [
   {
    "name": "S&P 500",
-   "value": "7,568.92",
-   "chg": "+0.36%"
+   "value": "7,688.62",
+   "chg": "+1.58%"
   },
   {
    "name": "Dow",
-   "value": "51,786.72",
-   "chg": "-0.38%"
+   "value": "53,356.12",
+   "chg": "+3.03%"
   },
   {
    "name": "Nasdaq",
-   "value": "25,372.01",
-   "chg": "+0.83%"
+   "value": "25,736.51",
+   "chg": "+1.44%"
   },
   {
    "name": "10-Yr Treasury",
-   "value": "4.95%",
-   "chg": "+0.06"
+   "value": "4.89%",
+   "chg": "-0.06"
   },
   {
    "name": "VIX",
-   "value": "20.83",
-   "chg": "-1.5%"
+   "value": "16.61",
+   "chg": "-2.03"
   },
   {
    "name": "Gold",
-   "value": "$3,940.40",
-   "chg": "-0.74%"
+   "value": "$4,073.00",
+   "chg": "+3.37%"
   },
   {
    "name": "Bitcoin",
-   "value": "$77,345.05",
-   "chg": "+0.87%"
+   "value": "$80,405.29",
+   "chg": "+3.96%"
   }
  ],
- "audio": "audio/read-daily/2026-11-04.mp3",
- "audio_seconds": 89
+ "audio": "audio/read-daily/2026-11-05.mp3",
+ "audio_seconds": 83
 }
