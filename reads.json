@@ -1,82 +1,82 @@
 {
- "updated": "2026-11-05T07:29:26-08:00",
- "label": "Thursday, November 5, 2026 \u00b7 Chip hangover edition",
- "intro": "The blue-wave rally lasted one session. Wednesday the Dow posted its biggest single-day gain since April, but Thursday the AI trade gave it back as chip stocks sold off for a second day on fears the Democratic Congress tightens data-center rules.",
+ "updated": "2026-11-06T07:41:15-08:00",
+ "label": "Friday, November 6, 2026 \u00b7 Dip-buyers edition",
+ "intro": "Thursday was the crash after the blue-wave party: the Nasdaq fell 5.5 percent, its worst day since 2020, and the Nasdaq slipped back into a correction. Friday the dip buyers showed up as the October jobs report beat forecasts, and chip stocks led the rebound.",
  "items": [
   {
    "source": "Bloomberg",
-   "title": "Semiconductor ETF drops over 3% as chipmakers extend losses into a second day",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/us-stock-futures-diverge-as-chip-selloff-extends-into-second-day",
-   "take": "The chip selloff bled through the night and into Asia, with memory giants Samsung and SK Hynix slipping hard. The fear: a Democratic sweep means tighter US data-center regulation and weaker semiconductor demand."
+   "title": "Dip buyers emerge as chipmakers rally after the selloff",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-05/stock-market-today-dow-s-p-live-updates",
+   "take": "Friday opened with the Nasdaq 100 up 2% and a gauge of chip giants up 6% as dip buyers returned. But the solid jobs reading reinforced bets the Fed will hike rates again in December, and short-dated Treasuries underperformed."
   },
   {
    "source": "Yahoo Finance",
-   "title": "Dow, S&P 500, Nasdaq plunge in dramatic reversal, giving back post-election rally gains",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-falls-090519607.html",
-   "take": "A day after the Dow's biggest one-day gain since April (+1,569 points), Thursday opened with a reversal: Nasdaq down 3.6%, S&P down 2.1%, Dow down 1% intraday. Losses are concentrated in chip and data-center stocks while energy and financials hold up."
+   "title": "Nasdaq, S&P rebound after brutal sell-off as US adds 165K jobs",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+   "take": "The October jobs report beat every forecast: 165,000 jobs added, versus 65,000 expected and a revised 60,000 in September. Chip stocks bounced after their worst sell-off since 2020, with the PHLX Semiconductor Index up 4% after Thursday's 12% plunge and Intel up 6%."
   },
   {
-   "source": "Investing.com",
-   "title": "AI, data-center stocks slip as Democratic sweep clouds expansion plans",
-   "url": "https://www.investing.com/news/stock-market-news/ai-datacenter-stocks-slip-as-democratic-sweep-clouds-expansion-plans-5003196",
-   "take": "Neocloud names CoreWeave and Nebius led the slide as investors priced tougher scrutiny of data-center construction. UBS estimates about 30% of expected 2028 US data-center capacity additions could be at risk from pauses; public opposition to new facilities was already mounting."
+   "source": "The Guardian",
+   "title": "US tech stocks open higher after worst day in 19 months",
+   "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
+   "take": "Thursday's rout was the real story: Nasdaq down 5.5%, Dow down 1,833 points, S&P down 4.4% as investors exited AI positions en masse. Friday's bounce is partial, the Dow was still down about 1% at the open, and copper is on track for its biggest weekly drop since March."
   },
   {
-   "source": "Investing.com",
-   "title": "Qualcomm plunges on weak smartphone-chip guidance; oil steadies after 8% slide",
-   "url": "https://www.investing.com/news/economy-news/us-midterms-fallout-in-focus-qualcomm-shares-slip--whats-moving-markets-5002636",
-   "take": "Qualcomm dropped about 10% after missing Q4 smartphone-chip estimates, hurt by sluggish demand and Apple-related revenue; global smartphone shipments fell a fifth last quarter partly on the memory-chip cost surge. Oil steadied above $95 after an 8% plunge on hopes the new Congress pressures an Iran endgame."
+   "source": "Economic Times",
+   "title": "Rate-hike odds settle as jobless claims hit a 57-year low",
+   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-amd-intel-broadcom-micron-tesla-airbnb-ai-chip-stocks-jobs-report-treasury-yields-iran-war-democrat-midterm-inflation-oil-prices-6th-november-2026/liveblog/135609029.cms",
+   "take": "Weekly jobless claims matched a 57-year low of 189,000, and money markets scaled back December rate-hike odds to about 65% from over 80%. Elsewhere Airbnb jumped 12% on a raised forecast and Goldman cut its end-2026 gold forecast to $4,150 on the hawkish Fed outlook."
   },
   {
    "source": "Washington Post",
-   "title": "Voters nationwide push back against data centers",
-   "url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
-   "take": "More than 20 local ballot measures to ban or restrict data centers passed Tuesday, the same night as the Democratic sweep. For the AI build-out, the resistance to new facilities is now both political and local \u2014 the backdrop behind this week's chip selloff."
+   "title": "Stocks tumble steeply as markets weigh future of AI build-out",
+   "url": "https://www.washingtonpost.com/business/2026/11/05/us-stocks-slide-wiping-out-post-midterm-gains/",
+   "take": "The Post frames Thursday's slide as the market repricing the AI build-out itself, wiping out the post-midterm gains in a single session. With a companion piece noting the US remains vulnerable to oil shocks 50 years on, the macro picture is doing no favors for risk appetite."
   },
   {
-   "source": "Morgan Stanley",
-   "title": "Podcast: Thoughts on the Market \u2014 Solving AI's power bottleneck",
-   "url": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
-   "take": "This week's rotation pick lands right on the day's story: Morgan Stanley on where the power for AI data centers actually comes from, and why the bottleneck shapes which build-outs survive."
+   "source": "Bloomberg Surveillance",
+   "title": "Podcast: Instant Reaction \u2014 US adds 165,000 jobs, topping all forecasts",
+   "url": "https://omny.fm/shows/bloomberg-surveillance/instant-reaction-us-adds-165-000-jobs-topping-all-forec",
+   "take": "This week's rotation pick is the fastest take on the number everyone is chewing on: Bloomberg Surveillance's instant reaction to the October jobs report, out this morning."
   }
  ],
  "tape": [
   {
    "name": "S&P 500",
-   "value": "7,688.62",
-   "chg": "+1.58%"
+   "value": "7,353.73",
+   "chg": "-4.36%"
   },
   {
    "name": "Dow",
-   "value": "53,356.12",
-   "chg": "+3.03%"
+   "value": "51,523.06",
+   "chg": "-3.44%"
   },
   {
    "name": "Nasdaq",
-   "value": "25,736.51",
-   "chg": "+1.44%"
+   "value": "24,315.00",
+   "chg": "-5.53%"
   },
   {
    "name": "10-Yr Treasury",
-   "value": "4.89%",
-   "chg": "-0.06"
+   "value": "4.84%",
+   "chg": "-0.05"
   },
   {
    "name": "VIX",
-   "value": "16.61",
-   "chg": "-2.03"
+   "value": "28.18",
+   "chg": "+11.57"
   },
   {
    "name": "Gold",
-   "value": "$4,073.00",
-   "chg": "+3.37%"
+   "value": "$4,113.50",
+   "chg": "+0.99%"
   },
   {
    "name": "Bitcoin",
-   "value": "$80,405.29",
-   "chg": "+3.96%"
+   "value": "$75,942.12",
+   "chg": "-5.54%"
   }
  ],
- "audio": "audio/read-daily/2026-11-05.mp3",
- "audio_seconds": 83
+ "audio": "audio/read-daily/2026-11-06.mp3",
+ "audio_seconds": 89
 }
