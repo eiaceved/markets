@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T15:41:15+00:00",
+ "updated": "2026-11-07T15:24:41+00:00",
  "shows": [
   {
    "name": "What's News",
@@ -43,14 +43,14 @@
  ],
  "latest": [
   {
+   "show": "What's News in Markets",
+   "title": "AI Blues, Musk Under the Microscope, Housing Hope",
+   "url": "https://www.wsj.com/podcasts/whats-news"
+  },
+  {
    "show": "Bloomberg Surveillance",
    "title": "Instant Reaction: US Adds 165,000 Jobs, Topping All Forecasts",
    "url": "https://omny.fm/shows/bloomberg-surveillance/instant-reaction-us-adds-165-000-jobs-topping-all-forec"
-  },
-  {
-   "show": "What's News",
-   "title": "A Blue Wave Just Swept Congress",
-   "url": "https://www.wsj.com/podcasts/whats-news"
   }
  ]
 }

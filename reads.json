@@ -1,82 +1,82 @@
 {
- "updated": "2026-11-06T07:41:15-08:00",
- "label": "Friday, November 6, 2026 \u00b7 Dip-buyers edition",
- "intro": "Thursday was the crash after the blue-wave party: the Nasdaq fell 5.5 percent, its worst day since 2020, and the Nasdaq slipped back into a correction. Friday the dip buyers showed up as the October jobs report beat forecasts, and chip stocks led the rebound.",
+ "updated": "2026-11-07T07:24:41-08:00",
+ "label": "Saturday, November 7, 2026 \u00b7 Week-in-review edition",
+ "intro": "Friday's partial rebound capped the worst week since early June: tech fell 7% and energy 11% over five sessions, and the Nasdaq stayed in a correction. The October jobs beat at 165,000 softened the landing, but it also pushed yields and December rate-hike odds right back up.",
  "items": [
   {
-   "source": "Bloomberg",
-   "title": "Dip buyers emerge as chipmakers rally after the selloff",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-05/stock-market-today-dow-s-p-live-updates",
-   "take": "Friday opened with the Nasdaq 100 up 2% and a gauge of chip giants up 6% as dip buyers returned. But the solid jobs reading reinforced bets the Fed will hike rates again in December, and short-dated Treasuries underperformed."
+   "source": "Yahoo Finance",
+   "title": "Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+   "take": "Friday closed with the S&P up 0.7% and the Nasdaq up 1.6%, but both wrapped their worst week since June 5, with tech down 7% and energy 11% over five sessions. Yardeni Research calls Thursday's selloff overdone and is sticking with a 7,900 year-end target on the S&P."
   },
   {
-   "source": "Yahoo Finance",
-   "title": "Nasdaq, S&P rebound after brutal sell-off as US adds 165K jobs",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
-   "take": "The October jobs report beat every forecast: 165,000 jobs added, versus 65,000 expected and a revised 60,000 in September. Chip stocks bounced after their worst sell-off since 2020, with the PHLX Semiconductor Index up 4% after Thursday's 12% plunge and Intel up 6%."
+   "source": "Charles Schwab",
+   "title": "Stocks mixed, yields up on surging U.S. job growth",
+   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+   "take": "The 165,000 jobs print came in far above consensus, and yields climbed with it as rate-hike odds rose. The VIX topped 28 on Thursday, its highest since March, though Schwab's technicians note traditional benchmarks now show oversold conditions."
   },
   {
    "source": "The Guardian",
-   "title": "US tech stocks open higher after worst day in 19 months",
+   "title": "US tech stocks post modest recovery after worst day in 19 months",
    "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
-   "take": "Thursday's rout was the real story: Nasdaq down 5.5%, Dow down 1,833 points, S&P down 4.4% as investors exited AI positions en masse. Friday's bounce is partial, the Dow was still down about 1% at the open, and copper is on track for its biggest weekly drop since March."
+   "take": "The Nasdaq clawed back 1.5% after Thursday's 5.5% plunge, with Rocket Lab up 12.5%, Airbnb up 11.7%, AMD up 9.3% and Intel up 8.9%. London wasn't so lucky: the FTSE 100 closed down 1% at 10,673 as AI concerns lingered."
   },
   {
    "source": "Economic Times",
-   "title": "Rate-hike odds settle as jobless claims hit a 57-year low",
-   "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-amd-intel-broadcom-micron-tesla-airbnb-ai-chip-stocks-jobs-report-treasury-yields-iran-war-democrat-midterm-inflation-oil-prices-6th-november-2026/liveblog/135609029.cms",
-   "take": "Weekly jobless claims matched a 57-year low of 189,000, and money markets scaled back December rate-hike odds to about 65% from over 80%. Elsewhere Airbnb jumped 12% on a raised forecast and Goldman cut its end-2026 gold forecast to $4,150 on the hawkish Fed outlook."
+   "title": "Airbnb jumps on raised forecast, Atlassian sinks, Bitcoin steadies",
+   "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-amd-intel-broadcom-micron-tesla-airbnb-ai-chip-stocks-jobs-report-treasury-yields-iran-war-democrat-midterm-inflation-oil-prices-6th-november-2026/amp_liveblog/135609029.cms",
+   "take": "Airbnb jumped 12% on a raised full-year revenue forecast while Atlassian sank 14% on its first-quarter results. Bitcoin settled near $75,600 after a 6% plunge from above $80,000, and Goldman cut its end-2026 gold forecast to $4,150 on the hawkish Fed outlook."
   },
   {
-   "source": "Washington Post",
-   "title": "Stocks tumble steeply as markets weigh future of AI build-out",
-   "url": "https://www.washingtonpost.com/business/2026/11/05/us-stocks-slide-wiping-out-post-midterm-gains/",
-   "take": "The Post frames Thursday's slide as the market repricing the AI build-out itself, wiping out the post-midterm gains in a single session. With a companion piece noting the US remains vulnerable to oil shocks 50 years on, the macro picture is doing no favors for risk appetite."
+   "source": "Northwest Arkansas Democrat-Gazette",
+   "title": "AI-tied sell-off slows as markets end week mixed",
+   "url": "https://www.nwaonline.com/news/2026/nov/07/ai-tied-sell-off-slows-as-markets-end-week-mixed/",
+   "take": "The week ended mixed as the AI-tied selloff slowed, with value and yield factors outperforming while growth sold off hard. Bargain hunting surfaced in the beaten-down areas, though commentators kept cautioning that no-earnings speculative names remain vulnerable."
   },
   {
-   "source": "Bloomberg Surveillance",
-   "title": "Podcast: Instant Reaction \u2014 US adds 165,000 jobs, topping all forecasts",
-   "url": "https://omny.fm/shows/bloomberg-surveillance/instant-reaction-us-adds-165-000-jobs-topping-all-forec",
-   "take": "This week's rotation pick is the fastest take on the number everyone is chewing on: Bloomberg Surveillance's instant reaction to the October jobs report, out this morning."
+   "source": "WSJ What's News in Markets",
+   "title": "Podcast: AI blues, Musk under the microscope, housing hope",
+   "url": "https://www.wsj.com/podcasts/whats-news",
+   "take": "This weekend's rotation pick is the markets edition of What's News, out Saturday morning: the AI rout's fallout, scrutiny on Musk after the midterms, and the one bright spot in housing."
   }
  ],
  "tape": [
   {
    "name": "S&P 500",
-   "value": "7,353.73",
-   "chg": "-4.36%"
+   "value": "7,376.86",
+   "chg": "+0.31%"
   },
   {
    "name": "Dow",
-   "value": "51,523.06",
-   "chg": "-3.44%"
+   "value": "51,285.73",
+   "chg": "-0.46%"
   },
   {
    "name": "Nasdaq",
-   "value": "24,315.00",
-   "chg": "-5.53%"
+   "value": "24,579.43",
+   "chg": "+1.09%"
   },
   {
    "name": "10-Yr Treasury",
-   "value": "4.84%",
-   "chg": "-0.05"
+   "value": "4.86%",
+   "chg": "+0.02"
   },
   {
    "name": "VIX",
-   "value": "28.18",
-   "chg": "+11.57"
+   "value": "25.64",
+   "chg": "-9.01%"
   },
   {
    "name": "Gold",
-   "value": "$4,113.50",
-   "chg": "+0.99%"
+   "value": "$4,074.90",
+   "chg": "-0.94%"
   },
   {
    "name": "Bitcoin",
-   "value": "$75,942.12",
-   "chg": "-5.54%"
+   "value": "$75,746.93",
+   "chg": "-0.26%"
   }
  ],
- "audio": "audio/read-daily/2026-11-06.mp3",
- "audio_seconds": 89
+ "audio": "audio/read-daily/2026-11-07.mp3",
+ "audio_seconds": 84
 }
