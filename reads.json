@@ -1,43 +1,42 @@
 {
- "updated": "2026-11-07T07:24:41-08:00",
- "label": "Saturday, November 7, 2026 \u00b7 Week-in-review edition",
- "intro": "Friday's partial rebound capped the worst week since early June: tech fell 7% and energy 11% over five sessions, and the Nasdaq stayed in a correction. The October jobs beat at 165,000 softened the landing, but it also pushed yields and December rate-hike odds right back up.",
+ "label": "Sunday, November 8, 2026 \u00b7 Week-ahead edition",
+ "updated": "2026-11-08T15:21:00+00:00",
  "items": [
   {
-   "source": "Yahoo Finance",
-   "title": "Nasdaq and S&P 500 rebound, Dow slips to cap bruising week for AI stocks",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
-   "take": "Friday closed with the S&P up 0.7% and the Nasdaq up 1.6%, but both wrapped their worst week since June 5, with tech down 7% and energy 11% over five sessions. Yardeni Research calls Thursday's selloff overdone and is sticking with a 7,900 year-end target on the S&P."
+   "source": "TipRanks",
+   "title": "The Week That Was, The Week Ahead: Macro and Markets, November 8",
+   "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-8",
+   "take": "U.S. stocks ended a turbulent week in the red as the tech selloff, midterm results and AI-spending worries piled up. Friday's surprisingly strong 165,000-jobs print complicates the rate-cut story, which makes Tuesday's October CPI the week's centerpiece."
   },
   {
-   "source": "Charles Schwab",
-   "title": "Stocks mixed, yields up on surging U.S. job growth",
-   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
-   "take": "The 165,000 jobs print came in far above consensus, and yields climbed with it as rate-hike odds rose. The VIX topped 28 on Thursday, its highest since March, though Schwab's technicians note traditional benchmarks now show oversold conditions."
+   "source": "Seeking Alpha",
+   "title": "Wall Street Week Ahead",
+   "url": "https://seekingalpha.com/article/4964825-wall-street-week-ahead",
+   "take": "Inflation and AI are back in focus, with October consumer prices due Tuesday and consensus looking for headline inflation around 3.7%, airfare posting another notable increase. Post-election volatility still hangs over technology stocks."
   },
   {
-   "source": "The Guardian",
-   "title": "US tech stocks post modest recovery after worst day in 19 months",
-   "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
-   "take": "The Nasdaq clawed back 1.5% after Thursday's 5.5% plunge, with Rocket Lab up 12.5%, Airbnb up 11.7%, AMD up 9.3% and Intel up 8.9%. London wasn't so lucky: the FTSE 100 closed down 1% at 10,673 as AI concerns lingered."
+   "source": "FXEmpire",
+   "title": "The Week Ahead: CPI and Tech Earnings Test a Fragile Stock Market",
+   "url": "https://www.fxempire.com/forecasts/article/the-week-ahead-cpi-and-tech-earnings-test-a-fragile-stock-market-1643118",
+   "take": "Tuesday's CPI and Friday's PPI will shape whether the Fed raises at its December 8-9 meeting. The AI trade's second test comes from earnings at CoreWeave, Cisco and Applied Materials."
   },
   {
-   "source": "Economic Times",
-   "title": "Airbnb jumps on raised forecast, Atlassian sinks, Bitcoin steadies",
-   "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-amd-intel-broadcom-micron-tesla-airbnb-ai-chip-stocks-jobs-report-treasury-yields-iran-war-democrat-midterm-inflation-oil-prices-6th-november-2026/amp_liveblog/135609029.cms",
-   "take": "Airbnb jumped 12% on a raised full-year revenue forecast while Atlassian sank 14% on its first-quarter results. Bitcoin settled near $75,600 after a 6% plunge from above $80,000, and Goldman cut its end-2026 gold forecast to $4,150 on the hawkish Fed outlook."
+   "source": "The Cantillon Report",
+   "title": "First Receivers \u00b7 #1 \u00b7 Sunday, November 8, 2026",
+   "url": "https://thecantillonreport.substack.com/p/first-receivers-1-sunday-november",
+   "take": "Money did not leave the stock market last week, it left the most crowded names: the chips broke first and the flows rotated into companies making and powering physical things. The Dow's best day in 19 months Wednesday, then the AI trade broke."
   },
   {
-   "source": "Northwest Arkansas Democrat-Gazette",
-   "title": "AI-tied sell-off slows as markets end week mixed",
-   "url": "https://www.nwaonline.com/news/2026/nov/07/ai-tied-sell-off-slows-as-markets-end-week-mixed/",
-   "take": "The week ended mixed as the AI-tied selloff slowed, with value and yield factors outperforming while growth sold off hard. Bargain hunting surfaced in the beaten-down areas, though commentators kept cautioning that no-earnings speculative names remain vulnerable."
+   "source": "The Morning Brief / Reuters",
+   "title": "Inflation and Earnings Test the AI Trade in the Week Ahead",
+   "url": "https://specterworks.substack.com/p/the-morning-brief-2026-11-08",
+   "take": "Anthropic reportedly committed $3.4 billion for 1.7 gigawatts of gas-generator capacity for AI data centers, per an FT report relayed by Reuters. Reuters also cites LSEG data putting the odds of a December rate hike around 80% after the jobs beat."
   },
   {
-   "source": "WSJ What's News in Markets",
-   "title": "Podcast: AI blues, Musk under the microscope, housing hope",
-   "url": "https://www.wsj.com/podcasts/whats-news",
-   "take": "This weekend's rotation pick is the markets edition of What's News, out Saturday morning: the AI rout's fallout, scrutiny on Musk after the midterms, and the one bright spot in housing."
+   "source": "Morgan Stanley Thoughts on the Market",
+   "title": "Why the Bond Market Remains Calm After the Blue Wave",
+   "url": "https://art19.com/shows/thoughts-on-the-market",
+   "take": "Friday's rotation pick: Morgan Stanley's Friday episode on why bond yields barely budged as the tech swoon deepened, and what that calm says about where the market thinks the risk sits."
   }
  ],
  "tape": [
@@ -76,7 +75,5 @@
    "value": "$75,746.93",
    "chg": "-0.26%"
   }
- ],
- "audio": "audio/read-daily/2026-11-07.mp3",
- "audio_seconds": 84
+ ]
 }
