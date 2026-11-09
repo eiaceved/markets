@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T15:21:00+00:00",
+ "updated": "2026-11-09T15:28:00+00:00",
  "shows": [
   {
    "name": "What's News",
@@ -43,18 +43,18 @@
  ],
  "latest": [
   {
-   "show": "Thoughts on the Market",
-   "from": "Morgan Stanley",
-   "title": "Why the Bond Market Remains Calm After the Blue Wave",
-   "date": "Fri, 06 Nov 2026 21:00:00 -0000",
-   "url": "https://art19.com/shows/thoughts-on-the-market"
-  },
-  {
    "show": "What's News",
    "from": "The Wall Street Journal",
-   "title": "What's News in Markets: AI Blues, Musk Under the Microscope, Housing Hope",
-   "date": "Sat, 07 Nov 2026 11:00:00 GMT",
+   "title": "What Does Beijing Know About Nvidia's Jensen Huang?",
+   "date": "Mon, 9 Nov 2026 10:52:00 +0000",
    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news"
+  },
+  {
+   "show": "The Markets",
+   "from": "Goldman Sachs",
+   "title": "The US Midterms: Reshaping the Stock Market",
+   "date": "Fri, 06 Nov 2026 18:34:00 -0000",
+   "url": "https://feeds.megaphone.fm/GLD9322922848"
   }
  ]
 }

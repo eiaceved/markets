@@ -1,42 +1,42 @@
 {
- "label": "Sunday, November 8, 2026 \u00b7 Week-ahead edition",
- "updated": "2026-11-08T15:21:00+00:00",
+ "label": "Monday, November 9, 2026 \u00b7 Relief-rally edition",
+ "updated": "2026-11-09T15:28:00+00:00",
  "items": [
   {
-   "source": "TipRanks",
-   "title": "The Week That Was, The Week Ahead: Macro and Markets, November 8",
-   "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-8",
-   "take": "U.S. stocks ended a turbulent week in the red as the tech selloff, midterm results and AI-spending worries piled up. Friday's surprisingly strong 165,000-jobs print complicates the rate-cut story, which makes Tuesday's October CPI the week's centerpiece."
+   "source": "Yahoo Finance",
+   "title": "Stock market today: Dow, S&P 500, Nasdaq rise with Nvidia stock, AI trade in focus",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
+   "take": "Monday opened as a relief rally: stocks clawed back part of last week's big loss with tech leading, even as Nvidia sank on its CEO probe. By mid-morning the S&P sat near 7,514, up about 1.9%, with the VIX back under 22."
   },
   {
-   "source": "Seeking Alpha",
-   "title": "Wall Street Week Ahead",
-   "url": "https://seekingalpha.com/article/4964825-wall-street-week-ahead",
-   "take": "Inflation and AI are back in focus, with October consumer prices due Tuesday and consensus looking for headline inflation around 3.7%, airfare posting another notable increase. Post-election volatility still hangs over technology stocks."
+   "source": "TheStreet",
+   "title": "Stock Market Today (Nov. 9, 2026): Dow climbs as Wall Street watches AI stocks",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202",
+   "take": "Oil fell below $100 after Trump downplayed the likelihood of renewed strikes on Iran, helping the early bid. Capital.com's senior analyst called the rebound a tentative recovery in risk appetite, not a convincing reversal of the downtrend."
   },
   {
-   "source": "FXEmpire",
-   "title": "The Week Ahead: CPI and Tech Earnings Test a Fragile Stock Market",
-   "url": "https://www.fxempire.com/forecasts/article/the-week-ahead-cpi-and-tech-earnings-test-a-fragile-stock-market-1643118",
-   "take": "Tuesday's CPI and Friday's PPI will shape whether the Fed raises at its December 8-9 meeting. The AI trade's second test comes from earnings at CoreWeave, Cisco and Applied Materials."
+   "source": "The Washington Post",
+   "title": "Nvidia probes CEO over ties to suspected Chinese spy",
+   "url": "https://www.washingtonpost.com/business/2026/11/08/nvidia-opens-investigation-into-ceo-over-relationship-with-suspected-chinese-spy/",
+   "take": "Nvidia opened an internal investigation into CEO Jensen Huang, who may have been the target of a foreign intelligence effort. The stock sank about 6% premarket even as the rest of tech rallied, and WSJ's Monday What's News leads with the same question."
   },
   {
-   "source": "The Cantillon Report",
-   "title": "First Receivers \u00b7 #1 \u00b7 Sunday, November 8, 2026",
-   "url": "https://thecantillonreport.substack.com/p/first-receivers-1-sunday-november",
-   "take": "Money did not leave the stock market last week, it left the most crowded names: the chips broke first and the flows rotated into companies making and powering physical things. The Dow's best day in 19 months Wednesday, then the AI trade broke."
+   "source": "The Shmuts",
+   "title": "NQ Daily Brief - Monday, 11/9/26",
+   "url": "https://theshmuts.substack.com/p/nq-daily-brief-monday-11926",
+   "take": "Tuesday's CPI comes with a wrinkle: the BLS can't publish 12-month changes this month because October 2025 prices couldn't be collected during the government shutdown, so there is no official year-over-year inflation rate. All the attention shifts to the monthly numbers."
   },
   {
-   "source": "The Morning Brief / Reuters",
-   "title": "Inflation and Earnings Test the AI Trade in the Week Ahead",
-   "url": "https://specterworks.substack.com/p/the-morning-brief-2026-11-08",
-   "take": "Anthropic reportedly committed $3.4 billion for 1.7 gigawatts of gas-generator capacity for AI data centers, per an FT report relayed by Reuters. Reuters also cites LSEG data putting the odds of a December rate hike around 80% after the jobs beat."
+   "source": "QSG Research",
+   "title": "QSG Daily Report, Monday, November 9",
+   "url": "https://qsgcap.substack.com/p/qsg-daily-report-monday-november-379",
+   "take": "The week's calendar: CPI Tuesday 8:30 ET (headline prior 3.7%, core 2.6%), jobless claims Thursday, PPI Friday. The 10-year closed Friday at 4.86%, down 42 basis points over the past month, so the bond market is already calmer than the equity tape."
   },
   {
-   "source": "Morgan Stanley Thoughts on the Market",
-   "title": "Why the Bond Market Remains Calm After the Blue Wave",
-   "url": "https://art19.com/shows/thoughts-on-the-market",
-   "take": "Friday's rotation pick: Morgan Stanley's Friday episode on why bond yields barely budged as the tech swoon deepened, and what that calm says about where the market thinks the risk sits."
+   "source": "Goldman Sachs The Markets",
+   "title": "The US Midterms: Reshaping the Stock Market",
+   "url": "https://feeds.megaphone.fm/GLD9322922848",
+   "take": "Friday's rotation pick: Goldman's audio on what the blue wave actually changes for sectors and policy, recorded before last week's AI selloff ran its course."
   }
  ],
  "tape": [
@@ -76,5 +76,6 @@
    "chg": "-0.26%"
   }
  ],
- "audio": "audio/read-daily/2026-11-08.mp3"
+ "audio": "audio/read-daily/2026-11-09.mp3",
+ "audio_seconds": 77
 }
