@@ -1,81 +1,74 @@
 {
- "label": "Monday, November 9, 2026 \u00b7 Relief-rally edition",
- "updated": "2026-11-09T15:28:00+00:00",
- "items": [
-  {
-   "source": "Yahoo Finance",
-   "title": "Stock market today: Dow, S&P 500, Nasdaq rise with Nvidia stock, AI trade in focus",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
-   "take": "Monday opened as a relief rally: stocks clawed back part of last week's big loss with tech leading, even as Nvidia sank on its CEO probe. By mid-morning the S&P sat near 7,514, up about 1.9%, with the VIX back under 22."
-  },
-  {
-   "source": "TheStreet",
-   "title": "Stock Market Today (Nov. 9, 2026): Dow climbs as Wall Street watches AI stocks",
-   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202",
-   "take": "Oil fell below $100 after Trump downplayed the likelihood of renewed strikes on Iran, helping the early bid. Capital.com's senior analyst called the rebound a tentative recovery in risk appetite, not a convincing reversal of the downtrend."
-  },
-  {
-   "source": "The Washington Post",
-   "title": "Nvidia probes CEO over ties to suspected Chinese spy",
-   "url": "https://www.washingtonpost.com/business/2026/11/08/nvidia-opens-investigation-into-ceo-over-relationship-with-suspected-chinese-spy/",
-   "take": "Nvidia opened an internal investigation into CEO Jensen Huang, who may have been the target of a foreign intelligence effort. The stock sank about 6% premarket even as the rest of tech rallied, and WSJ's Monday What's News leads with the same question."
-  },
-  {
-   "source": "The Shmuts",
-   "title": "NQ Daily Brief - Monday, 11/9/26",
-   "url": "https://theshmuts.substack.com/p/nq-daily-brief-monday-11926",
-   "take": "Tuesday's CPI comes with a wrinkle: the BLS can't publish 12-month changes this month because October 2025 prices couldn't be collected during the government shutdown, so there is no official year-over-year inflation rate. All the attention shifts to the monthly numbers."
-  },
-  {
-   "source": "QSG Research",
-   "title": "QSG Daily Report, Monday, November 9",
-   "url": "https://qsgcap.substack.com/p/qsg-daily-report-monday-november-379",
-   "take": "The week's calendar: CPI Tuesday 8:30 ET (headline prior 3.7%, core 2.6%), jobless claims Thursday, PPI Friday. The 10-year closed Friday at 4.86%, down 42 basis points over the past month, so the bond market is already calmer than the equity tape."
-  },
-  {
-   "source": "Goldman Sachs The Markets",
-   "title": "The US Midterms: Reshaping the Stock Market",
-   "url": "https://feeds.megaphone.fm/GLD9322922848",
-   "take": "Friday's rotation pick: Goldman's audio on what the blue wave actually changes for sectors and policy, recorded before last week's AI selloff ran its course."
-  }
- ],
- "tape": [
-  {
-   "name": "S&P 500",
-   "value": "7,376.86",
-   "chg": "+0.31%"
-  },
-  {
-   "name": "Dow",
-   "value": "51,285.73",
-   "chg": "-0.46%"
-  },
-  {
-   "name": "Nasdaq",
-   "value": "24,579.43",
-   "chg": "+1.09%"
-  },
-  {
-   "name": "10-Yr Treasury",
-   "value": "4.86%",
-   "chg": "+0.02"
-  },
-  {
-   "name": "VIX",
-   "value": "25.64",
-   "chg": "-9.01%"
-  },
-  {
-   "name": "Gold",
-   "value": "$4,074.90",
-   "chg": "-0.94%"
-  },
-  {
-   "name": "Bitcoin",
-   "value": "$75,746.93",
-   "chg": "-0.26%"
-  }
- ],
- "audio": "audio/read-daily/2026-11-09.mp3",
- "audio_seconds": 77
+  "label": "Tuesday, November 10, 2026 · December-hike edition",
+  "updated": "2026-11-10T15:35:00+00:00",
+  "items": [
+    {
+      "source": "Yahoo Finance",
+      "title": "Stock market today: Dow, S&P 500 slip after CPI data raises Fed rate-hike bets",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
+      "take": "October CPI came in hot: +0.4% on the month with core +0.3%, both above forecasts, and there is still no official year-over-year number because of the shutdown. Stocks opened lower with the Nasdaq down most, and traders now overwhelmingly price a December hike, with a growing cohort calling for a 50-basis-point jumbo."
+    },
+    {
+      "source": "TheStreet",
+      "title": "Stock Market Today (Nov. 10, 2026): Nasdaq falls after key inflation report",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026",
+      "take": "The hot print sets the stage for another hike in December after Monday's relief rally. Fed Governor Waller, speaking in London before the report, said even a cool October would not have changed his vote for a quarter-point hike, and that a 50-basis-point move should be considered if core ran 0.3% or more. It ran exactly 0.3%."
+    },
+    {
+      "source": "The New York Times",
+      "title": "CPI Live Updates: Inflation Persists in U.S. Economy",
+      "url": "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
+      "take": "The Fed's favorite gauge, supercore services, rose 0.4% in October, running near 5.5% annualized over the past three months. The Times' own back-of-envelope math puts year-over-year inflation around 4%, though it cautions that figure is partly a shutdown artifact."
+    },
+    {
+      "source": "TipRanks",
+      "title": "Hotter-than-expected October CPI weighs on U.S. stocks",
+      "url": "https://www.tipranks.com/news/hotter-than-expected-october-cpi-weighs-on-u-s-stocks",
+      "take": "Nasdaq-100 futures fell about 1% and S&P futures 0.4% ahead of the open, with Dow futures flat. Off the macro wire: Microsoft is lobbying the administration to scrap a planned ban on Chinese AI data-center parts."
+    },
+    {
+      "source": "Stock Titan",
+      "title": "CPI Report Shows Core Prices Up 0.3% Again, Hitting Waller's Line for Weighing a Half Point Hike",
+      "url": "https://www.stocktitan.net/articles/october-2026-cpi-inflation-report",
+      "take": "Core prices matched Waller's stated threshold for considering a half-point December move, but strategists like Principal's Seema Shah pushed back: an outsized hike needs evidence inflation is accelerating decisively, and 'we are not there yet.' Falling gasoline prices gave consumers the one bright spot."
+    },
+    {
+      "source": "WSJ What's News (podcast pick)",
+      "title": "Investors Weigh Fallout from Nvidia Spy Scandal",
+      "url": "https://www.wsj.com/podcasts/whats-news",
+      "take": "Today's rotation pick, fresh this morning: WSJ's What's News digests the CPI print alongside the Nvidia spy-scandal fallout that knocked the chipmaker out of Monday's rally."
+    }
+  ],
+  "tape": [
+    {
+      "label": "S&P 500",
+      "value": "7,549.94"
+    },
+    {
+      "label": "Dow",
+      "value": "52,389.75"
+    },
+    {
+      "label": "Nasdaq",
+      "value": "25,253.14"
+    },
+    {
+      "label": "10-Yr",
+      "value": "4.86%"
+    },
+    {
+      "label": "VIX",
+      "value": "19.92"
+    },
+    {
+      "label": "Gold",
+      "value": "$4,114.50"
+    },
+    {
+      "label": "Bitcoin",
+      "value": "$75,223.15"
+    }
+  ],
+  "audio": "audio/read-daily/2026-11-10.mp3",
+  "audio_seconds": 88
 }
