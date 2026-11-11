@@ -1,74 +1,68 @@
 {
-  "label": "Tuesday, November 10, 2026 · December-hike edition",
-  "updated": "2026-11-10T15:35:00+00:00",
+  "label": "Wednesday, November 11, 2026 · Veterans Day edition",
+  "updated": "2026-11-11T15:42:00+00:00",
   "items": [
     {
-      "source": "Yahoo Finance",
-      "title": "Stock market today: Dow, S&P 500 slip after CPI data raises Fed rate-hike bets",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
-      "take": "October CPI came in hot: +0.4% on the month with core +0.3%, both above forecasts, and there is still no official year-over-year number because of the shutdown. Stocks opened lower with the Nasdaq down most, and traders now overwhelmingly price a December hike, with a growing cohort calling for a 50-basis-point jumbo."
+      "source": "CNBC",
+      "title": "S&P 500 falls, dragged down by Nvidia sell-off and rate-hike fears after hot inflation data",
+      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
+      "take": "Tuesday's session closed lower as the hot CPI print and hawkish Fed talk sank tech, with Nvidia the worst offender. Overnight, UBS's Americas CIO came out against the half-point jumbo, saying a quarter-point December hike is the realistic path, while Asia opened lower tracking Wall Street."
     },
     {
-      "source": "TheStreet",
-      "title": "Stock Market Today (Nov. 10, 2026): Nasdaq falls after key inflation report",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026",
-      "take": "The hot print sets the stage for another hike in December after Monday's relief rally. Fed Governor Waller, speaking in London before the report, said even a cool October would not have changed his vote for a quarter-point hike, and that a 50-basis-point move should be considered if core ran 0.3% or more. It ran exactly 0.3%."
+      "source": "Kiplinger",
+      "title": "Stocks Drop as Rate-Hike Worries Rise: Stock Market Today",
+      "url": "https://www.kiplinger.com/investing/stocks/stocks-drop-as-rate-hike-worries-rise-stock-market-today",
+      "take": "Stocks opened lower Tuesday and never recovered, with strategists calling the hot headline and core prints proof that inflation is stickier than consensus presumed, likely cementing a December hike. Core CPI has now run 0.3% three months straight, and Wedbush doesn't expect the Huang scandal to cost the Nvidia CEO his job despite removal chatter."
     },
     {
-      "source": "The New York Times",
-      "title": "CPI Live Updates: Inflation Persists in U.S. Economy",
-      "url": "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
-      "take": "The Fed's favorite gauge, supercore services, rose 0.4% in October, running near 5.5% annualized over the past three months. The Times' own back-of-envelope math puts year-over-year inflation around 4%, though it cautions that figure is partly a shutdown artifact."
+      "source": "The Economic Times",
+      "title": "US market ends lower as hot inflation data, Fed comments heighten rate worries",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-ends-lower-as-hot-inflation-data-fed-comments-heighten-rate-worries/articleshow/135719918.cms",
+      "take": "Nvidia slid 5.5% as several firms cut price targets in the wake of the CEO scandal and Trump said the FBI is investigating. Albion Financial's Jason Ware called the jumbo-hike panic 'irrational,' pinning six months of CPI pressure on oil, energy and diesel pushing through."
     },
     {
-      "source": "TipRanks",
-      "title": "Hotter-than-expected October CPI weighs on U.S. stocks",
-      "url": "https://www.tipranks.com/news/hotter-than-expected-october-cpi-weighs-on-u-s-stocks",
-      "take": "Nasdaq-100 futures fell about 1% and S&P futures 0.4% ahead of the open, with Dow futures flat. Off the macro wire: Microsoft is lobbying the administration to scrap a planned ban on Chinese AI data-center parts."
-    },
-    {
-      "source": "Stock Titan",
-      "title": "CPI Report Shows Core Prices Up 0.3% Again, Hitting Waller's Line for Weighing a Half Point Hike",
-      "url": "https://www.stocktitan.net/articles/october-2026-cpi-inflation-report",
-      "take": "Core prices matched Waller's stated threshold for considering a half-point December move, but strategists like Principal's Seema Shah pushed back: an outsized hike needs evidence inflation is accelerating decisively, and 'we are not there yet.' Falling gasoline prices gave consumers the one bright spot."
+      "source": "TheStreet Pro",
+      "title": "Goldman Sachs now expects the Federal Reserve to hike in March as well as in December",
+      "url": "https://www.thestreet.com/stock-market-today",
+      "take": "After the hot print, Goldman dropped its call that December would be the Fed's last hike: economist David Mericle now adds another quarter point in March 2027 and pushes the first cut all the way back to December 2027. The peak lands at 4.25% to 4.5%, from 3.75% to 4% today."
     },
     {
       "source": "WSJ What's News (podcast pick)",
-      "title": "Investors Weigh Fallout from Nvidia Spy Scandal",
+      "title": "Tech Stocks Rebound Even As OpenAI Logs Heavy Losses",
       "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Today's rotation pick, fresh this morning: WSJ's What's News digests the CPI print alongside the Nvidia spy-scandal fallout that knocked the chipmaker out of Monday's rally."
+      "take": "Today's rotation pick, fresh this Wednesday morning: chip names are bouncing back even as OpenAI's heavy losses make the rounds, and the show covers where the December-hike debate settled overnight."
     }
   ],
   "tape": [
     {
       "label": "S&P 500",
-      "value": "7,549.94"
+      "value": "7,520.93"
     },
     {
       "label": "Dow",
-      "value": "52,389.75"
+      "value": "52,231.89"
     },
     {
       "label": "Nasdaq",
-      "value": "25,253.14"
+      "value": "25,065.87"
     },
     {
       "label": "10-Yr",
-      "value": "4.86%"
+      "value": "4.98%"
     },
     {
       "label": "VIX",
-      "value": "19.92"
+      "value": "19.46"
     },
     {
       "label": "Gold",
-      "value": "$4,114.50"
+      "value": "$4,030.20"
     },
     {
       "label": "Bitcoin",
-      "value": "$75,223.15"
+      "value": "$73,720.12"
     }
   ],
-  "audio": "audio/read-daily/2026-11-10.mp3",
-  "audio_seconds": 88
+  "audio": "audio/read-daily/2026-11-11.mp3",
+  "audio_seconds": 90
 }
