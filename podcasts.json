@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T15:42:00+00:00",
+  "updated": "2026-11-12T15:16:00+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -8,8 +8,8 @@
       "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
       "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440",
       "latest": {
-        "title": "Tech Stocks Rebound Even As OpenAI Logs Heavy Losses",
-        "date": "Wed, 11 Nov 2026",
+        "title": "Nvidia's Board Prepares to Oust Jensen Huang",
+        "date": "Thu, 12 Nov 2026",
         "url": "https://www.wsj.com/podcasts/whats-news"
       }
     },
@@ -29,8 +29,8 @@
       "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
       "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
       "latest": {
-        "title": "Big Political Shift, Narrow Economic Impact",
-        "date": "Tue, 10 Nov 2026",
+        "title": "Midterms Could Delay the AI Buildout, Not Derail It",
+        "date": "Wed, 11 Nov 2026",
         "url": "https://rss.art19.com/thoughts-on-the-market"
       }
     },

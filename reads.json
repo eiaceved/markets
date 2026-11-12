@@ -1,68 +1,68 @@
 {
-  "label": "Wednesday, November 11, 2026 · Veterans Day edition",
-  "updated": "2026-11-11T15:42:00+00:00",
+  "label": "Thursday, November 12, 2026 · Huang-watch edition",
+  "updated": "2026-11-12T15:16:00+00:00",
   "items": [
     {
-      "source": "CNBC",
-      "title": "S&P 500 falls, dragged down by Nvidia sell-off and rate-hike fears after hot inflation data",
-      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
-      "take": "Tuesday's session closed lower as the hot CPI print and hawkish Fed talk sank tech, with Nvidia the worst offender. Overnight, UBS's Americas CIO came out against the half-point jumbo, saying a quarter-point December hike is the realistic path, while Asia opened lower tracking Wall Street."
-    },
-    {
-      "source": "Kiplinger",
-      "title": "Stocks Drop as Rate-Hike Worries Rise: Stock Market Today",
-      "url": "https://www.kiplinger.com/investing/stocks/stocks-drop-as-rate-hike-worries-rise-stock-market-today",
-      "take": "Stocks opened lower Tuesday and never recovered, with strategists calling the hot headline and core prints proof that inflation is stickier than consensus presumed, likely cementing a December hike. Core CPI has now run 0.3% three months straight, and Wedbush doesn't expect the Huang scandal to cost the Nvidia CEO his job despite removal chatter."
-    },
-    {
-      "source": "The Economic Times",
-      "title": "US market ends lower as hot inflation data, Fed comments heighten rate worries",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-ends-lower-as-hot-inflation-data-fed-comments-heighten-rate-worries/articleshow/135719918.cms",
-      "take": "Nvidia slid 5.5% as several firms cut price targets in the wake of the CEO scandal and Trump said the FBI is investigating. Albion Financial's Jason Ware called the jumbo-hike panic 'irrational,' pinning six months of CPI pressure on oil, energy and diesel pushing through."
-    },
-    {
-      "source": "TheStreet Pro",
-      "title": "Goldman Sachs now expects the Federal Reserve to hike in March as well as in December",
-      "url": "https://www.thestreet.com/stock-market-today",
-      "take": "After the hot print, Goldman dropped its call that December would be the Fed's last hike: economist David Mericle now adds another quarter point in March 2027 and pushes the first cut all the way back to December 2027. The peak lands at 4.25% to 4.5%, from 3.75% to 4% today."
-    },
-    {
       "source": "WSJ What's News (podcast pick)",
-      "title": "Tech Stocks Rebound Even As OpenAI Logs Heavy Losses",
+      "title": "Nvidia's Board Prepares to Oust Jensen Huang",
       "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Today's rotation pick, fresh this Wednesday morning: chip names are bouncing back even as OpenAI's heavy losses make the rounds, and the show covers where the December-hike debate settled overnight."
+      "take": "Today's rotation pick, out early this morning, is the story: per the reporting, Nvidia's board is preparing to remove the CEO at the center of the spy-scandal affair reports. If it moves today, expect volatility well beyond the stock, given how heavily Nvidia weighs on the indexes."
+    },
+    {
+      "source": "Yahoo Finance",
+      "title": "Stock market today: Nvidia slides following reports of CEO's second affair, possible removal",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html",
+      "take": "Wednesday's session was a chip revival: CoreWeave surged 25% on an upbeat outlook, Nvidia bounced 2.9% after shedding about $430 billion of market value over two days, and the S&P and Nasdaq each gained more than 1%. Then after the bell came a second affair report, an independent board investigation into whether the woman involved was a Chinese spy, and the after-hours slide."
+    },
+    {
+      "source": "Wealth Professional",
+      "title": "US stocks rally, then Nvidia turmoil jolts futures",
+      "url": "https://www.wealthprofessional.ca/news/industry-news/us-stocks-rally-then-nvidia-turmoil-jolts-futures/393999",
+      "take": "Nvidia fell more than 8% in after-hours trading, and a source told Reuters the board was meeting to decide the CEO's future, with no decision reported yet. Nasdaq 100 futures later fell more than 1% and S&P contracts lost 0.5%. Also circling: Anthropic's IPO next week, 825 million shares at $70 to $78, a range that could value the company at up to $1.4 trillion."
+    },
+    {
+      "source": "Moneycontrol",
+      "title": "US stocks rally as CoreWeave surges 25%, Nvidia rebounds; S&P 500, Nasdaq gain over 1%",
+      "url": "https://www.moneycontrol.com/news/business/markets/us-stocks-rally-as-coreweave-surges-25-nvidia-rebounds-s-p-500-nasdaq-gain-over-1-14077446.html",
+      "take": "Semiconductors led Wednesday: Nvidia +2.9%, Micron +11.9%, AMD +7.3%, Broadcom +4%, on thin Veterans Day volume with fixed-income markets closed. Traders are now fully pricing at least a 25-basis-point December hike, with a 10.4% probability of a 50-basis-point move per CME FedWatch."
+    },
+    {
+      "source": "Charles Schwab",
+      "title": "Chip Revival: CoreWeave Sparks Fresh Tech Rally",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "take": "Futures trading now factors 50-basis-point December odds at just 15%, with a range of 4.5% to 4.75% by next June the most likely scenario, implying 75 basis points of tightening between now and mid-year. Memory and storage names were especially strong, with SanDisk up 13.7% and Seagate nearly 10%."
     }
   ],
   "tape": [
     {
       "label": "S&P 500",
-      "value": "7,520.93"
+      "value": "7,619.38"
     },
     {
       "label": "Dow",
-      "value": "52,231.89"
+      "value": "52,486.49"
     },
     {
       "label": "Nasdaq",
-      "value": "25,065.87"
+      "value": "25,466.19"
     },
     {
       "label": "10-Yr",
-      "value": "4.98%"
+      "value": "5.00%"
     },
     {
       "label": "VIX",
-      "value": "19.46"
+      "value": "17.49"
     },
     {
       "label": "Gold",
-      "value": "$4,030.20"
+      "value": "$4,000.50"
     },
     {
       "label": "Bitcoin",
-      "value": "$73,720.12"
+      "value": "$73,964.47"
     }
   ],
-  "audio": "audio/read-daily/2026-11-11.mp3",
-  "audio_seconds": 90
+  "audio": "audio/read-daily/2026-11-12.mp3",
+  "audio_seconds": 89
 }
