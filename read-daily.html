@@ -137,8 +137,10 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   const st=document.getElementById('strip');
   (D.tape||[]).forEach(c=>{
     const d=document.createElement('div');d.className='chip';
-    const cls=c.chg&&c.chg.startsWith('-')?'dn':'up';
-    d.innerHTML='<span class="lb">'+c.name+'</span><span class="v '+cls+'">'+c.value+' <small>'+c.chg+'</small></span><span class="tip">'+(TIPS[c.name]||c.name)+'</span>';
+    const nm=c.name||c.label||'';
+    const chg=(c.chg===undefined||c.chg===null||c.chg==='')?'':c.chg;
+    const cls=chg&&chg.startsWith('-')?'dn':'up';
+    d.innerHTML='<span class="lb">'+nm+'</span><span class="v '+cls+'">'+c.value+(chg?' <small>'+chg+'</small>':'')+'</span><span class="tip">'+(TIPS[nm]||nm)+'</span>';
     st.appendChild(d);
   });
   if(D.audio){const p=document.getElementById('player');p.src=D.audio+'?v='+Date.now();
