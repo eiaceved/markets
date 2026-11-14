@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T15:28:00+00:00",
+  "updated": "2026-11-14T15:15:00+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -8,8 +8,8 @@
       "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
       "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440",
       "latest": {
-        "title": "Jensen Huang, a Leader of the Global AI Boom, Is Out as Nvidia CEO",
-        "date": "Thu, 12 Nov 2026",
+        "title": "What's News in Markets: Nvidia's Next Chapter, CoreWeave's Bullish Backlog, Microsoft's Glitch",
+        "date": "Sat, 14 Nov 2026",
         "url": "https://www.wsj.com/podcasts/whats-news"
       }
     },
@@ -29,8 +29,8 @@
       "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
       "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
       "latest": {
-        "title": "From AI to Air-Conditioning: The Power Boom in Asia",
-        "date": "Thu, 12 Nov 2026",
+        "title": "Can AI Chip Demand Outrun the Power Crunch?",
+        "date": "Fri, 13 Nov 2026",
         "url": "https://rss.art19.com/thoughts-on-the-market"
       }
     },
@@ -48,7 +48,12 @@
       "cadence": "Weekly",
       "blurb": "Goldman traders and investors break down one market dynamic at a time, in ten minutes or less. Trading-floor perspective you won't get from the news.",
       "apple": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600",
-      "web": "https://www.goldmansachs.com/insights/the-markets"
+      "web": "https://www.goldmansachs.com/insights/the-markets",
+      "latest": {
+        "title": "How Will Higher-than-Expected Inflation Data Impact the Fed's Next Rate Decisions?",
+        "date": "Fri, 13 Nov 2026",
+        "url": "https://feeds.megaphone.fm/GLD9322922848"
+      }
     }
   ],
   "latest": [
