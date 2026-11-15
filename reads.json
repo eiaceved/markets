@@ -1,36 +1,36 @@
 {
-  "label": "Saturday, November 14, 2026 · Week-wrap edition",
-  "updated": "2026-11-14T15:15:00+00:00",
+  "label": "Sunday, November 15, 2026 · Week-ahead edition",
+  "updated": "2026-11-15T15:27:00+00:00",
   "items": [
     {
       "source": "WSJ What's News (podcast pick)",
-      "title": "What's News in Markets: Nvidia's Next Chapter, CoreWeave's Bullish Backlog, Microsoft's Glitch",
+      "title": "Where Does Nvidia Go From Here?",
       "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Saturday's markets edition sets up next week: Nvidia's first print under interim CEO Colette Kress, with analysts looking for about $125 billion in January-quarter guidance and answers on succession and China. Anthropic's IPO prices next week too, up to $1.4 trillion."
+      "take": "Sunday's episode frames the week's central question: what Nvidia looks like under interim CEO Colette Kress, and whether the AI trade holds together without its founder. Everything else this week orbits that answer."
     },
     {
       "source": "Yahoo Finance",
-      "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
-      "take": "Friday split the indexes: the Dow rose while the S&P and Nasdaq slipped, capping a volatile week of rising yields, an oil spike and the Nvidia turmoil. Retail investors were reportedly there to catch Nvidia's fall, and the 10-year touched 5.17%, its highest since October."
+      "title": "Nvidia's first post-Jensen earnings and Anthropic's IPO: What to watch this week",
+      "url": "https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html",
+      "take": "Nvidia reports its first post-Huang quarter Tuesday after the close, with Kress helming the 5 p.m. call. Anthropic's IPO prices Wednesday and starts trading Thursday on the Nasdaq under the ticker ANT, a test that could set the standard for rival OpenAI's own debut next year."
     },
     {
-      "source": "Benzinga",
-      "title": "Bulls and Bears: Nvidia's sixth straight weekly decline",
-      "url": "https://www.benzinga.com/markets/market-summary/26/11/63273716/benzinga-bulls-and-bears-nvidia-rocket-lab-nebius",
-      "take": "Nvidia fell about 13% from the previous Friday's close, a sixth consecutive weekly decline, while the broader market stayed relatively resilient. Tesla had its best five-day rally since September 2025, adding roughly $218 billion in market value as Musk pushes for a SpaceX merger by December."
+      "source": "Investing.com",
+      "title": "1 Stock to Buy, 1 Stock to Sell This Week: Nvidia, Home Depot",
+      "url": "https://www.investing.com/analysis/1-stock-to-buy-1-stock-to-sell-this-week-nvidia-home-depot-200691576",
+      "take": "Odds of a 25-basis-point December hike are approaching 90%, with about 10% priced for a half-point move. Wall Street expects Nvidia revenue near $108.9 billion, up about 91% year over year, and much of the leadership pain is already priced in after the rapid decline."
     },
     {
-      "source": "USA Today (via Freep)",
-      "title": "What Nvidia losing its founder did to stocks. The week on Wall Street",
-      "url": "https://www.freep.com/story/money/business/2026/11/14/nvidia-ceo-inflation-wall-street/92759685007/",
-      "take": "The week in one look: Nvidia dropped as much as 14% at Thursday's open, closed down 4.3%, and ended the week down about 13%. Traders treat a December hike as near certainty, up from about 80% odds a week ago, with an 11% chance of a half-point move."
+      "source": "BigGo Finance",
+      "title": "Nvidia Earnings and Anthropic IPO Land in Same Week, Testing Both Ends of the AI Supply Chain",
+      "url": "https://finance.biggo.com/news/94455a16-8d60-4f8d-9707-a6bdf15f265d",
+      "take": "Anthropic is raising up to roughly $100 billion, with IPO orders already about six times the shares on offer. October retail sales land Tuesday and the Fed's October meeting minutes come Thursday, both shaping the December decision."
     },
     {
-      "source": "Cardano Capital (weekly review)",
-      "title": "Nasdaq Snaps a Four-Week Slide, Up 2.3%, as Nvidia's CEO Resigns",
-      "url": "https://cardanocapital.substack.com/p/nasdaq-snaps-a-four-week-slide-up",
-      "take": "Despite the drama, the Nasdaq snapped a four-week slide and finished up 2.3%, with the S&P up about 2.5%. October PPI came in at +0.3% versus +0.4% expected, but its 6.5% annual rise is the largest since November 2022, keeping the Fed hawkish into Wednesday's FOMC minutes."
+      "source": "Yahoo Finance",
+      "title": "3 Key Events in the Coming Week That Could Move AI Stocks and Crypto",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-key-events-coming-week-091229277.html",
+      "take": "A beat from Nvidia plus a steady outlook from Kress would ease the leadership fears, and a strong Anthropic debut would add to it, but a hawkish tone in the Fed minutes could still cap any rebound. The next Fed decision is December 9."
     }
   ],
   "tape": [
@@ -63,6 +63,6 @@
       "value": "$68,249.27"
     }
   ],
-  "audio": "audio/read-daily/2026-11-14.mp3",
-  "audio_seconds": 78
+  "audio": "audio/read-daily/2026-11-15.mp3",
+  "audio_seconds": 88
 }
