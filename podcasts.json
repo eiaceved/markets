@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T15:27:00+00:00",
+  "updated": "2026-11-16T15:40:45+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -8,8 +8,8 @@
       "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
       "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440",
       "latest": {
-        "title": "Where Does Nvidia Go From Here?",
-        "date": "Sun, 15 Nov 2026",
+        "title": "Sean Duffy Wants $50 Billion to Prevent More Travel Chaos",
+        "date": "Mon, 16 Nov 2026",
         "url": "https://www.wsj.com/podcasts/whats-news"
       }
     },
@@ -60,16 +60,16 @@
     {
       "show": "What's News",
       "from": "The Wall Street Journal",
-      "title": "What Does Beijing Know About Nvidia's Jensen Huang?",
-      "date": "Mon, 9 Nov 2026 10:52:00 +0000",
-      "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news"
+      "title": "Sean Duffy Wants $50 Billion to Prevent More Travel Chaos",
+      "date": "Mon, 16 Nov 2026",
+      "url": "https://www.wsj.com/podcasts/whats-news"
     },
     {
-      "show": "The Markets",
-      "from": "Goldman Sachs",
-      "title": "The US Midterms: Reshaping the Stock Market",
-      "date": "Fri, 06 Nov 2026 18:34:00 -0000",
-      "url": "https://feeds.megaphone.fm/GLD9322922848"
+      "show": "Thoughts on the Market",
+      "from": "Morgan Stanley",
+      "title": "Can AI Chip Demand Outrun the Power Crunch?",
+      "date": "Fri, 13 Nov 2026 23:00:00 -0000",
+      "url": "https://rss.art19.com/thoughts-on-the-market"
     }
   ]
 }

@@ -1,68 +1,47 @@
 {
-  "label": "Sunday, November 15, 2026 · Week-ahead edition",
-  "updated": "2026-11-15T15:27:00+00:00",
+  "label": "Monday, November 16, 2026 \u00b7 Morning edition",
+  "updated": "2026-11-16T15:50:21+00:00",
   "items": [
     {
-      "source": "WSJ What's News (podcast pick)",
-      "title": "Where Does Nvidia Go From Here?",
-      "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Sunday's episode frames the week's central question: what Nvidia looks like under interim CEO Colette Kress, and whether the AI trade holds together without its founder. Everything else this week orbits that answer."
+      "source": "Yahoo Finance",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq slip ahead of pivotal week",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
+      "take": "Nvidia slipped about 2% after the Financial Times reported Jensen Huang and his allies are weighing a campaign to reinstate him as CEO, one week after the board forced him out. Tech led the tape lower, with the VIX jumping about 12% to 21.5."
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Stock Market Today: Dow, S&P Live Updates for November 16, 2026",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-15/stock-market-today-dow-s-p-live-updates",
+      "take": "The tech selloff carried into the new week, with a chip gauge down 5% and the Nasdaq 100 off 2%. Bonds edged higher ahead of Fed Chair Kevin Warsh's Monday remarks and tomorrow's Nvidia earnings."
     },
     {
       "source": "Yahoo Finance",
       "title": "Nvidia's first post-Jensen earnings and Anthropic's IPO: What to watch this week",
       "url": "https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html",
-      "take": "Nvidia reports its first post-Huang quarter Tuesday after the close, with Kress helming the 5 p.m. call. Anthropic's IPO prices Wednesday and starts trading Thursday on the Nasdaq under the ticker ANT, a test that could set the standard for rival OpenAI's own debut next year."
+      "take": "Nvidia reports its first post-Huang quarter Tuesday after the close, with interim CEO Colette Kress helming the 5 p.m. call. Anthropic prices Wednesday and starts trading Thursday on the Nasdaq as ANT, and October retail sales plus the Fed minutes round out the calendar."
     },
     {
-      "source": "Investing.com",
-      "title": "1 Stock to Buy, 1 Stock to Sell This Week: Nvidia, Home Depot",
-      "url": "https://www.investing.com/analysis/1-stock-to-buy-1-stock-to-sell-this-week-nvidia-home-depot-200691576",
-      "take": "Odds of a 25-basis-point December hike are approaching 90%, with about 10% priced for a half-point move. Wall Street expects Nvidia revenue near $108.9 billion, up about 91% year over year, and much of the leadership pain is already priced in after the rapid decline."
+      "source": "Investopedia",
+      "title": "5 Things Investors Need to Know About Monday's Markets",
+      "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-16-2026-12252523",
+      "take": "Bitcoin traded near $64,300, leaving November down roughly 17%, its second-worst start to a month since 2016. Crypto-linked stocks were under pressure premarket, with Strategy (MSTR) off 8%."
     },
     {
-      "source": "BigGo Finance",
-      "title": "Nvidia Earnings and Anthropic IPO Land in Same Week, Testing Both Ends of the AI Supply Chain",
-      "url": "https://finance.biggo.com/news/94455a16-8d60-4f8d-9707-a6bdf15f265d",
-      "take": "Anthropic is raising up to roughly $100 billion, with IPO orders already about six times the shares on offer. October retail sales land Tuesday and the Fed's October meeting minutes come Thursday, both shaping the December decision."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "3 Key Events in the Coming Week That Could Move AI Stocks and Crypto",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-key-events-coming-week-091229277.html",
-      "take": "A beat from Nvidia plus a steady outlook from Kress would ease the leadership fears, and a strong Anthropic debut would add to it, but a hawkish tone in the Fed minutes could still cap any rebound. The next Fed decision is December 9."
+      "source": "WSJ What's News (podcast pick)",
+      "title": "Sean Duffy Wants $50 Billion to Prevent More Travel Chaos",
+      "url": "https://www.wsj.com/podcasts/whats-news",
+      "take": "Travel chaos stretched into a third day after Friday's FAA ground stop, which the agency traced to a contractor replacing decades-old copper wire at remote sites in Arkansas and Texas. Duffy is asking Congress for $50 billion to modernize an air-traffic system he calls 'incredibly old.'"
     }
   ],
-  "tape": [
-    {
-      "label": "S&P 500",
-      "value": "7,561.67"
-    },
-    {
-      "label": "Dow",
-      "value": "52,347.55"
-    },
-    {
-      "label": "Nasdaq",
-      "value": "25,136.27"
-    },
-    {
-      "label": "10-Yr",
-      "value": "5.15%"
-    },
-    {
-      "label": "VIX",
-      "value": "19.30"
-    },
-    {
-      "label": "Gold",
-      "value": "$3,886.30"
-    },
-    {
-      "label": "Bitcoin",
-      "value": "$68,249.27"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-15.mp3",
-  "audio_seconds": 88
+  "tape": {
+    "S&P 500": 7463.65,
+    "Dow": 52020.37,
+    "Nasdaq": 24630.17,
+    "10-Yr": 5.11,
+    "VIX": 21.53,
+    "Gold": 3869.1,
+    "Bitcoin": 64105.14
+  },
+  "audio": "audio/read-daily/2026-11-16.mp3",
+  "audio_seconds": 73
 }
