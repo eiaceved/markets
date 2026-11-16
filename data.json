@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T17:51:32",
+ "updated": "2026-11-16T19:19:38",
  "quotes": {
   "AAPL": {
    "name": "Apple",
@@ -546,7 +546,7 @@
     "$12.59",
     "-16.07%",
     "\u2014",
-    "$436M"
+    "$419M"
    ],
    [
     "Oct 30, 2026",
@@ -726,12 +726,12 @@
   },
   "SKHY": {
    "name": "SK hynix",
-   "price": 131.79,
-   "chg": -5.92,
-   "chgPct": -4.3,
-   "vol": "16,415,154",
-   "range": "129.18 - 135.76",
-   "mcap": "610.67B"
+   "price": 124.48,
+   "chg": -7.31,
+   "chgPct": -5.55,
+   "vol": "13,508,747",
+   "range": "122.21 - 125.95",
+   "mcap": "577.13B"
   },
   "CBRS": {
    "name": "Cerebras Systems",
@@ -761,10 +761,10 @@
   "date_real": "11/13/2026",
   "tips10y": 2.91,
   "breakeven": 2.24,
-  "savings": 0.38,
-  "cd6m": 1.39,
-  "cd12m": 1.76,
-  "fdic_asof": "October 2026",
+  "savings": 0.39,
+  "cd6m": 1.4,
+  "cd12m": 1.81,
+  "fdic_asof": "November 2026",
   "unemployment": 4.1,
   "unemployment_month": "October 2026"
  }
