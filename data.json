@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T16:36:06",
+ "updated": "2026-11-16T17:51:32",
  "quotes": {
   "AAPL": {
    "name": "Apple",
@@ -744,12 +744,12 @@
   },
   "JMKE": {
    "name": "Jersey Mike's Subs",
-   "price": 19.44,
-   "chg": -0.42,
-   "chgPct": -2.11,
-   "vol": "2,082,538",
-   "range": "19.34 - 20.00",
-   "mcap": "6.17B"
+   "price": 19.31,
+   "chg": -0.14,
+   "chgPct": -0.69,
+   "vol": "587,249",
+   "range": "18.90 - 19.58",
+   "mcap": "6.13B"
   }
  },
  "rates": {
