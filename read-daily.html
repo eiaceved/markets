@@ -136,13 +136,15 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     list.appendChild(a);
   });
   const st=document.getElementById('strip');
+  function renderTape(tapeRaw){
   let tape=[];
-  if(Array.isArray(D.tape))tape=D.tape;
-  else if(D.tape&&typeof D.tape==='object')tape=Object.keys(D.tape).map(function(k){return {name:k,value:D.tape[k]};});
+  if(Array.isArray(tapeRaw))tape=tapeRaw;
+  else if(tapeRaw&&typeof tapeRaw==='object')tape=Object.keys(tapeRaw).map(function(k){return {name:k,value:tapeRaw[k]};});
   const fmt=function(k,v){
     if(k==='10-Yr')return (typeof v==='number'?v.toFixed(2):v)+'%';
     if(k==='Gold'||k==='Bitcoin')return '$'+(typeof v==='number'?v.toLocaleString('en-US',{minimumFractionDigits:2}):v);
     return typeof v==='number'?v.toLocaleString('en-US',{minimumFractionDigits:2}):v;};
+  try{
   tape.forEach(c=>{
     const d=document.createElement('div');d.className='chip';
     const nm=c.name||c.label||'';
@@ -152,6 +154,10 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     d.innerHTML='<span class="lb">'+nm+'</span><span class="v '+cls+'">'+fmt(nm,val)+(chg?' <small>'+chg+'</small>':'')+'</span><span class="tip">'+(TIPS[nm]||nm)+'</span>';
     st.appendChild(d);
   });
+  try{localStorage.setItem('cqTape',JSON.stringify(tape));localStorage.setItem('cqTapeAt',D.updated||'');}catch(e){}
+  }catch(te){}
+  }
+  renderTape(D.tape);
   if(D.audio){const p=document.getElementById('player');p.src=D.audio+'?v='+Date.now();
     const l=document.getElementById('alisten');if(l)l.textContent=(D.label||'Today')+' · '+(D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'listen');
     const mins=D.audio_seconds?Math.round(D.audio_seconds/60*10)/10+' min':'';
@@ -160,7 +166,14 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     const btn=document.getElementById('mbPlay'),PLAYING='\u23f8 Pause',IDLE='\u25b6 Listen to today\u2019s brief';
     btn.addEventListener('click',function(){if(p.paused){p.play();btn.innerHTML=PLAYING;}else{p.pause();btn.innerHTML=IDLE;}});
     p.addEventListener('ended',function(){btn.innerHTML=IDLE;});}
-}).catch(()=>{document.getElementById('stamp').textContent='Reads failed to load — refresh the page';});
+}).catch(()=>{
+  let ok=false;
+  try{
+    const saved=JSON.parse(localStorage.getItem('cqTape')||'null');
+    if(saved&&saved.length){renderTape(saved);ok=true;}
+  }catch(e){}
+  document.getElementById('stamp').textContent=ok?'Reads slow to load — market bar shows the last saved prices':'Reads failed to load — refresh the page';
+});
 </script>
 
 <div class="minibar" id="minibar" hidden>
