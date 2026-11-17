@@ -1,6 +1,6 @@
 {
  "label": "Tuesday, November 17, 2026 · Morning edition",
- "updated": "2026-11-17T17:55:36+00:00",
+ "updated": "2026-11-17T20:35:04+00:00",
  "items": [
   {
    "source": "Yahoo Finance",
@@ -36,38 +36,38 @@
  "tape": [
   {
    "name": "S&P 500",
-   "value": "7,334.14",
-   "chg": "-1.11%"
+   "value": "7,331.64",
+   "chg": "-1.15%"
   },
   {
    "name": "Dow 30",
-   "value": "50,866.88",
-   "chg": "-1.44%"
+   "value": "50,750.21",
+   "chg": "-1.66%"
   },
   {
    "name": "Nasdaq",
-   "value": "24,242.76",
-   "chg": "-1.09%"
+   "value": "24,267.93",
+   "chg": "-0.99%"
   },
   {
    "name": "10-Yr",
-   "value": "5.09%",
-   "chg": "-0.51%"
+   "value": "5.10%",
+   "chg": "-0.35%"
   },
   {
    "name": "VIX",
-   "value": "25.85",
-   "chg": "+12.83%"
+   "value": "26.89",
+   "chg": "+17.37%"
   },
   {
    "name": "Gold",
-   "value": "$3,868.20",
-   "chg": "+0.39%"
+   "value": "$3,851.10",
+   "chg": "-0.05%"
   },
   {
    "name": "Bitcoin",
-   "value": "$63,837.00",
-   "chg": "-1.72%"
+   "value": "$64,003.00",
+   "chg": "-1.62%"
   }
  ],
  "audio": "audio/read-daily/2026-11-17.mp3",
