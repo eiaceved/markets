@@ -127,6 +127,7 @@ var TIPS={
 };
 fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   document.getElementById('stamp').textContent='Updated '+new Date(D.updated).toLocaleString('en-US',{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  document.getElementById('strip').classList.add('ok');
   document.getElementById('intro').textContent=D.intro||'';
   const list=document.getElementById('list');
   D.items.forEach(it=>{
@@ -135,12 +136,20 @@ fetch('reads.json?v='+Date.now()).then(r=>r.json()).then(D=>{
     list.appendChild(a);
   });
   const st=document.getElementById('strip');
-  (D.tape||[]).forEach(c=>{
+  let tape=[];
+  if(Array.isArray(D.tape))tape=D.tape;
+  else if(D.tape&&typeof D.tape==='object')tape=Object.keys(D.tape).map(function(k){return {name:k,value:D.tape[k]};});
+  const fmt=function(k,v){
+    if(k==='10-Yr')return (typeof v==='number'?v.toFixed(2):v)+'%';
+    if(k==='Gold'||k==='Bitcoin')return '$'+(typeof v==='number'?v.toLocaleString('en-US',{minimumFractionDigits:2}):v);
+    return typeof v==='number'?v.toLocaleString('en-US',{minimumFractionDigits:2}):v;};
+  tape.forEach(c=>{
     const d=document.createElement('div');d.className='chip';
     const nm=c.name||c.label||'';
+    const val=(c.value!==undefined&&c.value!==null)?c.value:'';
     const chg=(c.chg===undefined||c.chg===null||c.chg==='')?'':c.chg;
-    const cls=chg&&chg.startsWith('-')?'dn':'up';
-    d.innerHTML='<span class="lb">'+nm+'</span><span class="v '+cls+'">'+c.value+(chg?' <small>'+chg+'</small>':'')+'</span><span class="tip">'+(TIPS[nm]||nm)+'</span>';
+    const cls=chg&&String(chg).startsWith('-')?'dn':'up';
+    d.innerHTML='<span class="lb">'+nm+'</span><span class="v '+cls+'">'+fmt(nm,val)+(chg?' <small>'+chg+'</small>':'')+'</span><span class="tip">'+(TIPS[nm]||nm)+'</span>';
     st.appendChild(d);
   });
   if(D.audio){const p=document.getElementById('player');p.src=D.audio+'?v='+Date.now();
