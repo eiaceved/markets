@@ -1,47 +1,75 @@
 {
-  "label": "Monday, November 16, 2026 \u00b7 Morning edition",
-  "updated": "2026-11-16T15:50:21+00:00",
-  "items": [
-    {
-      "source": "Yahoo Finance",
-      "title": "Stock market today: Dow, S&P 500, Nasdaq slip ahead of pivotal week",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
-      "take": "Nvidia slipped about 2% after the Financial Times reported Jensen Huang and his allies are weighing a campaign to reinstate him as CEO, one week after the board forced him out. Tech led the tape lower, with the VIX jumping about 12% to 21.5."
-    },
-    {
-      "source": "Bloomberg",
-      "title": "Stock Market Today: Dow, S&P Live Updates for November 16, 2026",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-15/stock-market-today-dow-s-p-live-updates",
-      "take": "The tech selloff carried into the new week, with a chip gauge down 5% and the Nasdaq 100 off 2%. Bonds edged higher ahead of Fed Chair Kevin Warsh's Monday remarks and tomorrow's Nvidia earnings."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "Nvidia's first post-Jensen earnings and Anthropic's IPO: What to watch this week",
-      "url": "https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html",
-      "take": "Nvidia reports its first post-Huang quarter Tuesday after the close, with interim CEO Colette Kress helming the 5 p.m. call. Anthropic prices Wednesday and starts trading Thursday on the Nasdaq as ANT, and October retail sales plus the Fed minutes round out the calendar."
-    },
-    {
-      "source": "Investopedia",
-      "title": "5 Things Investors Need to Know About Monday's Markets",
-      "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-16-2026-12252523",
-      "take": "Bitcoin traded near $64,300, leaving November down roughly 17%, its second-worst start to a month since 2016. Crypto-linked stocks were under pressure premarket, with Strategy (MSTR) off 8%."
-    },
-    {
-      "source": "WSJ What's News (podcast pick)",
-      "title": "Sean Duffy Wants $50 Billion to Prevent More Travel Chaos",
-      "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Travel chaos stretched into a third day after Friday's FAA ground stop, which the agency traced to a contractor replacing decades-old copper wire at remote sites in Arkansas and Texas. Duffy is asking Congress for $50 billion to modernize an air-traffic system he calls 'incredibly old.'"
-    }
-  ],
-  "tape": {
-    "S&P 500": 7463.65,
-    "Dow": 52020.37,
-    "Nasdaq": 24630.17,
-    "10-Yr": 5.11,
-    "VIX": 21.53,
-    "Gold": 3869.1,
-    "Bitcoin": 64105.14
+ "label": "Monday, November 16, 2026 · Morning edition",
+ "updated": "2026-11-17T00:45:12+00:00",
+ "items": [
+  {
+   "source": "Yahoo Finance",
+   "title": "Stock market today: Dow, S&P 500, Nasdaq slip ahead of pivotal week",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
+   "take": "Nvidia slipped about 2% after the Financial Times reported Jensen Huang and his allies are weighing a campaign to reinstate him as CEO, one week after the board forced him out. Tech led the tape lower, with the VIX jumping about 12% to 21.5."
   },
-  "audio": "audio/read-daily/2026-11-16.mp3",
-  "audio_seconds": 73
+  {
+   "source": "Bloomberg",
+   "title": "Stock Market Today: Dow, S&P Live Updates for November 16, 2026",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-15/stock-market-today-dow-s-p-live-updates",
+   "take": "The tech selloff carried into the new week, with a chip gauge down 5% and the Nasdaq 100 off 2%. Bonds edged higher ahead of Fed Chair Kevin Warsh's Monday remarks and tomorrow's Nvidia earnings."
+  },
+  {
+   "source": "Yahoo Finance",
+   "title": "Nvidia's first post-Jensen earnings and Anthropic's IPO: What to watch this week",
+   "url": "https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html",
+   "take": "Nvidia reports its first post-Huang quarter Tuesday after the close, with interim CEO Colette Kress helming the 5 p.m. call. Anthropic prices Wednesday and starts trading Thursday on the Nasdaq as ANT, and October retail sales plus the Fed minutes round out the calendar."
+  },
+  {
+   "source": "Investopedia",
+   "title": "5 Things Investors Need to Know About Monday's Markets",
+   "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-16-2026-12252523",
+   "take": "Bitcoin traded near $64,300, leaving November down roughly 17%, its second-worst start to a month since 2016. Crypto-linked stocks were under pressure premarket, with Strategy (MSTR) off 8%."
+  },
+  {
+   "source": "WSJ What's News (podcast pick)",
+   "title": "Sean Duffy Wants $50 Billion to Prevent More Travel Chaos",
+   "url": "https://www.wsj.com/podcasts/whats-news",
+   "take": "Travel chaos stretched into a third day after Friday's FAA ground stop, which the agency traced to a contractor replacing decades-old copper wire at remote sites in Arkansas and Texas. Duffy is asking Congress for $50 billion to modernize an air-traffic system he calls 'incredibly old.'"
+  }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": "7,416.59",
+   "chg": "-1.92%"
+  },
+  {
+   "name": "Dow 30",
+   "value": "51,608.17",
+   "chg": "-1.41%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": "24,509.76",
+   "chg": "-2.49%"
+  },
+  {
+   "name": "10-Yr",
+   "value": "5.12%",
+   "chg": "-0.64%"
+  },
+  {
+   "name": "VIX",
+   "value": "22.91",
+   "chg": "+18.70%"
+  },
+  {
+   "name": "Gold",
+   "value": "$3,859.90",
+   "chg": "+0.18%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": "$64,552.00",
+   "chg": "-0.26%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-16.mp3",
+ "audio_seconds": 73
 }
