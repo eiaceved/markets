@@ -1,75 +1,75 @@
 {
-  "label": "Tuesday, November 17, 2026 \u00b7 Morning edition",
-  "updated": "2026-11-17T15:38:22+00:00",
-  "items": [
-    {
-      "source": "Yahoo Finance",
-      "title": "Stock market today: Dow, S&P 500, Nasdaq slip in countdown to Nvidia earnings",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html",
-      "take": "Stocks opened lower with Nvidia's first results since Jensen Huang's resignation due after the bell tonight, and shares fell as investors weighed reports of a possible campaign to reinstate him. The S&P 500 is up about 8% for 2026, roughly 110 points shy of the ~7,530 level that would make it a 10% year."
-    },
-    {
-      "source": "The Wall Street Journal",
-      "title": "Rough Month Marks the End of the 'No-Brainer' AI Trade",
-      "url": "https://www.wsj.com/",
-      "take": "About $2.5 trillion in value was erased in the Nasdaq's worst session in almost two years, and hedge funds that concentrated roughly 40% of portfolios in AI hardware funds counted drawdowns of their own. The 'no-brainer' era of the AI trade is over, and what replaces it is punishing volatility."
-    },
-    {
-      "source": "The New York Times",
-      "title": "U.S. Acts to Close a Chip Loophole Beijing Exploits",
-      "url": "https://www.nytimes.com/",
-      "take": "The Commerce Department's new rule, effective in 90 days, aims to stop China from renting advanced AI chips at data centers in third countries like Malaysia, Thailand and Singapore. It underpins the Trump administration's position heading into Thursday's summit with Xi in Shenzhen."
-    },
-    {
-      "source": "CNBC",
-      "title": "Anthropic IPO guide: The price range, date and more",
-      "url": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
-      "take": "Anthropic prices its 825 million-share offering at $70 to $78 tomorrow evening and begins trading on Nasdaq Thursday under the ticker ANT. Revenue grew to $33.2 billion in the first nine months of 2026, and the company was founded when Dario Amodei split from OpenAI in 2021."
-    },
-    {
-      "source": "WSJ What's News podcast",
-      "title": "Can Trump Keep Both China and America's Asian Allies Happy?",
-      "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Trump flies from Manila toward this week's Xi summit as allies press him to hold a hard line against China's growing assertiveness, with the new chip rule in his pocket. Today's pick: the flagship WSJ brief on whether trade deals survive the trip to Shenzhen."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": "7,360.38",
-      "chg": "-0.76%"
-    },
-    {
-      "name": "Dow 30",
-      "value": "51,125.71",
-      "chg": "-0.93%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": "24,305.57",
-      "chg": "-0.83%"
-    },
-    {
-      "name": "10-Yr",
-      "value": "5.14%",
-      "chg": "+0.39%"
-    },
-    {
-      "name": "VIX",
-      "value": "22.92",
-      "chg": "+0.04%"
-    },
-    {
-      "name": "Gold",
-      "value": "$3,871.70",
-      "chg": "+0.49%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": "$64,735.00",
-      "chg": "+0.91%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-17.mp3",
-  "audio_seconds": 54
+ "label": "Tuesday, November 17, 2026 · Morning edition",
+ "updated": "2026-11-17T17:55:36+00:00",
+ "items": [
+  {
+   "source": "Yahoo Finance",
+   "title": "Stock market today: Dow, S&P 500, Nasdaq slip in countdown to Nvidia earnings",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html",
+   "take": "Stocks opened lower with Nvidia's first results since Jensen Huang's resignation due after the bell tonight, and shares fell as investors weighed reports of a possible campaign to reinstate him. The S&P 500 is up about 8% for 2026, roughly 110 points shy of the ~7,530 level that would make it a 10% year."
+  },
+  {
+   "source": "The Wall Street Journal",
+   "title": "Rough Month Marks the End of the 'No-Brainer' AI Trade",
+   "url": "https://www.wsj.com/",
+   "take": "About $2.5 trillion in value was erased in the Nasdaq's worst session in almost two years, and hedge funds that concentrated roughly 40% of portfolios in AI hardware funds counted drawdowns of their own. The 'no-brainer' era of the AI trade is over, and what replaces it is punishing volatility."
+  },
+  {
+   "source": "The New York Times",
+   "title": "U.S. Acts to Close a Chip Loophole Beijing Exploits",
+   "url": "https://www.nytimes.com/",
+   "take": "The Commerce Department's new rule, effective in 90 days, aims to stop China from renting advanced AI chips at data centers in third countries like Malaysia, Thailand and Singapore. It underpins the Trump administration's position heading into Thursday's summit with Xi in Shenzhen."
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic IPO guide: The price range, date and more",
+   "url": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
+   "take": "Anthropic prices its 825 million-share offering at $70 to $78 tomorrow evening and begins trading on Nasdaq Thursday under the ticker ANT. Revenue grew to $33.2 billion in the first nine months of 2026, and the company was founded when Dario Amodei split from OpenAI in 2021."
+  },
+  {
+   "source": "WSJ What's News podcast",
+   "title": "Can Trump Keep Both China and America's Asian Allies Happy?",
+   "url": "https://www.wsj.com/podcasts/whats-news",
+   "take": "Trump flies from Manila toward this week's Xi summit as allies press him to hold a hard line against China's growing assertiveness, with the new chip rule in his pocket. Today's pick: the flagship WSJ brief on whether trade deals survive the trip to Shenzhen."
+  }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": "7,334.14",
+   "chg": "-1.11%"
+  },
+  {
+   "name": "Dow 30",
+   "value": "50,866.88",
+   "chg": "-1.44%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": "24,242.76",
+   "chg": "-1.09%"
+  },
+  {
+   "name": "10-Yr",
+   "value": "5.09%",
+   "chg": "-0.51%"
+  },
+  {
+   "name": "VIX",
+   "value": "25.85",
+   "chg": "+12.83%"
+  },
+  {
+   "name": "Gold",
+   "value": "$3,868.20",
+   "chg": "+0.39%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": "$63,837.00",
+   "chg": "-1.72%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-17.mp3",
+ "audio_seconds": 54
 }
