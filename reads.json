@@ -1,75 +1,91 @@
 {
- "label": "Tuesday, November 17, 2026 · Morning edition",
- "updated": "2026-11-18T14:52:27+00:00",
- "items": [
-  {
-   "source": "Yahoo Finance",
-   "title": "Stock market today: Dow, S&P 500, Nasdaq slip in countdown to Nvidia earnings",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html",
-   "take": "Stocks opened lower with Nvidia's first results since Jensen Huang's resignation due after the bell tonight, and shares fell as investors weighed reports of a possible campaign to reinstate him. The S&P 500 is up about 8% for 2026, roughly 110 points shy of the ~7,530 level that would make it a 10% year."
-  },
-  {
-   "source": "The Wall Street Journal",
-   "title": "Rough Month Marks the End of the 'No-Brainer' AI Trade",
-   "url": "https://www.wsj.com/",
-   "take": "About $2.5 trillion in value was erased in the Nasdaq's worst session in almost two years, and hedge funds that concentrated roughly 40% of portfolios in AI hardware funds counted drawdowns of their own. The 'no-brainer' era of the AI trade is over, and what replaces it is punishing volatility."
-  },
-  {
-   "source": "The New York Times",
-   "title": "U.S. Acts to Close a Chip Loophole Beijing Exploits",
-   "url": "https://www.nytimes.com/",
-   "take": "The Commerce Department's new rule, effective in 90 days, aims to stop China from renting advanced AI chips at data centers in third countries like Malaysia, Thailand and Singapore. It underpins the Trump administration's position heading into Thursday's summit with Xi in Shenzhen."
-  },
-  {
-   "source": "CNBC",
-   "title": "Anthropic IPO guide: The price range, date and more",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
-   "take": "Anthropic prices its 825 million-share offering at $70 to $78 tomorrow evening and begins trading on Nasdaq Thursday under the ticker ANT. Revenue grew to $33.2 billion in the first nine months of 2026, and the company was founded when Dario Amodei split from OpenAI in 2021."
-  },
-  {
-   "source": "WSJ What's News podcast",
-   "title": "Can Trump Keep Both China and America's Asian Allies Happy?",
-   "url": "https://www.wsj.com/podcasts/whats-news",
-   "take": "Trump flies from Manila toward this week's Xi summit as allies press him to hold a hard line against China's growing assertiveness, with the new chip rule in his pocket. Today's pick: the flagship WSJ brief on whether trade deals survive the trip to Shenzhen."
+  "label": "Wednesday, November 18, 2026 \u00b7 Morning edition",
+  "updated": "2026-11-18T15:45:59+00:00",
+  "items": [
+    {
+      "source": "CNN Business",
+      "title": "Four takeaways from Nvidia's first earnings report after Jensen Huang scandal",
+      "url": "https://www.cnn.com/2026/11/18/tech/nvidias-earnings-report-jensen-huang-scandal-takeaways",
+      "take": "Nvidia's first report since Jensen Huang's Nov 12 resignation beat again, but the SEC opened an inquiry into whether its disclosures gave investors a complete picture, and leadership ruled out his return. U.S. stocks fell as AI doubts festered, with the S&P 500 down 1.6% and Nvidia off roughly 24% this month."
+    },
+    {
+      "source": "Bloomberg",
+      "title": "Anthropic Approaches Final IPO Hurdle After Tech Stocks Decline",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-approaches-final-ipo-hurdle-after-tech-stocks-churn",
+      "take": "Anthropic prices potentially the biggest IPO ever tonight after guiding investors above its $70-to-$78 range, aiming for a valuation near $1.4 trillion. Shares trade Thursday on Nasdaq under ANT, with Google and Nvidia each putting $10 billion in alongside the deal."
+    },
+    {
+      "source": "The New York Times",
+      "title": "Trump, Xi and Putin Shake Hands as Leaders Gather in China: Live Updates",
+      "url": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+      "take": "Trump landed in Shenzhen to a rare airport hug from Xi, and the three nuclear-armed leaders' first-ever trilateral summit comes Thursday on APEC's sidelines. Nuclear arms control is the marquee topic, though analysts see little chance of a breakthrough."
+    },
+    {
+      "source": "CNBC",
+      "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
+      "url": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
+      "take": "The Pan American Health Organization revoked the U.S. measles-elimination status earned in 2000, after 12 straight months of transmission and more than 5,400 cases this year, the worst outbreak since 1991. It leads every front page this morning, from the Times to USA Today to the Globe."
+    },
+    {
+      "source": "WSJ What's News",
+      "title": "Nvidia Moves On From Jensen Huang",
+      "url": "https://podcasts.apple.com/us/podcast/the-wall-street-journal-whats-news/id152016440",
+      "take": "Today's WSJ podcast leads with Nvidia's post-Huang earnings call: the beat was clean, but the SEC inquiry and the question of who replaces him hung over the tape. Also on the show, Trump's return to the world stage in Asia."
+    }
+  ],
+  "tape": [
+    {
+      "name": "S&P 500",
+      "value": "7,322.46",
+      "chg": "-0.25%"
+    },
+    {
+      "name": "Dow 30",
+      "value": "50,251.26",
+      "chg": "-1.00%"
+    },
+    {
+      "name": "Nasdaq",
+      "value": "24,369.64",
+      "chg": "+0.17%"
+    },
+    {
+      "name": "10-Yr",
+      "value": "5.09%",
+      "chg": "-0.27%"
+    },
+    {
+      "name": "VIX",
+      "value": "24.22",
+      "chg": "-4.87%"
+    },
+    {
+      "name": "Gold",
+      "value": "$3,758.40",
+      "chg": "-2.74%"
+    },
+    {
+      "name": "Bitcoin",
+      "value": "$63,495.00",
+      "chg": "-1.87%"
+    }
+  ],
+  "audio": "audio/read-daily/2026-11-18.mp3",
+  "audio_seconds": 84,
+  "podcasts": {
+    "wsj": {
+      "latest": {
+        "title": "Nvidia Moves On From Jensen Huang",
+        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+      }
+    },
+    "tom": {
+      "latest": {
+        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+        "url": "https://rss.art19.com/thoughts-on-the-market"
+      }
+    }
   }
- ],
- "tape": [
-  {
-   "name": "S&P 500",
-   "value": "7,313.32",
-   "chg": "-0.37%"
-  },
-  {
-   "name": "Dow 30",
-   "value": "50,283.54",
-   "chg": "-0.94%"
-  },
-  {
-   "name": "Nasdaq",
-   "value": "24,305.35",
-   "chg": "-0.09%"
-  },
-  {
-   "name": "10-Yr",
-   "value": "5.08%",
-   "chg": "-0.35%"
-  },
-  {
-   "name": "VIX",
-   "value": "24.79",
-   "chg": "-2.63%"
-  },
-  {
-   "name": "Gold",
-   "value": "$3,770.00",
-   "chg": "-2.44%"
-  },
-  {
-   "name": "Bitcoin",
-   "value": "$63,256.00",
-   "chg": "-2.58%"
-  }
- ],
- "audio": "audio/read-daily/2026-11-17.mp3",
- "audio_seconds": 54
 }
