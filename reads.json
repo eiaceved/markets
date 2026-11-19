@@ -1,6 +1,6 @@
 {
  "label": "Wednesday, November 18, 2026 · Morning edition",
- "updated": "2026-11-19T00:37:52+00:00",
+ "updated": "2026-11-19T15:06:13+00:00",
  "items": [
   {
    "source": "CNN Business",
@@ -36,38 +36,38 @@
  "tape": [
   {
    "name": "S&P 500",
-   "value": "7,323.63",
-   "chg": "-0.23%"
+   "value": "7,386.08",
+   "chg": "+0.85%"
   },
   {
    "name": "Dow 30",
-   "value": "50,198.17",
-   "chg": "-1.11%"
+   "value": "50,206.52",
+   "chg": "+0.02%"
   },
   {
    "name": "Nasdaq",
-   "value": "24,429.88",
-   "chg": "+0.42%"
+   "value": "24,839.71",
+   "chg": "+1.68%"
   },
   {
    "name": "10-Yr",
-   "value": "5.07%",
-   "chg": "-0.73%"
+   "value": "5.10%",
+   "chg": "+0.61%"
   },
   {
    "name": "VIX",
-   "value": "24.56",
-   "chg": "-3.53%"
+   "value": "22.20",
+   "chg": "-9.61%"
   },
   {
    "name": "Gold",
-   "value": "$3,745.10",
-   "chg": "+0.09%"
+   "value": "$3,707.50",
+   "chg": "-0.92%"
   },
   {
    "name": "Bitcoin",
-   "value": "$62,969.00",
-   "chg": "-2.76%"
+   "value": "$63,786.00",
+   "chg": "+0.32%"
   }
  ],
  "audio": "audio/read-daily/2026-11-18.mp3",
