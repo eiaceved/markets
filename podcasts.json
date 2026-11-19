@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T15:40:43+00:00",
+  "updated": "2026-11-19T15:40:27+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -63,16 +63,16 @@
   },
   "wsj": {
     "latest": {
-      "title": "Nvidia Moves On From Jensen Huang",
-      "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-      "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+      "title": "It\u2019s Time for (Another) Record IPO",
+      "pub": "Thu, 19 Nov 2026 11:16:00 +0000",
+      "url": "https://www.wsj.com/podcasts/whats-news"
     }
   },
   "tom": {
     "latest": {
-      "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-      "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-      "url": "https://rss.art19.com/thoughts-on-the-market"
+      "title": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
+      "pub": "Wed, 18 Nov 2026 21:30:00 -0000",
+      "url": ""
     }
   }
 }
