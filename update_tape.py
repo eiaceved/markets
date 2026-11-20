@@ -27,7 +27,7 @@ def chip(name,px,prev,forced_chg=None):
     if px is None: return None
     pct=forced_chg if forced_chg is not None else (((px-prev)/prev*100.0) if prev else None)
     # plain numbers: read-daily.html adds % and $ itself (fmt() in the page)
-    value=float(px)
+    value=round(float(px),2)
     chg=('' if pct is None else ('%+.2f%%'%pct))
     return {'name':name,'value':value,'chg':chg}
 def main():
