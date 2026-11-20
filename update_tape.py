@@ -26,9 +26,8 @@ def btc_cg():
 def chip(name,px,prev,forced_chg=None):
     if px is None: return None
     pct=forced_chg if forced_chg is not None else (((px-prev)/prev*100.0) if prev else None)
-    if name=='10-Yr': value=('%.2f%%'%px) if abs(px)<100 else ('%.2f'%px)
-    elif name in ('Gold','Bitcoin'): value='$'+format(px,',.2f')
-    else: value=format(px,',.2f')
+    # plain numbers: read-daily.html adds % and $ itself (fmt() in the page)
+    value=float(px)
     chg=('' if pct is None else ('%+.2f%%'%pct))
     return {'name':name,'value':value,'chg':chg}
 def main():

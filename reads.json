@@ -1,91 +1,91 @@
 {
-  "label": "Friday, November 20, 2026 \u00b7 Morning edition",
-  "updated": "2026-11-20T15:21:52.419730+00:00",
-  "items": [
-    {
-      "source": "Yahoo Finance",
-      "title": "Anthropic closes debut at $97.17, then slides in second day",
-      "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html",
-      "take": "Opened its first day at $111.50, briefly topping a $2 trillion market cap, and closed Thursday at $97.17, 17% above its $83 IPO price. Friday it gave back about 9% as investors booked profits on the largest IPO in history."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "Worst week in over a year even after the IPO",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-anthropic-mega-141513005.html",
-      "take": "The S&P 500 and Nasdaq are on course for their worst weekly performances in over a year despite the blockbuster debut; the Nasdaq slid more than 1% at Friday's open while the Dow rose. Meta is off 4% and Microsoft 3% as AI financing doubts spread."
-    },
-    {
-      "source": "Stock Titan",
-      "title": "Chip stocks tumble around the world before the US open",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026",
-      "take": "Nvidia fell about 4% premarket Friday, a 35% one-month slide despite record revenue, and semiconductor names dropped across Asia and Europe. Amazon and Alphabet, Anthropic's largest shareholders, feel its post-IPO slide directly."
-    },
-    {
-      "source": "NYT",
-      "title": "Trump, Xi and Putin seek to project power at their first summit",
-      "url": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-      "take": "The first-ever trilateral summit in Shenzhen produced a four-point peace declaration and a dialogue on nuclear nonproliferation, but no Ukraine breakthrough. The joint statement did include cooperation on AI safety to prevent security threats."
-    },
-    {
-      "source": "WSJ What's News",
-      "title": "U.S. Floats NATO Membership for Ukraine",
-      "url": "https://www.wsj.com/podcasts/whats-news",
-      "take": "Today's morning podcast covers Washington floating NATO membership for Ukraine in a peace plan, plus the market fallout from Anthropic's debut. A good 10-minute catch-up before class."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": "7,156.45",
-      "chg": "-0.27%"
-    },
-    {
-      "name": "Dow 30",
-      "value": "49,480.00",
-      "chg": "+0.78%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": "23,586.39",
-      "chg": "-1.23%"
-    },
-    {
-      "name": "10-Yr",
-      "value": "4.99%",
-      "chg": "-1.19%"
-    },
-    {
-      "name": "VIX",
-      "value": "27.06",
-      "chg": "-4.85%"
-    },
-    {
-      "name": "Gold",
-      "value": "$3,569.20",
-      "chg": "-3.16%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": "$60,995.00",
-      "chg": "-3.98%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-20.mp3",
-  "audio_seconds": 70,
-  "podcasts": {
-    "wsj": {
-      "latest": {
-        "title": "Nvidia Moves On From Jensen Huang",
-        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-      }
-    },
-    "tom": {
-      "latest": {
-        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-        "url": "https://rss.art19.com/thoughts-on-the-market"
-      }
-    }
+ "label": "Friday, November 20, 2026 · Morning edition",
+ "updated": "2026-11-20T15:29:47+00:00",
+ "items": [
+  {
+   "source": "Yahoo Finance",
+   "title": "Anthropic closes debut at $97.17, then slides in second day",
+   "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html",
+   "take": "Opened its first day at $111.50, briefly topping a $2 trillion market cap, and closed Thursday at $97.17, 17% above its $83 IPO price. Friday it gave back about 9% as investors booked profits on the largest IPO in history."
+  },
+  {
+   "source": "Yahoo Finance",
+   "title": "Worst week in over a year even after the IPO",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-anthropic-mega-141513005.html",
+   "take": "The S&P 500 and Nasdaq are on course for their worst weekly performances in over a year despite the blockbuster debut; the Nasdaq slid more than 1% at Friday's open while the Dow rose. Meta is off 4% and Microsoft 3% as AI financing doubts spread."
+  },
+  {
+   "source": "Stock Titan",
+   "title": "Chip stocks tumble around the world before the US open",
+   "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026",
+   "take": "Nvidia fell about 4% premarket Friday, a 35% one-month slide despite record revenue, and semiconductor names dropped across Asia and Europe. Amazon and Alphabet, Anthropic's largest shareholders, feel its post-IPO slide directly."
+  },
+  {
+   "source": "NYT",
+   "title": "Trump, Xi and Putin seek to project power at their first summit",
+   "url": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "take": "The first-ever trilateral summit in Shenzhen produced a four-point peace declaration and a dialogue on nuclear nonproliferation, but no Ukraine breakthrough. The joint statement did include cooperation on AI safety to prevent security threats."
+  },
+  {
+   "source": "WSJ What's News",
+   "title": "U.S. Floats NATO Membership for Ukraine",
+   "url": "https://www.wsj.com/podcasts/whats-news",
+   "take": "Today's morning podcast covers Washington floating NATO membership for Ukraine in a peace plan, plus the market fallout from Anthropic's debut. A good 10-minute catch-up before class."
   }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": 7119.51,
+   "chg": "-0.78%"
+  },
+  {
+   "name": "Dow 30",
+   "value": 49278.98,
+   "chg": "+0.37%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": 23418.252,
+   "chg": "-1.93%"
+  },
+  {
+   "name": "10-Yr",
+   "value": 4.972,
+   "chg": "-1.58%"
+  },
+  {
+   "name": "VIX",
+   "value": 28.15,
+   "chg": "-1.02%"
+  },
+  {
+   "name": "Gold",
+   "value": 3545.0,
+   "chg": "-3.81%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": 60161.0,
+   "chg": "-5.10%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-20.mp3",
+ "audio_seconds": 70,
+ "podcasts": {
+  "wsj": {
+   "latest": {
+    "title": "Nvidia Moves On From Jensen Huang",
+    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+   }
+  },
+  "tom": {
+   "latest": {
+    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+    "url": "https://rss.art19.com/thoughts-on-the-market"
+   }
+  }
+ }
 }
