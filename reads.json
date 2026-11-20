@@ -1,91 +1,91 @@
 {
- "label": "Thursday, November 19, 2026 · Morning edition",
- "updated": "2026-11-20T14:46:30+00:00",
- "items": [
-  {
-   "source": "Yahoo Finance",
-   "title": "Stock market today: Dow, S&P 500, Nasdaq rise ahead of historic Anthropic trading debut",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html",
-   "take": "Anthropic begins trading on the Nasdaq this morning under ticker ANT after pricing at $83 a share, above the marketed $70-78 range, the largest IPO in history at about $81 billion. The deal is reviving the battered AI trade before the bell, with Nasdaq futures up over 1.5% and Broadcom up nearly 3%."
-  },
-  {
-   "source": "CNBC",
-   "title": "Dow drops more than 500 points; S&P 500 falls for fifth day as Nvidia sells off",
-   "url": "https://www.cnbc.com/2026/11/17/stock-market-today-live-updates.html",
-   "take": "Nvidia slid 3% again Wednesday, a fifth straight losing day, dragging the S&P 500 to its fifth consecutive decline, while UnitedHealth's 10% plunge pushed the Dow down more than 500 points. The chipmaker's quarter beat estimates, so the selloff is about leadership uncertainty after Jensen Huang's resignation, not the numbers."
-  },
-  {
-   "source": "CNBC",
-   "title": "Walmart (WMT) Q3 2026 earnings",
-   "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-   "take": "Walmart beat on both lines ($188.8 billion revenue, 65 cents adjusted EPS) and raised its full-year outlook for the third time this year, on 23% e-commerce growth heading into the holidays. The consumer bellwether gives the market one more reason to feel good besides the Anthropic IPO."
-  },
-  {
-   "source": "The New York Times",
-   "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October",
-   "url": "https://www.nytimes.com/2026/11/18/business/federal-reserve-rate-increase-october-meeting.html",
-   "take": "Minutes from the Fed's October meeting show most officials saw further rate increases as needed, calling inflation pressures 'broad based' and flagging high energy prices. Markets read it as hawkish: gold fell to its lowest in over a year, silver to a 52-week low, and the 10-year yield sits near 5.1%."
-  },
-  {
-   "source": "ZeroHedge",
-   "title": "Futures Rip As Anthropic IPO Frenzy Revives AI Trade, Asian Chips Puke",
-   "url": "https://www.zerohedge.com/markets/futures-rip-anthropic-ipo-frenzy-revives-ai-trade-asian-chips-puke",
-   "take": "Copper just had its worst daily drop in more than a year, about 6%, as investors reassess AI data-center spending, a second crack in the buildout trade beyond Nvidia. Today's slate: jobless claims and the Philadelphia Fed survey at 8:30 a.m., with the October jobs report out Friday."
+  "label": "Friday, November 20, 2026 \u00b7 Morning edition",
+  "updated": "2026-11-20T15:21:52.419730+00:00",
+  "items": [
+    {
+      "source": "Yahoo Finance",
+      "title": "Anthropic closes debut at $97.17, then slides in second day",
+      "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html",
+      "take": "Opened its first day at $111.50, briefly topping a $2 trillion market cap, and closed Thursday at $97.17, 17% above its $83 IPO price. Friday it gave back about 9% as investors booked profits on the largest IPO in history."
+    },
+    {
+      "source": "Yahoo Finance",
+      "title": "Worst week in over a year even after the IPO",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-anthropic-mega-141513005.html",
+      "take": "The S&P 500 and Nasdaq are on course for their worst weekly performances in over a year despite the blockbuster debut; the Nasdaq slid more than 1% at Friday's open while the Dow rose. Meta is off 4% and Microsoft 3% as AI financing doubts spread."
+    },
+    {
+      "source": "Stock Titan",
+      "title": "Chip stocks tumble around the world before the US open",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026",
+      "take": "Nvidia fell about 4% premarket Friday, a 35% one-month slide despite record revenue, and semiconductor names dropped across Asia and Europe. Amazon and Alphabet, Anthropic's largest shareholders, feel its post-IPO slide directly."
+    },
+    {
+      "source": "NYT",
+      "title": "Trump, Xi and Putin seek to project power at their first summit",
+      "url": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+      "take": "The first-ever trilateral summit in Shenzhen produced a four-point peace declaration and a dialogue on nuclear nonproliferation, but no Ukraine breakthrough. The joint statement did include cooperation on AI safety to prevent security threats."
+    },
+    {
+      "source": "WSJ What's News",
+      "title": "U.S. Floats NATO Membership for Ukraine",
+      "url": "https://www.wsj.com/podcasts/whats-news",
+      "take": "Today's morning podcast covers Washington floating NATO membership for Ukraine in a peace plan, plus the market fallout from Anthropic's debut. A good 10-minute catch-up before class."
+    }
+  ],
+  "tape": [
+    {
+      "name": "S&P 500",
+      "value": "7,156.45",
+      "chg": "-0.27%"
+    },
+    {
+      "name": "Dow 30",
+      "value": "49,480.00",
+      "chg": "+0.78%"
+    },
+    {
+      "name": "Nasdaq",
+      "value": "23,586.39",
+      "chg": "-1.23%"
+    },
+    {
+      "name": "10-Yr",
+      "value": "4.99%",
+      "chg": "-1.19%"
+    },
+    {
+      "name": "VIX",
+      "value": "27.06",
+      "chg": "-4.85%"
+    },
+    {
+      "name": "Gold",
+      "value": "$3,569.20",
+      "chg": "-3.16%"
+    },
+    {
+      "name": "Bitcoin",
+      "value": "$60,995.00",
+      "chg": "-3.98%"
+    }
+  ],
+  "audio": "audio/read-daily/2026-11-20.mp3",
+  "audio_seconds": 70,
+  "podcasts": {
+    "wsj": {
+      "latest": {
+        "title": "Nvidia Moves On From Jensen Huang",
+        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+      }
+    },
+    "tom": {
+      "latest": {
+        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+        "url": "https://rss.art19.com/thoughts-on-the-market"
+      }
+    }
   }
- ],
- "tape": [
-  {
-   "name": "S&P 500",
-   "value": "7,148.15",
-   "chg": "-0.39%"
-  },
-  {
-   "name": "Dow 30",
-   "value": "49,333.98",
-   "chg": "+0.48%"
-  },
-  {
-   "name": "Nasdaq",
-   "value": "23,575.34",
-   "chg": "-1.27%"
-  },
-  {
-   "name": "10-Yr",
-   "value": "4.99%",
-   "chg": "-1.31%"
-  },
-  {
-   "name": "VIX",
-   "value": "29.46",
-   "chg": "+3.59%"
-  },
-  {
-   "name": "Gold",
-   "value": "$3,570.40",
-   "chg": "-3.12%"
-  },
-  {
-   "name": "Bitcoin",
-   "value": "$61,463.00",
-   "chg": "-3.79%"
-  }
- ],
- "audio": "audio/read-daily/2026-11-19.mp3",
- "audio_seconds": 85,
- "podcasts": {
-  "wsj": {
-   "latest": {
-    "title": "Nvidia Moves On From Jensen Huang",
-    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-   }
-  },
-  "tom": {
-   "latest": {
-    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-    "url": "https://rss.art19.com/thoughts-on-the-market"
-   }
-  }
- }
 }

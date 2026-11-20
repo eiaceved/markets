@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T15:40:27+00:00",
+  "updated": "2026-11-20T15:21:52.419730+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -8,8 +8,8 @@
       "blurb": "WSJ's flagship news brief: the top business and market stories in about 10-15 minutes, twice a day. The easiest daily habit of the five.",
       "apple": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440",
       "latest": {
-        "title": "Can Trump Keep Both China and America's Asian Allies Happy?",
-        "date": "Tue, 17 Nov 2026",
+        "title": "U.S. Floats NATO Membership for Ukraine",
+        "date": "Fri, 20 Nov 2026",
         "url": "https://www.wsj.com/podcasts/whats-news"
       }
     },
@@ -29,8 +29,8 @@
       "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
       "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
       "latest": {
-        "title": "2027 Global Outlook: Powered by AI, Tested by Oil",
-        "date": "Mon, 16 Nov 2026",
+        "title": "Europe's AI Moment",
+        "date": "Thu, 19 Nov 2026",
         "url": "https://rss.art19.com/thoughts-on-the-market"
       }
     },
@@ -57,22 +57,22 @@
     }
   ],
   "latest": {
-    "title": "Can Trump Keep Both China and America's Asian Allies Happy?",
-    "date": "Tue, 17 Nov 2026",
+    "title": "U.S. Floats NATO Membership for Ukraine",
+    "pub": "Fri, 20 Nov 2026 11:16:00 +0000",
     "url": "https://www.wsj.com/podcasts/whats-news"
   },
   "wsj": {
     "latest": {
-      "title": "It\u2019s Time for (Another) Record IPO",
-      "pub": "Thu, 19 Nov 2026 11:16:00 +0000",
+      "title": "U.S. Floats NATO Membership for Ukraine",
+      "pub": "Fri, 20 Nov 2026 11:16:00 +0000",
       "url": "https://www.wsj.com/podcasts/whats-news"
     }
   },
   "tom": {
     "latest": {
-      "title": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
-      "pub": "Wed, 18 Nov 2026 21:30:00 -0000",
-      "url": ""
+      "title": "Europe's AI Moment",
+      "pub": "Thu, 19 Nov 2026 21:30:00 -0000",
+      "url": "https://rss.art19.com/thoughts-on-the-market"
     }
   }
 }
