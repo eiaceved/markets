@@ -1,45 +1,80 @@
 {
-  "updated": "2026-11-20T07:17:20.935434-08:00",
-  "label": "Friday, November 20, 2026",
+  "updated": "2026-11-21T15:20:14.564978+00:00",
+  "label": "Saturday, November 21, 2026",
   "pages": [
     {
       "name": "New York Times",
       "source": "nytimes.com",
-      "img": "frontpages/nyt-2026-11-20.jpg",
-      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ny_nyt/2026-11-20/front-page-large.jpg"
+      "img": "frontpages/nyt-2026-11-21.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ny_nyt/2026-11-21/front-page-large.jpg"
     },
     {
       "name": "Los Angeles Times",
       "source": "latimes.com",
-      "img": "frontpages/lat-2026-11-20.jpg",
-      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ca_lat/2026-11-20/front-page-large.jpg"
+      "img": "frontpages/lat-2026-11-21.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ca_lat/2026-11-21/front-page-large.jpg"
     },
     {
       "name": "WSJ",
       "source": "wsj.com",
-      "img": "frontpages/wsj-2026-11-20.jpg",
-      "url": "https://d2dr22b2lm4tvw.cloudfront.net/wsj/2026-11-20/front-page-large.jpg"
-    },
-    {
-      "name": "USA Today",
-      "source": "usatoday.com",
-      "img": "frontpages/usat-2026-11-20.jpg",
-      "url": "https://d2dr22b2lm4tvw.cloudfront.net/usat/2026-11-20/front-page-large.jpg"
+      "img": "frontpages/wsj-2026-11-21.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/wsj/2026-11-21/front-page-large.jpg"
     },
     {
       "name": "Chicago Tribune",
       "source": "chicagotribune.com",
-      "img": "frontpages/trib-2026-11-20.jpg",
-      "url": "https://d2dr22b2lm4tvw.cloudfront.net/il_ct/2026-11-20/front-page-large.jpg"
+      "img": "frontpages/trib-2026-11-21.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/il_ct/2026-11-21/front-page-large.jpg"
     },
     {
-      "name": "Boston Globe",
+      "name": "The Boston Globe",
       "source": "bostonglobe.com",
-      "img": "frontpages/globe-2026-11-20.jpg",
-      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ma_bg/2026-11-20/front-page-large.jpg"
+      "img": "frontpages/globe-2026-11-21.jpg",
+      "url": "https://d2dr22b2lm4tvw.cloudfront.net/ma_bg/2026-11-21/front-page-large.jpg"
     }
   ],
   "history": [
+    {
+      "date": "2026-11-20",
+      "pages": [
+        {
+          "name": "New York Times",
+          "source": "nytimes.com",
+          "img": "frontpages/nyt-2026-11-20.jpg",
+          "url": "https://d2dr22b2lm4tvw.cloudfront.net/ny_nyt/2026-11-20/front-page-large.jpg"
+        },
+        {
+          "name": "Los Angeles Times",
+          "source": "latimes.com",
+          "img": "frontpages/lat-2026-11-20.jpg",
+          "url": "https://d2dr22b2lm4tvw.cloudfront.net/ca_lat/2026-11-20/front-page-large.jpg"
+        },
+        {
+          "name": "WSJ",
+          "source": "wsj.com",
+          "img": "frontpages/wsj-2026-11-20.jpg",
+          "url": "https://d2dr22b2lm4tvw.cloudfront.net/wsj/2026-11-20/front-page-large.jpg"
+        },
+        {
+          "name": "USA Today",
+          "source": "usatoday.com",
+          "img": "frontpages/usat-2026-11-20.jpg",
+          "url": "https://d2dr22b2lm4tvw.cloudfront.net/usat/2026-11-20/front-page-large.jpg"
+        },
+        {
+          "name": "Chicago Tribune",
+          "source": "chicagotribune.com",
+          "img": "frontpages/trib-2026-11-20.jpg",
+          "url": "https://d2dr22b2lm4tvw.cloudfront.net/il_ct/2026-11-20/front-page-large.jpg"
+        },
+        {
+          "name": "Boston Globe",
+          "source": "bostonglobe.com",
+          "img": "frontpages/globe-2026-11-20.jpg",
+          "url": "https://d2dr22b2lm4tvw.cloudfront.net/ma_bg/2026-11-20/front-page-large.jpg"
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "label": "Thursday, November 19, 2026",
@@ -235,42 +270,6 @@
           "source": "washingtonpost.com",
           "img": "frontpages/wap-2026-11-15.jpg",
           "url": "https://dedq39jz5ilmb.cloudfront.net/20261115/A01_RE_EZ_DAILY_20261115.pdf"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-14",
-      "label": "Saturday, November 14, 2026",
-      "pages": [
-        {
-          "name": "The New York Times",
-          "source": "nytimes.com",
-          "img": "frontpages/nyt-2026-11-14.jpg",
-          "url": "https://d2dr22b2lm4tvw.cloudfront.net/ny_nyt/2026-11-14/front-page-large.jpg"
-        },
-        {
-          "name": "Los Angeles Times",
-          "source": "latimes.com",
-          "img": "frontpages/lat-2026-11-14.jpg",
-          "url": "https://d2dr22b2lm4tvw.cloudfront.net/ca_lat/2026-11-14/front-page-large.jpg"
-        },
-        {
-          "name": "WSJ",
-          "source": "wsj.com",
-          "img": "frontpages/wsj-2026-11-14.jpg",
-          "url": "https://d2dr22b2lm4tvw.cloudfront.net/wsj/2026-11-14/front-page-large.jpg"
-        },
-        {
-          "name": "Boston Globe",
-          "source": "bostonglobe.com",
-          "img": "frontpages/globe-2026-11-14.jpg",
-          "url": "https://d2dr22b2lm4tvw.cloudfront.net/ma_bg/2026-11-14/front-page-large.jpg"
-        },
-        {
-          "name": "The Washington Post",
-          "source": "washingtonpost.com",
-          "img": "frontpages/wap-2026-11-14.jpg",
-          "url": "https://dedq39jz5ilmb.cloudfront.net/20261114/A01_RE_EZ_DAILY_20261114.pdf"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T15:21:52.419730+00:00",
+  "updated": "2026-11-21T15:17:42.377949+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -29,9 +29,9 @@
       "apple": "https://podcasts.apple.com/us/podcast/thoughts-on-the-market/id1466686717",
       "web": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market",
       "latest": {
-        "title": "Europe's AI Moment",
+        "title": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
         "date": "Thu, 19 Nov 2026",
-        "url": "https://rss.art19.com/thoughts-on-the-market"
+        "url": "https://podcastrex.com/shows/thoughts-on-the-market/2027-equities-outlook-why-the-correction-isnt-the-end-of-the-bull-market"
       }
     },
     {
@@ -56,11 +56,7 @@
       }
     }
   ],
-  "latest": {
-    "title": "U.S. Floats NATO Membership for Ukraine",
-    "pub": "Fri, 20 Nov 2026 11:16:00 +0000",
-    "url": "https://www.wsj.com/podcasts/whats-news"
-  },
+  "latest": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
   "wsj": {
     "latest": {
       "title": "U.S. Floats NATO Membership for Ukraine",
