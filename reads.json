@@ -1,91 +1,91 @@
 {
-  "label": "Saturday, November 21, 2026 \u00b7 Morning edition",
-  "updated": "2026-11-21T15:20:51+00:00",
-  "items": [
-    {
-      "source": "Yahoo Finance",
-      "title": "Nvidia extends its $2.7 trillion rout as the SEC is reported to be probing its accounting",
-      "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
-      "take": "Nvidia fell 14% Friday, its worst day since the DeepSeek rout in January 2025 and its seventh straight loss, after Reuters reported the SEC's probe is examining the chipmaker's accounting. Shares bounced about 4% after hours, and the rout lands amid leadership upheaval following Jensen Huang's exit."
-    },
-    {
-      "source": "CNBC",
-      "title": "S&P 500 correction: Five forces behind the market sell-off",
-      "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
-      "take": "The S&P 500 and Dow closed in correction territory Friday, more than 10% below their records, and the Nasdaq is now in the red for 2026. CNBC lays out the five forces behind the sell-off and notes Anthropic closed the week at $88.91 after the Nasdaq's worst week since March 2020."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "Chips suffer their worst week since 2001 as the Nasdaq nears a bear market",
-      "url": "https://finance.yahoo.com/markets/article/chips-are-crashing-like-its-2008-as-the-nasdaq-100-nears-a-bear-market-192805534.html",
-      "take": "Chip stocks are falling almost as fast as they did in late 2008, a pace topped only by the dot-com bust and the financial crisis. The Nasdaq 100 finished just shy of a bear market, and the S&P 500 is headed for its worst November since 1973."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "Anthropic came within 5 cents of its $83 IPO price on day two, then bounced",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-stock-came-within-5-211710460.html",
-      "take": "Anthropic nearly gave back its entire debut on its second day, trading within five cents of the $83 IPO price before a late-day bounce. The piece's yardstick: Facebook fell 11% on its own day two in 2012 and closed below its IPO price."
-    },
-    {
-      "source": "AP (via WSLS)",
-      "title": "A 10% drop for the stock market is unnerving, but it's not that unusual",
-      "url": "https://www.wsls.com/business/2026/11/21/a-10-drop-for-the-stock-market-is-unnerving-but-its-not-that-unusual/",
-      "take": "The market's 10% slide from last month's high is driven by worries about the hurdles facing the AI industry. AP's read: unnerving but historically normal, with analysts likening it to the corrections of March 2020 and April 2025."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": 6910.39,
-      "chg": "-3.70%"
-    },
-    {
-      "name": "Dow 30",
-      "value": 48147.33,
-      "chg": "-1.93%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": 22617.73,
-      "chg": "-5.28%"
-    },
-    {
-      "name": "10-Yr",
-      "value": 4.91,
-      "chg": "-2.77%"
-    },
-    {
-      "name": "VIX",
-      "value": 35.89,
-      "chg": "+26.20%"
-    },
-    {
-      "name": "Gold",
-      "value": 3515.4,
-      "chg": "-4.62%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": 59831.0,
-      "chg": "-0.72%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-21.mp3",
-  "audio_seconds": 73.2,
-  "podcasts": {
-    "wsj": {
-      "latest": {
-        "title": "Nvidia Moves On From Jensen Huang",
-        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-      }
-    },
-    "tom": {
-      "latest": {
-        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-        "url": "https://rss.art19.com/thoughts-on-the-market"
-      }
-    }
+ "label": "Saturday, November 21, 2026 · Morning edition",
+ "updated": "2026-11-21T17:36:49+00:00",
+ "items": [
+  {
+   "source": "Yahoo Finance",
+   "title": "Nvidia extends its $2.7 trillion rout as the SEC is reported to be probing its accounting",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
+   "take": "Nvidia fell 14% Friday, its worst day since the DeepSeek rout in January 2025 and its seventh straight loss, after Reuters reported the SEC's probe is examining the chipmaker's accounting. Shares bounced about 4% after hours, and the rout lands amid leadership upheaval following Jensen Huang's exit."
+  },
+  {
+   "source": "CNBC",
+   "title": "S&P 500 correction: Five forces behind the market sell-off",
+   "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+   "take": "The S&P 500 and Dow closed in correction territory Friday, more than 10% below their records, and the Nasdaq is now in the red for 2026. CNBC lays out the five forces behind the sell-off and notes Anthropic closed the week at $88.91 after the Nasdaq's worst week since March 2020."
+  },
+  {
+   "source": "Yahoo Finance",
+   "title": "Chips suffer their worst week since 2001 as the Nasdaq nears a bear market",
+   "url": "https://finance.yahoo.com/markets/article/chips-are-crashing-like-its-2008-as-the-nasdaq-100-nears-a-bear-market-192805534.html",
+   "take": "Chip stocks are falling almost as fast as they did in late 2008, a pace topped only by the dot-com bust and the financial crisis. The Nasdaq 100 finished just shy of a bear market, and the S&P 500 is headed for its worst November since 1973."
+  },
+  {
+   "source": "Yahoo Finance",
+   "title": "Anthropic came within 5 cents of its $83 IPO price on day two, then bounced",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-stock-came-within-5-211710460.html",
+   "take": "Anthropic nearly gave back its entire debut on its second day, trading within five cents of the $83 IPO price before a late-day bounce. The piece's yardstick: Facebook fell 11% on its own day two in 2012 and closed below its IPO price."
+  },
+  {
+   "source": "AP (via WSLS)",
+   "title": "A 10% drop for the stock market is unnerving, but it's not that unusual",
+   "url": "https://www.wsls.com/business/2026/11/21/a-10-drop-for-the-stock-market-is-unnerving-but-its-not-that-unusual/",
+   "take": "The market's 10% slide from last month's high is driven by worries about the hurdles facing the AI industry. AP's read: unnerving but historically normal, with analysts likening it to the corrections of March 2020 and April 2025."
   }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": 6910.39,
+   "chg": "-3.70%"
+  },
+  {
+   "name": "Dow 30",
+   "value": 48147.33,
+   "chg": "-1.93%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": 22617.73,
+   "chg": "-5.28%"
+  },
+  {
+   "name": "10-Yr",
+   "value": 4.91,
+   "chg": "-2.77%"
+  },
+  {
+   "name": "VIX",
+   "value": 35.89,
+   "chg": "+26.20%"
+  },
+  {
+   "name": "Gold",
+   "value": 3515.4,
+   "chg": "-4.62%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": 60014.0,
+   "chg": "+1.52%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-21.mp3",
+ "audio_seconds": 73.2,
+ "podcasts": {
+  "wsj": {
+   "latest": {
+    "title": "Nvidia Moves On From Jensen Huang",
+    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+   }
+  },
+  "tom": {
+   "latest": {
+    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+    "url": "https://rss.art19.com/thoughts-on-the-market"
+   }
+  }
+ }
 }
