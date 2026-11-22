@@ -1,91 +1,91 @@
 {
-  "label": "Sunday, November 22, 2026 · Morning edition",
-  "updated": "2026-11-22T15:12:54+00:00",
-  "items": [
-    {
-      "source": "TipRanks",
-      "title": "The Week That Was, The Week Ahead: Macro and Markets",
-      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22",
-      "take": "The damage bill from week 47: Nvidia fell 22.9% across five sessions and is down nearly 50% from its October 6 peak, and the Nasdaq is now negative for 2026 while the S&P 500 and Dow barely hold positive returns. The week ahead is holiday-shortened, with Workday and Deere earnings and Friday's October PCE inflation read the main markers."
-    },
-    {
-      "source": "Mostly Markets",
-      "title": "The S&P 500 fell into a correction as an SEC report sank Nvidia",
-      "url": "https://mostlymarkets.substack.com/p/stock-market-today-the-s-and-p-500",
-      "take": "The weekend's calendar of what comes next: markets close Thursday for Thanksgiving and at 1 p.m. Friday, Jensen Huang sits for closed-door interviews with three House committees on December 1, and the Fed meets December 8-9. Adobe expects $12.9 billion of online Black Friday spending, up 9.2%. Its verdict on Nvidia: a trust story now, record sales lost to an SEC report and an empty chair."
-    },
-    {
-      "source": "24/7 Wall St.",
-      "title": "Micron plunges 13% as Barron's calls memory stocks 'agonizingly cheap'",
-      "url": "https://247wallst.com/investing/2026/11/20/micron-stock-plunges-13-as-barrons-calls-memory-stocks-agonizingly-cheap-western-digital-sandisk-and-seagate-sink-in-ai-chip-selloff/",
-      "take": "The contrarian weekend read: even after Friday's 13% plunge, Barron's argues the memory-chip names are agonizingly cheap, with Micron at roughly 3.4 times the earnings analysts expect for its fiscal year versus 15 to 20 times for the typical S&P 500 stock, and the average analyst target implying almost 150% upside. Even after the drop Micron is still up 111% this year."
-    },
-    {
-      "source": "JournalArta",
-      "title": "What held up in the rout: defensives and healthcare as money rotated out of tech",
-      "url": "https://journalarta.com/en/2026/11/22/stocks-to-watch-this-week-nvidia-workday-deere-and-thanksgiving-pce-data/",
-      "take": "Not everything fell: UnitedHealth rose 2.84%, AT&T gained 2.11%, and consumer staples like Colgate-Palmolive and Kraft Heinz each climbed 1.89% as money rotated out of high-growth technology. The piece's watch list for the short week centers on Nvidia, Workday, Deere and the Thanksgiving-week PCE data."
-    },
-    {
-      "source": "VolumeLeaders",
-      "title": "Not a flight to cash: where the money hid in an 8.6% down week",
-      "url": "https://volumeleaders.substack.com/p/not-a-flight-to-cash-where-the-money",
-      "take": "Friday's breadth was as bad as it gets: only about 1% of the stocks in the broad-market group rose, the second straight day near that level, on roughly $420 billion of institutional volume, the heaviest day in a 30-day window that averages about $267 billion. The takeaway from the flows: this read as rotation within equities, not a stampede into cash."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": 6910.39,
-      "chg": "-3.70%"
-    },
-    {
-      "name": "Dow 30",
-      "value": 48147.33,
-      "chg": "-1.93%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": 22617.73,
-      "chg": "-5.28%"
-    },
-    {
-      "name": "10-Yr",
-      "value": 4.91,
-      "chg": "-2.77%"
-    },
-    {
-      "name": "VIX",
-      "value": 35.89,
-      "chg": "+26.20%"
-    },
-    {
-      "name": "Gold",
-      "value": 3515.4,
-      "chg": "-4.62%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": 60785.0,
-      "chg": "+0.95%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-22.mp3",
-  "audio_seconds": 85.54,
-  "podcasts": {
-    "wsj": {
-      "latest": {
-        "title": "Nvidia Moves On From Jensen Huang",
-        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-      }
-    },
-    "tom": {
-      "latest": {
-        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-        "url": "https://rss.art19.com/thoughts-on-the-market"
-      }
-    }
+ "label": "Sunday, November 22, 2026 · Morning edition",
+ "updated": "2026-11-22T17:48:35+00:00",
+ "items": [
+  {
+   "source": "TipRanks",
+   "title": "The Week That Was, The Week Ahead: Macro and Markets",
+   "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22",
+   "take": "The damage bill from week 47: Nvidia fell 22.9% across five sessions and is down nearly 50% from its October 6 peak, and the Nasdaq is now negative for 2026 while the S&P 500 and Dow barely hold positive returns. The week ahead is holiday-shortened, with Workday and Deere earnings and Friday's October PCE inflation read the main markers."
+  },
+  {
+   "source": "Mostly Markets",
+   "title": "The S&P 500 fell into a correction as an SEC report sank Nvidia",
+   "url": "https://mostlymarkets.substack.com/p/stock-market-today-the-s-and-p-500",
+   "take": "The weekend's calendar of what comes next: markets close Thursday for Thanksgiving and at 1 p.m. Friday, Jensen Huang sits for closed-door interviews with three House committees on December 1, and the Fed meets December 8-9. Adobe expects $12.9 billion of online Black Friday spending, up 9.2%. Its verdict on Nvidia: a trust story now, record sales lost to an SEC report and an empty chair."
+  },
+  {
+   "source": "24/7 Wall St.",
+   "title": "Micron plunges 13% as Barron's calls memory stocks 'agonizingly cheap'",
+   "url": "https://247wallst.com/investing/2026/11/20/micron-stock-plunges-13-as-barrons-calls-memory-stocks-agonizingly-cheap-western-digital-sandisk-and-seagate-sink-in-ai-chip-selloff/",
+   "take": "The contrarian weekend read: even after Friday's 13% plunge, Barron's argues the memory-chip names are agonizingly cheap, with Micron at roughly 3.4 times the earnings analysts expect for its fiscal year versus 15 to 20 times for the typical S&P 500 stock, and the average analyst target implying almost 150% upside. Even after the drop Micron is still up 111% this year."
+  },
+  {
+   "source": "JournalArta",
+   "title": "What held up in the rout: defensives and healthcare as money rotated out of tech",
+   "url": "https://journalarta.com/en/2026/11/22/stocks-to-watch-this-week-nvidia-workday-deere-and-thanksgiving-pce-data/",
+   "take": "Not everything fell: UnitedHealth rose 2.84%, AT&T gained 2.11%, and consumer staples like Colgate-Palmolive and Kraft Heinz each climbed 1.89% as money rotated out of high-growth technology. The piece's watch list for the short week centers on Nvidia, Workday, Deere and the Thanksgiving-week PCE data."
+  },
+  {
+   "source": "VolumeLeaders",
+   "title": "Not a flight to cash: where the money hid in an 8.6% down week",
+   "url": "https://volumeleaders.substack.com/p/not-a-flight-to-cash-where-the-money",
+   "take": "Friday's breadth was as bad as it gets: only about 1% of the stocks in the broad-market group rose, the second straight day near that level, on roughly $420 billion of institutional volume, the heaviest day in a 30-day window that averages about $267 billion. The takeaway from the flows: this read as rotation within equities, not a stampede into cash."
   }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": 6910.39,
+   "chg": "-3.70%"
+  },
+  {
+   "name": "Dow 30",
+   "value": 48147.33,
+   "chg": "-1.93%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": 22617.73,
+   "chg": "-5.28%"
+  },
+  {
+   "name": "10-Yr",
+   "value": 4.91,
+   "chg": "-2.77%"
+  },
+  {
+   "name": "VIX",
+   "value": 35.89,
+   "chg": "+26.20%"
+  },
+  {
+   "name": "Gold",
+   "value": 3515.4,
+   "chg": "-4.62%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": 60766.0,
+   "chg": "+1.36%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-22.mp3",
+ "audio_seconds": 85.54,
+ "podcasts": {
+  "wsj": {
+   "latest": {
+    "title": "Nvidia Moves On From Jensen Huang",
+    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+   }
+  },
+  "tom": {
+   "latest": {
+    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+    "url": "https://rss.art19.com/thoughts-on-the-market"
+   }
+  }
+ }
 }
