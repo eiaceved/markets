@@ -1,91 +1,91 @@
 {
- "label": "Saturday, November 21, 2026 · Morning edition",
- "updated": "2026-11-22T14:43:27+00:00",
- "items": [
-  {
-   "source": "Yahoo Finance",
-   "title": "Nvidia extends its $2.7 trillion rout as the SEC is reported to be probing its accounting",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
-   "take": "Nvidia fell 14% Friday, its worst day since the DeepSeek rout in January 2025 and its seventh straight loss, after Reuters reported the SEC's probe is examining the chipmaker's accounting. Shares bounced about 4% after hours, and the rout lands amid leadership upheaval following Jensen Huang's exit."
-  },
-  {
-   "source": "CNBC",
-   "title": "S&P 500 correction: Five forces behind the market sell-off",
-   "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
-   "take": "The S&P 500 and Dow closed in correction territory Friday, more than 10% below their records, and the Nasdaq is now in the red for 2026. CNBC lays out the five forces behind the sell-off and notes Anthropic closed the week at $88.91 after the Nasdaq's worst week since March 2020."
-  },
-  {
-   "source": "Yahoo Finance",
-   "title": "Chips suffer their worst week since 2001 as the Nasdaq nears a bear market",
-   "url": "https://finance.yahoo.com/markets/article/chips-are-crashing-like-its-2008-as-the-nasdaq-100-nears-a-bear-market-192805534.html",
-   "take": "Chip stocks are falling almost as fast as they did in late 2008, a pace topped only by the dot-com bust and the financial crisis. The Nasdaq 100 finished just shy of a bear market, and the S&P 500 is headed for its worst November since 1973."
-  },
-  {
-   "source": "Yahoo Finance",
-   "title": "Anthropic came within 5 cents of its $83 IPO price on day two, then bounced",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-stock-came-within-5-211710460.html",
-   "take": "Anthropic nearly gave back its entire debut on its second day, trading within five cents of the $83 IPO price before a late-day bounce. The piece's yardstick: Facebook fell 11% on its own day two in 2012 and closed below its IPO price."
-  },
-  {
-   "source": "AP (via WSLS)",
-   "title": "A 10% drop for the stock market is unnerving, but it's not that unusual",
-   "url": "https://www.wsls.com/business/2026/11/21/a-10-drop-for-the-stock-market-is-unnerving-but-its-not-that-unusual/",
-   "take": "The market's 10% slide from last month's high is driven by worries about the hurdles facing the AI industry. AP's read: unnerving but historically normal, with analysts likening it to the corrections of March 2020 and April 2025."
+  "label": "Sunday, November 22, 2026 · Morning edition",
+  "updated": "2026-11-22T15:12:54+00:00",
+  "items": [
+    {
+      "source": "TipRanks",
+      "title": "The Week That Was, The Week Ahead: Macro and Markets",
+      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22",
+      "take": "The damage bill from week 47: Nvidia fell 22.9% across five sessions and is down nearly 50% from its October 6 peak, and the Nasdaq is now negative for 2026 while the S&P 500 and Dow barely hold positive returns. The week ahead is holiday-shortened, with Workday and Deere earnings and Friday's October PCE inflation read the main markers."
+    },
+    {
+      "source": "Mostly Markets",
+      "title": "The S&P 500 fell into a correction as an SEC report sank Nvidia",
+      "url": "https://mostlymarkets.substack.com/p/stock-market-today-the-s-and-p-500",
+      "take": "The weekend's calendar of what comes next: markets close Thursday for Thanksgiving and at 1 p.m. Friday, Jensen Huang sits for closed-door interviews with three House committees on December 1, and the Fed meets December 8-9. Adobe expects $12.9 billion of online Black Friday spending, up 9.2%. Its verdict on Nvidia: a trust story now, record sales lost to an SEC report and an empty chair."
+    },
+    {
+      "source": "24/7 Wall St.",
+      "title": "Micron plunges 13% as Barron's calls memory stocks 'agonizingly cheap'",
+      "url": "https://247wallst.com/investing/2026/11/20/micron-stock-plunges-13-as-barrons-calls-memory-stocks-agonizingly-cheap-western-digital-sandisk-and-seagate-sink-in-ai-chip-selloff/",
+      "take": "The contrarian weekend read: even after Friday's 13% plunge, Barron's argues the memory-chip names are agonizingly cheap, with Micron at roughly 3.4 times the earnings analysts expect for its fiscal year versus 15 to 20 times for the typical S&P 500 stock, and the average analyst target implying almost 150% upside. Even after the drop Micron is still up 111% this year."
+    },
+    {
+      "source": "JournalArta",
+      "title": "What held up in the rout: defensives and healthcare as money rotated out of tech",
+      "url": "https://journalarta.com/en/2026/11/22/stocks-to-watch-this-week-nvidia-workday-deere-and-thanksgiving-pce-data/",
+      "take": "Not everything fell: UnitedHealth rose 2.84%, AT&T gained 2.11%, and consumer staples like Colgate-Palmolive and Kraft Heinz each climbed 1.89% as money rotated out of high-growth technology. The piece's watch list for the short week centers on Nvidia, Workday, Deere and the Thanksgiving-week PCE data."
+    },
+    {
+      "source": "VolumeLeaders",
+      "title": "Not a flight to cash: where the money hid in an 8.6% down week",
+      "url": "https://volumeleaders.substack.com/p/not-a-flight-to-cash-where-the-money",
+      "take": "Friday's breadth was as bad as it gets: only about 1% of the stocks in the broad-market group rose, the second straight day near that level, on roughly $420 billion of institutional volume, the heaviest day in a 30-day window that averages about $267 billion. The takeaway from the flows: this read as rotation within equities, not a stampede into cash."
+    }
+  ],
+  "tape": [
+    {
+      "name": "S&P 500",
+      "value": 6910.39,
+      "chg": "-3.70%"
+    },
+    {
+      "name": "Dow 30",
+      "value": 48147.33,
+      "chg": "-1.93%"
+    },
+    {
+      "name": "Nasdaq",
+      "value": 22617.73,
+      "chg": "-5.28%"
+    },
+    {
+      "name": "10-Yr",
+      "value": 4.91,
+      "chg": "-2.77%"
+    },
+    {
+      "name": "VIX",
+      "value": 35.89,
+      "chg": "+26.20%"
+    },
+    {
+      "name": "Gold",
+      "value": 3515.4,
+      "chg": "-4.62%"
+    },
+    {
+      "name": "Bitcoin",
+      "value": 60785.0,
+      "chg": "+0.95%"
+    }
+  ],
+  "audio": "audio/read-daily/2026-11-22.mp3",
+  "audio_seconds": 85.54,
+  "podcasts": {
+    "wsj": {
+      "latest": {
+        "title": "Nvidia Moves On From Jensen Huang",
+        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+      }
+    },
+    "tom": {
+      "latest": {
+        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+        "url": "https://rss.art19.com/thoughts-on-the-market"
+      }
+    }
   }
- ],
- "tape": [
-  {
-   "name": "S&P 500",
-   "value": 6910.39,
-   "chg": "-3.70%"
-  },
-  {
-   "name": "Dow 30",
-   "value": 48147.33,
-   "chg": "-1.93%"
-  },
-  {
-   "name": "Nasdaq",
-   "value": 22617.73,
-   "chg": "-5.28%"
-  },
-  {
-   "name": "10-Yr",
-   "value": 4.91,
-   "chg": "-2.77%"
-  },
-  {
-   "name": "VIX",
-   "value": 35.89,
-   "chg": "+26.20%"
-  },
-  {
-   "name": "Gold",
-   "value": 3515.4,
-   "chg": "-4.62%"
-  },
-  {
-   "name": "Bitcoin",
-   "value": 60657.0,
-   "chg": "+0.66%"
-  }
- ],
- "audio": "audio/read-daily/2026-11-21.mp3",
- "audio_seconds": 73.2,
- "podcasts": {
-  "wsj": {
-   "latest": {
-    "title": "Nvidia Moves On From Jensen Huang",
-    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-   }
-  },
-  "tom": {
-   "latest": {
-    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-    "url": "https://rss.art19.com/thoughts-on-the-market"
-   }
-  }
- }
 }

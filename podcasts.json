@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T15:17:42.377949+00:00",
+  "updated": "2026-11-22T15:12:32.951576+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -50,9 +50,8 @@
       "apple": "https://podcasts.apple.com/us/podcast/goldman-sachs-the-markets/id1683802600",
       "web": "https://www.goldmansachs.com/insights/the-markets",
       "latest": {
-        "title": "How Will Higher-than-Expected Inflation Data Impact the Fed's Next Rate Decisions?",
-        "date": "Fri, 13 Nov 2026",
-        "url": "https://feeds.megaphone.fm/GLD9322922848"
+        "title": "The Outlook for Retail Stocks as Black Friday Approaches",
+        "url": "https://www.goldmansachs.com/insights/the-markets/the-outlook-for-retail-stocks-as-black-friday-approaches"
       }
     }
   ],
