@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T15:12:32.951576+00:00",
+  "updated": "2026-11-22T15:24:51.825157+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -55,7 +55,26 @@
       }
     }
   ],
-  "latest": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
+  "latest": [
+    {
+      "show": "What's News",
+      "title": "U.S. Floats NATO Membership for Ukraine",
+      "date": "Fri, 20 Nov 2026",
+      "url": "https://www.wsj.com/podcasts/whats-news"
+    },
+    {
+      "show": "Thoughts on the Market",
+      "title": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
+      "date": "Thu, 19 Nov 2026",
+      "url": "https://podcastrex.com/shows/thoughts-on-the-market/2027-equities-outlook-why-the-correction-isnt-the-end-of-the-bull-market"
+    },
+    {
+      "show": "The Markets",
+      "title": "The Outlook for Retail Stocks as Black Friday Approaches",
+      "date": "Thu, 19 Nov 2026",
+      "url": "https://www.goldmansachs.com/insights/the-markets/the-outlook-for-retail-stocks-as-black-friday-approaches"
+    }
+  ],
   "wsj": {
     "latest": {
       "title": "U.S. Floats NATO Membership for Ukraine",
