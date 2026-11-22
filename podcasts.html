@@ -55,7 +55,7 @@ fetch('podcasts.json?v='+Date.now()).then(r=>r.json()).then(D=>{
   const L=document.getElementById('list');
   (D.shows||[]).forEach(s=>{
     const a=document.createElement('a');a.className='show';a.href=s.apple;a.target='_blank';a.rel='noopener';
-    let h='<span class="row1"><span class="src">'+s.from+'</span><span class="cad">'+s.cad+'</span></span><p class="t">'+s.name+'</p><p class="take">'+s.blurb+'</p>';
+    let h='<span class="row1"><span class="src">'+s.from+'</span><span class="cad">'+s.cadence+'</span></span><p class="t">'+s.name+'</p><p class="take">'+s.blurb+'</p>';
     const ep=(D.latest||[]).find(e=>e.show===s.name);
     if(ep)h+='<div class="latest">Latest checked: <b>'+ep.title+'</b> · <a href="'+ep.url+'" target="_blank" rel="noopener">listen &#8599;</a></div>';
     a.innerHTML=h;L.appendChild(a);
