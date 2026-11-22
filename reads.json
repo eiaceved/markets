@@ -1,6 +1,6 @@
 {
  "label": "Saturday, November 21, 2026 · Morning edition",
- "updated": "2026-11-21T20:41:48+00:00",
+ "updated": "2026-11-22T00:38:19+00:00",
  "items": [
   {
    "source": "Yahoo Finance",
@@ -66,8 +66,8 @@
   },
   {
    "name": "Bitcoin",
-   "value": 60364.0,
-   "chg": "+3.16%"
+   "value": 60184.0,
+   "chg": "+2.02%"
   }
  ],
  "audio": "audio/read-daily/2026-11-21.mp3",
