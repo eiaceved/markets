@@ -1,91 +1,91 @@
 {
-  "label": "Monday, November 23, 2026 \u00b7 Morning edition",
-  "updated": "2026-11-23T15:25:25.165200+00:00",
-  "items": [
-    {
-      "source": "Reuters (via Investing.com)",
-      "title": "Nasdaq futures jump 6% as Nvidia reinstates Jensen Huang as CEO",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-jump-6-as-nvidia-reinstates-jensen-huang-as-ceo-5045819",
-      "take": "The board reversed Friday's abrupt resignation of Huang, and Nvidia rocketed as much as 29% premarket after its worst weekly drop since 2008. Analysts are calling it relief, not resolution: the bounce has to survive a few sessions before anyone names a bottom."
-    },
-    {
-      "source": "CNBC",
-      "title": "Futures rally after Wall Street's nightmare week",
-      "url": "https://www.cnbc.com/2026/11/23/futures-rally-after-wall-streets-nightmare-week-.html",
-      "take": "The S&P 500 and Dow start the week in a correction, and Monday's premarket surge is dragging them back toward the line. Anthropic also stabilized in premarket after its 8.5% slide on Friday, a sign the new AI listings are rejoining the rally."
-    },
-    {
-      "source": "Yahoo Finance",
-      "title": "CrowdStrike to buy Zscaler in $43.9 billion all-stock deal",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html",
-      "take": "Security software's biggest deal of the year landed mid-rebound: 1.135 CrowdStrike shares per Zscaler share. The market liked the target and disliked the price, sending Zscaler up 13% and CrowdStrike down 9.6% on the day."
-    },
-    {
-      "source": "Reuters",
-      "title": "US futures rally as AI selloff pauses, Asian authorities support stocks",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/us-futures-bounce-while-asia-234419517.html",
-      "take": "Taiwan rose 2.4% with government support behind the tape, and South Korea's finance minister pledged to stabilize a KOSPI that has halved from its peak. The policy put is now visible on both sides of the Pacific."
-    },
-    {
-      "source": "Benzinga",
-      "title": "What to watch in a short week following market correction",
-      "url": "https://www.benzinga.com/opinion/26/11/63522511/what-to-watch-in-a-short-week-following-market-correction",
-      "take": "Wednesday's PCE print is the Fed's preferred inflation gauge and the week's main event, with NY Fed president John Williams speaking today. A holiday-shortened tape cuts both ways: thin volume exaggerates whichever direction wins."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": 7245.28,
-      "chg": "+4.85%"
-    },
-    {
-      "name": "Dow 30",
-      "value": 49550.17,
-      "chg": "+2.91%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": 24168.18,
-      "chg": "+6.85%"
-    },
-    {
-      "name": "10-Yr",
-      "value": 4.95,
-      "chg": "+0.73%"
-    },
-    {
-      "name": "VIX",
-      "value": 27.71,
-      "chg": "-2.57%"
-    },
-    {
-      "name": "Gold",
-      "value": 3669.3,
-      "chg": "+4.38%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": 63007.0,
-      "chg": "+3.58%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-23.mp3",
-  "audio_seconds": 80.1,
-  "podcasts": {
-    "wsj": {
-      "latest": {
-        "title": "Nvidia Moves On From Jensen Huang",
-        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-      }
-    },
-    "tom": {
-      "latest": {
-        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-        "url": "https://rss.art19.com/thoughts-on-the-market"
-      }
-    }
+ "label": "Monday, November 23, 2026 · Morning edition",
+ "updated": "2026-11-23T17:58:30+00:00",
+ "items": [
+  {
+   "source": "Reuters (via Investing.com)",
+   "title": "Nasdaq futures jump 6% as Nvidia reinstates Jensen Huang as CEO",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-jump-6-as-nvidia-reinstates-jensen-huang-as-ceo-5045819",
+   "take": "The board reversed Friday's abrupt resignation of Huang, and Nvidia rocketed as much as 29% premarket after its worst weekly drop since 2008. Analysts are calling it relief, not resolution: the bounce has to survive a few sessions before anyone names a bottom."
+  },
+  {
+   "source": "CNBC",
+   "title": "Futures rally after Wall Street's nightmare week",
+   "url": "https://www.cnbc.com/2026/11/23/futures-rally-after-wall-streets-nightmare-week-.html",
+   "take": "The S&P 500 and Dow start the week in a correction, and Monday's premarket surge is dragging them back toward the line. Anthropic also stabilized in premarket after its 8.5% slide on Friday, a sign the new AI listings are rejoining the rally."
+  },
+  {
+   "source": "Yahoo Finance",
+   "title": "CrowdStrike to buy Zscaler in $43.9 billion all-stock deal",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html",
+   "take": "Security software's biggest deal of the year landed mid-rebound: 1.135 CrowdStrike shares per Zscaler share. The market liked the target and disliked the price, sending Zscaler up 13% and CrowdStrike down 9.6% on the day."
+  },
+  {
+   "source": "Reuters",
+   "title": "US futures rally as AI selloff pauses, Asian authorities support stocks",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/us-futures-bounce-while-asia-234419517.html",
+   "take": "Taiwan rose 2.4% with government support behind the tape, and South Korea's finance minister pledged to stabilize a KOSPI that has halved from its peak. The policy put is now visible on both sides of the Pacific."
+  },
+  {
+   "source": "Benzinga",
+   "title": "What to watch in a short week following market correction",
+   "url": "https://www.benzinga.com/opinion/26/11/63522511/what-to-watch-in-a-short-week-following-market-correction",
+   "take": "Wednesday's PCE print is the Fed's preferred inflation gauge and the week's main event, with NY Fed president John Williams speaking today. A holiday-shortened tape cuts both ways: thin volume exaggerates whichever direction wins."
   }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": 7235.46,
+   "chg": "+4.70%"
+  },
+  {
+   "name": "Dow 30",
+   "value": 49597.87,
+   "chg": "+3.01%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": 24098.85,
+   "chg": "+6.55%"
+  },
+  {
+   "name": "10-Yr",
+   "value": 4.94,
+   "chg": "+0.57%"
+  },
+  {
+   "name": "VIX",
+   "value": 27.89,
+   "chg": "-1.93%"
+  },
+  {
+   "name": "Gold",
+   "value": 3648.4,
+   "chg": "+3.78%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": 61746.0,
+   "chg": "+1.63%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-23.mp3",
+ "audio_seconds": 80.1,
+ "podcasts": {
+  "wsj": {
+   "latest": {
+    "title": "Nvidia Moves On From Jensen Huang",
+    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+   }
+  },
+  "tom": {
+   "latest": {
+    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+    "url": "https://rss.art19.com/thoughts-on-the-market"
+   }
+  }
+ }
 }
