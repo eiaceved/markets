@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T15:24:51.825157+00:00",
+  "updated": "2026-11-23T15:19:37.222574+00:00",
   "shows": [
     {
       "name": "What's News",
@@ -58,21 +58,21 @@
   "latest": [
     {
       "show": "What's News",
-      "title": "U.S. Floats NATO Membership for Ukraine",
-      "date": "Fri, 20 Nov 2026",
-      "url": "https://www.wsj.com/podcasts/whats-news"
+      "from": "The Wall Street Journal",
+      "title": "Tech Stocks Recover After U.S. Wipeout",
+      "url": "https://podcasts.apple.com/us/podcast/wsj-whats-news/id152016440"
     },
     {
       "show": "Thoughts on the Market",
-      "title": "2027 Equities Outlook: Why the Correction Isn't the End of the Bull Market",
-      "date": "Thu, 19 Nov 2026",
-      "url": "https://podcastrex.com/shows/thoughts-on-the-market/2027-equities-outlook-why-the-correction-isnt-the-end-of-the-bull-market"
+      "from": "Morgan Stanley",
+      "title": "China's Bet on Physical AI",
+      "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market"
     },
     {
       "show": "The Markets",
+      "from": "Goldman Sachs",
       "title": "The Outlook for Retail Stocks as Black Friday Approaches",
-      "date": "Thu, 19 Nov 2026",
-      "url": "https://www.goldmansachs.com/insights/the-markets/the-outlook-for-retail-stocks-as-black-friday-approaches"
+      "url": "https://www.goldmansachs.com/podcasts/the-markets"
     }
   ],
   "wsj": {
