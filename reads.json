@@ -1,6 +1,6 @@
 {
  "label": "Sunday, November 22, 2026 · Morning edition",
- "updated": "2026-11-23T00:40:49+00:00",
+ "updated": "2026-11-23T14:51:35+00:00",
  "items": [
   {
    "source": "TipRanks",
@@ -36,38 +36,38 @@
  "tape": [
   {
    "name": "S&P 500",
-   "value": 6910.39,
-   "chg": "-3.70%"
+   "value": 7210.29,
+   "chg": "+4.34%"
   },
   {
    "name": "Dow 30",
-   "value": 48147.33,
-   "chg": "-1.93%"
+   "value": 49376.36,
+   "chg": "+2.55%"
   },
   {
    "name": "Nasdaq",
-   "value": 22617.73,
-   "chg": "-5.28%"
+   "value": 23991.23,
+   "chg": "+6.07%"
   },
   {
    "name": "10-Yr",
-   "value": 4.91,
-   "chg": "-2.77%"
+   "value": 4.96,
+   "chg": "+0.90%"
   },
   {
    "name": "VIX",
-   "value": 35.89,
-   "chg": "+26.20%"
+   "value": 28.44,
+   "chg": "+0.00%"
   },
   {
    "name": "Gold",
-   "value": 3573.4,
-   "chg": "+1.65%"
+   "value": 3668.1,
+   "chg": "+4.34%"
   },
   {
    "name": "Bitcoin",
-   "value": 61025.0,
-   "chg": "+1.37%"
+   "value": 62974.0,
+   "chg": "+3.58%"
   }
  ],
  "audio": "audio/read-daily/2026-11-22.mp3",
