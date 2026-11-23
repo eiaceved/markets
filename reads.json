@@ -1,6 +1,6 @@
 {
  "label": "Sunday, November 22, 2026 · Morning edition",
- "updated": "2026-11-22T20:40:39+00:00",
+ "updated": "2026-11-23T00:40:49+00:00",
  "items": [
   {
    "source": "TipRanks",
@@ -61,13 +61,13 @@
   },
   {
    "name": "Gold",
-   "value": 3515.4,
-   "chg": "+0.00%"
+   "value": 3573.4,
+   "chg": "+1.65%"
   },
   {
    "name": "Bitcoin",
-   "value": 60556.0,
-   "chg": "+0.32%"
+   "value": 61025.0,
+   "chg": "+1.37%"
   }
  ],
  "audio": "audio/read-daily/2026-11-22.mp3",
