@@ -1,91 +1,91 @@
 {
-  "label": "Tuesday, November 24, 2026 \u00b7 Morning edition",
-  "updated": "2026-11-24T15:26:24.490750+00:00",
-  "items": [
-    {
-      "source": "The Guardian",
-      "title": "Tech sell-off resumes as Nvidia shares drop 5% and Anthropic tumbles below IPO price",
-      "url": "https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates",
-      "take": "Monday's relief rally is already being sold: Nvidia gives back a chunk of its 31.5% surge in premarket, and Anthropic slipped below its $83 IPO price just three days after its record Nasdaq debut. The market is treating Monday's bounce as the trade that survived, not proof the AI unwind is over."
-    },
-    {
-      "source": "Reuters (via Yahoo Finance)",
-      "title": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
-      "url": "https://finance.yahoo.com/technology/articles/nvidias-huang-returns-cheers-china-133038439.html",
-      "take": "Huang was gone only eleven days after revelations including an affair with a businesswoman alleged to be a Beijing spy, and returns to a far more restrictive US-China tech environment than he left. Trump says he personally convinced the board to bring him back, a remarkable flex over a four-trillion-dollar company."
-    },
-    {
-      "source": "Reuters (via Yahoo Finance)",
-      "title": "Sanofi strikes $41 billion deal to acquire US drugmaker Insmed",
-      "url": "https://finance.yahoo.com/healthcare/articles/sanofi-strikes-41-billion-deal-064356197.html",
-      "take": "Sanofi pays $175 a share in cash, its biggest deal in two decades and the second mega-deal this week after CrowdStrike-Zscaler. Insmed jumped 14% premarket, and Sanofi calls the respiratory portfolio a $10 billion peak-sales play beyond Dupixent."
-    },
-    {
-      "source": "Trading and Investment News",
-      "title": "December Fed hike stays in play as Williams says Fed must act",
-      "url": "https://www.tradingandinvestmentnews.co.uk/december-fed-hike-williams/",
-      "take": "NY Fed president John Williams said the Fed must keep acting on inflation, and markets price a December hike as near-certain with about 5% odds of a half-point move. Wednesday's PCE report, with core seen rising to 3.2%, is the last major data before the December 9 decision."
-    },
-    {
-      "source": "MLQ.ai",
-      "title": "Retail earnings jump premarket before Thanksgiving: DICK'S, Kohl's, Dollar Tree",
-      "url": "https://mlq.ai/news/us-stock-futures-fall-as-nvidia-gives-back-part-of-mondays-rally-dollar-tree-and-dicks-jump-premarket/",
-      "take": "DICK'S surged 16% premarket on a raised outlook and Kohl's added 7% on returning to sales growth, a strong start to the holiday shopping read. Dollar Tree beat on earnings but cut its profit outlook, and Best Buy reports before the open."
-    }
-  ],
-  "tape": [
-    {
-      "name": "S&P 500",
-      "value": 7197.01,
-      "chg": "-0.55%"
-    },
-    {
-      "name": "Dow 30",
-      "value": 49795.34,
-      "chg": "+0.40%"
-    },
-    {
-      "name": "Nasdaq",
-      "value": 23724.38,
-      "chg": "-1.52%"
-    },
-    {
-      "name": "10-Yr",
-      "value": 4.91,
-      "chg": "-0.12%"
-    },
-    {
-      "name": "VIX",
-      "value": 27.32,
-      "chg": "+2.63%"
-    },
-    {
-      "name": "Gold",
-      "value": 3608.4,
-      "chg": "-1.18%"
-    },
-    {
-      "name": "Bitcoin",
-      "value": 59858.0,
-      "chg": "-4.90%"
-    }
-  ],
-  "audio": "audio/read-daily/2026-11-24.mp3",
-  "audio_seconds": 89.0,
-  "podcasts": {
-    "wsj": {
-      "latest": {
-        "title": "Nvidia Moves On From Jensen Huang",
-        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-      }
-    },
-    "tom": {
-      "latest": {
-        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-        "url": "https://rss.art19.com/thoughts-on-the-market"
-      }
-    }
+ "label": "Tuesday, November 24, 2026 · Morning edition",
+ "updated": "2026-11-24T17:47:41+00:00",
+ "items": [
+  {
+   "source": "The Guardian",
+   "title": "Tech sell-off resumes as Nvidia shares drop 5% and Anthropic tumbles below IPO price",
+   "url": "https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates",
+   "take": "Monday's relief rally is already being sold: Nvidia gives back a chunk of its 31.5% surge in premarket, and Anthropic slipped below its $83 IPO price just three days after its record Nasdaq debut. The market is treating Monday's bounce as the trade that survived, not proof the AI unwind is over."
+  },
+  {
+   "source": "Reuters (via Yahoo Finance)",
+   "title": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
+   "url": "https://finance.yahoo.com/technology/articles/nvidias-huang-returns-cheers-china-133038439.html",
+   "take": "Huang was gone only eleven days after revelations including an affair with a businesswoman alleged to be a Beijing spy, and returns to a far more restrictive US-China tech environment than he left. Trump says he personally convinced the board to bring him back, a remarkable flex over a four-trillion-dollar company."
+  },
+  {
+   "source": "Reuters (via Yahoo Finance)",
+   "title": "Sanofi strikes $41 billion deal to acquire US drugmaker Insmed",
+   "url": "https://finance.yahoo.com/healthcare/articles/sanofi-strikes-41-billion-deal-064356197.html",
+   "take": "Sanofi pays $175 a share in cash, its biggest deal in two decades and the second mega-deal this week after CrowdStrike-Zscaler. Insmed jumped 14% premarket, and Sanofi calls the respiratory portfolio a $10 billion peak-sales play beyond Dupixent."
+  },
+  {
+   "source": "Trading and Investment News",
+   "title": "December Fed hike stays in play as Williams says Fed must act",
+   "url": "https://www.tradingandinvestmentnews.co.uk/december-fed-hike-williams/",
+   "take": "NY Fed president John Williams said the Fed must keep acting on inflation, and markets price a December hike as near-certain with about 5% odds of a half-point move. Wednesday's PCE report, with core seen rising to 3.2%, is the last major data before the December 9 decision."
+  },
+  {
+   "source": "MLQ.ai",
+   "title": "Retail earnings jump premarket before Thanksgiving: DICK'S, Kohl's, Dollar Tree",
+   "url": "https://mlq.ai/news/us-stock-futures-fall-as-nvidia-gives-back-part-of-mondays-rally-dollar-tree-and-dicks-jump-premarket/",
+   "take": "DICK'S surged 16% premarket on a raised outlook and Kohl's added 7% on returning to sales growth, a strong start to the holiday shopping read. Dollar Tree beat on earnings but cut its profit outlook, and Best Buy reports before the open."
   }
+ ],
+ "tape": [
+  {
+   "name": "S&P 500",
+   "value": 7202.53,
+   "chg": "-0.48%"
+  },
+  {
+   "name": "Dow 30",
+   "value": 49967.15,
+   "chg": "+0.75%"
+  },
+  {
+   "name": "Nasdaq",
+   "value": 23737.68,
+   "chg": "-1.46%"
+  },
+  {
+   "name": "10-Yr",
+   "value": 4.91,
+   "chg": "-0.20%"
+  },
+  {
+   "name": "VIX",
+   "value": 26.52,
+   "chg": "-0.38%"
+  },
+  {
+   "name": "Gold",
+   "value": 3563.7,
+   "chg": "-2.40%"
+  },
+  {
+   "name": "Bitcoin",
+   "value": 59968.0,
+   "chg": "-2.26%"
+  }
+ ],
+ "audio": "audio/read-daily/2026-11-24.mp3",
+ "audio_seconds": 89.0,
+ "podcasts": {
+  "wsj": {
+   "latest": {
+    "title": "Nvidia Moves On From Jensen Huang",
+    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+   }
+  },
+  "tom": {
+   "latest": {
+    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+    "url": "https://rss.art19.com/thoughts-on-the-market"
+   }
+  }
+ }
 }
