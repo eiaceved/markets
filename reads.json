@@ -1,77 +1,75 @@
 {
- "label": "Tuesday, November 24, 2026 · Morning edition",
- "updated": "2026-11-25T14:47:34+00:00",
+ "label": "Wednesday, November 25, 2026 \u00b7 Morning edition",
+ "updated": "2026-11-25T15:13:13+00:00",
  "items": [
   {
-   "source": "The Guardian",
-   "title": "Tech sell-off resumes as Nvidia shares drop 5% and Anthropic tumbles below IPO price",
-   "url": "https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates",
-   "take": "Monday's relief rally is already being sold: Nvidia gives back a chunk of its 31.5% surge in premarket, and Anthropic slipped below its $83 IPO price just three days after its record Nasdaq debut. The market is treating Monday's bounce as the trade that survived, not proof the AI unwind is over."
+   "source": "Yahoo Finance",
+   "title": "Stock market today: Dow, S&P 500, Nasdaq sink on hot inflation, new Trump tariffs as chip rout continues",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
+   "take": "Wall Street is opening with everything it feared at once: hotter inflation, fresh tariff threats and a chip rout that will not let up, and the Dow is down roughly 800 points early. Monday's Nvidia relief rally is now fully unwound, and the tape goes into the Thanksgiving holiday deep red."
   },
   {
-   "source": "Reuters (via Yahoo Finance)",
-   "title": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
-   "url": "https://finance.yahoo.com/technology/articles/nvidias-huang-returns-cheers-china-133038439.html",
-   "take": "Huang was gone only eleven days after revelations including an affair with a businesswoman alleged to be a Beijing spy, and returns to a far more restrictive US-China tech environment than he left. Trump says he personally convinced the board to bring him back, a remarkable flex over a four-trillion-dollar company."
+   "source": "Fox Business",
+   "title": "Stocks tumble as AI sell-off deepens, Fed's preferred inflation gauge rises",
+   "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026",
+   "take": "Nvidia fell 5.1% premarket after dropping 5.9% Tuesday, with AMD down 6.5%, Micron and Marvell about 6%, echoing a 3.1% slide across chip-heavy Asia-Pacific markets. The brief relief sparked by Jensen Huang's reinstatement evaporated in a single day."
   },
   {
-   "source": "Reuters (via Yahoo Finance)",
-   "title": "Sanofi strikes $41 billion deal to acquire US drugmaker Insmed",
-   "url": "https://finance.yahoo.com/healthcare/articles/sanofi-strikes-41-billion-deal-064356197.html",
-   "take": "Sanofi pays $175 a share in cash, its biggest deal in two decades and the second mega-deal this week after CrowdStrike-Zscaler. Insmed jumped 14% premarket, and Sanofi calls the respiratory portfolio a $10 billion peak-sales play beyond Dupixent."
+   "source": "Investopedia",
+   "title": "5 Things Investors Need to Know About Wednesday's Markets",
+   "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-25-2026-12276784",
+   "take": "Core PCE, the Fed's preferred gauge, rose to 3.3% versus the 3.2% expected, cementing bets on a December hike now priced at 98% odds. Consumer confidence, durable goods and the Fed's Beige Book all land today, the last full data day before the holiday."
   },
   {
-   "source": "Trading and Investment News",
-   "title": "December Fed hike stays in play as Williams says Fed must act",
-   "url": "https://www.tradingandinvestmentnews.co.uk/december-fed-hike-williams/",
-   "take": "NY Fed president John Williams said the Fed must keep acting on inflation, and markets price a December hike as near-certain with about 5% odds of a half-point move. Wednesday's PCE report, with core seen rising to 3.2%, is the last major data before the December 9 decision."
+   "source": "Economic Times",
+   "title": "US stock market crash: what is driving Wall Street's brutal sell-off?",
+   "url": "https://economictimes.indiatimes.com/world/us/us-stock-market-crash-today-what-is-driving-wall-streets-brutal-sell-off-dow-jones-loses-nearly-1000-points-sp-500-and-nasdaq-turn-deep-red-as-trumps-20-tariffs-hit-nvidia-intel-and-ai-stocks/articleshow/136164605.cms",
+   "take": "Trump's proposed 20% tariffs on 14 trading partners, including India, China, Japan and the EU, landed on top of the inflation surprise and the chip unwind. Three shocks at once is how a bad week turns into a red week before the December 9 Fed decision."
   },
   {
-   "source": "MLQ.ai",
-   "title": "Retail earnings jump premarket before Thanksgiving: DICK'S, Kohl's, Dollar Tree",
-   "url": "https://mlq.ai/news/us-stock-futures-fall-as-nvidia-gives-back-part-of-mondays-rally-dollar-tree-and-dicks-jump-premarket/",
-   "take": "DICK'S surged 16% premarket on a raised outlook and Kohl's added 7% on returning to sales growth, a strong start to the holiday shopping read. Dollar Tree beat on earnings but cut its profit outlook, and Best Buy reports before the open."
+   "source": "Yahoo Finance",
+   "title": "Nvidia stock continues to fall after massive rally, Jensen Huang apologizes to employees",
+   "url": "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
+   "take": "The exuberance around Huang's return faded inside 48 hours and he opened his first day back apologizing to employees, even as Anthropic slid 8% back below its IPO price and Oracle dropped more than 8%. The AI trade's problem was never the CEO chair."
   }
  ],
  "tape": [
   {
    "name": "S&P 500",
-   "value": 6993.76,
-   "chg": "-2.88%"
+   "value": 7038.39,
+   "chg": "-2.26%"
   },
   {
    "name": "Dow 30",
-   "value": 49026.73,
-   "chg": "-1.98%"
+   "value": 49335.64,
+   "chg": "-1.37%"
   },
   {
    "name": "Nasdaq",
-   "value": 22729.5,
-   "chg": "-4.23%"
+   "value": 22941.35,
+   "chg": "-3.34%"
   },
   {
    "name": "10-Yr",
-   "value": 4.83,
-   "chg": "-1.55%"
+   "value": 4.82,
+   "chg": "-1.71%"
   },
   {
    "name": "VIX",
-   "value": 32.4,
-   "chg": "+22.91%"
+   "value": 33.39,
+   "chg": "+26.67%"
   },
   {
    "name": "Gold",
-   "value": 3493.4,
-   "chg": "-2.72%"
+   "value": 3495.4,
+   "chg": "-2.66%"
   },
   {
    "name": "Bitcoin",
-   "value": 57308.0,
-   "chg": "-5.24%"
+   "value": 57846.0,
+   "chg": "-3.53%"
   }
  ],
- "audio": "audio/read-daily/2026-11-24.mp3",
- "audio_seconds": 89.0,
  "podcasts": {
   "wsj": {
    "latest": {
@@ -87,5 +85,7 @@
     "url": "https://rss.art19.com/thoughts-on-the-market"
    }
   }
- }
+ },
+ "audio": "audio/read-daily/2026-11-25.mp3",
+ "audio_seconds": 87.77
 }
