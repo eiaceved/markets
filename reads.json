@@ -1,6 +1,6 @@
 {
  "label": "Tuesday, November 24, 2026 · Morning edition",
- "updated": "2026-11-25T00:36:50+00:00",
+ "updated": "2026-11-25T14:47:34+00:00",
  "items": [
   {
    "source": "The Guardian",
@@ -36,38 +36,38 @@
  "tape": [
   {
    "name": "S&P 500",
-   "value": 7201.09,
-   "chg": "-0.50%"
+   "value": 6993.76,
+   "chg": "-2.88%"
   },
   {
    "name": "Dow 30",
-   "value": 50018.7,
-   "chg": "+0.85%"
+   "value": 49026.73,
+   "chg": "-1.98%"
   },
   {
    "name": "Nasdaq",
-   "value": 23733.53,
-   "chg": "-1.48%"
+   "value": 22729.5,
+   "chg": "-4.23%"
   },
   {
    "name": "10-Yr",
-   "value": 4.9,
-   "chg": "-0.28%"
+   "value": 4.83,
+   "chg": "-1.55%"
   },
   {
    "name": "VIX",
-   "value": 26.36,
-   "chg": "-0.98%"
+   "value": 32.4,
+   "chg": "+22.91%"
   },
   {
    "name": "Gold",
-   "value": 3539.3,
-   "chg": "-0.63%"
+   "value": 3493.4,
+   "chg": "-2.72%"
   },
   {
    "name": "Bitcoin",
-   "value": 59509.0,
-   "chg": "-2.62%"
+   "value": 57308.0,
+   "chg": "-5.24%"
   }
  ],
  "audio": "audio/read-daily/2026-11-24.mp3",
