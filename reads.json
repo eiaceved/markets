@@ -1,36 +1,36 @@
 {
- "label": "Wednesday, November 25, 2026 · Morning edition",
- "updated": "2026-11-26T15:07:46+00:00",
+ "label": "Thursday, November 26, 2026 \u00b7 Thanksgiving edition",
+ "updated": "2026-11-26T15:49:06.718144+00:00",
  "items": [
   {
-   "source": "Yahoo Finance",
-   "title": "Stock market today: Dow, S&P 500, Nasdaq sink on hot inflation, new Trump tariffs as chip rout continues",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
-   "take": "Wall Street is opening with everything it feared at once: hotter inflation, fresh tariff threats and a chip rout that will not let up, and the Dow is down roughly 800 points early. Monday's Nvidia relief rally is now fully unwound, and the tape goes into the Thanksgiving holiday deep red."
+   "source": "CNBC",
+   "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
+   "url": "https://www.cnbc.com/amp/2026/11/26/stock-markets-today-.html",
+   "take": "With U.S. cash markets closed for Thanksgiving, global investors are fishing for bargains: Europe is rebounding after Wednesday's decline as the new tariff round reads less bad than feared. The open question is whether Wall Street's late recovery can hold once trading resumes."
   },
   {
-   "source": "Fox Business",
-   "title": "Stocks tumble as AI sell-off deepens, Fed's preferred inflation gauge rises",
-   "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026",
-   "take": "Nvidia fell 5.1% premarket after dropping 5.9% Tuesday, with AMD down 6.5%, Micron and Marvell about 6%, echoing a 3.1% slide across chip-heavy Asia-Pacific markets. The brief relief sparked by Jensen Huang's reinstatement evaporated in a single day."
+   "source": "CNBC TV18",
+   "title": "US stock markets closed for Thanksgiving, Wall Street prepares for shortened Black Friday session",
+   "url": "https://www.cnbctv18.com/market/us-stock-market-holiday-november-26-nyse-nasdaq-closed-for-thanksgiving-check-black-friday-timings-20042435.htm",
+   "take": "NYSE and Nasdaq are dark today and reopen Friday for a half-day session ending at 1:00 PM Eastern, typically among the year's thinnest volume. Light trading can exaggerate moves, so Friday's tape is directionally suspect until full attendance returns next week."
   },
   {
-   "source": "Investopedia",
-   "title": "5 Things Investors Need to Know About Wednesday's Markets",
-   "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-25-2026-12276784",
-   "take": "Core PCE, the Fed's preferred gauge, rose to 3.3% versus the 3.2% expected, cementing bets on a December hike now priced at 98% odds. Consumer confidence, durable goods and the Fed's Beige Book all land today, the last full data day before the holiday."
+   "source": "IC Markets",
+   "title": "General Market Analysis: a mixed Thanksgiving-eve session",
+   "url": "https://www.ic.com/blog/general-market-analysis-26-november-2026-ic/",
+   "take": "Wednesday split down the middle: technology kept sliding while the Dow edged higher, and stocks recovered a large chunk of their earlier losses by the close. Tellingly, yields and the dollar fell even with a December hike all but locked in, a sign positioning, not data, is steering."
   },
   {
-   "source": "Economic Times",
-   "title": "US stock market crash: what is driving Wall Street's brutal sell-off?",
-   "url": "https://economictimes.indiatimes.com/world/us/us-stock-market-crash-today-what-is-driving-wall-streets-brutal-sell-off-dow-jones-loses-nearly-1000-points-sp-500-and-nasdaq-turn-deep-red-as-trumps-20-tariffs-hit-nvidia-intel-and-ai-stocks/articleshow/136164605.cms",
-   "take": "Trump's proposed 20% tariffs on 14 trading partners, including India, China, Japan and the EU, landed on top of the inflation surprise and the chip unwind. Three shocks at once is how a bad week turns into a red week before the December 9 Fed decision."
+   "source": "Morningstar (via Dow Jones Newswires)",
+   "title": "GDP revised up to 4.3% annual pace, the fastest in three years",
+   "url": "https://que.com/thanksgiving-pause-a-resilient-u-s-economy-meets-a-nervous-market/",
+   "take": "Third-quarter GDP was revised to 4.3% from an initial 3.4%, the fastest growth in three years, which complicates the sell-off's story of a weakening economy. A resilient economy plus sticky inflation is exactly the combination that keeps a December 9 rate hike on the menu."
   },
   {
-   "source": "Yahoo Finance",
-   "title": "Nvidia stock continues to fall after massive rally, Jensen Huang apologizes to employees",
-   "url": "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
-   "take": "The exuberance around Huang's return faded inside 48 hours and he opened his first day back apologizing to employees, even as Anthropic slid 8% back below its IPO price and Oracle dropped more than 8%. The AI trade's problem was never the CEO chair."
+   "source": "Charles Schwab",
+   "title": "After the holiday: jobs data takes the wheel next week",
+   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+   "take": "The calendar empties for the holiday, then fills fast: next week's reports culminate in the December 4 nonfarm payrolls reading, the Fed's last big data point before the December 9 decision. With a hike priced near-certain, the jobs number now sets the tone for 2027 policy."
   }
  ],
  "tape": [
@@ -56,18 +56,18 @@
   },
   {
    "name": "VIX",
-   "value": 26.89,
-   "chg": "-4.95%"
+   "value": 26.7,
+   "chg": "-5.62%"
   },
   {
    "name": "Gold",
-   "value": 3608.4,
-   "chg": "+1.23%"
+   "value": 3599.9,
+   "chg": "+0.99%"
   },
   {
    "name": "Bitcoin",
-   "value": 60295.0,
-   "chg": "+3.52%"
+   "value": 60363.0,
+   "chg": "+3.46%"
   }
  ],
  "podcasts": {
@@ -86,6 +86,6 @@
    }
   }
  },
- "audio": "audio/read-daily/2026-11-25.mp3",
- "audio_seconds": 87.77
+ "audio": "audio/read-daily/2026-11-26.mp3",
+ "audio_seconds": 84.86
 }
