@@ -1,6 +1,6 @@
 {
- "label": "Thursday, November 26, 2026 \u00b7 Thanksgiving edition",
- "updated": "2026-11-26T15:49:06.718144+00:00",
+ "label": "Thursday, November 26, 2026 · Thanksgiving edition",
+ "updated": "2026-11-26T18:04:23+00:00",
  "items": [
   {
    "source": "CNBC",
@@ -56,18 +56,18 @@
   },
   {
    "name": "VIX",
-   "value": 26.7,
-   "chg": "-5.62%"
+   "value": 26.8,
+   "chg": "-5.27%"
   },
   {
    "name": "Gold",
-   "value": 3599.9,
-   "chg": "+0.99%"
+   "value": 3594.2,
+   "chg": "+0.83%"
   },
   {
    "name": "Bitcoin",
-   "value": 60363.0,
-   "chg": "+3.46%"
+   "value": 60484.0,
+   "chg": "+1.37%"
   }
  ],
  "podcasts": {
