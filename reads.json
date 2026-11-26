@@ -1,6 +1,6 @@
 {
  "label": "Wednesday, November 25, 2026 · Morning edition",
- "updated": "2026-11-26T00:35:20+00:00",
+ "updated": "2026-11-26T15:07:46+00:00",
  "items": [
   {
    "source": "Yahoo Finance",
@@ -56,18 +56,18 @@
   },
   {
    "name": "VIX",
-   "value": 28.29,
-   "chg": "+7.32%"
+   "value": 26.89,
+   "chg": "-4.95%"
   },
   {
    "name": "Gold",
-   "value": 3602.5,
-   "chg": "+1.06%"
+   "value": 3608.4,
+   "chg": "+1.23%"
   },
   {
    "name": "Bitcoin",
-   "value": 60787.0,
-   "chg": "+2.14%"
+   "value": 60295.0,
+   "chg": "+3.52%"
   }
  ],
  "podcasts": {
