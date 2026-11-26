@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T18:03:16",
+ "updated": "2026-11-26T19:08:05",
  "quotes": {
   "AAPL": {
    "name": "Apple",
@@ -741,7 +741,7 @@
    "chgPct": -0.75,
    "vol": "24,188,803",
    "range": "101.91 - 111.16",
-   "mcap": "555.19B"
+   "mcap": "556.89B"
   },
   "CBRS": {
    "name": "Cerebras Systems",
