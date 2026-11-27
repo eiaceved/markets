@@ -1,6 +1,6 @@
 {
  "label": "Thursday, November 26, 2026 · Thanksgiving edition",
- "updated": "2026-11-27T00:34:32+00:00",
+ "updated": "2026-11-27T14:55:42+00:00",
  "items": [
   {
    "source": "CNBC",
@@ -36,38 +36,38 @@
  "tape": [
   {
    "name": "S&P 500",
-   "value": 7182.78,
-   "chg": "-0.25%"
+   "value": 7235.99,
+   "chg": "+0.74%"
   },
   {
    "name": "Dow 30",
-   "value": 50182.95,
-   "chg": "+0.33%"
+   "value": 50515.39,
+   "chg": "+0.66%"
   },
   {
    "name": "Nasdaq",
-   "value": 23585.8,
-   "chg": "-0.62%"
+   "value": 23796.65,
+   "chg": "+0.89%"
   },
   {
    "name": "10-Yr",
-   "value": 4.85,
-   "chg": "-1.14%"
+   "value": 4.88,
+   "chg": "-0.41%"
   },
   {
    "name": "VIX",
-   "value": 26.8,
-   "chg": "-5.27%"
+   "value": 27.14,
+   "chg": "+1.27%"
   },
   {
    "name": "Gold",
-   "value": 3594.5,
-   "chg": "+0.84%"
+   "value": 3663.3,
+   "chg": "+2.77%"
   },
   {
    "name": "Bitcoin",
-   "value": 60519.0,
-   "chg": "-0.39%"
+   "value": 59253.0,
+   "chg": "-2.40%"
   }
  ],
  "podcasts": {
