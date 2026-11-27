@@ -1,91 +1,91 @@
 {
- "label": "Thursday, November 26, 2026 · Thanksgiving edition",
- "updated": "2026-11-27T14:55:42+00:00",
- "items": [
-  {
-   "source": "CNBC",
-   "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
-   "url": "https://www.cnbc.com/amp/2026/11/26/stock-markets-today-.html",
-   "take": "With U.S. cash markets closed for Thanksgiving, global investors are fishing for bargains: Europe is rebounding after Wednesday's decline as the new tariff round reads less bad than feared. The open question is whether Wall Street's late recovery can hold once trading resumes."
+  "label": "Friday, November 27, 2026 \u00b7 Black Friday edition",
+  "updated": "2026-11-27T15:19:41+00:00",
+  "items": [
+    {
+      "source": "Investing.com",
+      "title": "Wall Street futures surge toward best week in months on Nvidia lifeline",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-in-holidaythinned-trade-tech-rebound-in-focus-5052775",
+      "take": "Wall Street reopened for its shortened Black Friday session with a strong bid: Nasdaq-100 futures jumped about 2% pre-market as beaten-down chip and AI names (Nvidia, Sandisk, Micron, AMD, Oracle, CoreWeave) bounced back. After Wednesday's late recovery, the tape is on course for its best week in months."
+    },
+    {
+      "source": "Invezz",
+      "title": "Dow futures surge 650 points: 5 things to know before Wall Street opens",
+      "url": "https://invezz.com/news/2026/11/27/5-things-to-know-before-wall-street-opens-november-27/",
+      "take": "Analysts caution the rebound is technical buying, not a verdict on the AI-spend-and-returns questions that drove November's selloff, and thin holiday volumes can magnify moves either way. December brings inflation prints, jobs data and a Fed meeting to settle it."
+    },
+    {
+      "source": "Adobe Analytics",
+      "title": "Adobe forecasts record $12.9 billion online for Black Friday",
+      "url": "https://mlq.ai/news/black-friday-2026-adobe-tracks-825-billion-online-so-far-up-91/",
+      "take": "Adobe projects $12.9 billion in US online sales today, up 9.2%, on the way to a record $275.1 billion season, with $82.5 billion already spent online this month. The catch: the NRF expects 182.7 million shoppers, down from 202.9 million, and much of the growth is price, not volume (PwC puts real growth near 2.8%)."
+    },
+    {
+      "source": "CNBC",
+      "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+      "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+      "take": "The new Section 301 overcapacity levies land on China (an added 20%, about 45% total), the EU, Japan, India and ten more economies, with hearings set for January 25. Investors spent the holiday weighing whether this week's bounce survives full volumes and the tariff overhang next week."
+    },
+    {
+      "source": "Firstpost",
+      "title": "Thanksgiving storm pounds US East Coast, Macy's parade postponed to Saturday",
+      "url": "https://www.firstpost.com/explainers/thanksgiving-storm-us-noreaster-flooding-power-outages-flight-disruptions-east-coast-14062949.html",
+      "take": "A nor'easter flooded the East Coast on Thanksgiving, canceling roughly 400 flights and prompting a New Jersey state of emergency, and Macy's moved its 100th-anniversary parade to Saturday for the first time ever. The weather is a real drag on holiday travel and foot traffic just as the biggest shopping weekend starts."
+    }
+  ],
+  "tape": [
+    {
+      "name": "S&P 500",
+      "value": 7245.66,
+      "chg": "+0.88%"
+    },
+    {
+      "name": "Dow 30",
+      "value": 50565.52,
+      "chg": "+0.76%"
+    },
+    {
+      "name": "Nasdaq",
+      "value": 23855.44,
+      "chg": "+1.14%"
+    },
+    {
+      "name": "10-Yr",
+      "value": 4.89,
+      "chg": "-0.20%"
+    },
+    {
+      "name": "VIX",
+      "value": 27.34,
+      "chg": "+2.01%"
+    },
+    {
+      "name": "Gold",
+      "value": 3659.1,
+      "chg": "+2.65%"
+    },
+    {
+      "name": "Bitcoin",
+      "value": 59554.0,
+      "chg": "-0.97%"
+    }
+  ],
+  "podcasts": {
+    "wsj": {
+      "latest": {
+        "title": "Nvidia Moves On From Jensen Huang",
+        "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
+        "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
+      }
+    },
+    "tom": {
+      "latest": {
+        "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
+        "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
+        "url": "https://rss.art19.com/thoughts-on-the-market"
+      }
+    }
   },
-  {
-   "source": "CNBC TV18",
-   "title": "US stock markets closed for Thanksgiving, Wall Street prepares for shortened Black Friday session",
-   "url": "https://www.cnbctv18.com/market/us-stock-market-holiday-november-26-nyse-nasdaq-closed-for-thanksgiving-check-black-friday-timings-20042435.htm",
-   "take": "NYSE and Nasdaq are dark today and reopen Friday for a half-day session ending at 1:00 PM Eastern, typically among the year's thinnest volume. Light trading can exaggerate moves, so Friday's tape is directionally suspect until full attendance returns next week."
-  },
-  {
-   "source": "IC Markets",
-   "title": "General Market Analysis: a mixed Thanksgiving-eve session",
-   "url": "https://www.ic.com/blog/general-market-analysis-26-november-2026-ic/",
-   "take": "Wednesday split down the middle: technology kept sliding while the Dow edged higher, and stocks recovered a large chunk of their earlier losses by the close. Tellingly, yields and the dollar fell even with a December hike all but locked in, a sign positioning, not data, is steering."
-  },
-  {
-   "source": "Morningstar (via Dow Jones Newswires)",
-   "title": "GDP revised up to 4.3% annual pace, the fastest in three years",
-   "url": "https://que.com/thanksgiving-pause-a-resilient-u-s-economy-meets-a-nervous-market/",
-   "take": "Third-quarter GDP was revised to 4.3% from an initial 3.4%, the fastest growth in three years, which complicates the sell-off's story of a weakening economy. A resilient economy plus sticky inflation is exactly the combination that keeps a December 9 rate hike on the menu."
-  },
-  {
-   "source": "Charles Schwab",
-   "title": "After the holiday: jobs data takes the wheel next week",
-   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
-   "take": "The calendar empties for the holiday, then fills fast: next week's reports culminate in the December 4 nonfarm payrolls reading, the Fed's last big data point before the December 9 decision. With a hike priced near-certain, the jobs number now sets the tone for 2027 policy."
-  }
- ],
- "tape": [
-  {
-   "name": "S&P 500",
-   "value": 7235.99,
-   "chg": "+0.74%"
-  },
-  {
-   "name": "Dow 30",
-   "value": 50515.39,
-   "chg": "+0.66%"
-  },
-  {
-   "name": "Nasdaq",
-   "value": 23796.65,
-   "chg": "+0.89%"
-  },
-  {
-   "name": "10-Yr",
-   "value": 4.88,
-   "chg": "-0.41%"
-  },
-  {
-   "name": "VIX",
-   "value": 27.14,
-   "chg": "+1.27%"
-  },
-  {
-   "name": "Gold",
-   "value": 3663.3,
-   "chg": "+2.77%"
-  },
-  {
-   "name": "Bitcoin",
-   "value": 59253.0,
-   "chg": "-2.40%"
-  }
- ],
- "podcasts": {
-  "wsj": {
-   "latest": {
-    "title": "Nvidia Moves On From Jensen Huang",
-    "pub": "Wed, 18 Nov 2026 11:06:00 +0000",
-    "url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed"
-   }
-  },
-  "tom": {
-   "latest": {
-    "title": "2027 Global Outlook: The Case for a Stronger Dollar, Longer AI Cycle",
-    "pub": "Tue, 17 Nov 2026 21:30:00 -0000",
-    "url": "https://rss.art19.com/thoughts-on-the-market"
-   }
-  }
- },
- "audio": "audio/read-daily/2026-11-26.mp3",
- "audio_seconds": 84.86
+  "audio": "audio/read-daily/2026-11-27.mp3",
+  "audio_seconds": 75.7
 }
