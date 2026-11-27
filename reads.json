@@ -1,6 +1,6 @@
 {
  "label": "Thursday, November 26, 2026 · Thanksgiving edition",
- "updated": "2026-11-26T20:35:38+00:00",
+ "updated": "2026-11-27T00:34:32+00:00",
  "items": [
   {
    "source": "CNBC",
@@ -61,13 +61,13 @@
   },
   {
    "name": "Gold",
-   "value": 3593.4,
-   "chg": "+0.81%"
+   "value": 3594.5,
+   "chg": "+0.84%"
   },
   {
    "name": "Bitcoin",
-   "value": 60658.0,
-   "chg": "+1.22%"
+   "value": 60519.0,
+   "chg": "-0.39%"
   }
  ],
  "podcasts": {
