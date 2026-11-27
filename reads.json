@@ -1,6 +1,6 @@
 {
  "label": "Friday, November 27, 2026 · Black Friday edition",
- "updated": "2026-11-27T17:51:24+00:00",
+ "updated": "2026-11-27T20:34:39+00:00",
  "items": [
   {
    "source": "Investing.com",
@@ -36,38 +36,38 @@
  "tape": [
   {
    "name": "S&P 500",
-   "value": 7272.29,
-   "chg": "+1.25%"
+   "value": 7297.49,
+   "chg": "+1.60%"
   },
   {
    "name": "Dow 30",
-   "value": 50655.69,
-   "chg": "+0.94%"
+   "value": 50774.94,
+   "chg": "+1.18%"
   },
   {
    "name": "Nasdaq",
-   "value": 24002.08,
-   "chg": "+1.76%"
+   "value": 24129.5,
+   "chg": "+2.31%"
   },
   {
    "name": "10-Yr",
-   "value": 4.93,
-   "chg": "+1.67%"
+   "value": 4.94,
+   "chg": "+1.82%"
   },
   {
    "name": "VIX",
-   "value": 24.53,
-   "chg": "-8.47%"
+   "value": 23.81,
+   "chg": "-11.16%"
   },
   {
    "name": "Gold",
-   "value": 3661.4,
-   "chg": "+2.72%"
+   "value": 3668.5,
+   "chg": "+2.91%"
   },
   {
    "name": "Bitcoin",
-   "value": 59547.0,
-   "chg": "-1.42%"
+   "value": 59749.0,
+   "chg": "-1.52%"
   }
  ],
  "podcasts": {
